@@ -1,0 +1,699 @@
+
+/*----------------------------------------------------------
+
+[RESET]			CSS RESET
+
+-----------------------------------------------------------*/
+body, html, div, blockquote, img, label, p, h1, h2, h3, h4, h5, h6, pre, ul, ol, li, dl, dt, dd, form, a, fieldset, input, th, td 
+{ margin: 0; padding: 0; /*border: 0;*/ outline: none; }
+
+body { line-height: 1; font-size: 1em; }
+h1, h2, h3, h4, h5, h6 { font-size: 100%; padding: 0; margin: 0; }
+ul, ol { list-style: none; }
+a, a img { color: black; text-decoration: none; border:none;}
+a:hover { text-decoration: underline; }
+.floatLeft { float: left; padding: 0; }
+.floatRight { float: right; padding: 0; }
+
+/*----------------------------------------------------------
+
+[COLUMN]			COLUMNS LAYOUT
+
+-----------------------------------------------------------*/
+/*
+	Variable Grid System.
+	Learn more ~ http://www.spry-soft.com/grids/
+	Based on 960 Grid System - http://960.gs/
+
+	Licensed under GPL and MIT.
+*/
+
+/* Containers
+----------------------------------------------------------------------------------------------------*/
+.container_12 {
+	margin-left: auto;
+	margin-right: auto;
+	/*width: 960px;*/
+}
+
+/* Grid >> Global
+----------------------------------------------------------------------------------------------------*/
+
+.grid_1, .grid_2, .grid_3, .grid_4, .grid_5, .grid_6, .grid_7, .grid_8, .grid_9, .grid_10, .grid_11, .grid_12 {
+	display:inline; 	float: left; 	position: relative; 	margin-left: 10px; 	margin-right: 10px;
+}
+.push_1, .pull_1, .push_2, .pull_2, .push_3, .pull_3, .push_4, .pull_4,.push_5, .pull_5, .push_6, .pull_6, 
+.push_7, .pull_7, .push_8, .pull_8, .push_9, .pull_9, .push_10, .pull_10, .push_11, .pull_11, .push_12, .pull_12 {
+	position:relative; 
+}
+
+/* Grid >> Children (Alpha ~ First, Omega ~ Last)
+----------------------------------------------------------------------------------------------------*/
+.alpha { 	margin-left: 0; }
+.omega { 	margin-right: 0; }
+
+/* Grid >> 12 Columns
+----------------------------------------------------------------------------------------------------*/
+.container_12 .grid_1 { 	width:60px; }
+.container_12 .grid_2 { 	width:140px; }
+.container_12 .grid_3 { 	width:220px; }
+.container_12 .grid_4 { 	width:300px; }
+.container_12 .grid_5 { 	width:380px; }
+.container_12 .grid_6 { 	width:460px; }
+.container_12 .grid_7 { 	width:540px; }
+.container_12 .grid_8 { 	width:620px; }
+.container_12 .grid_9 { 	width:700px; }
+.container_12 .grid_10 { 	width:780px; }
+.container_12 .grid_11 { 	width:860px; }
+.container_12 .grid_12 { 	width:940px; }
+
+/* Prefix Extra Space >> 12 Columns
+----------------------------------------------------------------------------------------------------*/
+.container_12 .prefix_1 { 	padding-left:80px; }
+.container_12 .prefix_2 { 	padding-left:160px; }
+.container_12 .prefix_3 { 	padding-left:240px; }
+.container_12 .prefix_4 { 	padding-left:320px; }
+.container_12 .prefix_5 { 	padding-left:400px; }
+.container_12 .prefix_6 { 	padding-left:480px; }
+.container_12 .prefix_7 { 	padding-left:560px; }
+.container_12 .prefix_8 { 	padding-left:640px; }
+.container_12 .prefix_9 { 	padding-left:720px; }
+.container_12 .prefix_10 { 	padding-left:800px; }
+.container_12 .prefix_11 { 	padding-left:880px; }
+
+/* Suffix Extra Space >> 12 Columns
+----------------------------------------------------------------------------------------------------*/
+.container_12 .suffix_1 { 	padding-right:80px; }
+.container_12 .suffix_2 { 	padding-right:160px; }
+.container_12 .suffix_3 { 	padding-right:240px; }
+.container_12 .suffix_4 { 	padding-right:320px; }
+.container_12 .suffix_5 { 	padding-right:400px; }
+.container_12 .suffix_6 { 	padding-right:480px; }
+.container_12 .suffix_7 { 	padding-right:560px; }
+.container_12 .suffix_8 { 	padding-right:640px; }
+.container_12 .suffix_9 { 	padding-right:720px; }
+.container_12 .suffix_10 { 	padding-right:800px; }
+.container_12 .suffix_11 { 	padding-right:880px; }
+
+/* Push Space >> 12 Columns
+----------------------------------------------------------------------------------------------------*/
+.container_12 .push_1 { 	left:80px; }
+.container_12 .push_2 { 	left:160px; }
+.container_12 .push_3 { 	left:240px; }
+.container_12 .push_4 { 	left:320px; }
+.container_12 .push_5 { 	left:400px; }
+.container_12 .push_6 { 	left:480px; }
+.container_12 .push_7 { 	left:560px; }
+.container_12 .push_8 { 	left:640px; }
+.container_12 .push_9 { 	left:720px; }
+.container_12 .push_10 { 	left:800px; }
+.container_12 .push_11 { 	left:880px; }
+
+/* Pull Space >> 12 Columns
+----------------------------------------------------------------------------------------------------*/
+.container_12 .pull_1 { 	left:-80px; }
+.container_12 .pull_2 { 	left:-160px; }
+.container_12 .pull_3 { 	left:-240px; }
+.container_12 .pull_4 { 	left:-320px; }
+.container_12 .pull_5 { 	left:-400px; }
+.container_12 .pull_6 { 	left:-480px; }
+.container_12 .pull_7 { 	left:-560px; }
+.container_12 .pull_8 { 	left:-640px; }
+.container_12 .pull_9 { 	left:-720px; }
+.container_12 .pull_10 { 	left:-800px; }
+.container_12 .pull_11 { 	left:-880px; }
+
+/*----------------------------------------------------------
+	- [CLEAR]			CLEARS
+-----------------------------------------------------------*/
+
+/* http://sonspring.com/journal/clearing-floats */
+.clear {   clear: both;   display: block;   overflow: hidden;   visibility: hidden;   width: 0;   height: 0; }
+
+/* http://www.yuiblog.com/blog/2010/09/27/clearfix-reloaded-overflowhidden-demystified */
+.clearfix:before,
+.clearfix:after {   content: '\0020';   display: block;   overflow: hidden;   visibility: hidden;   width: 0;   height: 0; }
+.clearfix:after {   clear: both; }
+
+/*----------------------------------------------------------
+
+[CORE]					CORE styles
+
+-----------------------------------------------------------*/
+
+/*----------------------------------------------------------
+	- [STRU]			STRUCTURE
+						- horizontal structure
+						- some top-level height
+-----------------------------------------------------------*/
+* { }
+
+body, #site-wrapper, #header-wrapper, #footer-wrapper {
+	min-width:220px; 
+}
+#content,  #header-content, #footer-content {
+	position:relative;
+	margin:0 auto;
+	/*width:960px;*/
+}
+#content div, p {
+	min-height:1px/*20px*/;
+}
+
+/*----------------------------------------------------------
+
+	- [TYPO]			TYPOGRAPHY
+
+-----------------------------------------------------------*/
+body {
+	font-family:"Source Sans Pro", Arial, sans-serif;
+	font-size:16px;
+	font-weight:400;
+	line-height:20px;
+}
+
+h1, #pre-footer h2, .title, h1.four04,
+div.sign-up-box h2, div.sign-up-box form input:not([type='submit']), div.sign-up-box form input[type=text], div.sign-up-box form input[type=password]
+							{font-weight:300; }
+h2, h3, h4, h5, h6, p, #top-nav ul li a,
+.page-type-list .post-wrap .title, .page-type-grid .post-wrap .title
+							{ font-weight:400; }
+h1>span, .footer-nav li:first-child
+							{ font-weight:600; }
+strong, .call-out, #top-nav ul li a[title="free-trial"]
+							{ font-weight:700;	}
+
+.oversize, .oversized, .title
+							{ font-size:60px;
+							line-height:60px; }
+.front-page-call-out h3
+							{ font-size:48px;
+							line-height:60px; }
+h1 
+							{ font-size:40px;
+							  line-height:60px;	}
+h2
+							{ font-size:36px;
+							  line-height:40px; }
+h3,
+.feature-box h4, .page-type-list .post-wrap h5.title,
+#pre-footer h2, div.sign-up-box h2
+							{ font-size:30px;
+							  line-height:40px; }
+h4,
+div.sign-up-box form input[type=text], div.sign-up-box form input[type=password]
+							{ font-size:26px;
+							  line-height:40px; }
+h5,
+.page-type-grid .post-wrap h5.title, div.sign-up-box form input[type=submit]
+							{ font-size:20px;
+							  line-height:20px;	}
+h6,
+.text-bubble p:first-child, .sign-up-box p
+							{ font-size:18px;
+							  line-height:20px; }
+p
+							{ font-size:16px;
+							  line-height:20px; }
+
+.chat-bubble p a, .subscript,
+#already-engaged p, #footer-content p, #footer-content a, #footer-content, .footer-nav
+							{ font-size:14px;
+							  line-height:20px; }
+.more-link, small, #livechat p, #top-nav ul li a
+							{ font-size:12px;
+							  line-height:20px; }
+.feature-box h4,  .feature-box h5,  .feature-box h6, .feature-box p {
+	margin-left: auto; 
+	margin-right: auto;
+	text-align: center;
+	}
+
+.call-out a:hover 	{ text-decoration:none;}
+.more-link 			{ text-transform:uppercase; }
+
+.textalignleft, .text-bubble p,
+.page-type-list .post-wrap .title, 
+.page-type-grid .post-wrap .title
+					{ text-align:left; }
+.textaligncenter, .feature-box
+					{ text-align:center; }
+.textalignright 
+					{ text-align:right; }	
+	
+/*----------------------------------------------------------
+
+[SKIN]					SKIN
+
+-----------------------------------------------------------*/
+
+/*----------------------------------------------------------
+	- [COLO]		COLORS
+----------------------------------------------------------*/
+a 									{ color:#0fb0cc; } /* greenish light blue */
+#footer-content a, #footer-content
+									/*{ color:#839baa; }  greenish light grey */
+									{ color:#5d7584; } /* dark grey-blue */
+
+body,
+#pre-footer p, 
+div.sign-up-box p,					
+.feature-box
+									/* { color:#5d7584;} dark grey-blue */
+									{ color:#2A4251;} /* darkER grey-blue */
+/* #header-wrapper 					{ background-color:#5d7584; } /* dark grey-blue */
+#header-wrapper 					{ background:url('../images/header-wrap-grad.png') repeat-x bottom center #5d7584; } /* dark grey-blue */
+#header-wrapper						{ border-bottom:2px solid #e0ecfd; 
+									  margin-bottom:-2px; }
+#top-nav-wrapper					{ /*background:url('../images/hr3.png') no-repeat 140px 68px transparent;*/ }
+
+
+#content-wrapper 					{ background:url('images/content-background-tile.jpg') repeat top left #e0ecfd; } /* background light blue */
+.title, h1.title, .category-description
+									{ color: #e0ecfd; } /* background light blue */
+
+#pre-footer	h1, #pre-footer h2, #pre-footer h3, #pre-footer h4, #pre-footer h5, 
+#pre-footer h6,.feature-box h4,	.feature-box>h4>a,.sign-up-box h1, .footer-nav li:first-child, 
+.text-bubble p span, .feature-box h4, h1.four04 
+									{ color:#38aeff; } /* baby blue */
+.text-bubble p:first-child			{ background-color:#38aeff; } /* baby blue */
+.text-bubble .arrow-down /*arrow*/	{ border-top-color:#38aeff; } /* baby blue */
+
+div.sign-up-box form input[type=text],
+div.sign-up-box form input[type=password]
+									{ border:5px solid #38aeff; } /* baby blue */
+									
+.front-page-text-bubble h1,
+.page-type-list .post-wrap .title,
+.page-type-grid .post-wrap .title
+									{ color:#005288; } /* dark blue */
+	
+#livechat p, #livechat a, .front-page-call-out,
+.front-page-call-out h3, .front-page-call-out a,
+.text-bubble p:first-child, .chat-bubble p:first-child,
+div.sign-up-box form input[type=submit],
+.call-out, .call-out a
+									{ color:#ffffff; } /* white */
+.front-page-text-bubble 			{ background-color:#ffffff; }
+.front-page-text-bubble .arrow-down { border-top-color:#ffffff; } /* white */
+
+body,
+#site-wrapper,
+#footer-wrapper,
+div.sign-up-box form input[type=text],
+div.sign-up-box form input[type=password],
+.page-type-list, .pricing-table, .pricing-details, .pricing-question,
+#gallery-container 
+									{ background-color:#ecf6ff; } /* off white blue */
+
+#livechat p span,
+.front-page-text-bubble h1 span 	{ color:#7de218; } /* neon green */
+
+.chat-bubble p a					{ background-color:#7de218; } /* neon green */
+
+.chat-bubble .arrow-down			{ border-top-color:#66cc00; } /* darker green */
+
+.chat-bubble p a 					{ border:thin solid #4ebe00; } /* dark-green */
+
+div.sign-up-box form input[type=submit],
+.front-page-call-out				{ border:thin solid #e68c00; } /* dark-orange border*/
+
+/*----------------------------------------------------------
+
+	- [GRAD]		GRADIENTS   
+
+-----------------------------------------------------------*/
+.orange-grad,
+.front-page-call-out,
+.call-out a,
+#top-nav ul li a[title="free-trial"],
+div.sign-up-box form input[type=submit] { /* Orange gradient */
+  background-color: #fda100;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fda100), to(#e68c00));
+  background-image: -webkit-linear-gradient(top, #fda100, #e68c00);
+  background-image:    -moz-linear-gradient(top, #fda100, #e68c00);
+  background-image:      -o-linear-gradient(top, #fda100, #e68c00);
+  background-image:         linear-gradient(to bottom, #fda100, #e68c00);
+}
+
+.orange-grad-hover,
+.front-page-call-out:hover,
+.call-out a:hover,
+#top-nav ul li a[title="free-trial"]:hover,
+div.sign-up-box form input[type=submit]:hover { /* Orange gradient reverse */
+  background-color: #e68c00;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e68c00), to(#fda100));
+  background-image: -webkit-linear-gradient(top, #e68c00, #fda100);
+  background-image:    -moz-linear-gradient(top, #e68c00, #fda100);
+  background-image:      -o-linear-gradient(top, #e68c00, #fda100);
+  background-image:         linear-gradient(to bottom, #e68c00, #fda100);
+  }
+
+.green-grad,
+.chat-call-out a,
+.chat-bubble p a { /* green gradient */
+  background-color: #8ade24;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#8ade24), to(#6bba09));
+  background-image: -webkit-linear-gradient(top, #8ade24, #6bba09);
+  background-image:    -moz-linear-gradient(top, #8ade24, #6bba09);
+  background-image:      -o-linear-gradient(top, #8ade24, #6bba09);
+  background-image:         linear-gradient(to bottom, #8ade24, #6bba09);
+}
+
+.green-grad-hover,
+.chat-call-out a:hover { /* green gradient */
+  background-color: #6bba09;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#6bba09), to(#8ade24));
+  background-image: -webkit-linear-gradient(top, #6bba09, #8ade24);
+  background-image:    -moz-linear-gradient(top, #6bba09, #8ade24);
+  background-image:      -o-linear-gradient(top, #6bba09, #8ade24);
+  background-image:         linear-gradient(to bottom, #6bba09, #8ade24);
+}
+
+.grey-green-grad-down,
+#top-nav ul li.current-menu-item a,
+#top-nav ul li a:hover,
+#top-nav ul li a[title="sign-in"]:hover {
+  background-color: #5c7584;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#5c7584), to(#546b79));
+  background-image: -webkit-linear-gradient(top, #5c7584, #546b79);
+  background-image:    -moz-linear-gradient(top, #5c7584, #546b79);
+  background-image:      -o-linear-gradient(top, #5c7584, #546b79);
+  background-image:         linear-gradient(to bottom, #5c7584, #546b79);
+}
+
+.grey-green-grad-up,
+#top-nav ul li a[title="sign-in"]  {
+  background-color: #546b79;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#546b79), to(#5c7584));
+  background-image: -webkit-linear-gradient(top, #546b79, #5c7584);
+  background-image:    -moz-linear-gradient(top, #546b79, #5c7584);
+  background-image:      -o-linear-gradient(top, #546b79, #5c7584);
+  background-image:         linear-gradient(to bottom, #546b79, #5c7584);
+}
+#glow { 
+	/*background:url('../images/glow.png') no-repeat top center transparent;*/
+	/*width:960px;*/ 	/*height:960px;*/
+	position:absolute; 	top:0; 	left:-10px;
+}
+
+/*----------------------------------------------------------
+	- [GENE]			GENERIC styles
+						quote bubbles, arrows
+-----------------------------------------------------------*/
+	
+hr {
+	border:none;
+	border:0;
+	/*background:url('../images/hr3.png') no-repeat center center transparent;*/
+	clear:both;
+	display:block;
+	/*height:20px;
+	margin:20px 0;*/
+	width:100%;
+}
+input {
+	height:50px; /*20*/
+}
+#content a.title {
+	text-decoration:none;
+}
+#content hr { /* more blue hr */
+	/*background-image:url('../images/hr-blue.png');*/
+}
+.alignleft {
+	float:left;
+}
+.alignright {
+	float:right;
+}
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align:center;
+}
+.aligncenterparent {
+	text-align:center;
+}
+pre {
+	max-width:940px;
+}
+.attachment-post-thumbnail {
+	float:left;
+	margin: 0 20px 20px;
+}
+	
+/* Quote bubble */
+.text-bubble p:first-child {
+	position:relative;
+}
+.text-bubble .arrow-down {
+	position:absolute;
+	bottom:-14px;
+	left:20px;
+	
+	border-width:15px;
+}
+
+.text-bubble p:last-child { /* quote attribution */
+	margin-left:20px;
+}
+.text-bubble .size-thumbnail {
+	position:relative;
+	float:right;	
+}
+.text-bubble .size-thumbnail.airbnb {
+	top:-15px;
+	right:25px;
+}
+
+/* Arrows */
+.arrow-up { width: 0; height: 0; /* -bottom takes color */
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	
+	border-bottom: 5px solid #fff;
+	}
+.arrow-down { width: 0; height: 0;  /* -top takes color */
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	
+	border-top: 20px solid #fff;
+	}
+.arrow-right { width: 0; height: 0; /* -left takes color */
+	border-top: 60px solid transparent;
+	border-bottom: 60px solid transparent;
+	
+	border-left: 60px solid #fff;
+	}
+.arrow-left { width: 0; height: 0; /* -right takes color */
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent; 
+	
+	border-right:10px solid #fff; 
+	}
+
+/*----------------------------------------------------------
+	- [SPEC]			SPECIAL styles
+						rounded corners, drop shadows,
+-----------------------------------------------------------*/
+.rounded_light,
+.chat-bubble p a, .front-page-call-out, .front-page-text-bubble,
+#top-nav ul li a[title="sign-in"], #top-nav ul li a[title="free-trial"],
+.post-wrap, .page-type-list, .wp-post-image
+ {
+	-webkit-border-radius: 5px; /* Safari 3-4, iOS 1-3.2, Android =1.6 */
+    border-radius: 5px; /* Opera 10.5, IE9+, Safari 5, Chrome, Firefox 4+, iOS 4, Android 2.1+ */
+	-moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+}
+.rounded_medium,
+.call-out a, .text-bubble p:first-child,
+div.sign-up-box form input[type=text], div.sign-up-box form input[type=password], div.sign-up-box form input[type=submit],
+.pricing-details, .pricing-question,
+#gallery-container
+{
+	-webkit-border-radius: 10px; /* Safari 3-4, iOS 1-3.2, Android =1.6 */
+    border-radius: 10px; /* Opera 10.5, IE9+, Safari 5, Chrome, Firefox 4+, iOS 4, Android 2.1+ */
+	-moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+}
+.rounded_heavy,
+.pricing-table
+ {
+	-webkit-border-radius: 30px; /* Safari 3-4, iOS 1-3.2, Android =1.6 */
+    border-radius: 30px; /* Opera 10.5, IE9+, Safari 5, Chrome, Firefox 4+, iOS 4, Android 2.1+ */
+	-moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+}
+.shadow-22,
+.front-page-text-bubble {
+	-webkit-box-shadow: 0px 0px 22px 0px #4a677a; /* blue-grey */
+    box-shadow: 0px 0px 22px 0px #4a677a;
+	-moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+}
+.shadow_3,
+.attachment-post-thumbnail,
+.post-thumb img {
+	-webkit-box-shadow: 1px 1px 3px 0px #4a677a; /* blue-grey */
+    box-shadow: 1px 1px 3px 0px #4a677a;
+	-moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+}
+
+/*----------------------------------------------------------
+	- [SPAC]		SPACING, VERTICAL-STRUCTURE
+					- padding, margins, etc.
+-----------------------------------------------------------*/
+#content {
+	padding-bottom:20px;
+	padding-top:40px;
+}
+
+.front-page-call-out,
+.feature-box p,
+.more-link,
+.sign-up-box h1,
+p {
+	margin-bottom:20px;
+}
+
+.feature-box .icon,
+.feature-box h4 {
+	margin-bottom:10px;
+}
+
+#already-engaged img {
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+#already-engaged .more-link,
+.feature-box-flair,
+#header-wrapper p  {
+	margin-bottom:0;
+}
+
+.feature-box .more-link {
+	padding-bottom:40px;
+}
+
+.padding_10 {
+	padding:10px;
+}
+
+.text-bubble p:first-child {
+	padding: 15px 5px 25px 15px;
+}
+
+/*----------------------------------------------------------
+
+[PAGE]					PAGE SPEICIFC styles
+
+-----------------------------------------------------------*/		
+
+/*----------------------------------------------------------
+	- [HEAD]			HEADER styles
+-----------------------------------------------------------*/
+
+#header-content {
+	height:80px;
+}
+#top-nav-wrapper {
+	height:70px;
+}
+#top-nav ul {
+	list-style-type:none;
+}
+body.front-page #sub-header {
+	height:70px;
+}
+#sub-header {
+	height:60px;
+	overflow:hidden;
+}
+#sub-header .title {
+	margin-top:25px;
+	height:25px;
+	overflow:hidden;
+}
+#top-nav {
+	height:20px;
+	padding-top:20px;
+}
+body.front-page #top-nav {
+	padding-top:10px;
+}
+#top-nav ul {
+	display:inline-block;
+	margin: 0 10px;
+}
+#top-nav ul li {
+	float:left;
+	height:20px;
+	margin:4px 0 -4px 0;
+	vertical-align:baseline;
+}
+#top-nav ul li a {
+	color:#ffffff;
+	letter-spacing:0.2px;
+	padding:10px 15px;
+	text-transform:uppercase;
+}	
+#top-nav a:hover,
+#top-nav a[title="sign-in"],
+#top-nav a[title="free-trial"] {
+	text-decoration:none;
+}
+#top-nav ul#menu-top-nav-trial li a {
+	padding: 10px 8px;
+}
+#top-nav ul#menu-top-nav-trial li,
+#top-nav ul#menu-top-nav-trial	{
+	margin-right:-5px;
+}
+#header-logo {
+	z-index: 100;
+	position:relative;
+	padding-bottom:10px;
+}
+#header-logo a img {
+	position:absolute;
+	top:12px;
+	left:1px;
+}
+body.front-page #header-logo a img {
+	padding:0;
+	position:absolute;
+	top:30px;
+}
+body.front-page #livechat {
+	top:20px;
+}
+#livechat {
+	display:none; /* Will be .fadeIn()'d by jQuery */
+}
+#livechat {
+	top:10px;
+	display:inline-block;
+}
+#livechat hr {
+	display:none;
+}
+#livechat div
+#livechat p {
+	position:relative;
+	bottom:0;
+}
+.front-page .chat-bubble {
+	margin:10px 0px 8px 5px;
+}
+.chat-bubble p a {
+	height:20px;
+	width:100%;
+}
+.chat-bubble a {
+	padding:9px 15px;
+}
+.chat-bubble a:hover {
+	text-decoration:none;
+}
+
+

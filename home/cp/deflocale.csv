@@ -1,0 +1,52 @@
+_LANG;English;Greek;
+Monday;Monday;Δευτέρα;
+Tuesday;Tuesday;Τρίτη;
+Wednesday;Wednesday;Τετάρτη;
+Thursday;Thursday;Πέμπτη;
+Friday;Friday;Παρασκευή;
+Saturday;Saturday;Σάββατο;
+Sunday;Sunday;Κυριακή;
+January;January;Ιανουαρίου;
+February;February;Φεβρουαρίου;
+March;March;Μαρτίου;
+April;April;Απριλίου;
+May;May;Μαίου;
+June;June;Ιουνίου;
+July;July;Ιουλίου;
+August;August;Αυγούστου;
+September;September;Σεπτεμβρίου;
+October;October;Οκτωβρίου;
+November;November;Νοεμβρίου;
+December;December;Δεκεμβρίου;
+_LOCAL;Language;Γλώσσα;
+_HOME;My Home;Αρχική;
+_ADMIN;Admin;Διαχείρηση;
+_COMMANDS;Commands;Εντολές;
+_THEME;Theme;Θέμα;
+_MORE;More;Περισσότερα;
+_CODE;Code;Κωδικός;
+_ADVANCE;Advance;Για προχωρημένους;
+_CPANEL;Control;Διαχείρηση;
+_COMLINE;Command;Εντολή;
+_DATE;Date;Ημερ/νία;
+_TIME;Time;Ωρα;
+_BUY;Buy;Αγορά;
+_ADD;Add;Προσθήκη;
+_REM;Remove;Αφαίρεση
+_ITEM;Item;Είδος;
+_NOACCESS;No Access;Μη Προσβάσιμο;
+_IMAGE;Picture;Εικόνα;
+_WEEKOFFERS;Offers of the week;Προσφορες εβδομάδος;
+_MONTHOFFERS;Offers of the month;Προσφορες μηνός;
+_REGISTER;Register now...;Καταχωρηθειτε τωρα...;
+_ASKFOR;Ask for...;Ζητήστε...;
+_DOWNLOADS;Downloads;Παροχές Λογισμικού;Downloads;
+_GROUPOF;Group;Ομάδα;Group;
+
+_delphi2java_overview;Delphi2Java Overview;Delphi2Java Overview;
+_delphi2java_history;Delphi2Java Release history;Delphi2Java Relese History;
+_java2delphi_overview;Java2Delphi Overview;Java2Delphi Overview;
+_java2delphi_history;Java2Delphi Release history;Java2Delphi Relese History;
+
+_START;Hme;Αρχική;
+
