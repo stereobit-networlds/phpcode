@@ -1,0 +1,248 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<base href="http://www.e-basis.gr/" />
+		<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+		<title>ΒΑΣΙΣ ΑΝΑΛΩΣΙΜΑ</title>
+		<style type="text/css">
+body,html { height: 100%; } 
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-color: #EBEBEB;
+}
+a {	
+color: #0066B3;
+text-decoration: none;
+}
+a:hover {
+    color: #6d2508;
+    text-decoration: underline;
+}
+.TopBG {
+	background-repeat: repeat-x;
+	background-position: top;
+	background-image: url(http://www.e-basis.gr/images/bg_top_fade.gif);
+}
+.border_2 {
+	border: thin dotted #CCCCCC;
+}
+.textsmall_3 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #333333;
+	font-size: 11px;
+	font-weight: normal;
+}
+.textsmall_sitelinks {
+    color: #8A4400;
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-size: 9px;
+    font-weight: normal;
+}
+.textsmall_sitelinks_separators {
+    color: #D77A20;
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+}
+.ProdWindowTopTile {
+	background-image: url(http://www.e-basis.gr/images/prod_wind_small_19.gif);
+	background-repeat: repeat-x;
+	background-position: top;
+}
+.ProdWindowLeftTile {
+	background-image: url(http://www.e-basis.gr/images/prod_wind_small_24.gif);
+	background-repeat: repeat-y;
+	background-position: left;
+}
+.ProdWindowRightTile {
+	background-image: url(http://www.e-basis.gr/images/prod_wind_small_28.png);
+	background-repeat: repeat-y;
+	background-position: right;
+}
+.ProdWindowBottomTile {
+	background-image: url(http://www.e-basis.gr/images/prod_wind_small_34.png);
+	background-repeat: repeat-x;
+	background-position: bottom;
+}
+.textDetails {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #003963;
+	font-size: 9px;
+}
+.textProdName {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #0066B3;
+	font-size: 11px;
+	font-weight: bold;
+	text-decoration: none;
+}
+.textProdName a:hover {
+	color: #f6a900;
+	text-decoration: none;	
+}
+.MainWindowShadowLeft {
+	background-image: url(http://www.e-basis.gr/images/shadow_fade_left.png);
+	background-repeat: repeat-y;
+	background-position: right;
+}
+.MainWindowShadowRight {
+	background-image: url(http://www.e-basis.gr/images/shadow_fade_right.png);
+	background-repeat: repeat-y;
+	background-position: right;
+}
+.MainBar {
+	background-image: url(http://www.e-basis.gr/images/bar_tile.jpg);
+	background-repeat: repeat-x;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #FFFFFF;
+	text-align: center;
+	vertical-align: middle;
+	background-position: top;
+}
+.textBig1 {
+	text-decoration: none;
+	color: #666666;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+}		</style>
+	</head>
+	<body>
+		<table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="98%">
+			<tbody>
+				<tr>
+					<td class="MainWindowShadowLeft" rowspan="3" width="10">
+						&nbsp;</td>
+					<td bgcolor="#FFFFFF" class="TopBG" height="90" valign="top">
+						<table border="0" cellpadding="0" cellspacing="0" width="100%">
+							<tbody>
+								<tr>
+									<td align="right" class="textsmall_1" width="1232">
+										Επικοινωνήστε μαζί μας <span class="textsmall_2">2310 682 680</span></td>
+									<td width="10">
+										&nbsp;</td>
+								</tr>
+								<tr>
+									<td align="left" colspan="2">
+										<table border="0" cellpadding="0" cellspacing="0" width="100%">
+											<tbody>
+												<tr>
+													<td align="center" width="320">
+														<div class="logopicture">
+															&nbsp;</div>
+														<div align="left">
+															<a href="http://www.e-basis.gr"><img border="0" id="Image28" name="Image28" src="images/logo.png" /></a></div>
+													</td>
+													<td align="center">
+														&nbsp;</td>
+													<td width="70">
+														<img height="64" src="images/b2b.png" width="64" /></td>
+												</tr>
+											</tbody>
+										</table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</td>
+					<td class="MainWindowShadowRight" rowspan="3" width="10">
+						&nbsp;</td>
+				</tr>
+				<tr>
+					<td height="10" valign="top">
+						<table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="100%">
+							<tbody>
+								<tr>
+									<td align="center" class="MainBar" height="30" valign="bottom" width="98%">
+										<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+											<tbody>
+												<tr>
+													<td height="15" valign="top">
+														<div align="center">
+															<a class="textsmall_sitelinks" href="http://www.e-basis.gr/klist/ΑΝΑΛΩΣΙΜΑ_ΜΗΧΑΝΩΝ/">ΑΝΑΛΩΣΙΜΑ ΜΗΧΑΝΩΝ</a><span class="textsmall_sitelinks_separators"> | </span> <a class="textsmall_sitelinks" href="http://www.e-basis.gr/klist/ΒΙΒΛΙΟΔΕΣΙΑ_-_ΠΛΑΣΤΙΚΟΠΟΙΗΣΗ/">ΒΙΒΛΙΟΔΕΣΙΑ - ΠΛΑΣΤΙΚΟΠΟΙΗΣΗ</a><span class="textsmall_sitelinks_separators"> | </span> <a class="textsmall_sitelinks" href="http://www.e-basis.gr/klist/ΜΗΧΑΝΕΣ_ΓΡΑΦΕΙΟΥ/">ΜΗΧΑΝΕΣ ΓΡΑΦΕΙΟΥ</a><span class="textsmall_sitelinks_separators"> | </span> <a class="textsmall_sitelinks" href="http://www.e-basis.gr/klist/ΠΕΡΙΒΑΛΛΟΝ_ΓΡΑΦΕΙΟΥ/">ΠΕΡΙΒΑΛΛΟΝ ΓΡΑΦΕΙΟΥ</a><span class="textsmall_sitelinks_separators"> | </span> <a class="textsmall_sitelinks" href="http://www.e-basis.gr/klist/ΠΕΡΙΦΕΡΕΙΑΚΑ_Η-Υ/">ΠΕΡΙΦΕΡΙΑΚΑ Η/Υ</a><span class="textsmall_sitelinks_separators"> | </span> <a class="textsmall_sitelinks" href="http://www.e-basis.gr/klist/ΥΛΙΚΑ_PLOTTER/">ΥΛΙΚΑ PLOTTER</a><span class="textsmall_sitelinks_separators"> | </span> <a class="textsmall_sitelinks" href="http://www.e-basis.gr/klist/ΧΑΡΤΙΑ_-_ΦΙΛΜ/">ΧΑΡΤΙΑ - ΦΙΛΜ</a></div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td align="center" bgcolor="#FFFFFF" class="border_2" valign="top" width="99%">
+						<table border="0" cellpadding="0" cellspacing="0" width="100%">
+							<tbody>
+								<tr>
+									<td>
+										&nbsp;</td>
+								</tr>
+								<tr>
+									<td>
+										<table border="0" cellpadding="0" cellspacing="0" width="100%">
+											<tbody>
+												<tr>
+													<td width="20">
+														&nbsp;</td>
+													<td>
+														<div align="center" id="Protasis">
+															<img alt="" src="/images/multilaser(1).jpg" style="width: 567px; height: 655px;" /></div>
+													</td>
+													<td width="20">
+														&nbsp;</td>
+												</tr>
+											</tbody>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										&nbsp;</td>
+								</tr>
+							</tbody>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td class="MainWindowShadowLeft">
+						&nbsp;</td>
+					<td align="center" bgcolor="#FFFFFF" height="20" valign="top">
+						<table border="0" cellpadding="0" cellspacing="5" width="100%">
+							<tbody>
+								<tr>
+									<td align="center" valign="middle">
+										<img height="66" src="http://www.e-basis.gr/images/footer1.jpg" width="596" /></td>
+								</tr>
+								<tr>
+									<td align="center" valign="middle">
+										<table bgcolor="#F5F5F5" border="0" cellpadding="0" cellspacing="0" class="border_2" width="100%">
+											<tbody>
+												<tr>
+													<td align="center" height="15" valign="top">
+														<a class="textsmall_sitelinks" href="http://www.e-basis.gr/company.php">Η Εταιρία</a><span class="textsmall_sitelinks_separators"> | </span><a class="textsmall_sitelinks" href="http://www.e-basis.gr/transportation.php">Αποστολή εμπορευμάτων</a><span class="textsmall_sitelinks_separators"> | </span><a class="textsmall_sitelinks" href="http://www.e-basis.gr/payment.php">Τρόποι πληρωμής</a><span class="textsmall_sitelinks_separators"> | </span><a class="textsmall_sitelinks" href="http://www.e-basis.gr/terms.php">Όροι χρήσης</a><span class="textsmall_sitelinks_separators"> | </span><a class="textsmall_sitelinks" href="http://www.e-basis.gr/contact.php">Επικοινωνία</a></td>
+												</tr>
+											</tbody>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td align="center" valign="middle">
+										<span class="textsmall_sitelinks">Mail Powered by&nbsp;<a href="http://www.stereobit.gr" target="_blank"><img border="0" height="12" src="images/stereobit.png" width="88" /></a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; ΒΑΣΙΣ ΑΝΑΛΩΣΙΜΑ Ι.Κ.Ε. </span></td>
+								</tr>
+							</tbody>
+						</table>
+					</td>
+					<td class="MainWindowShadowRight">
+						&nbsp;</td>
+				</tr>
+			</tbody>
+		</table>
+		<br />
+	<img src="http://www.stereobit.gr/mtrack.php?i=201505061005391360@basis&r=filoxenidis@gmail.com" border="0" width="1" height="2"></body>
+</html>

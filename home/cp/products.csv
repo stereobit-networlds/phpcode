@@ -1,0 +1,6 @@
+cat1;cat2;cat3;cat4;code;active;itmactive;title;title;price (retail);price (wholesale);uniname;qty;private
+Company;;;;the-company;101;1;Η εταιρία;The Company;0;0;pcs;1;1
+Products;Products A;Products A1;;the-product-a;101;1;Προϊόν Α;Product A;0;0;pcs;1;1
+Products;Products B;Products B1;;the-product-b;101;1;Προϊόν Β;Product B;0;0;pcs;1;1
+Products;Products C;Products C1;;the-product-c;101;1;Προϊόν Γ;Product C;0;0;pcs;1;1
+Products;Products D;Products D1;;the-product-d;101;1;Προϊόν Δ;Product D;0;0;pcs;1;1
