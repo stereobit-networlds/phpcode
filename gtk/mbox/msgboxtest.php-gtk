@@ -1,0 +1,35 @@
+<?php
+/*
+*	Sample for MessageBox()
+*	by Christian Weiske, cweiske@cweiske.de
+*/
+
+//Load GTK if not happened yet
+dl( "php_gtk." . ( strstr( PHP_OS, "WIN") ? "dll" : "so"));
+require_once( "GTK_MessageBox.inc");
+
+
+$nAnswer = MessageBox( "This is the text.\nAnd this is a new line.", "The title", MB_YESNO + MB_ICONQUESTION + MB_DEFBUTTON2 + MB_CENTER);
+if( $nAnswer == IDYES) {
+	MessageBox( "You've clicked YES", NULL, MB_ICONINFORMATION);
+} else {
+	MessageBox( "You didn't click YES");
+}
+
+
+
+$nAnswer = MessageBox( "You can define your own buttons.", "Buttons?", MB_OWN + MB_ICONEXCLAMATION, array( 1 => "Button 1", 2 => "Button 2", 3 => "Button 3"));
+switch( $nAnswer) {
+	case 1:
+		$strMsg	= "You've clicked button 1";
+		break;
+	case 2:
+		$strMsg	= "You've clicked button 2";
+		break;
+	case 3:
+		$strMsg	= "You've clicked button 3";
+		break;
+}
+MessageBox( $strMsg, "Own buttons", MB_ICONINFORMATION);
+
+?>

@@ -1,0 +1,1 @@
+it: <?php phpinfo(); ?>

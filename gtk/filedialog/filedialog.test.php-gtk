@@ -1,0 +1,72 @@
+<?php
+/*
+*	Sample for FileDialog
+*	by Christian Weiske, cweiske@cweiske.de
+*/
+
+//Load GTK if not happened yet
+dl( "php_gtk." . ( strstr( PHP_OS, "WIN") ? "dll" : "so")) || die( "Can't load php_gtk module!");
+require_once( "GTK_FileDialog.inc");
+
+
+/*
+*	This is a sample für the direct, fast file selection function.
+*	You don't need to create a filedialog object and DoModal() it,
+*	but you can't retrieve information about the readonly flags and so
+*/
+$strFilename	= FileDialog( true, "txt", NULL, OFN_CREATEPROMPT, array( "All files (*)" => "*", "php-gtk applications (*.php-gtk)" => "*.php-gtk"));
+if( $strFilename === false) {
+	MessageBox( "You've clicked CANCEL!", "FileDialog Test", MB_ICONEXCLAMATION);
+} else {
+	MessageBox( "You've selected this file:\n" . $strFilename, "FileDialog Test", MB_ICONINFORMATION);
+}
+
+/*
+*	Here is the example for the "harder" way, but it is still easy, I think
+*	Create the FileDialog object and DoModal() it
+*	After that, you can retrieve information on the readonly flag,
+*	Get dirname(s), filename(s),... for the file(s)
+*/
+
+
+
+$objFD			= new FileDialog( true, "txt", NULL, OFN_CREATEPROMPT + OFN_SHOWHELP, array( "All files (*)" => "*", "php-gtk applications (*.php-gtk)" => "*.php-gtk"), array( "OnHelp", "This is a parameter"));
+$objFD			->strDialogTitle = "Set your own dialog title...";
+if( $objFD->DoModal() == IDOK) {
+	$objFD->GetReadonly() ? $strReadonly = "Readonly is ON" : $strReadonly = "Readonly is OFF";
+
+	MessageBox( "With the \"hard\" way you can get some extra information:\n" .
+		"Filename: " . $objFD->GetFileName() . "\n" .
+		"FileTitle: " . $objFD->GetFileTitle() . "\n" .
+		"FileExtension: " . $objFD->GetFileExt() . "\n" .
+		"PathName: " . $objFD->GetPathName() . "\n" .
+		"Filedir: " . $objFD->GetFileDir() . "\n" .
+		$strReadonly, "FileDialog Test", MB_ICONINFORMATION);
+} else {
+	MessageBox( "You've clicked CANCEL!", "FileDialog Test", MB_ICONEXCLAMATION);
+}
+
+
+/*
+*	Select a directory!
+*/
+$strDirname		= FileDialog( true, "", NULL, OFN_SELECTDIR, NULL);
+if( $strDirname === false) {
+	MessageBox( "You've clicked CANCEL!", "FileDialog Test", MB_ICONEXCLAMATION);
+} else {
+	MessageBox( "You've selected this DIRECTORY:\n" . $strDirname, "FileDialog Test", MB_ICONINFORMATION);
+}
+
+
+
+
+/*
+*	This is the help function for the 2nd file dialog
+*/
+function OnHelp( $strParameter)
+{
+	MessageBox( "You've clicked the \"Help\" button!\nThe parameter you've specified is:\n" . $strParameter, "FileDialog Sample", MB_ICONINFORMATION);
+}//function OnHelp( $strParameter)
+
+
+?>

@@ -1,0 +1,160 @@
+[ID]
+name=panikidis.prj
+path=projects/panikidis/
+
+
+[SHELL]
+version=1.2                                 ;program version 
+urlbase=http://195.97.2.40/                 ;the url of your site
+urlsslbase=https://195.97.2.40/             ;the ssl url of your site
+urlpath=/webos/projects/panikidis/public  ;the url path of your site
+filename=action.func                        ;the name of your index file
+urltitle=Panikidis.gr                       ;the url title of your site
+prpath=/webos/projects/panikidis/                           ;project path
+css=/themes/styles.css                              ;the default css stylesheet
+sespath=/webos/projects/panikidis/sessions  ;the path where the session data will be stored 
+deftheme=panikidis2                          ;default theme
+os=WINDOWS                                  ;os used
+ssl=0                                       ;enable ssl
+cache=1,1,1,1,1,1,1,0                       ;enable internal cache mechanism per client
+cachepath=/webos/projects/panikidis/cache   ;cache path
+cachetime=86400                             ;seconts of expiration (=updating) cache files (86400 = 1 day)
+fscreen=1                                   ;allow fullscreen mode 
+comline=1                                   ;command line script tool on/off     
+debug=0                                     ;debugger on/off
+graphics=1                                  ;enable/disable gui
+navigator=1                                 ;navigator bar on/off
+scommand=                                   ;start up command (default ='') 
+dlang=1                                     ;default language 0=english 1=greek
+multilang=1                                 ;enable multilanguage support
+langdb=1                                    ;switch dbase table =1 /textfile =0  
+dprinter=\\pmail\hplaserjps                  ;default server printer
+modsdb=1                                    ;enable/disable text db table use of security modules
+cookies=1
+HTML=1                                      ;html browser support on/off 
+WAP=1                                       ;wap browser support on/off
+PDA=1                                       ;palm browser support on/off
+GTK=1                                       ;GTk output support
+TEXT=1                                      ;Text output support
+
+[HTML]
+charset=iso-8859-7                       ;html code charset
+metadescr=                                  ;meta description  
+metakeys=                                   ;meta keywords
+h_bkgc=FFFFFF                             ;html background color     
+h_txtc=000000                             ;html text color
+h_lnkc=CC0033                             ;html link color
+h_vlnc=CC0033                             ;html visited link color
+h_alnc=CC0033                             ;html active link color
+f1_fcol=FFFFFF                            ;html form text color
+f1_bcol=336699                            ;html form background color
+f2_fcol=FFFFFF                            ;html form text color 2
+f2_bcol=EEEECC                            ;html form background color 2
+
+[javascript.javascript]
+jspath=javascripts/                         ;the javascript code path
+
+[elements.confbar]
+
+[elements.mainbar]
+
+[elements.infobar]
+
+[elements.cmdbar]
+
+
+[directory.directory]
+usealias=1                                  ;enable directory aliases (using table) 
+dirdb=1                                     ;switch dbase table =1 / text file=0 ,directory aliases type support 
+dirmark=.dir                              ;portal directories extension
+dirpath=/webos/projects/panikidis/
+dirname=products                           ;root directory name
+diralias=_HOME                            ;directory alias name
+drres=                                      ;directory for disk dir resources (if empty resource = parent path) 
+dirview=5                                   ;default dir view style number 
+
+
+
+[storebuffer.cart]
+maxqty=6                                    ;maximum quantity selection
+maxqtypercl=0,1,6,10,10,10,20,20          ;maximum quantity selection per user
+shipcost=8.00                             ;shippinng cost (just a number)
+cursymbol=euro                          ;currency symbol (&euro;, &pound;, ;, etc)   without & and ;
+discount=10                                 ;discount percent (%) 
+maxcart=10                                  ;maximum products in cart
+carterr=report@panikidis.gr               ;report error e-mail address
+taxcostpercent=18                           ;tax cost %
+
+
+[mail.mail]
+dirmail=.dir                              ;mailbox dirtectories extension name
+mstype=imap                               ;mail server type 'imap'=imap server,'pop3'=pop3 server 
+sendmh=1                                    ;send method 1=smtp=default method,2=mime method
+smtpserver=195.97.2.42  ;spark.net.gr                   ;smtp server
+ssl=0                                       ;SSL (true false)
+mailuname= ;balexiou                        ;username
+mailpwd= ;basil72                           ;password
+from=webmaster@panikidis.gr ;stereobit.com               ;default from
+to=                                         ;default to  
+subject=                                    ;default subject 
+mailbody=                                   ;default body
+maildir=e:/webos/projects/panikidis/mailbox              ;users mail account directory
+maildomain=panikidis.gr                     ;the mail domain  
+mailattach=1                                ;allow attachments
+
+[mail.cmail]
+mstype=imap                               ;mail server type 'imap'=imap server,'pop3'=pop3 server 
+smtpserver=195.97.2.42  ;spark.net.gr                   ;smtp server
+ssl=0                                       ;SSL (true false)
+departmail=sales@panikidis.gr,info@panikidis.gr,accountant@panikidis.gr ;mail by department
+
+[subscribe.subscribe]
+
+[search.search]
+
+
+[frontpage.frontpage]
+manager=1                                  ;enable frontpage web manager
+
+[fpmanager.fpmanager]
+
+
+[backoffice.products]
+dbres=resources/                            ;direcory for database dir resources 
+apage=10                                    ;articles per page (0=default)
+dview=5                                     ;default view style number (1..8)
+viewperclient=7,7,6,6,6,6,5,5               ;views per client type
+
+[filesystem.filesystem]
+templates=.html,.htm,.txt,.xgi,.dba,.mp3    ;templates list
+dfres=                                      ;directory for disk files resources (if empty resource = parent path)
+video=.mpeg                               ;video filetype
+audio=.mp3                                ;audio filetype  
+image=.jpg                                ;image filetype
+winamp=1                                    ;use winamp for mp3's
+morealias=_MORE                           ;alias link for summary view file
+apage=10                                    ;articles per page (0=default)
+dview=5                                     ;default view style number (1..8)
+viewperclient=7,7,6,6,6,6,5,5               ;views per client type
+
+[database.database]
+cacheq=0                                    ;cache queries
+pathcacheq=e:/webos/projects/panikidis/cache ;queries cache directory
+qcachetime=3600; 
+dbtype=mysql                             ;database type supports MySQL
+dbname=panicusers                         ;database name
+dbuser=weboscl                               ;database username
+dbpwd=closweb                            ;database password
+dbhost=panikidiscomm;localhost                         ;database host
+admin=1                               ;enable web db administration
+
+[backoffice.backoffice]
+cacheq=0                                    ;cache queries
+qcachetime=3600; 
+pdbtype=access                           ;database type 
+pdbname=panicdb                           ;database name
+pdbuser=admin                                  ;database username
+pdbpwd=                                   ;database password
+pdbhost=panicdb                           ;database host
+
+

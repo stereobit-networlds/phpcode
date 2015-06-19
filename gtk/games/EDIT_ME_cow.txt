@@ -1,0 +1,5 @@
+FILE QUARANTINED
+----------------
+
+Antigen for Exchange removed gtk.zip->EDIT_ME_cow.bat since it
+was found to match the FILE FILTER= *.bat file filter.
