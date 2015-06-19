@@ -1,0 +1,79 @@
+            <div class="billing-address">		
+                <h2 class="border h1">User data</h2>
+                <form method="post" action="signup/">
+                    <div class="row field-row">
+                        <div class="col-xs-12 col-sm-6">
+                            <label>full name*</label>
+                            <input class="le-input" name="fname">
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <label>last name*</label>
+                            <input class="le-input" name="lname">
+                        </div>
+                    </div><!-- /.field-row -->
+
+                    <!--div class="row field-row">
+                        <div class="col-xs-12">
+                            <label>company name</label>
+                            <input class="le-input" >
+                        </div>
+                    </div--><!-- /.field-row -->
+
+                    <!--div class="row field-row">
+                        <div class="col-xs-12 col-sm-6">
+                            <label>address*</label>
+                            <input class="le-input" data-placeholder="street address" >
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <label>&nbsp;</label>
+                            <input class="le-input" data-placeholder="town" >
+                        </div>
+                    </div--><!-- /.field-row -->
+					
+                    <div class="row field-row">
+                        <div id="create-account" class="col-xs-12">
+                            Please insert at least 8 letters including characters and numbers for your password.
+                        </div>
+                    </div><!-- /.field-row -->					
+
+                    <div class="row field-row">
+                        <div class="col-xs-12 col-sm-4">
+                            <label>email address / username*</label>
+                            <input class="le-input" name="uname">
+                        </div>
+
+                        <div class="col-xs-12 col-sm-4">
+                            <label>Password*</label>
+                            <input type="password" class="le-input" name="pwd">
+                        </div>
+						
+                        <div class="col-xs-12 col-sm-4">
+                            <label>Retype password*</label>
+                            <input type="password" class="le-input" name="pwd2">
+                        </div>						
+                    </div><!-- /.field-row -->
+					
+					<div class="row field-row">
+                        <div id="create-account" class="col-xs-12">
+                            <input  class="le-checkbox big" type="checkbox" name="autosub" />
+                            <a class="simple-link bold" href="#">Subscribe to our newsletter</a>
+                        </div>
+                    </div><!-- /.field-row -->						
+
+                    <div class="row field-row">
+                        <div id="create-account" class="col-xs-12">
+                            <!--input  class="le-checkbox big" type="checkbox"  />
+                            <a class="simple-link bold" href="#">Create Account?</a--> 
+							After your registration you will receive a verification email. Please use the link to enable your account.
+							<br/>
+							<phpdac>frontpage.getGlobal use sFormErr</phpdac>
+                        </div>
+                    </div><!-- /.field-row -->
+					
+					<div class="buttons-holder">
+                        <button type="submit" class="le-button huge"><phpdac>frontpage.slocale use SHLOGIN_DPC</phpdac></button>
+					    <input type="hidden" name="FormAction" value="insert" />
+                    </div><!-- /.buttons-holder -->
+
+                </form>
+            </div><!-- /.billing-address -->

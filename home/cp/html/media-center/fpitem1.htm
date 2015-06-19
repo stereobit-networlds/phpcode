@@ -1,0 +1,192 @@
+            <div id="single-product" class="row">
+                <!--hpdac>frontpage.include_part use /parts/section/single-product-gallery.php+++media-center</phpda-->
+				<div class="no-margin col-xs-12 col-sm-6 col-md-5 gallery-holder">
+					<div class="product-item-holder size-big single-product-gallery small-gallery">
+
+						<div id="owl-single-product">
+							<div class="single-product-gallery-item" id="slide1">
+							    <phpdac>frontpage.nvltokens use $26$+<div class='ribbon blue'><span>με έκπτωση</span></div>++</phpdac>
+								<a data-rel="prettyphoto" href="$19$">
+									<img class="img-responsive" alt="" src="assets/images/blank.gif" data-echo="$18$" />
+								</a>
+							</div><!-- /.single-product-gallery-item -->
+
+							<!--hpdac>shkatalogmedia.show_aditional_files use $10$+++fpitemaddfiles.htm</phpda-->
+							$15$
+						</div><!-- /.single-product-slider -->
+
+
+						<div class="single-product-gallery-thumbs gallery-thumbs">
+
+							<div id="owl-single-product-thumbnails">
+								<a class="horizontal-thumb active" data-target="#owl-single-product" data-slide="0" href="#slide1">
+									<img width="67" alt="" src="assets/images/blank.gif" data-echo="$17$" />
+								</a>
+
+								<phpdac>shkatalogmedia.show_aditional_files use $10$+++fpitemaddfiles-thumb.htm</phpdac>
+
+							</div><!-- /#owl-single-product-thumbnails -->
+
+							<div class="nav-holder left hidden-xs">
+								<a class="prev-btn slider-prev" data-target="#owl-single-product-thumbnails" href="#prev"></a>
+							</div><!-- /.nav-holder -->
+            
+							<div class="nav-holder right hidden-xs">
+								<a class="next-btn slider-next" data-target="#owl-single-product-thumbnails" href="#next"></a>
+							</div><!-- /.nav-holder -->
+
+						</div><!-- /.gallery-thumbs -->
+
+					</div><!-- /.single-product-gallery -->
+				</div><!-- /.gallery-holder (single-product-gallery)-->
+				
+
+                <!--hpdac>frontpage.include_part use /parts/section/single-product-detail.php+++media-center</phpda-->
+				<div class="no-margin col-xs-12 col-sm-7 body-holder">
+					<div class="body">
+						<!--div class="star-holder inline"><div class="star" data-score="4"></div></div>
+						<div class="availability"><label>Availability:</label><span class="available">  in stock $7$</span></div-->
+
+						<div class="title"><a href="$8$">$0$</a></div>
+						<div class="brand">$10$ $3$</div>
+                        $25$
+						<!--div class="social-row">
+							<span class="st_facebook_hcount"></span>
+							<span class="st_twitter_hcount"></span>
+							<span class="st_pinterest_hcount"></span>
+						</div-->
+
+						<div class="buttons-holder">
+							<a class="btn-add-to-wishlist" href="wishadd/$10$/"><phpdac>frontpage.slocale use _ADDTOWISHLIST</phpdac></a>
+							<a class="btn-add-to-compare" href="cmpadd/$10$/"><phpdac>frontpage.slocale use _ADDTOCOMPARE</phpdac></a>
+						</div>
+
+						<div class="excerpt">
+							<p>$1$</p>
+						</div>
+        
+		                <!--div class="prices">
+							<div class="price-prev">Αξία: $5$ &euro;</div>
+						</div-->
+						<div class="prices">
+							<div class="price-current">
+								$5$ &euro;
+								<span class="price-prev"><phpdac>frontpage.slocale use _WITHTAX</phpdac></span>
+							</div>
+							<div class="price-prev"><phpdac>shcart.price_with_tax use $5$</phpdac></div>
+						</div>
+
+						<div class="qnt-holder">
+							<div class="le-quantity">
+							<form>
+								<a class="minus" href="#reduce" onclick="preselqty('PRESELQTY',-1,1)"></a>
+								<input id="PRESELQTY" name="PRESELQTY" readonly="readonly" type="text" value="<phpdac>shcart.getCartItemQty use $10$</phpdac>" />
+								<a class="plus" href="#add" onclick="preselqty('PRESELQTY',1,24)"></a>
+							</form>
+							</div>
+							<a id="addto-cart" href="javascript:void(0)" onclick="addtocart('PRESELQTY','$27$');" class="le-button huge">Στο καλάθι</a>
+							<!--6-->
+						</div><!-- /.qnt-holder -->
+						$12$
+					</div><!-- /.body -->
+
+				</div><!-- /.body-holder (single-product-detail)-->				
+
+            </div><!-- /.row #single-product -->
+            
+<phpdac>frontpage.setGlobal use containerClass+no-container</phpdac>
+<phpdac>frontpage.setGlobal use hasSidebar+1</phpdac>
+<!--hpdac>frontpage.include_part use /parts/section/single-product-tab.php+++media-center</phpda-->
+<!--php
+    $containerClass = isset($containerClass) ? $containerClass : 'container';
+    $hasSidebar = isset($hasSidebar) ? $hasSidebar : false;
+-->
+<!-- ========================================= SINGLE PRODUCT TAB ========================================= -->
+<section id="single-product-tab">
+    <div class="<phpdac>frontpage.nvldac2 use containerClass+frontpage.getGlobal:containerClass+rcserver.paramload:MEDIA-CENTER|containerClass+</phpdac>">
+        <div class="tab-holder">
+            
+            <ul class="nav nav-tabs simple" >
+                <li class="active"><a href="#description" data-toggle="tab"><phpdac>frontpage.slocale use _DESCRIPTION</phpdac></a></li>
+                <li><a href="#additional-info" data-toggle="tab"><phpdac>frontpage.slocale use _ADDITIONALINFO</phpdac></a></li>
+                <!--li><a href="#reviews" data-toggle="tab"><phpdac>frontpage.slocale use _REVIEWS</phpdac> (3)</a></li-->
+            </ul><!-- /.nav-tabs -->
+
+            <div class="tab-content">
+                <div class="tab-pane active" id="description">
+                    $13$
+                    <div class="meta-row">
+                        <div class="inline">
+                            <label>SKU:</label>
+                            <span>$10$</span>
+                        </div><!-- /.inline -->
+
+                        <span class="seperator">/</span>
+
+                        <div class="inline">
+                            <label><phpdac>frontpage.slocale use SHKATEGORIES_DPC</phpdac>:</label>
+                            <span><a href="#"><phpdac>shkategories.getcurrentkategory</phpdac></a></span>
+                        </div><!-- /.inline -->
+
+                        <span class="seperator">/</span>
+
+                        <div class="inline">
+                            <label><phpdac>frontpage.slocale use _TAG</phpdac>:</label>
+							<phpdac>shtag.get_tags use $10$+keywords</phpdac>
+                        </div><!-- /.inline -->
+                    </div><!-- /.meta-row -->
+                </div><!-- /.tab-pane #description -->
+
+                <div class="tab-pane" id="additional-info">
+                    <ul class="tabled-data">
+                        <li>
+                            <label><phpdac>frontpage.slocale use _WEIGHT</phpdac></label>
+                            <div class="value">$20$</div>
+                        </li>
+                        <li>
+                            <label><phpdac>frontpage.slocale use _VOLUME</phpdac></label>
+                            <div class="value">$21$</div>
+                        </li>						
+                        <li>
+                            <label><phpdac>frontpage.slocale use _DIMENSIONS</phpdac></label>
+                            <div class="value">$22$</div>
+                        </li>
+                        <li>
+                            <label><phpdac>frontpage.slocale use _SIZE</phpdac></label>
+                            <div class="value">$23$</div>
+                        </li>
+                        <li>
+                            <label><phpdac>frontpage.slocale use _COLOR</phpdac></label>
+                            <div class="value">$24$</div>
+                        </li>
+                    </ul><!-- /.tabled-data -->
+
+                    <div class="meta-row">
+                        <div class="inline">
+                            <label>SKU:</label>
+                            <span>$10$</span>
+                        </div><!-- /.inline -->
+
+                        <span class="seperator">/</span>
+
+                        <div class="inline">
+                            <label><phpdac>frontpage.slocale use SHKATEGORIES_DPC</phpdac>:</label>
+                            <span><a href="#"><phpdac>shkategories.getcurrentkategory</phpdac></a></span>
+                        </div><!-- /.inline -->
+
+                        <span class="seperator">/</span>
+
+                        <div class="inline">
+                            <label><phpdac>frontpage.slocale use _TAG</phpdac>:</label>
+                            <phpdac>shtag.get_tags use $10$+keywords1</phpdac>
+                        </div><!-- /.inline -->
+                    </div><!-- /.meta-row -->
+                </div><!-- /.tab-pane #additional-info -->
+
+            </div><!-- /.tab-content -->
+
+        </div><!-- /.tab-holder -->
+    </div><!-- /.container -->
+</section><!-- /#single-product-tab -->
+<!-- ========================================= SINGLE PRODUCT TAB : END ========================================= -->			
+			

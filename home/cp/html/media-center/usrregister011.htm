@@ -1,0 +1,118 @@
+            <div class="billing-address">
+                <h2 class="border h1">Τύπος παραστατικού: $32$<!--hpdac>nvldac2 use invtype+frontpage.slocale:_INVOICE+frontpage.slocale:_APODEIXI+1</phpda--></h2>		
+				<ul class="categories-filter animate-dropdown">
+					<li class="dropdown">
+						<a class="dropdown-toggle"  data-toggle="dropdown" href="#">Παρακαλώ επιλέξτε τύπο τιμολόγησης</a>
+						<ul class="dropdown-menu" role="menu" >
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="signup/0/"><phpdac>frontpage.slocale use _APODEIXI</phpdac></a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="signup/1/"><phpdac>frontpage.slocale use _INVOICE</phpdac></a></li>
+						</ul>
+					</li>
+				</ul>
+				
+                <h2 class="border h1">Στοιχεία χρήστη</h2>
+				<p>Συμπληρώστε προσεκτικά τα στοιχεία σας.</p>
+                <form method="post" action="signup/">
+                    <div class="row field-row">
+                        <div class="col-xs-12 col-sm-6">
+                            <label>Υπεύθυνος επικοινωνίας*</label>
+                            <input class="le-input" name="fname">
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <label>Επωνυμία*</label>
+                            <input class="le-input" name="lname">
+                        </div>
+                    </div><!-- /.field-row -->
+
+                    <div class="row field-row">
+                        <div class="col-xs-12 col-sm-6">
+                            <label>Διεύθυνση*</label>
+                            <input class="le-input" data-placeholder="οδός-αριθμός" name="address">
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <label>&nbsp;</label>
+                            <input class="le-input" data-placeholder="πόλη" name="area">
+                        </div>
+                    </div><!-- /.field-row -->
+
+                    <div class="row field-row">
+                        <div class="col-xs-12 col-sm-4">
+                            <label>Ταχ. κωδικός*</label>
+                            <input class="le-input" name="zip">
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <label>Τηλέφωνο*</label>
+                            <input class="le-input" name="voice1">
+                        </div>
+
+                        <div class="col-xs-12 col-sm-4">
+                            <label>skype</label>
+                            <input class="le-input" name="voice2">
+                        </div>
+                    </div><!-- /.field-row -->
+					
+                    <div class="row field-row">
+                        <div id="create-account" class="col-xs-12">
+                            Εισάγετε το email σας και τουλάχιστον 8 χαρακτήρες με γράμματα και αριθμούς για κωδικό.
+                        </div>
+                    </div><!-- /.field-row -->					
+
+                    <div class="row field-row">
+                        <div class="col-xs-12 col-sm-4">
+                            <label>email / username*</label>
+                            <input class="le-input" name="uname">
+                        </div>
+
+                        <div class="col-xs-12 col-sm-4">
+                            <label>Κωδικός*</label>
+                            <input type="password" class="le-input" name="pwd">
+                        </div>
+						
+                        <div class="col-xs-12 col-sm-4">
+                            <label>Επιβεβαιωση κωδικου*</label>
+                            <input type="password" class="le-input" name="pwd2">
+                        </div>						
+                    </div><!-- /.field-row -->
+					
+					<div class="row field-row">
+                        <div id="create-account" class="col-xs-12">
+                            <input  class="le-checkbox big" type="checkbox" name="autosub" checked />
+                            <a class="simple-link bold" href="#">Ενεργοποίηση περιοδικής ενημέρωσης</a>
+                        </div>
+                    </div><!-- /.field-row -->	
+
+					<h2 class="border h1">Διεύθυνση αποστολής</h2>
+					<p>Αφήστε κενά τα πεδία αν είναι ίδια με της βασικής διεύθυνσης.</p>
+                    <div class="row field-row">
+                        <div class="col-xs-12 col-sm-6">
+                            <label>&nbsp;</label>
+                            <input class="le-input" data-placeholder="οδός-αριθμός αποστολής" name="address_d">
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <label>&nbsp;</label>
+                            <input class="le-input" data-placeholder="πόλη αποστολής" name="area_d">
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <label>&nbsp;</label>
+                            <input class="le-input" data-placeholder="τ.κ. αποστολής"name="zip_d">
+                        </div>
+                    </div><!-- /.field-row -->						
+
+                    <div class="row field-row">
+                        <div id="create-account" class="col-xs-12">
+                            <!--input  class="le-checkbox big" type="checkbox"  />
+                            <a class="simple-link bold" href="#">Create Account?</a--> 
+							Μετά την εγγραφή σας θα λάβετε email επιβεβαίωσης και ενεργοποίησης του λογαριασμού.
+							<br/>
+							<phpdac>frontpage.getGlobal use sFormErr</phpdac>
+                        </div>
+                    </div><!-- /.field-row -->
+					
+					<div class="buttons-holder">
+                        <button type="submit" class="le-button huge"><!--hpdac>frontpage.slocale use SHLOGIN_DPC</phpda-->Εγγραφή</button>
+					    <input type="hidden" name="FormAction" value="insert" />
+                    </div><!-- /.buttons-holder -->
+
+                </form>
+            </div><!-- /.billing-address -->
+			

@@ -1,0 +1,43 @@
+                <section class="section sign-in inner-right-xs">
+					<h2 class="bordered"><phpdac>frontpage.slocale use SHLOGIN_DPC</phpdac></h2>
+					<p>$0 <phpdac>frontpage.slocale use _PLEASETEXT</phpdac></p>
+
+					<!--div class="social-auth-buttons">
+						<div class="row">
+							<div class="col-md-6">
+								<button class="btn-block btn-lg btn btn-facebook"><i class="fa fa-facebook"></i> Sign In with Facebook</button>
+							</div>
+							<div class="col-md-6">
+								<button class="btn-block btn-lg btn btn-twitter"><i class="fa fa-twitter"></i> Sign In with Twitter</button>
+							</div>
+						</div>
+					</div-->
+
+					<form role="form" class="login-form cf-style-1" method="post" action="?t=dologin">
+						<div class="field-row">
+                            <label>Email</label>
+                            <input type="text" class="le-input" name="Username">
+                        </div><!-- /.field-row -->
+
+                        <div class="field-row">
+                            <label><phpdac>frontpage.slocale use _PASSWORD</phpdac></label>
+                            <input type="password" class="le-input" name="Password">
+                        </div><!-- /.field-row -->
+
+                        <div class="field-row clearfix">
+                        	<!--span class="pull-left">
+                        		<label class="content-color"><input type="checkbox" class="le-checbox auto-width inline"> <span class="bold">Remember me</span></label>
+                        	</span-->
+                        	<span class="pull-right">
+                        		<a href="rempwd/" class="content-color bold">Forgotten Password ?</a>
+                        	</span>
+                        </div>
+
+                        <div class="buttons-holder">
+                            <button type="submit" class="le-button huge"><phpdac>frontpage.slocale use SHLOGIN_DPC</phpdac></button>
+							<input type="hidden" name="FormAction" value="dologin" />
+							<input type="hidden" name="FormGoto" value="<phpdac>fronthtmlpage.baseURL</phpdac>" />							
+                        </div><!-- /.buttons-holder -->
+					</form><!-- /.cf-style-1 -->
+
+				</section><!-- /.sign-in -->

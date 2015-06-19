@@ -1,0 +1,79 @@
+            <div class="billing-address">
+                <h2 class="border h1">Στοιχεία χρήστη</h2>
+                <form method="post" action="signup/">
+                    <div class="row field-row">
+                        <div class="col-xs-12 col-sm-6">
+                            <label>Υπεύθυνος επικοινωνίας*</label>
+                            <input class="le-input" name="fname">
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <label>Επωνυμία*</label>
+                            <input class="le-input" name="lname">
+                        </div>
+                    </div><!-- /.field-row -->
+
+                    <!--div class="row field-row">
+                        <div class="col-xs-12">
+                            <label>company name</label>
+                            <input class="le-input" >
+                        </div>
+                    </div--><!-- /.field-row -->
+
+                    <!--div class="row field-row">
+                        <div class="col-xs-12 col-sm-6">
+                            <label>address*</label>
+                            <input class="le-input" data-placeholder="street address" >
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <label>&nbsp;</label>
+                            <input class="le-input" data-placeholder="town" >
+                        </div>
+                    </div--><!-- /.field-row -->
+					
+                    <div class="row field-row">
+                        <div id="create-account" class="col-xs-12">
+                            Εισάγετε το email σας και τουλάχιστον 8 χαρακτήρες με γράμματα και αριθμούς για κωδικό.
+                        </div>
+                    </div><!-- /.field-row -->					
+
+                    <div class="row field-row">
+                        <div class="col-xs-12 col-sm-4">
+                            <label>email / username*</label>
+                            <input class="le-input" name="uname">
+                        </div>
+
+                        <div class="col-xs-12 col-sm-4">
+                            <label>Κωδικός*</label>
+                            <input type="password" class="le-input" name="pwd">
+                        </div>
+						
+                        <div class="col-xs-12 col-sm-4">
+                            <label>Επιβεβαιωση κωδικου*</label>
+                            <input type="password" class="le-input" name="pwd2">
+                        </div>						
+                    </div><!-- /.field-row -->
+					
+					<div class="row field-row">
+                        <div id="create-account" class="col-xs-12">
+                            <input  class="le-checkbox big" type="checkbox" name="autosub" />
+                            <a class="simple-link bold" href="#">Ενεργοποίηση περιοδικής ενημέρωσης</a>
+                        </div>
+                    </div><!-- /.field-row -->					
+
+                    <div class="row field-row">
+                        <div id="create-account" class="col-xs-12">
+                            <!--input  class="le-checkbox big" type="checkbox"  />
+                            <a class="simple-link bold" href="#">Create Account?</a--> 
+							Μετά την εγγραφή σας θα λάβετε email επιβεβαίωσης και ενεργοποίησης του λογαριασμού.
+							<br/>
+							<phpdac>frontpage.getGlobal use sFormErr</phpdac>
+                        </div>
+                    </div><!-- /.field-row -->
+					
+					<div class="buttons-holder">
+                        <button type="submit" class="le-button huge"><phpdac>frontpage.slocale use SHLOGIN_DPC</phpdac></button>
+					    <input type="hidden" name="FormAction" value="insert" />
+                    </div><!-- /.buttons-holder -->
+
+                </form>
+            </div><!-- /.billing-address -->
