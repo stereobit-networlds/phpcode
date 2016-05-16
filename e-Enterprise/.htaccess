@@ -1,0 +1,23 @@
+RewriteEngine On
+
+RewriteRule ^bm/([^/]*)/([^/]*)/([^/]*)/$ /bulkmail.php?t=$1&cid=$2&page=$3 [L]
+RewriteRule ^bm/([^/]*)/([^/]*)/$ /bulkmail.php?t=$1&cid=$2 [L]
+RewriteRule ^bm/([^/]*)/$ /bulkmail.php?t=$1 [L]
+
+
+# PHP 5, Apache 1 and 2.
+#<IfModule mod_php5.c>
+#  php_value magic_quotes_gpc                0
+#  php_value register_globals                0
+#  php_value session.auto_start              0
+#  php_value mbstring.http_input             pass
+#  php_value mbstring.http_output            pass
+#  php_value mbstring.encoding_translation   0
+#   php_value max_input_vars                  3000
+#</IfModule>
+
+
+AuthType Basic
+AuthName "CONTROL PANEL"
+AuthUserFile "/home/stereobi/.htpasswds/public_html/cp/passwd"
+require valid-user

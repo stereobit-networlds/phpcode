@@ -1,0 +1,24 @@
+#!/usr/bin/php
+<?php
+//define('SMTP_PHPMAILER','true');
+define('SENDMAIL_PHPMAILER','true');
+
+require_once('dpc/system/pcntlcmd.lib.php'); 
+$page = &new pcntl('
+super rcserver.rcssystem;
+
+load_extension adodb refby _ADODB_; 
+super database;
+
+use mail.bounce_driver;
+
+frontpage.fronthtmlpage;
+mail.smtpmail;
+mail.maildbqueue;
+
+',0);	 
+
+$ret = GetGlobal('controller')->calldpc_method('maildbqueue.sendmail_daemon use 20+100');//20,400
+echo $ret;
+//echo $page->render();
+?>

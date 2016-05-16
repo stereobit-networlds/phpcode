@@ -1,0 +1,22 @@
+#!/usr/bin/php
+<?php
+$data = @file_get_contents(getcwd() .'/syncsql/skroutz.xml');//'http://dl.dropbox.com/u/106627024/skroutz.xml');
+//echo $data;
+//$ndata = str_replace(array("\r","\n"),array('',''),$data);
+$utfdata = mb_convert_encoding($data, 'UTF-8', 'ISO-8859-7');
+echo $utfdata;
+
+$to = getcwd() . '/../skroutz.xml';
+$to2 = getcwd() . '/../totos.xml';
+file_put_contents($to, trim($utfdata, "\t\n\r\0\x0B"));
+file_put_contents($to2, trim($utfdata, "\t\n\r\0\x0B"));
+echo $to,'>home/stereobi/public_html/basis/skroutz.xml';
+
+$data = @file_get_contents(getcwd() . '/syncsql/bestprice.xml');//'http://dl.dropbox.com/u/106627024/bestprice.xml');
+//$ndata = str_replace(array("\r","\n"),array('',''),$data);
+$utfdata = mb_convert_encoding($data, 'UTF-8', 'ISO-8859-7');
+$to3 = getcwd() . '/../bestprice.xml';
+file_put_contents($to3, trim($utfdata, "\t\n\r\0\x0B"));
+
+echo $to,'>home/stereobi/public_html/basis/bestprice.xml';
+?>

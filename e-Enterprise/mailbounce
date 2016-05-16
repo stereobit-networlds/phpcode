@@ -1,0 +1,31 @@
+#!/usr/bin/php
+<?php
+require_once('dpc/system/pcntlcmd.lib.php'); 
+$page = &new pcntl('
+super rcserver.rcssystem;
+
+load_extension adodb refby _ADODB_; 
+super database;
+
+use mail.bounce_driver;
+
+frontpage.fronthtmlpage;
+mail.smtpmail;
+mail.maildbqueue;
+cp.rcbmailbounce;
+
+',0);	 
+
+//root app
+$ret = GetGlobal('controller')->calldpc_method("rcbmailbounce.cleanBounce use +1"); //+1 //for del
+echo $ret;
+
+$apps = GetGlobal('controller')->calldpc_var('maildbqueue.app_pool');
+if (!empty($apps)) {
+  foreach ($apps as $i=>$app) {
+    echo $app,'<br/>';
+	$ret = GetGlobal('controller')->calldpc_method("rcbmailbounce.cleanBounce use $app+1+1");
+	echo $ret;
+  }
+}
+?>
