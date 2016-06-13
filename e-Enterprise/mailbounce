@@ -1,18 +1,21 @@
 #!/usr/bin/php
 <?php
-require_once('dpc/system/pcntlcmd.lib.php'); 
+
+/*** adodb4 (prev ver) for pcntlcmd (!?) ***/
+
+require_once('dpc2/system/pcntlcmd.lib.php'); 
 $page = &new pcntl('
 super rcserver.rcssystem;
 
-load_extension adodb refby _ADODB_; 
+load_extension adodb4 refby _ADODB_; 
 super database;
 
 use mail.bounce_driver;
 
-frontpage.fronthtmlpage;
-mail.smtpmail;
-mail.maildbqueue;
-cp.rcbmailbounce;
+public frontpage.fronthtmlpage;
+public mail.smtpmail;
+public mail.maildbqueue;
+public cp.rcbmailbounce;
 
 ',0);	 
 

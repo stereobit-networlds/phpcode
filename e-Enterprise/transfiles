@@ -1,0 +1,41 @@
+#!/usr/bin/php
+<?php
+define('SMTP_PHPMAILER','true');
+
+require_once('dpc/system/pcntlcmd.lib.php'); 
+
+$page = &new pcntl('
+super rcserver.rcssystem;
+
+load_extension adodb refby _ADODB_; 	
+super database.database;
+
+#---------------------------------load not create dpc (internal use)
+networlds.clientdpc;	
+
+#---------------------------------load all and create after dpc objects
+frontpage.fronthtmlpage;
+mail.smtpmail;
+#shop.rctranssql2;
+',0);	 
+
+//$ret = GetGlobal('controller')->calldpc_method('rctranssql2.remote_execute_sql use /cp/syncsql/syncmysqlpos.txt++ISO-8859-7+UTF-8+1+1');
+//$ret .= GetGlobal('controller')->calldpc_method('rctranssql2.run_sql use +1');//execute sql
+//echo $ret;
+//echo $page->render();
+
+$path = paramload('SHELL', 'urlpath') . '/cp/';
+
+$cmd = "find ". $path . " -cmin -120";
+//$out = exec('$cmd');
+//$ret = system('$cmd', $out);
+//$files=explode("\n",$out);
+
+//echo $path . ">files:\r\n" . $out;
+
+$files = scandir($path, SCANDIR_SORT_DESCENDING);
+$newest_file = $files[0];
+
+echo $path . ">files:\r\n" . $newest_file;
+
+?>

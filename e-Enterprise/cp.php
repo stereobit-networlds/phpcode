@@ -21,6 +21,7 @@ private frontpage.fronthtmlpage /cgi-bin;
 
 #ifdef SES_LOGIN
 public jqgrid.mygrid;
+public crm.crmforms;
 private cp.rcbulkmail /cgi-bin;
 #endif
 

@@ -3,18 +3,20 @@
 //define('SMTP_PHPMAILER','true');
 define('SENDMAIL_PHPMAILER','true');
 
-require_once('dpc/system/pcntlcmd.lib.php'); 
+/*** adodb4 (prev ver) for pcntlcmd (!?) ***/
+
+require_once('dpc2/system/pcntlcmd.lib.php'); 
 $page = &new pcntl('
 super rcserver.rcssystem;
 
-load_extension adodb refby _ADODB_; 
+load_extension adodb4 refby _ADODB_; 
 super database;
 
 use mail.bounce_driver;
 
-frontpage.fronthtmlpage;
-mail.smtpmail;
-mail.maildbqueue;
+public frontpage.fronthtmlpage;
+public mail.smtpmail;
+public mail.maildbqueue;
 
 ',0);	 
 
