@@ -9,6 +9,7 @@ super database;
 use xwindow.window,browser;
 use gui.swfcharts;
 use jqgrid.jqgrid;
+use cp.cpflotcharts;
 
 /---------------------------------load not create dpc (internal use)
 include networlds.clientdpc;
@@ -22,6 +23,7 @@ private frontpage.fronthtmlpage /cgi-bin;
 #ifdef SES_LOGIN
 public jqgrid.mygrid;
 public crm.crmforms;
+public crm.rccrmtrace;
 private cp.rcbulkmail /cgi-bin;
 #endif
 
@@ -54,8 +56,13 @@ $cptemplate = GetGlobal('controller')->calldpc_method('rcserver.paramload use FR
 							$login = GetGlobal('controller')->calldpc_method("shlogin.do_login use ".$user.'+'.$pass.'+1');	//editmode
 						
 					    if ((GetSessionParam('LOGIN'))||($login)) { 
+						    $cpGet = GetGlobal('controller')->calldpc_var('rcpmenu.cpGet');
+						    $id = $cpGet['id'];
+						    $cat = $cpGet['cat'];
+						    $dashboard = (isset($id)) ? 'cp-itemstats' : ( (isset($cat)) ? 'cp-catstats' : 'cp-dashboard' );
+						
 							$seclevid = $GLOBALS['ADMINSecID'] ? $GLOBALS['ADMINSecID'] : GetSessionParam('ADMINSecID');
-							$default_page = ($seclevid<6) ? 'cp-mailstats' : 'cp-dashboard';
+							$default_page = ($seclevid<6) ? 'cp-mailstats' : $dashboard; //'cp-dashboard';
 							$mc_page = (($p=GetReq('t')) && ($p!='cp'))  ? str_replace('cp', 'cp-', GetReq('t')) : $default_page;
 						}
 						else

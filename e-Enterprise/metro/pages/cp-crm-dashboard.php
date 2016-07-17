@@ -8,7 +8,7 @@
    <title>e-Enterprise Crm</title>
    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
    <meta content="" name="description" />
-   <meta content="Mosaddek" name="author" />
+   <meta content="stereobit.networlds" name="author" />
    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
    <link href="assets/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" />
    <!--link href="assets/bootstrap/css/bootstrap-fileupload.css" rel="stylesheet" /-->
@@ -75,15 +75,15 @@
                     <div class="metro-nav-block nav-light-green">
                         <a data-original-title="" href="javascript:sndReqArg('cp.php?t=cpinfo&s=&statsid='+statsid.value,'cpinfo');">
                             <i class="icon-bar-chart"></i>
-                            <div class="info">#</div>
-                            <div class="status">Resources</div>
+                            <div class="info"><phpdac>crmdashboard.itemsPurchasedQty</phpdac></div>
+                            <div class="status">Purchased Qty</div>
                         </a>
                     </div>				
                     <div class="metro-nav-block nav-light-blue double">
                         <a data-original-title="" href="javascript:sndReqArg('cp.php?t=cpinfo&s=items&statsid='+statsid.value,'cpinfo');">
                             <i class="icon-tasks"></i>
-                            <div class="info">#</div>
-                            <div class="status">Active Items</div>
+                            <div class="info"><phpdac>crmdashboard.itemsPurchased</phpdac></div>
+                            <div class="status">Purchased Items</div>
                         </a>
                     </div>
                     <div class="metro-nav-block nav-block-yellow">

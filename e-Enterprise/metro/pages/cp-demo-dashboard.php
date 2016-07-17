@@ -8,7 +8,7 @@
    <title>e-Enterprise</title>
    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
    <meta content="" name="description" />
-   <meta content="stereobit" name="author" />
+   <meta content="stereobit.networlds" name="author" />
    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
    <link href="assets/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" />
    <!--link href="assets/bootstrap/css/bootstrap-fileupload.css" rel="stylesheet" /-->
@@ -22,6 +22,8 @@
 	
    <!--link href="assets/fullcalendar/fullcalendar/bootstrap-fullcalendar.css" rel="stylesheet" /-->
    <link href="assets/jquery-easy-pie-chart/jquery.easy-pie-chart.css" rel="stylesheet" type="text/css" media="screen"/>
+   
+   <link rel="stylesheet" href="css/zebra/flat/zebra_dialog.css" type="text/css">
     
 </head>
 <!-- END HEAD -->
@@ -553,6 +555,13 @@
    
    <!--script src="js/home-page-calender.js"></script>
    <script src="js/home-chartjs.js"></script-->
+   
+   <!-- stream dialog -->
+   <script type="text/javascript" src="js/zebra/zebra_dialog.js"></script>
+   <script language="JavaScript">		
+		//setInterval(function() {<phpdac>rcpmenu.streamDialog</phpdac>}, 30000);	//disabled for demo
+   </script>
+   <!-- end stream dialog -->    
   
    <!-- END JAVASCRIPTS --> 
    

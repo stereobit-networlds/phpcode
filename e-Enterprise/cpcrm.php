@@ -19,6 +19,11 @@ include networlds.clientdpc;
 private frontpage.fronthtmlpage /cgi-bin;
 #ifdef SES_LOGIN
 public jqgrid.mygrid;
+public crm.crmpurchases;
+public crm.crmitemstats;
+public crm.crmwishlist;
+public crm.crmwishcmp;
+public crm.crmwishfav;
 public crm.crmforms;
 public crm.crmplus;
 public crm.crmtransactions;
