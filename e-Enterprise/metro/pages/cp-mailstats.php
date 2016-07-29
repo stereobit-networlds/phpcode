@@ -242,6 +242,7 @@
                             <div class="text-center">
                                 <div id="mailqueue"></div>
                             </div>
+							<div class="plots"></div>							
                         </div>
                     </div>		
 					
@@ -355,6 +356,11 @@
    <script type="text/javascript" src="assets/jquery-slimscroll/jquery.slimscroll.min.js"></script>
    <!--script src="assets/fullcalendar/fullcalendar/fullcalendar.min.js"></script-->
    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+   <script src="assets/flot/jquery.flot.js"></script>
+   <script src="assets/flot/jquery.flot.resize.js"></script>
+   <script src="assets/flot/jquery.flot.pie.js"></script>
+   <script src="assets/flot/jquery.flot.stack.js"></script>
+   <script src="assets/flot/jquery.flot.crosshair.js"></script>   
 
    <!-- ie8 fixes -->
    <!--[if lt IE 9]>
@@ -385,10 +391,8 @@
    <!--script for this page only-->  
    <!--script src="js/form-component.js"></script partial -->   
    <script language="javascript" type="text/javascript">
-    /*   $(function() {
-           $.configureBoxes();
-       });
-	*/  
+   
+    <phpdac>cpflotcharts.jsflotMailcharts</phpdac>  
 	
     //chosen select
     $(".chzn-select").chosen(); $(".chzn-select-deselect").chosen({allow_single_deselect:true});

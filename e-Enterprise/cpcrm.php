@@ -11,6 +11,7 @@ super database;
 /---------------------------------load and create libs
 use filesystem.downloadfile;
 use jqgrid.jqgrid;
+use cp.cpflotcharts;
 
 /---------------------------------load not create dpc (internal use)
 include networlds.clientdpc;	
@@ -29,6 +30,9 @@ public crm.crmplus;
 public crm.crmtransactions;
 public crm.crmtasks;
 public crm.crminbox;
+public crm.crmoutbox;
+public crm.crmdocs;
+public crm.crmdocsitem;
 public crm.crmstats;
 public crm.crmcustomer;
 public crm.crmdashboard;
@@ -42,10 +46,12 @@ $cptemplate = GetGlobal('controller')->calldpc_method('rcserver.paramload use FR
 
 	switch ($_GET['t']) {
 		case 'cpcrmrun'       : $p = 'cp-crm-subdetail'; break; 
-		case 'cpcrmdetails'   : $p = 'cp-crm-subdetail'; break;
+		case 'cpcrmdetails'   : $p = $_GET['iframe'] ? 'cp-crm-subdetail' : 'cp-tags'; break;
 		case 'cpcrmshowcus'   : $p = 'cp-crm-detail'; break;
 		case 'cpcrmshowusr'   : $p = 'cp-crm-detail'; break;
 		case 'cpcrmdashboard' : $p = 'cp-crm-dashboard'; break;
+		case 'crmstats'       : $p = 'cp-crm-stats'; break;
+		case 'crmtree'        : $p = 'cp-crm'; break;
 		default               : $p = $_GET['iframe'] ? 'cp-crm-detail' : 'cp-crm';
 	}
 	

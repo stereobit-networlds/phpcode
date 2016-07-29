@@ -14,6 +14,7 @@ super database;
 /use xwindow.window,xwindow.window2,browser;
 use gui.swfcharts;
 use jqgrid.jqgrid;
+use cp.cpflotcharts;
 
 /---------------------------------load not create dpc (internal use)
 include networlds.clientdpc;
@@ -26,6 +27,7 @@ public twig.twigengine;
 public jqgrid.mygrid;
 public gui.ajax;
 public phpdac.rcfs;
+public crm.crmforms;
 private cp.rcpmenu /cgi-bin;
 private cp.rccollections /cgi-bin;
 private cp.rcbulkmail /cgi-bin;

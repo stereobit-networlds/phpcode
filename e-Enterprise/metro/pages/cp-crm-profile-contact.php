@@ -37,7 +37,7 @@
          <!-- BEGIN PAGE CONTAINER-->
          <div class="container-fluid">
             <!-- BEGIN PAGE HEADER-->   
-				<phpdac>rccontrolpanel.select_timeline use cptimeline</phpdac>
+				<phpdac>rccrmtrace.select_timeline use crm-cptimeline</phpdac>
             <!-- END PAGE HEADER-->
             <!-- BEGIN PAGE CONTENT-->
              <div class="row-fluid">
@@ -46,19 +46,23 @@
                      <div class="span2">
                          <div class="profile-photo">
                              <img src="img/lock-thumb.jpg" alt="">
-                             <a href="javascript:;" class="edit" title="Edit Photo">
+                             <a href="javascript:vdetails('<phpdac>rccrmtrace.currentVisitor use email</phpdac>');" class="edit" title="Dashboard">
                                  <i class="icon-pencil"></i>
                              </a>
                          </div>
-                         <a href="cpcrmtrace.php?t=cpcrmprofile" class="profile-features ">
+                         <a href="cpcrmtrace.php?t=cpcrmprofile&v=<phpdac>rccrmtrace.currentVisitor</phpdac>&<phpdac>rccrmtrace.getDateRange</phpdac>" class="profile-features ">
                              <i class=" icon-user"></i>
                              <p class="info">Profile</p>
                          </a>
-                         <a href="cpcrmtrace.php?t=cpcrmactivities" class="profile-features">
+                         <a href="cpcrmtrace.php?t=cpcrmactivities&v=<phpdac>rccrmtrace.currentVisitor</phpdac>&<phpdac>rccrmtrace.getDateRange</phpdac>" class="profile-features">
                              <i class=" icon-calendar"></i>
                              <p class="info">Activities</p>
                          </a>
-                         <a href="cpcrmtrace.php?t=cpcrmcontact" class="profile-features active">
+                         <a href="cpcrmtrace.php?t=cpcrmtimeline&v=<phpdac>rccrmtrace.currentVisitor</phpdac>&<phpdac>rccrmtrace.getDateRange</phpdac>" class="profile-features">
+                             <i class=" icon-th-list"></i>
+                             <p class="info">Timeline</p>
+                         </a>							 
+                         <a href="cpcrmtrace.php?t=cpcrmcontact&v=<phpdac>rccrmtrace.currentVisitor</phpdac>&<phpdac>rccrmtrace.getDateRange</phpdac>" class="profile-features active">
                              <i class=" icon-phone"></i>
                              <p class="info">Contact</p>
                          </a>
@@ -66,35 +70,38 @@
                      <div class="span10">
                          <div class="profile-head">
                              <div class="span4">
-                                 <h1>Jonathan Smith</h1>
-                                 <p>Lead Designer at <a href="#">Vectorlab Inc.</a></p>
+                                 <h1><phpdac>rccrmtrace.readContactName</phpdac></h1>
+                                 <p><phpdac>rccrmtrace.currentVisitor use auto</phpdac></p>
                              </div>
 
                              <div class="span4">
                                  <ul class="social-link-pf">
-                                     <li><a href="#">
+                                     <li><a href="<phpdac>rccrmtrace.readContactWeb use facebook</phpdac>" target="_blank">
                                          <i class="icon-facebook"></i>
                                      </a></li>
-                                     <li><a href="#">
+                                     <li><a href="<phpdac>rccrmtrace.readContactWeb use twitter</phpdac>" target="_blank">
                                          <i class="icon-twitter"></i>
                                      </a></li>
-                                     <li><a href="#">
+                                     <li><a href="<phpdac>rccrmtrace.readContactWeb use linkedin</phpdac>" target="_blank">
                                          <i class="icon-linkedin"></i>
                                      </a></li>
                                  </ul>
                              </div>
 
                              <div class="span4">
-                                 <a href="cpcrmtrace.php?t=cpcrmeditprofile" class="btn btn-edit btn-large pull-right mtop20"> Edit Profile </a>
+                                 <a href="cpcrmtrace.php?t=cpcrmeditprofile&v=<phpdac>rccrmtrace.currentVisitor</phpdac>" class="btn btn-edit btn-large pull-right mtop20"> Edit Profile </a>
                              </div>
                          </div>
                          <div class="space15"></div>
-                         <div class="row-fluid">
+						 
+						 <?METRO/INDEX?>
+						 
+                         <div class="row-fluid"> 
                              <div class="span8 profile-contact">
                                  <h2>Contact</h2>
-                                 <strong>Jonathan Smith</strong>
-                                 <p>Lead Designer</p>
-                                 <p>Dreamland Avenue, sute 73, Australia, pc 1361</p>
+                                 <strong><phpdac>rccrmtrace.readContactField use firstname+1</phpdac> <phpdac>rccrmtrace.readContactField use lastname+1</phpdac></strong>
+                                 <p><phpdac>rccrmtrace.readContactField use occupation+1</phpdac></p>
+                                 <p><phpdac>rccrmtrace.readContactField use address+1</phpdac></p>
 
                                  <br>
 
@@ -102,13 +109,13 @@
                                      Phone
                                  </strong>
                                  <br>
-                                 (123) 456-7890
+                                 <phpdac>rccrmtrace.readContactField use phone</phpdac>
                                  <br><br>
                                  <strong>
                                      Email
                                  </strong>
                                  <br>
-                                 info@vectorlab.net
+								 <a href="cpcrmoffers.php?v=<phpdac>rccrmtrace.readContactField use email</phpdac>"><phpdac>rccrmtrace.readContactField use email</phpdac></a>
                                  <br>
                                  <br>
 
@@ -117,66 +124,50 @@
                                  </strong>
                                  <br>
 
-                                 skype@vectorlab.net
+                                 <phpdac>rccrmtrace.readContactField use skype</phpdac>
                                  <br>
                                  <br>
                                  <strong>
-                                     Live
+                                     Website
                                  </strong>
                                  <br>
-                                 live@vectorlab.net
+                                 <a href="<phpdac>rccrmtrace.readContactWeb use website</phpdac>" target="_blank"><phpdac>rccrmtrace.readContactField use website</phpdac></a>
 
                                  <div class="space20"></div>
 
                              </div>
                              <div class="span4">
                                  <div class="profile-side-box red">
-                                     <h1>Recommended By</h1>
+                                     <h1>Profile</h1>
                                      <div class="desk">
                                          <div class="row-fluid">
                                              <div class="span4">
                                                 <div class="text-center">
-                                                    <a href="#"><img src="img/avatar1.jpg" alt=""></a>
-                                                    <p><a href="#">Fill Martin</a></p>
+                                                    <a href="cpcrmtrace.php?t=cpcrmuser&v=<phpdac>rccrmtrace.currentVisitor</phpdac>"><img src="img/avatar1.jpg" alt=""></a>
+                                                    <p><a href="cpcrmtrace.php?t=cpcrmuser&v=<phpdac>rccrmtrace.currentVisitor</phpdac>">User</a></p>
                                                 </div>
                                              </div>
                                              <div class="span4">
                                                  <div class="text-center">
-                                                     <a href="#"><img src="img/avatar2.jpg" alt=""></a>
-                                                     <p><a href="#">Scatel Filip</a></p>
+                                                     <a href="cpcrmtrace.php?t=cpcrmcust&v=<phpdac>rccrmtrace.currentVisitor</phpdac>"><img src="img/avatar2.jpg" alt=""></a>
+                                                     <p><a href="cpcrmtrace.php?t=cpcrmcust&v=<phpdac>rccrmtrace.currentVisitor</phpdac>">Customer</a></p>
                                                  </div>
                                              </div>
                                              <div class="span4">
                                                  <div class="text-center">
-                                                     <a href="#"><img src="img/avatar3.jpg" alt=""></a>
-                                                     <p><a href="#">Paul Robin</a></p>
+                                                     <a href="cpcrmtrace.php?t=cpcrmcont&v=<phpdac>rccrmtrace.currentVisitor</phpdac>"><img src="img/avatar3.jpg" alt=""></a>
+                                                     <p><a href="cpcrmtrace.php?t=cpcrmcont&v=<phpdac>rccrmtrace.currentVisitor</phpdac>">Contact</a></p>
                                                  </div>
                                              </div>
                                          </div>
                                      </div>
                                  </div>
-                                 <div class="profile-side-box green">
-                                     <h1>Experience</h1>
+							     <div class="profile-side-box green">
+                                     <h1>Mail responds</h1>
                                      <div class="desk">
-                                         <div class="row-fluid experience">
-                                             <h4>Envato</h4>
-                                             <p>Duration: 4 years as Senior Designer from June 2033 to June 2007</p>
-                                             <a href="#">www.abccompany.com</a>
-                                         </div>
-                                         <div class="space10"></div>
-                                         <div class="row-fluid experience">
-                                             <h4>Themeforest</h4>
-                                             <p>Duration: 4 years as Senior Designer from June 2033 to June 2007</p>
-                                             <a href="#">www.abccompany.com</a>
-                                         </div>
-                                         <div class="space10"></div>
-                                         <div class="row-fluid experience">
-                                             <h4>Vector Lab</h4>
-                                             <p>Duration: 4 years as Senior Designer from June 2033 to June 2007</p>
-                                             <a href="#">www.abccompany.com</a>
-                                         </div>
+									     <span><phpdac>rccrmtrace.mailResponds use crm-responds</phpdac></span>
                                      </div>
-                                 </div>
+                                 </div>								 
                              </div>
                          </div>
                      </div>
@@ -279,6 +270,9 @@
    </script>    
   
    <!-- END JAVASCRIPTS --> 
+   <script>
+	function vdetails() {var str = arguments[0]; if (str) $('#crmdetails').load("cpcrmtrace.php?t=cpcrmdataprofile&id="+str);}
+   </script>      
    
    <phpdac>frontpage.include_part use /parts/google-analytics.php+++metro</phpdac>
    <!-- e-Enterprise, stereobit.networlds (phpdac5) -->     

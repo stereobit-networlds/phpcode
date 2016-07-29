@@ -247,7 +247,6 @@
                                         <li class="next"><a href="javascript:;">Next</a></li>
                                         <li class="next finish" style="display:none;"><a href="javascript:document.getElementById('tForm').submit();">Finish</a></li>
                                     </ul>
-                                    </ul>
                                 </div>
                             </div>
                             </form>

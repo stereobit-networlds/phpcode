@@ -37,7 +37,7 @@
          <!-- BEGIN PAGE CONTAINER-->
          <div class="container-fluid">
             <!-- BEGIN PAGE HEADER-->   
-				<phpdac>rccontrolpanel.select_timeline use cptimeline</phpdac>
+				<phpdac>rccrmtrace.select_timeline use crm-cptimeline</phpdac>
             <!-- END PAGE HEADER-->
             <!-- BEGIN PAGE CONTENT-->
              <div class="row-fluid">
@@ -46,140 +46,55 @@
                      <div class="row-fluid">
                          <div class="span8 ">
                              <div class="row-fluid">
-                                 <div class="blog">
-                                     <div class="span2 orange">
-                                         <a href="javascript:;" class="blog-features date active">
-                                             <p class="day">02</p>
-                                             <p class="month">Jul</p>
-                                         </a>
-                                         <a href="javascript:;" class="blog-features comments">
-                                             <i class=" icon-comments-alt"></i>
-                                             <p class="info">145 Comments</p>
-                                         </a>
-                                         <a href="javascript:;" class="blog-features comments">
-                                             <i class=" icon-share"></i>
-                                             <p class="info">14 Share</p>
-                                         </a>
-                                         <a href="javascript:;" class="blog-features comments">
-                                             <i class=" icon-eye-open"></i>
-                                             <p class="info">1400 View</p>
-                                         </a>
-                                     </div>
-                                     <div class="span10">
-                                         <h2>
-                                             <a href="blog_details.html">Suspendisse et mauris nisi, in semper justo.</a>
-                                         </h2>
-                                         <p>
-                                             BY <a href="javascript:;" class="author">METRO LAB</a> |  MONDAY, 12:30 PM
-                                         </p>
-                                         <img alt="" src="img/blog/blog1-big.jpg">
-                                         <p> Nam sed arcu non tellus fringilla fringilla ut vel ipsum. Aliquam ac magna metus. Nam sed arcu non tellus fringilla fringilla ut vel ipsum. Aliquam ac magna metus.  Nam sed arcu non tellus fringilla fringilla ut vel ipsum. Aliquam ac magna metus. Nam sed arcu non tellus fringilla fringilla ut vel ipsum. Aliquam ac magna metus.  Nam sed arcu non tellus fringilla fringilla ut vel ipsum. Aliquam ac magna metus. Nam sed arcu non tellus fringilla fring. Aliquam ac... <a href="blog_details.html" class="read-more">Continue Reading</a> </p>
-                                     </div>
-                                 </div>
-                                 <div class="blog">
-                                     <div class="span2 green">
-                                         <a href="javascript:;" class="blog-features date active">
-                                             <p class="day">03</p>
-                                             <p class="month">Aug</p>
-                                         </a>
-                                         <a href="javascript:;" class="blog-features comments">
-                                             <i class=" icon-comments-alt"></i>
-                                             <p class="info">145 Comments</p>
-                                         </a>
-                                         <a href="javascript:;" class="blog-features comments">
-                                             <i class=" icon-share"></i>
-                                             <p class="info">14 Share</p>
-                                         </a>
-                                         <a href="javascript:;" class="blog-features comments">
-                                             <i class=" icon-eye-open"></i>
-                                             <p class="info">1400 View</p>
-                                         </a>
-                                     </div>
-                                     <div class="span10">
-                                         <h2>
-                                             <a href="blog_details.html">Suspendisse et mauris nisi, in semper justo.</a>
-                                         </h2>
-                                         <p>
-                                             BY <a href="javascript:;" class="author">METRO LAB</a> |  MONDAY, 12:30 PM
-                                         </p>
-                                         <img alt="" src="img/blog/blog2-big.jpg">
-                                         <p> Nam sed arcu non tellus fringilla fringilla ut vel ipsum. Aliquam ac magna metus. Nam sed arcu non tellus fringilla fringilla ut vel ipsum. Aliquam ac magna metus.  Nam sed arcu non tellus fringilla fringilla ut vel ipsum. Aliquam ac magna metus. Nam sed arcu non tellus fringilla fringilla ut vel ipsum. Aliquam ac magna metus.  Nam sed arcu non tellus fringilla fringilla ut vel ipsum. Aliquam ac magna metus. Nam sed arcu non tellus fringilla fring. Aliquam ac... <a href="blog_details.html" class="read-more">Continue Reading</a> </p>
-                                     </div>
-                                 </div>
-                                 <div class="blog">
-                                     <div class="span2 red">
-                                         <a href="javascript:;" class="blog-features date active">
-                                             <p class="day">05</p>
-                                             <p class="month">Sep</p>
-                                         </a>
-                                         <a href="javascript:;" class="blog-features comments">
-                                             <i class=" icon-comments-alt"></i>
-                                             <p class="info">145 Comments</p>
-                                         </a>
-                                         <a href="javascript:;" class="blog-features comments">
-                                             <i class=" icon-share"></i>
-                                             <p class="info">14 Share</p>
-                                         </a>
-                                         <a href="javascript:;" class="blog-features comments">
-                                             <i class=" icon-eye-open"></i>
-                                             <p class="info">1400 View</p>
-                                         </a>
-                                     </div>
-                                     <div class="span10">
-                                         <h2>
-                                             <a href="blog_details.html">Suspendisse et mauris nisi, in semper justo.</a>
-                                         </h2>
-                                         <p>
-                                             BY <a href="javascript:;" class="author">METRO LAB</a> |  MONDAY, 12:30 PM
-                                         </p>
-                                         <img alt="" src="img/blog/blog3-big.jpg">
-                                         <p> Nam sed arcu non tellus fringilla fringilla ut vel ipsum. Aliquam ac magna metus. Nam sed arcu non tellus fringilla fringilla ut vel ipsum. Aliquam ac magna metus.  Nam sed arcu non tellus fringilla fringilla ut vel ipsum. Aliquam ac magna metus. Nam sed arcu non tellus fringilla fringilla ut vel ipsum. Aliquam ac magna metus.  Nam sed arcu non tellus fringilla fringilla ut vel ipsum. Aliquam ac magna metus. Nam sed arcu non tellus fringilla fring. Aliquam ac... <a href="blog_details.html" class="read-more">Continue Reading</a> </p>
-                                     </div>
-                                 </div>
-                                 <div class="blog">
-                                     <div class="span2 yellow">
-                                         <a href="javascript:;" class="blog-features date active">
-                                             <p class="day">02</p>
-                                             <p class="month">Jul</p>
-                                         </a>
-                                         <a href="javascript:;" class="blog-features comments">
-                                             <i class=" icon-comments-alt"></i>
-                                             <p class="info">145 Comments</p>
-                                         </a>
-                                         <a href="javascript:;" class="blog-features comments">
-                                             <i class=" icon-share"></i>
-                                             <p class="info">14 Share</p>
-                                         </a>
-                                         <a href="javascript:;" class="blog-features comments">
-                                             <i class=" icon-eye-open"></i>
-                                             <p class="info">1400 View</p>
-                                         </a>
-                                     </div>
-                                     <div class="span10">
-                                         <h2>
-                                             <a href="blog_details.html">Suspendisse et mauris nisi, in semper justo.</a>
-                                         </h2>
-                                         <p>
-                                             BY <a href="javascript:;" class="author">METRO LAB</a> |  MONDAY, 12:30 PM
-                                         </p>
-                                         <img alt="" src="img/blog/blog1-big.jpg">
-                                         <p> Nam sed arcu non tellus fringilla fringilla ut vel ipsum. Aliquam ac magna metus. Nam sed arcu non tellus fringilla fringilla ut vel ipsum. Aliquam ac magna metus.  Nam sed arcu non tellus fringilla fringilla ut vel ipsum. Aliquam ac magna metus. Nam sed arcu non tellus fringilla fringilla ut vel ipsum. Aliquam ac magna metus.  Nam sed arcu non tellus fringilla fringilla ut vel ipsum. Aliquam ac magna metus. Nam sed arcu non tellus fringilla fring. Aliquam ac... <a href="blog_details.html" class="read-more">Continue Reading</a> </p>
-                                     </div>
-                                 </div>
-                                 <div class="custom-pagination pagination-centered">
-                                     <ul>
-                                         <li><a href="javascript:;">«</a></li>
-                                         <li><a href="javascript:;">1</a></li>
-                                         <li><a href="javascript:;">2</a></li>
-                                         <li><a href="javascript:;">3</a></li>
-                                         <li><a href="javascript:;">4</a></li>
-                                         <li><a href="javascript:;">»</a></li>
-                                     </ul>
-                                 </div>
+							 
+								<!--BEGIN METRO STATES-->
+								<div class="metro-nav">
+
+									<div class="metro-nav-block  nav-block-grey">
+										<a href="cpcrmtrace.php?t=cpcrmtrace&recognized=1&<phpdac>rccrmtrace.getDateRange</phpdac>" data-original-title="">
+											<div class="text-center">
+											<i class="icon-puzzle-piece"></i>
+											</div>
+											<div class="status">Recognize</div>
+										</a>
+									</div>
+									<div class="metro-nav-block nav-block-blue ">
+										<a href="cpcrmtrace.php?t=cpcrmtrace&resolved=1&<phpdac>rccrmtrace.getDateRange</phpdac>" data-original-title="">
+											<div class="text-center">
+											<i class="icon-cogs"></i>
+											</div>
+											<div class="status">Resolve</div>
+										</a>
+									</div>
+									<div class="metro-nav-block  nav-block-red">
+										<a href="cpcrmtrace.php?t=cpcrmtrace&<phpdac>rccrmtrace.getDateRange</phpdac>" data-original-title="">
+											<div class="text-center">
+											<i class="icon-user"></i>
+											</div>
+											<div class="status">All</div>
+										</a>
+									</div>
+								</div>
+								<div class="space10"></div>
+								<!--END METRO STATES-->							 
+							 
+								<div id="visits" class="widget blue">
+									<div class="widget-title">
+										<h4><i class="icon-bell-alt"></i> <phpdac>frontpage.slocale use _visits</phpdac></h4>
+										<span class="tools">
+										<a class="icon-chevron-down" href="javascript:;"></a>
+										<!--a class="icon-remove" href="javascript:;"></a-->
+										</span>
+									</div>
+									<div class="widget-body">
+										<phpdac>rccrmtrace.visitors use crm-alert-important</phpdac>
+									</div>
+								</div>
+
                              </div>
                          </div>
                          <div class="span4">
-                             <div class="blog-side-bar blue-box">
+                             <!--div class="blog-side-bar blue-box">
                                 <h2> <i class=" icon-tasks"></i> category</h2>
                                  <ul>
                                      <li>
@@ -219,9 +134,92 @@
                                          </a>
                                      </li>
                                  </ul>
-                             </div>
-                             <div class="blog-side-bar green-box">
-                                 <h2> <i class="  icon-comments-alt"></i> Latest blog</h2>
+                             </div-->
+                             <div class="blog-side-bar orange-box">
+                                 <h2> <i class=" icon-tasks"></i> Archive</h2>
+                                 <ul>
+                                     <li>
+                                         <a href="cpcrmtrace.php?t=cpcrmtrace&month=01&year=<phpdac>rccrmtrace.getYear</phpdac>">
+                                             <span class="large">Jan</span>
+                                             <span><phpdac>rccrmtrace.getYear</phpdac></span>
+                                         </a>
+                                     </li>
+                                     <li>
+                                         <a href="cpcrmtrace.php?t=cpcrmtrace&month=02&year=<phpdac>rccrmtrace.getYear</phpdac>">
+                                             <span class="large">Feb</span>
+                                             <span><phpdac>rccrmtrace.getYear</phpdac></span>
+                                         </a>
+                                     </li>
+                                     <li>
+                                         <a href="cpcrmtrace.php?t=cpcrmtrace&month=03&year=<phpdac>rccrmtrace.getYear</phpdac>">
+                                             <span class="large">Mar</span>
+                                             <span><phpdac>rccrmtrace.getYear</phpdac></span>
+                                         </a>
+                                     </li>
+                                     <li>
+                                         <a href="cpcrmtrace.php?t=cpcrmtrace&month=04&year=<phpdac>rccrmtrace.getYear</phpdac>">
+                                             <span class="large">Apr</span>
+                                             <span><phpdac>rccrmtrace.getYear</phpdac></span>
+                                         </a>
+                                     </li>
+                                     <li>
+                                         <a href="cpcrmtrace.php?t=cpcrmtrace&month=05&year=<phpdac>rccrmtrace.getYear</phpdac>">
+                                             <span class="large">May</span>
+                                             <span><phpdac>rccrmtrace.getYear</phpdac></span>
+                                         </a>
+                                     </li>
+                                     <li>
+                                         <a href="cpcrmtrace.php?t=cpcrmtrace&month=06&year=<phpdac>rccrmtrace.getYear</phpdac>">
+                                             <span class="large">Jun</span>
+                                             <span><phpdac>rccrmtrace.getYear</phpdac></span>
+                                         </a>
+                                     </li>
+                                     <li>
+                                         <a href="cpcrmtrace.php?t=cpcrmtrace&month=07&year=<phpdac>rccrmtrace.getYear</phpdac>">
+                                             <span class="large">Jul</span>
+                                             <span><phpdac>rccrmtrace.getYear</phpdac></span>
+                                         </a>
+                                     </li>
+                                     <li>
+                                         <a href="cpcrmtrace.php?t=cpcrmtrace&month=08&year=<phpdac>rccrmtrace.getYear</phpdac>">
+                                             <span class="large">Aug</span>
+                                             <span><phpdac>rccrmtrace.getYear</phpdac></span>
+                                         </a>
+                                     </li>
+                                     <li>
+                                         <a href="cpcrmtrace.php?t=cpcrmtrace&month=09&year=<phpdac>rccrmtrace.getYear</phpdac>">
+                                             <span class="large">Sep</span>
+                                             <span><phpdac>rccrmtrace.getYear</phpdac></span>
+                                         </a>
+                                     </li>
+                                     <li>
+                                         <a href="cpcrmtrace.php?t=cpcrmtrace&month=10&year=<phpdac>rccrmtrace.getYear</phpdac>">
+                                             <span class="large">Okt</span>
+                                             <span><phpdac>rccrmtrace.getYear</phpdac></span>
+                                         </a>
+                                     </li>
+                                     <li>
+                                         <a href="cpcrmtrace.php?t=cpcrmtrace&month=11&year=<phpdac>rccrmtrace.getYear</phpdac>">
+                                             <span class="large">Nov</span>
+                                             <span><phpdac>rccrmtrace.getYear</phpdac></span>
+                                         </a>
+                                     </li>
+                                     <li>
+                                         <a href="cpcrmtrace.php?t=cpcrmtrace&month=12&year=<phpdac>rccrmtrace.getYear</phpdac>">
+                                             <span class="large">Dec</span>
+                                             <span><phpdac>rccrmtrace.getYear</phpdac></span>
+                                         </a>
+                                     </li>									 
+                                 </ul>
+                             </div>	
+                             <div class="blog-side-bar red-box">
+                                 <h2> <i class=" icon-tags"></i> searches</h2>
+                                 <ul class="unstyled tag">
+									 <span><phpdac>rccrmtrace.searchTags use crm-searchtags</phpdac></span>
+                                 </ul>
+                             </div>							 
+                             <!--div class="blog-side-bar green-box">
+                                 <h2> <i class="  icon-comments-alt"></i> Latest messages</h2>
                                  <div class="space20"></div>
                                  <div class="row-fluid">
                                      <div class="green-box-blog">
@@ -268,63 +266,7 @@
                                      </div>
                                  </div>
                                  <div class="space10"></div>
-                             </div>
-                             <div class="blog-side-bar red-box">
-                                 <h2> <i class=" icon-tags"></i> popular tags</h2>
-                                 <ul class="unstyled tag">
-                                     <li><a href="#">Metrolab Admin</a></li>
-                                     <li><a href="#"> Dashboard Theme</a></li>
-                                     <li><a href="#"> Metro</a></li>
-                                     <li><a href="#"> Control Panel</a></li>
-                                     <li><a href="#"> UI</a></li>
-                                     <li><a href="#"> Web Design</a></li>
-                                     <li><a href="#"> UIX</a></li>
-                                     <li><a href="#"> Blog</a></li>
-                                     <li><a href="#">Metrolab Admin</a></li>
-                                     <li><a href="#"> Dashboard Theme</a></li>
-                                 </ul>
-                             </div>
-                             <div class="blog-side-bar orange-box">
-                                 <h2> <i class=" icon-tasks"></i> Archive</h2>
-                                 <ul>
-                                     <li>
-                                         <a href="#">
-                                             <span class="large">OCT</span>
-                                             <span>2012</span>
-                                         </a>
-                                     </li>
-                                     <li>
-                                         <a href="#">
-                                             <span class="large">Nov</span>
-                                             <span>2012</span>
-                                         </a>
-                                     </li>
-                                     <li>
-                                         <a href="#">
-                                             <span class="large">dec</span>
-                                             <span>2012</span>
-                                         </a>
-                                     </li>
-                                     <li>
-                                         <a href="#">
-                                             <span class="large">jan</span>
-                                             <span>2013</span>
-                                         </a>
-                                     </li>
-                                     <li>
-                                         <a href="#">
-                                             <span class="large">feb</span>
-                                             <span>2013</span>
-                                         </a>
-                                     </li>
-                                     <li>
-                                         <a href="#">
-                                             <span class="large">mar</span>
-                                             <span>2013</span>
-                                         </a>
-                                     </li>
-                                 </ul>
-                             </div>
+                             </div-->
                          </div>
                      </div>
                      <!-- END BLOG PORTLET-->

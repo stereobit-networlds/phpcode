@@ -76,7 +76,7 @@
                         <a data-original-title="" href="javascript:sndReqArg('cp.php?t=cpinfo&s=&statsid='+statsid.value,'cpinfo');">
                             <i class="icon-bar-chart"></i>
                             <div class="info"><phpdac>crmdashboard.itemsPurchasedQty</phpdac></div>
-                            <div class="status">Purchased Qty</div>
+                            <div class="status">Purchased Quantity</div>
                         </a>
                     </div>				
                     <div class="metro-nav-block nav-light-blue double">
@@ -113,151 +113,23 @@
             </div>
 
             <div class="row-fluid">
-                <div class="span6">			
-                    <!--BEGIN GENERAL STATISTICS-->
-                    <!--div class="widget orange">
-                        <div class="widget-title">
-                            <h4><i class="icon-tasks"></i> General Statistics </h4>
-                         <span class="tools">
-                            <a href="javascript:;" class="icon-chevron-down"></a>
-                            <a href="javascript:;" class="icon-remove"></a>
-                         </span>
-                            <div class="update-btn">
-                                <a href="javascript:;" class="btn"><i class="icon-repeat"></i> Update</a>
-                            </div>
-                        </div-->
-                        <div class="widget-body">
-                            <div class="text-center">
-                                <div class="easy-pie-chart">
-                                    <div class="percentage success" data-percent="<phpdac>rccontrolpanel.getStats use Diskspace+remainsizepercent</phpdac>"><span><phpdac>rccontrolpanel.getStats use Diskspace+remainsizepercent</phpdac></span>%</div>
-                                    <div class="title">Used Space</div>
-                                </div>
-                                <div class="easy-pie-chart">
-                                    <div class="percentage" data-percent="<phpdac>rccontrolpanel.getStats use Diskspace+remainhdpercent</phpdac>"><span><phpdac>rccontrolpanel.getStats use Diskspace+remainhdpercent</phpdac></span>%</div>
-                                    <div class="title">HD Usage</div>
-                                </div>
-                                <div class="easy-pie-chart">
-                                    <div class="percentage" data-percent="<phpdac>rccontrolpanel.getStats use Diskspace+remainmxpercent</phpdac>"><span><phpdac>rccontrolpanel.getStats use Diskspace+remainmxpercent</phpdac></span>%</div>
-                                    <div class="title">MX Usage</div>
-                                </div>
-                                <div class="easy-pie-chart">
-                                    <div class="percentage" data-percent="<phpdac>rccontrolpanel.getStats use Diskspace+remaindbpercent</phpdac>"><span><phpdac>rccontrolpanel.getStats use Diskspace+remaindbpercent</phpdac></span>%</div>
-                                    <div class="title">DB Usage</div>
-                                </div>
-                            </div>
-                        </div>
-                    <!--/div-->
-				
-					
-                    <div class="widget purple">
-                        <div class="widget-title">
-                            <h4><i class="icon-tasks"></i> Items </h4>
-                         <span class="tools">
-                            <a href="javascript:;" class="icon-chevron-down"></a>
-                            <a href="javascript:;" class="icon-remove"></a>
-                         </span>
-						 <div class="update-btn">
-                            <a href="javascript:sndReqArg('cp.php?t=cpchartshow&group=&ai=2&report=statistics&statsid='+statsid.value,'statistics');" class="btn"><i class="icon-repeat"></i> Update</a>
-                         </div>
-                        </div>
-                        <div class="widget-body">
-                            <div class="text-center">
-                                <div id="statistics"></div>
-                            </div>
-                        </div>
-                    </div>	
-					<div class="widget red">
-                        <div class="widget-title">
-                            <h4><i class="icon-tasks"></i> Categories </h4>
-                         <span class="tools">
-                            <a href="javascript:;" class="icon-chevron-down"></a>
-                            <a href="javascript:;" class="icon-remove"></a>
-                         </span>
-						 <div class="update-btn">
-                            <a href="javascript:sndReqArg('cp.php?t=cpchartshow&group=&ai=1&report=statisticscat&statsid='+statsid.value,'statisticscat');" class="btn"><i class="icon-repeat"></i> Update</a>
-                         </div>
-                        </div>
-                        <div class="widget-body">
-                            <div class="text-center">
-                                <div id="statisticscat"></div>
-                            </div>
-                        </div>
-                    </div>		
-                    <!--END GENERAL STATISTICS-->
-                </div>
-                <div class="span6">
-                    <!--BEGIN GENERAL STATISTICS-->
-                    <div class="widget purple">
-                        <div class="widget-title">
-                            <h4><i class="icon-tasks"></i> General Statistics </h4>
-                         <span class="tools">
-                            <a href="javascript:;" class="icon-chevron-down"></a>
-                            <a href="javascript:;" class="icon-remove"></a>
-                         </span>
-                        </div>
-                        <div class="widget-body">
-                            <div class="row-fluid">
-                                <div class="text-center">
-                                    <div class="sparkline">
-                                        <div id="metro-sparkline-type1"></div>
-                                        <div class="sparkline-tittle">Server Load</div>
-                                    </div>
-                                    <div class="sparkline">
-                                        <div id="metro-sparkline-type2"></div>
-                                        <div class="sparkline-tittle">Network Load</div>
-                                    </div>
-                                    <div class="sparkline">
-                                        <div id="metro-sparkline-type3"></div>
-                                        <div class="sparkline-tittle">Visit Load</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+				<div class="span12">
 					<div class="widget yellow">
                         <div class="widget-title">
-                            <h4><i class="icon-tasks"></i> Mail Queue </h4>
+                            <h4><i class="icon-tasks"></i> Chart </h4>
                          <span class="tools">
                             <a href="javascript:;" class="icon-chevron-down"></a>
-                            <a href="javascript:;" class="icon-remove"></a>
                          </span>
-						 <div class="update-btn">
-                            <a href="javascript:sndReqArg('cp.php?t=cpchartshow&group=&ai=1&report=mailqueue&statsid='+statsid.value,'mailqueue');" class="btn"><i class="icon-repeat"></i> Update</a>
-                         </div>
                         </div>
                         <div class="widget-body">
-                            <div class="text-center">
-                                <div id="mailqueue"></div>
-                            </div>
+							<div class="plots"></div>							
                         </div>
-                    </div>					
-					<div class="widget green">
-                        <div class="widget-title">
-                            <h4><i class="icon-tasks"></i> Transactions </h4>
-                         <span class="tools">
-                            <a href="javascript:;" class="icon-chevron-down"></a>
-                            <a href="javascript:;" class="icon-remove"></a>
-                         </span>
-						 <div class="update-btn">
-                            <a href="javascript:sndReqArg('cp.php?t=cpchartshow&group=&ai=2&report=transactions&statsid='+statsid.value,'transactions');" class="btn"><i class="icon-repeat"></i> Update</a>
-                         </div>
-                        </div>
-                        <div class="widget-body">
-                            <div class="text-center">
-                                <div id="transactions"></div>
-                            </div>
-                        </div>
-                    </div>						
-					<!--END GENERAL STATISTICS-->				
-                </div>
-            </div>
-            <div class="row-fluid"> 
-				 <!--hpdac>rccontrolpanel._show_charts</phpda-->
-				 <INPUT TYPE= "hidden" ID="statsid" VALUE="0" />
+                    </div>
+				</div>	
             </div>
             <!-- END PAGE CONTENT-->         
          </div>
-         <!-- END PAGE CONTAINER-->
+         <!-- END PAGE CONTAINER-->	 
 
 
    <!-- BEGIN JAVASCRIPTS -->
@@ -272,6 +144,11 @@
    <script type="text/javascript" src="assets/jquery-slimscroll/jquery.slimscroll.min.js"></script>
    <!--script src="assets/fullcalendar/fullcalendar/fullcalendar.min.js"></script-->
    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+   <script src="assets/flot/jquery.flot.js"></script>
+   <script src="assets/flot/jquery.flot.resize.js"></script>
+   <script src="assets/flot/jquery.flot.pie.js"></script>
+   <script src="assets/flot/jquery.flot.stack.js"></script>
+   <script src="assets/flot/jquery.flot.crosshair.js"></script>     
 
    <!-- ie8 fixes -->
    <!--[if lt IE 9]>
@@ -298,7 +175,9 @@
 
    <!--script for this page only-->
    <script language="javascript" type="text/javascript">
-	   
+   
+	<phpdac>cpflotcharts.jsflotCrmCharts</phpdac>
+	
     //chosen select
     $(".chzn-select").chosen(); $(".chzn-select-deselect").chosen({allow_single_deselect:true});
 	   

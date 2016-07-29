@@ -37,7 +37,7 @@
          <!-- BEGIN PAGE CONTAINER-->
          <div class="container-fluid">
             <!-- BEGIN PAGE HEADER-->   
-				<phpdac>rccontrolpanel.select_timeline use cptimeline</phpdac>
+				<phpdac>rccrmtrace.select_timeline use crm-cptimeline</phpdac>
             <!-- END PAGE HEADER-->
             <!-- BEGIN PAGE CONTENT-->
              <div class="row-fluid">
@@ -50,15 +50,19 @@
                                  <i class="icon-pencil"></i>
                              </a>
                          </div>
-                         <a href="cpcrmtrace.php?t=cpcrmprofile" class="profile-features active">
+                         <a href="cpcrmtrace.php?t=cpcrmprofile&v=<phpdac>rccrmtrace.currentVisitor</phpdac>&<phpdac>rccrmtrace.getDateRange</phpdac>" class="profile-features">
                              <i class=" icon-user"></i>
                              <p class="info">Profile</p>
                          </a>
-                         <a href="cpcrmtrace.php?t=cpcrmactivities" class="profile-features ">
+                         <a href="cpcrmtrace.php?t=cpcrmactivities&v=<phpdac>rccrmtrace.currentVisitor</phpdac>&<phpdac>rccrmtrace.getDateRange</phpdac>" class="profile-features ">
                              <i class=" icon-calendar"></i>
                              <p class="info">Activities</p>
                          </a>
-                         <a href="cpcrmtrace.php?t=cpcrmcontact" class="profile-features ">
+                         <a href="cpcrmtrace.php?t=cpcrmtimeline&v=<phpdac>rccrmtrace.currentVisitor</phpdac>&<phpdac>rccrmtrace.getDateRange</phpdac>" class="profile-features">
+                             <i class=" icon-th-list"></i>
+                             <p class="info">Timeline</p>
+                         </a>							 
+                         <a href="cpcrmtrace.php?t=cpcrmcontact&v=<phpdac>rccrmtrace.currentVisitor</phpdac>&<phpdac>rccrmtrace.getDateRange</phpdac>" class="profile-features ">
                              <i class=" icon-phone"></i>
                              <p class="info">Contact</p>
                          </a>
@@ -66,98 +70,153 @@
                      <div class="span10">
                          <div class="profile-head">
                              <div class="span4">
-                                 <h1>Jonathan Smith</h1>
-                                 <p>Lead Designer at <a href="#">Vectorlab Inc.</a></p>
+                                 <h1><phpdac>rccrmtrace.readContactName</phpdac></h1>
+                                 <p><phpdac>rccrmtrace.currentVisitor use auto</phpdac></p>
                              </div>
 
                              <div class="span4">
                                  <ul class="social-link-pf">
-                                     <li><a href="#">
+                                     <li><a href="<phpdac>rccrmtrace.readContactWeb use facebook</phpdac>" target="_blank">
                                          <i class="icon-facebook"></i>
                                      </a></li>
-                                     <li><a href="#">
+                                     <li><a href="<phpdac>rccrmtrace.readContactWeb use twitter</phpdac>" target="_blank">
                                          <i class="icon-twitter"></i>
                                      </a></li>
-                                     <li><a href="#">
+                                     <li><a href="<phpdac>rccrmtrace.readContactWeb use linkedin</phpdac>" target="_blank">
                                          <i class="icon-linkedin"></i>
                                      </a></li>
                                  </ul>
                              </div>
 
                              <div class="span4">
-                                 <a href="cpcrmtrace.php?t=cpcrmsaveprofile" class="btn btn-edit btn-large pull-right mtop20"> Save Profile </a>
+                                 <a href="javascript:document.getElementById('pForm').submit();" class="btn btn-edit btn-large pull-right mtop20"> Save Profile </a>
                              </div>
                          </div>
                          <div class="space15"></div>
                          <div class="row-fluid">
                              <div class="span12 bio form">
                                  <h2> Profile Info</h2>
-                                 <form class="form-horizontal" action="#">
+                                 <form id="pForm" class="form-horizontal" method="POST" action="cpcrmtrace.php?t=cpcrmsaveprofile&v=<phpdac>rccrmtrace.currentVisitor</phpdac>">
+                                     <input type="hidden" name="id" value="<phpdac>rccrmtrace.readContactID</phpdac>" />								 
+									 <input type="hidden" name="reference" value="<phpdac>rccrmtrace.readContactRef</phpdac>" />
+									 <input type="hidden" name="source" value="<phpdac>rccrmtrace.readContactSource</phpdac>" />
+									 <input type="hidden" name="ip" value="<phpdac>rccrmtrace.readContactIP</phpdac>" />
+								     <input type="hidden" name="FormName" value="saveprofile" />
+								     <input type="hidden" name="FormAction" value="cpcrmsaveprofile" />
+								     <input type="hidden" name="v" value="<phpdac>rccrmtrace.currentVisitor</phpdac>">
                                      <div class="control-group">
-                                         <label class="control-label">About Me</label>
+                                         <label class="control-label">About</label>
                                          <div class="controls">
-                                             <textarea rows="5" class="span10 "></textarea>
+                                             <textarea rows="5" class="span10 " name="about"><phpdac>rccrmtrace.readContactField use about</phpdac></textarea>
                                          </div>
                                      </div>
                                      <div class="control-group">
                                          <label class="control-label">First Name</label>
                                          <div class="controls">
-                                             <input type="text" class="span6 ">
+                                             <input type="text" class="span6 " name="firstname" value="<phpdac>rccrmtrace.readContactField use firstname+1</phpdac>" >
                                          </div>
                                      </div>
                                      <div class="control-group">
                                          <label class="control-label">Last Name</label>
                                          <div class="controls">
-                                             <input type="text" class="span6 ">
+                                             <input type="text" class="span6 " name="lastname" value="<phpdac>rccrmtrace.readContactField use lastname+1</phpdac>" >
                                          </div>
                                      </div>
                                      <div class="control-group">
+                                         <label class="control-label">Address</label>
+                                         <div class="controls">
+                                             <input type="text" class="span6 " name="address" value="<phpdac>rccrmtrace.readContactField use address+1</phpdac>" >
+                                         </div>
+                                     </div>									 
+                                     <div class="control-group">
                                          <label class="control-label">Country</label>
                                          <div class="controls">
-                                             <input type="text" data-source="[&quot;Alabama&quot;,&quot;Alaska&quot;,&quot;Arizona&quot;,&quot;Arkansas&quot;,&quot;California&quot;,&quot;Colorado&quot;,&quot;Connecticut&quot;,&quot;Delaware&quot;,&quot;Florida&quot;,&quot;Georgia&quot;,&quot;Hawaii&quot;,&quot;Idaho&quot;,&quot;Illinois&quot;,&quot;Indiana&quot;,&quot;Iowa&quot;,&quot;Kansas&quot;,&quot;Kentucky&quot;,&quot;Louisiana&quot;,&quot;Maine&quot;,&quot;Maryland&quot;,&quot;Massachusetts&quot;,&quot;Michigan&quot;,&quot;Minnesota&quot;,&quot;Mississippi&quot;,&quot;Missouri&quot;,&quot;Montana&quot;,&quot;Nebraska&quot;,&quot;Nevada&quot;,&quot;New Hampshire&quot;,&quot;New Jersey&quot;,&quot;New Mexico&quot;,&quot;New York&quot;,&quot;North Dakota&quot;,&quot;North Carolina&quot;,&quot;Ohio&quot;,&quot;Oklahoma&quot;,&quot;Oregon&quot;,&quot;Pennsylvania&quot;,&quot;Rhode Island&quot;,&quot;South Carolina&quot;,&quot;South Dakota&quot;,&quot;Tennessee&quot;,&quot;Texas&quot;,&quot;Utah&quot;,&quot;Vermont&quot;,&quot;Virginia&quot;,&quot;Washington&quot;,&quot;West Virginia&quot;,&quot;Wisconsin&quot;,&quot;Wyoming&quot;]" data-items="4" data-provide="typeahead" style="margin: 0 auto;" class="span6 ">
+                                             <input type="text" name="country" data-source="[&quot;Alabama&quot;,&quot;Alaska&quot;,&quot;Arizona&quot;,&quot;Arkansas&quot;,&quot;California&quot;,&quot;Colorado&quot;,&quot;Connecticut&quot;,&quot;Delaware&quot;,&quot;Florida&quot;,&quot;Georgia&quot;,&quot;Hawaii&quot;,&quot;Idaho&quot;,&quot;Illinois&quot;,&quot;Indiana&quot;,&quot;Iowa&quot;,&quot;Kansas&quot;,&quot;Kentucky&quot;,&quot;Louisiana&quot;,&quot;Maine&quot;,&quot;Maryland&quot;,&quot;Massachusetts&quot;,&quot;Michigan&quot;,&quot;Minnesota&quot;,&quot;Mississippi&quot;,&quot;Missouri&quot;,&quot;Montana&quot;,&quot;Nebraska&quot;,&quot;Nevada&quot;,&quot;New Hampshire&quot;,&quot;New Jersey&quot;,&quot;New Mexico&quot;,&quot;New York&quot;,&quot;North Dakota&quot;,&quot;North Carolina&quot;,&quot;Ohio&quot;,&quot;Oklahoma&quot;,&quot;Oregon&quot;,&quot;Pennsylvania&quot;,&quot;Rhode Island&quot;,&quot;South Carolina&quot;,&quot;South Dakota&quot;,&quot;Tennessee&quot;,&quot;Texas&quot;,&quot;Utah&quot;,&quot;Vermont&quot;,&quot;Virginia&quot;,&quot;Washington&quot;,&quot;West Virginia&quot;,&quot;Wisconsin&quot;,&quot;Wyoming&quot;]" data-items="4" data-provide="typeahead" style="margin: 0 auto;" class="span6 " value="<phpdac>rccrmtrace.readContactField use country+1</phpdac>">
                                              <p class="help-block">Start typing to auto complete!. E.g: Florida</p>
                                          </div>
                                      </div>
                                      <div class="control-group">
-                                         <label class="control-label">Bithday</label>
+                                         <label class="control-label">Birthday</label>
 
                                          <div class="controls">
-                                             <input type="text" class="m-ctrl-medium span6" size="16" value="12-02-2012" id="dp1">
+                                             <input type="text" class="m-ctrl-medium span6" size="16" name="birthday" value="<phpdac>rccrmtrace.readContactField use birthday</phpdac>" id="dp1">
                                          </div>
                                      </div>
                                      <div class="control-group">
                                          <label class="control-label">Occupation</label>
                                          <div class="controls">
-                                             <input type="text" class="span6 ">
+                                             <input type="text" class="span6 " name="occupation" value="<phpdac>rccrmtrace.readContactField use occupation+1</phpdac>" >
                                          </div>
                                      </div>
                                      <div class="control-group">
                                          <label class="control-label">Email</label>
                                          <div class="controls">
-                                             <input type="text" class="span6 ">
+                                             <input type="text" class="span6 " name="email" value="<phpdac>rccrmtrace.readContactField use email</phpdac>" >
                                          </div>
                                      </div>
                                      <div class="control-group">
                                          <label class="control-label">Mobile</label>
                                          <div class="controls">
-                                             <input type="text" class="span6 ">
+                                             <input type="text" class="span6 " name="mobile" value="<phpdac>rccrmtrace.readContactField use mobile</phpdac>" >
                                          </div>
                                      </div>
                                      <div class="control-group">
-                                         <label class="control-label">Webiste Url</label>
+                                         <label class="control-label">Phone</label>
                                          <div class="controls">
-                                             <input type="text" class="span6" placeholder="http://www.demowebsite.com">
+                                             <input type="text" class="span6 " name="phone" value="<phpdac>rccrmtrace.readContactField use phone</phpdac>" >
+                                         </div>
+                                     </div>	
+                                     <div class="control-group">
+                                         <label class="control-label">Skype</label>
+                                         <div class="controls">
+                                             <input type="text" class="span6 " name="skype" value="<phpdac>rccrmtrace.readContactField use skype</phpdac>" >
                                          </div>
                                      </div>
+                                     <div class="control-group">
+                                         <label class="control-label">Facebook</label>
+                                         <div class="controls">
+                                             <input type="text" class="span6 " name="facebook" value="<phpdac>rccrmtrace.readContactField use facebook</phpdac>" >
+                                         </div>
+                                     </div>		
+                                     <div class="control-group">
+                                         <label class="control-label">Twitter</label>
+                                         <div class="controls">
+                                             <input type="text" class="span6 " name="twitter" value="<phpdac>rccrmtrace.readContactField use twitter</phpdac>" >
+                                         </div>
+                                     </div>									 
+                                     <div class="control-group">
+                                         <label class="control-label">Linkedin</label>
+                                         <div class="controls">
+                                             <input type="text" class="span6 " name="linkedin" value="<phpdac>rccrmtrace.readContactField use linkedin</phpdac>" >
+                                         </div>
+                                     </div>									 
+                                     <div class="control-group">
+                                         <label class="control-label">Website Url</label>
+                                         <div class="controls">
+                                             <input type="text" class="span6" name="website" placeholder="http://www.example.com" value="<phpdac>rccrmtrace.readContactWeb use website</phpdac>" >
+                                         </div>
+                                     </div>
+                                     <div class="control-group">
+                                         <label class="control-label">Longitude</label>
+                                         <div class="controls">
+                                             <input type="text" class="span6 " name="longitude" value="<phpdac>rccrmtrace.readContactField use longitude</phpdac>" >
+                                         </div>
+                                     </div>	
+                                     <div class="control-group">
+                                         <label class="control-label">Latitude</label>
+                                         <div class="controls">
+                                             <input type="text" class="span6 " name="latitude" value="<phpdac>rccrmtrace.readContactField use latitude</phpdac>" >
+                                         </div>
+                                     </div>									 
                                      <div class="form-actions">
-                                         <button class="btn btn-success" type="submit">Submit</button>
-                                         <button class="btn" type="button">Cancel</button>
+                                         <button class="btn btn-success" type="submit">Save</button>
+                                         <!--button class="btn" type="button">Cancel</button-->
                                      </div>
                                  </form>
 
                                  <div class="space10"></div>
 
-                                 <h2>Change Password</h2>
+                                 <!--h2>Change Password</h2>
 
                                  <div class="widget orange">
                                      <div class="widget-title">
@@ -253,7 +312,7 @@
                                            </span>
                                      </div>
                                      <div class="widget-body form">
-                                         <!-- BEGIN FORM-->
+
                                          <form class="form-horizontal" action="#">
 
                                              <div class="control-group">
@@ -294,13 +353,13 @@
                                                  </div>
                                              </div>
                                          </form>
-                                         <!-- END FORM-->
+
                                      </div>
                                  </div>
                                  <div class="text-center">
                                      <button class="btn btn-inverse btn-large "> Save & Continue</button>
                                  </div>
-                                 <div class="space20"></div>
+                                 <div class="space20"></div-->
                                  <div class="space20"></div>
                              </div>
                          </div>

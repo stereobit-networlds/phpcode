@@ -27,13 +27,15 @@
              <div class="row-fluid">
                  <div class="span12">
 				 	<?METRO/INDEX?>	
-					<div id="edit_form" class="control-group">
+					<div name="form1" id="edit_form" class="control-group">
 						<form method="post" action="#" class="form-horizontal">
-							<textarea class="span12 ckeditor" name="formdata" rows="12">
-								<phpdac>rccrmforms.fetchFormData</phpdac>
-							</textarea>
+							<!--textarea class="span12 ckeditor" name="formdata" name="formdata" rows="12"-->
+							<textarea wrap="virtual" id="formdata" class="span12" name="formdata" rows="20"><phpdac>rccrmforms.fetchFormData</phpdac></textarea>
 							<input type="hidden" name="id" value="<phpdac>fronthtmlpage.echostr use id</phpdac>">
-                            <phpdac>rccrmforms.ckeditorjs use formdata+maximize+0</phpdac>										
+							<input type="hidden" name="FormName" value="htmlform">									
+							<input type="hidden" name="FormAction" value="cpcrmformsubdetail">
+							<input type="submit" value="Save">	
+                            <!--hpdac>rccrmforms.ckeditorjs use formdata+maximize+0</phpda-->										
 						</form>
 					</div>				
                  </div>
@@ -54,6 +56,22 @@
    <!--common script for all pages-->
    <script src="js/common-scripts.js"></script>
    
+	<script language="Javascript" type="text/javascript" src="http://www.stereobit.gr/javascripts/edit_area/edit_area_full.js"></script>
+	<script language="Javascript" type="text/javascript">
+		// initialisation
+		editAreaLoader.init({
+			id: "formdata"	
+			,start_highlight: true	
+			,allow_resize: "both"
+			,allow_toggle: false
+			,word_wrap: true
+			,language: "en"
+			,syntax: "html"
+			,toolbar: "undo, redo, |, select_font, |, change_smooth_selection, highlight, reset_highlight"			
+			,replace_tab_by_spaces: 4
+			,save_callback: "submitform"
+		});  
+	</script>		
 </body>
 <!-- END BODY -->
 </html>

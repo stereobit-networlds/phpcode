@@ -194,6 +194,8 @@
                     </div>
                     <!-- END ALERTS PORTLET-->
 					
+					<div class="plots"></div>
+					
                     <div class="widget purple">
                         <div class="widget-title">
                             <h4><i class="icon-tasks"></i> Items </h4>
@@ -242,6 +244,7 @@
                         <div class="widget-body">
                             <div class="text-center">
                                 <div id="mailqueue"></div>
+								<div id="chart-1" class="chart"></div>
                             </div>
                         </div>
                     </div>					
@@ -259,6 +262,7 @@
                         <div class="widget-body">
                             <div class="text-center">
                                 <div id="transactions"></div>
+								<div id="chart-2" class="chart"></div>
                             </div>
                         </div>
                     </div>		
@@ -418,6 +422,11 @@
    <script type="text/javascript" src="assets/jquery-slimscroll/jquery.slimscroll.min.js"></script>
    <!--script src="assets/fullcalendar/fullcalendar/fullcalendar.min.js"></script-->
    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+   <script src="assets/flot/jquery.flot.js"></script>
+   <script src="assets/flot/jquery.flot.resize.js"></script>
+   <script src="assets/flot/jquery.flot.pie.js"></script>
+   <script src="assets/flot/jquery.flot.stack.js"></script>
+   <script src="assets/flot/jquery.flot.crosshair.js"></script>     
 
    <!-- ie8 fixes -->
    <!--[if lt IE 9]>
@@ -444,9 +453,8 @@
 
    <!--script for this page only-->
    <script language="javascript" type="text/javascript">
-       /*$(function() {
-           $.configureBoxes();
-       });*/
+   
+    <phpdac>cpflotcharts.jsflotcharts</phpdac> 
 	   
     //chosen select
     $(".chzn-select").chosen(); $(".chzn-select-deselect").chosen({allow_single_deselect:true});

@@ -37,7 +37,7 @@
          <!-- BEGIN PAGE CONTAINER-->
          <div class="container-fluid">
             <!-- BEGIN PAGE HEADER-->   
-				<phpdac>rccontrolpanel.select_timeline use cptimeline</phpdac>
+				<phpdac>rccrmtrace.select_timeline use crm-cptimeline</phpdac>
             <!-- END PAGE HEADER-->
             <!-- BEGIN PAGE CONTENT-->
              <div class="row-fluid">
@@ -46,19 +46,23 @@
                      <div class="span2">
                          <div class="profile-photo">
                              <img src="img/lock-thumb.jpg" alt="">
-                             <a href="javascript:;" class="edit" title="Edit Photo">
+                             <a href="javascript:vdetails('<phpdac>rccrmtrace.currentVisitor use email</phpdac>');" class="edit" title="Dashboard">
                                  <i class="icon-pencil"></i>
                              </a>
                          </div>
-                         <a href="cpcrmtrace.php?t=cpcrmprofile" class="profile-features active">
+                         <a href="cpcrmtrace.php?t=cpcrmprofile&v=<phpdac>rccrmtrace.currentVisitor</phpdac>&<phpdac>rccrmtrace.getDateRange</phpdac>" class="profile-features active">
                              <i class=" icon-user"></i>
                              <p class="info">Profile</p>
                          </a>
-                         <a href="cpcrmtrace.php?t=cpcrmactivities" class="profile-features ">
+                         <a href="cpcrmtrace.php?t=cpcrmactivities&v=<phpdac>rccrmtrace.currentVisitor</phpdac>&<phpdac>rccrmtrace.getDateRange</phpdac>" class="profile-features ">
                              <i class=" icon-calendar"></i>
                              <p class="info">Activities</p>
                          </a>
-                         <a href="cpcrmtrace.php?t=cpcrmcontact" class="profile-features ">
+                         <a href="cpcrmtrace.php?t=cpcrmtimeline&v=<phpdac>rccrmtrace.currentVisitor</phpdac>&<phpdac>rccrmtrace.getDateRange</phpdac>" class="profile-features">
+                             <i class=" icon-th-list"></i>
+                             <p class="info">Timeline</p>
+                         </a>							 
+                         <a href="cpcrmtrace.php?t=cpcrmcontact&v=<phpdac>rccrmtrace.currentVisitor</phpdac>&<phpdac>rccrmtrace.getDateRange</phpdac>" class="profile-features ">
                              <i class=" icon-phone"></i>
                              <p class="info">Contact</p>
                          </a>
@@ -66,45 +70,62 @@
                      <div class="span10">
                          <div class="profile-head">
                              <div class="span4">
-                                 <h1>Jonathan Smith</h1>
-                                 <p>Lead Designer at <a href="#">Vectorlab Inc.</a></p>
+                                 <h1><phpdac>rccrmtrace.readContactName</phpdac></h1>
+                                 <p><phpdac>rccrmtrace.currentVisitor use auto</phpdac></p>
                              </div>
 
                              <div class="span4">
                                  <ul class="social-link-pf">
-                                     <li><a href="#">
+                                     <li><a href="<phpdac>rccrmtrace.readContactWeb use facebook</phpdac>" target="_blank">
                                          <i class="icon-facebook"></i>
                                      </a></li>
-                                     <li><a href="#">
+                                     <li><a href="<phpdac>rccrmtrace.readContactWeb use twitter</phpdac>" target="_blank">
                                          <i class="icon-twitter"></i>
                                      </a></li>
-                                     <li><a href="#">
+                                     <li><a href="<phpdac>rccrmtrace.readContactWeb use linkedin</phpdac>" target="_blank">
                                          <i class="icon-linkedin"></i>
                                      </a></li>
                                  </ul>
                              </div>
 
                              <div class="span4">
-                                 <a href="cpcrmtrace.php?t=cpcrmeditprofile" class="btn btn-edit btn-large pull-right mtop20"> Edit Profile </a>
+                                 <a href="cpcrmtrace.php?t=cpcrmeditprofile&v=<phpdac>rccrmtrace.currentVisitor</phpdac>" class="btn btn-edit btn-large pull-right mtop20"> Edit Profile </a>
                              </div>
                          </div>
                          <div class="space15"></div>
+						 
+						 <?METRO/INDEX?>
+							 
                          <div class="row-fluid">
                              <div class="span8 bio">
-                                 <h2>About Smith</h2>
-                                 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Donec ut volutpat metus. Aliquam tortor lorem, fringilla tempor dignissim at, pretium et arcu. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.</p>
-                                 <div class="space15"></div>
-                                 <h2>Bio Graph</h2>
-                                 <p><label>First Name </label>: Jonathan</p>
-                                 <p><label>Last Name </label>: Smith</p>
-                                 <p><label>Country </label>: Australia</p>
-                                 <p><label>Bithday </label>: 13 July 1983</p>
-                                 <p><label>Occupation </label>: Designer</p>
-                                 <p><label>Email </label>: <a href="#">smith@vectorlab.net</a></p>
-                                 <p><label>Phone </label>: (12) 03 4567890</p>
-                                 <p><label>Website Url </label>: <a href="#">http://www.demowebsite.com</a></p>
+                                 <h2>About <phpdac>rccrmtrace.readContactName</phpdac></h2>
+                                 <p><phpdac>rccrmtrace.readContactField use about</phpdac></p>
+								 <p><phpdac>rccrmtrace.contactMenu</phpdac></p>
+                                 <div class="space15"></div>								 
+                                 <h2><phpdac>rccrmtrace.readContactRef use 1+1</phpdac></h2>
+                                 <p><label>First Name </label>: <phpdac>rccrmtrace.readContactField use firstname+1</phpdac></p>
+                                 <p><label>Last Name </label>: <phpdac>rccrmtrace.readContactField use lastname+1</phpdac></p>
+                                 <p><label>Address </label>: <phpdac>rccrmtrace.readContactField use address+1</phpdac></p>								 
+                                 <p><label>Country </label>: <phpdac>rccrmtrace.readContactField use country+1</phpdac></p>
+                                 <p><label>Birthday </label>: <phpdac>rccrmtrace.readContactField use birthday</phpdac></p>
+                                 <p><label>Occupation </label>: <phpdac>rccrmtrace.readContactField use occupation+1</phpdac></p>
+                                 <p><label>Email </label>: <a href="cpcrmoffers.php?v=<phpdac>rccrmtrace.readContactField use email</phpdac>"><phpdac>rccrmtrace.readContactField use email</phpdac></a></p>
+								 <!--p><label>Email </label>: <phpdac>rccrmtrace.contactMenu</phpdac></p-->
+								 <p><label>Mobile </label>: <phpdac>rccrmtrace.readContactField use mobile</phpdac></p>
+                                 <p><label>Phone </label>: <phpdac>rccrmtrace.readContactField use phone</phpdac></p>
+								 <p><label>Skype </label>: <phpdac>rccrmtrace.readContactField use skype</phpdac></p>
+								 <p><label>Facebook </label>: <phpdac>rccrmtrace.readContactField use facebook</phpdac></p>
+								 <p><label>Twitter </label>: <phpdac>rccrmtrace.readContactField use twitter</phpdac></p>
+								 <p><label>Linkedin </label>: <phpdac>rccrmtrace.readContactField use linkedin</phpdac></p>
+                                 <p><label>Website Url </label>: <a href="<phpdac>rccrmtrace.readContactWeb use website</phpdac>" target="_blank"><phpdac>rccrmtrace.readContactField use website</phpdac></a></p>
+								 <p><label>Longitude </label>: <phpdac>rccrmtrace.readContactField use longitude</phpdac></p>
+								 <p><label>Latitude </label>: <phpdac>rccrmtrace.readContactField use latitude</phpdac></p>
                                  <div class="space15"></div>
                                  <hr>
+								 <p><label>Reference </label>: <phpdac>rccrmtrace.readContactField use reference</phpdac></p>
+								 <p><label>Source </label>: <phpdac>rccrmtrace.readContactField use source</phpdac></p>								 
+								 <p><label>Ip </label>: <phpdac>rccrmtrace.readContactField use ip</phpdac></p>								 
+								 <hr>
                                  <div class="space15"></div>
 
                                  <h2>Project Progress</h2>
@@ -139,50 +160,117 @@
 
                              </div>
                              <div class="span4">
+							  <div class="blog-side-bar orange-box">
+                                 <h2> <i class=" icon-tasks"></i> Timeline Archive</h2>
+                                 <ul>
+                                     <li>
+                                         <a href="cpcrmtrace.php?t=cpcrmtimeline&v=<phpdac>rccrmtrace.currentVisitor</phpdac>&month=01&year=<phpdac>rccrmtrace.getYear</phpdac>">
+                                             <span class="large">Jan</span>
+                                             <span><phpdac>rccrmtrace.getYear</phpdac></span>
+                                         </a>
+                                     </li>
+                                     <li>
+                                         <a href="cpcrmtrace.php?t=cpcrmtimeline&v=<phpdac>rccrmtrace.currentVisitor</phpdac>&month=02&year=<phpdac>rccrmtrace.getYear</phpdac>">
+                                             <span class="large">Feb</span>
+                                             <span><phpdac>rccrmtrace.getYear</phpdac></span>
+                                         </a>
+                                     </li>
+                                     <li>
+                                         <a href="cpcrmtrace.php?t=cpcrmtimeline&v=<phpdac>rccrmtrace.currentVisitor</phpdac>&month=03&year=<phpdac>rccrmtrace.getYear</phpdac>">
+                                             <span class="large">Mar</span>
+                                             <span><phpdac>rccrmtrace.getYear</phpdac></span>
+                                         </a>
+                                     </li>
+                                     <li>
+                                         <a href="cpcrmtrace.php?t=cpcrmtimeline&v=<phpdac>rccrmtrace.currentVisitor</phpdac>&month=04&year=<phpdac>rccrmtrace.getYear</phpdac>">
+                                             <span class="large">Apr</span>
+                                             <span><phpdac>rccrmtrace.getYear</phpdac></span>
+                                         </a>
+                                     </li>
+                                     <li>
+                                         <a href="cpcrmtrace.php?t=cpcrmtimeline&v=<phpdac>rccrmtrace.currentVisitor</phpdac>&month=05&year=<phpdac>rccrmtrace.getYear</phpdac>">
+                                             <span class="large">May</span>
+                                             <span><phpdac>rccrmtrace.getYear</phpdac></span>
+                                         </a>
+                                     </li>
+                                     <li>
+                                         <a href="cpcrmtrace.php?t=cpcrmtimeline&v=<phpdac>rccrmtrace.currentVisitor</phpdac>&month=06&year=<phpdac>rccrmtrace.getYear</phpdac>">
+                                             <span class="large">Jun</span>
+                                             <span><phpdac>rccrmtrace.getYear</phpdac></span>
+                                         </a>
+                                     </li>
+                                     <li>
+                                         <a href="cpcrmtrace.php?t=cpcrmtimeline&v=<phpdac>rccrmtrace.currentVisitor</phpdac>&month=07&year=<phpdac>rccrmtrace.getYear</phpdac>">
+                                             <span class="large">Jul</span>
+                                             <span><phpdac>rccrmtrace.getYear</phpdac></span>
+                                         </a>
+                                     </li>
+                                     <li>
+                                         <a href="cpcrmtrace.php?t=cpcrmtimeline&v=<phpdac>rccrmtrace.currentVisitor</phpdac>&month=08&year=<phpdac>rccrmtrace.getYear</phpdac>">
+                                             <span class="large">Aug</span>
+                                             <span><phpdac>rccrmtrace.getYear</phpdac></span>
+                                         </a>
+                                     </li>
+                                     <li>
+                                         <a href="cpcrmtrace.php?t=cpcrmtimeline&v=<phpdac>rccrmtrace.currentVisitor</phpdac>&month=09&year=<phpdac>rccrmtrace.getYear</phpdac>">
+                                             <span class="large">Sep</span>
+                                             <span><phpdac>rccrmtrace.getYear</phpdac></span>
+                                         </a>
+                                     </li>
+                                     <li>
+                                         <a href="cpcrmtrace.php?t=cpcrmtimeline&v=<phpdac>rccrmtrace.currentVisitor</phpdac>&month=10&year=<phpdac>rccrmtrace.getYear</phpdac>">
+                                             <span class="large">Okt</span>
+                                             <span><phpdac>rccrmtrace.getYear</phpdac></span>
+                                         </a>
+                                     </li>
+                                     <li>
+                                         <a href="cpcrmtrace.php?t=cpcrmtimeline&v=<phpdac>rccrmtrace.currentVisitor</phpdac>&month=11&year=<phpdac>rccrmtrace.getYear</phpdac>">
+                                             <span class="large">Nov</span>
+                                             <span><phpdac>rccrmtrace.getYear</phpdac></span>
+                                         </a>
+                                     </li>
+                                     <li>
+                                         <a href="cpcrmtrace.php?t=cpcrmtimeline&v=<phpdac>rccrmtrace.currentVisitor</phpdac>&month=12&year=<phpdac>rccrmtrace.getYear</phpdac>">
+                                             <span class="large">Dec</span>
+                                             <span><phpdac>rccrmtrace.getYear</phpdac></span>
+                                         </a>
+                                     </li>									 
+                                 </ul>
+                             </div>	
+								<div class="blog-side-bar red-box">
+									<h2> <i class=" icon-tags"></i> searches</h2>
+									<ul class="unstyled tag">
+										<span><phpdac>rccrmtrace.searchTags use crm-searchtags</phpdac></span>
+									</ul>
+								</div>	
+							    <div class="profile-side-box green">
+                                     <h1>Mail responds</h1>
+                                     <div class="desk">
+									     <span><phpdac>rccrmtrace.mailResponds use crm-responds</phpdac></span>
+                                     </div>
+                                 </div>
                                  <div class="profile-side-box red">
-                                     <h1>Recommended By</h1>
+                                     <h1>Profile</h1>
                                      <div class="desk">
                                          <div class="row-fluid">
                                              <div class="span4">
                                                 <div class="text-center">
-                                                    <a href="#"><img src="img/avatar1.jpg" alt=""></a>
-                                                    <p><a href="#">Fill Martin</a></p>
+                                                    <a href="cpcrmtrace.php?t=cpcrmuser&v=<phpdac>rccrmtrace.currentVisitor</phpdac>"><img src="img/avatar1.jpg" alt=""></a>
+                                                    <p><a href="cpcrmtrace.php?t=cpcrmuser&v=<phpdac>rccrmtrace.currentVisitor</phpdac>">User</a></p>
                                                 </div>
                                              </div>
                                              <div class="span4">
                                                  <div class="text-center">
-                                                     <a href="#"><img src="img/avatar2.jpg" alt=""></a>
-                                                     <p><a href="#">Scatel Filip</a></p>
+                                                     <a href="cpcrmtrace.php?t=cpcrmcust&v=<phpdac>rccrmtrace.currentVisitor</phpdac>"><img src="img/avatar2.jpg" alt=""></a>
+                                                     <p><a href="cpcrmtrace.php?t=cpcrmcust&v=<phpdac>rccrmtrace.currentVisitor</phpdac>">Customer</a></p>
                                                  </div>
                                              </div>
                                              <div class="span4">
                                                  <div class="text-center">
-                                                     <a href="#"><img src="img/avatar3.jpg" alt=""></a>
-                                                     <p><a href="#">Paul Robin</a></p>
+                                                     <a href="cpcrmtrace.php?t=cpcrmcont&v=<phpdac>rccrmtrace.currentVisitor</phpdac>"><img src="img/avatar3.jpg" alt=""></a>
+                                                     <p><a href="cpcrmtrace.php?t=cpcrmcont&v=<phpdac>rccrmtrace.currentVisitor</phpdac>">Contact</a></p>
                                                  </div>
                                              </div>
-                                         </div>
-                                     </div>
-                                 </div>
-                                 <div class="profile-side-box green">
-                                     <h1>Experience</h1>
-                                     <div class="desk">
-                                         <div class="row-fluid experience">
-                                             <h4>Envato</h4>
-                                             <p>Duration: 4 years as Senior Designer from June 2033 to June 2007</p>
-                                             <a href="#">www.abccompany.com</a>
-                                         </div>
-                                         <div class="space10"></div>
-                                         <div class="row-fluid experience">
-                                             <h4>Themeforest</h4>
-                                             <p>Duration: 4 years as Senior Designer from June 2033 to June 2007</p>
-                                             <a href="#">www.abccompany.com</a>
-                                         </div>
-                                         <div class="space10"></div>
-                                         <div class="row-fluid experience">
-                                             <h4>Vector Lab</h4>
-                                             <p>Duration: 4 years as Senior Designer from June 2033 to June 2007</p>
-                                             <a href="#">www.abccompany.com</a>
                                          </div>
                                      </div>
                                  </div>
@@ -286,8 +374,10 @@
     $('#reportrange span').html(Date.today().add({ days: -29 }).toString('MMMM d, yyyy') + ' - ' + Date.today().toString('MMMM d, yyyy'));
 
    </script>    
-  
    <!-- END JAVASCRIPTS --> 
+    <script>
+	function vdetails() {var str = arguments[0]; if (str) $('#crmdetails').load("cpcrmtrace.php?t=cpcrmdataprofile&id="+str);}
+   </script>     
    
    <phpdac>frontpage.include_part use /parts/google-analytics.php+++metro</phpdac>
    <!-- e-Enterprise, stereobit.networlds (phpdac5) -->     
