@@ -7,6 +7,7 @@ super rcserver.rcssystem;
 load_extension adodb refby _ADODB_; 
 super database;
 
+use i18n.i18n;
 use xwindow.window,xwindow.window2;
 use gui.swfcharts;
 
@@ -21,6 +22,8 @@ private cp.cpmhtmleditor /cgi-bin;
 private cp.rcpmenu /cgi-bin;
 #endif
 private cp.rccontrolpanel /cgi-bin;
+public i18n.i18nL;
+
 ',1);
 	
 $cptemplate = GetGlobal('controller')->calldpc_method('rcserver.paramload use FRONTHTMLPAGE+cptemplate');

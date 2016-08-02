@@ -50,6 +50,18 @@
 			 <div class="row-fluid">
                  <div class="span12">
                     <!-- BEGIN  widget-->
+					<div class="widget">
+                            <div class="widget-title">
+                                <h4><i class="icon-bar-chart"></i> Campaign clicks</h4>
+                           <span class="tools">
+                               <a href="javascript:;" class="icon-chevron-down"></a>
+                               <a href="javascript:;" class="icon-remove"></a>
+                           </span>
+                            </div>
+                            <div class="widget-body" style="width: 96%">
+                                <div class="plots"></div>
+                            </div>
+                    </div>					
                     <div class="widget yellow">
                         <div class="widget-title">
                             <h4><i class="icon-reorder"></i> Content</h4>
@@ -87,7 +99,11 @@
    <script src="js/jquery.nicescroll.js" type="text/javascript"></script>
    <script type="text/javascript" src="assets/ckeditor/ckeditor.js"></script>
    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-   <!--script type="text/javascript" src="assets/bootstrap/js/bootstrap-fileupload.js"></script-->
+   <script src="assets/flot/jquery.flot.js"></script>
+   <script src="assets/flot/jquery.flot.resize.js"></script>
+   <script src="assets/flot/jquery.flot.pie.js"></script>
+   <script src="assets/flot/jquery.flot.stack.js"></script>
+   <script src="assets/flot/jquery.flot.crosshair.js"></script>
    <script src="js/jquery.blockui.js"></script>
 
    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
@@ -119,10 +135,10 @@
 
    <script language="javascript" type="text/javascript">
 
+	   <phpdac>cpflotcharts.jsflotMailcharts</phpdac>
+   
        $(function() {
-
            $.configureBoxes();
-
        });
 
    </script>

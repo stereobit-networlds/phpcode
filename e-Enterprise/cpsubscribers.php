@@ -11,13 +11,12 @@ load_extension adodb refby _ADODB_;
 super database;
 
 /---------------------------------load and create libs
+use i18n.i18n;
 use xwindow.window,xwindow.window2,browser,gui.swfcharts;
 use jqgrid.jqgrid;
 
 /---------------------------------load not create dpc (internal use)
 include networlds.clientdpc;
-/include gui.datepick;
-/include mail.smtpmail;
 		
 
 /---------------------------------load all and create after dpc objects
@@ -37,6 +36,7 @@ private phpdac.rcshsubsqueue /cgi-bin;
 private cp.rcpmenu /cgi-bin;
 #endif
 private cp.rccontrolpanel /cgi-bin;
+public i18n.i18nL;
 
 ',1);
 

@@ -6,6 +6,7 @@ super rcserver.rcssystem;
 load_extension adodb refby _ADODB_; 
 super database;
 /---------------------------------load and create libs
+use i18n.i18n;
 use xwindow.window,browser;
 use gui.swfcharts;
 use jqgrid.jqgrid;
@@ -18,6 +19,7 @@ include mail.smtpmail;
 load_extension recaptcha refby _RECAPTCHA_;	
 
 /---------------------------------load all and create after dpc objects
+/public i18n.i18n;
 private frontpage.fronthtmlpage /cgi-bin;
 
 #ifdef SES_LOGIN
@@ -30,6 +32,7 @@ private cp.rcbulkmail /cgi-bin;
 private cp.rcpmenu /cgi-bin;
 private cp.shlogin /cgi-bin;
 private cp.rccontrolpanel /cgi-bin;
+public i18n.i18nL;
 
 ',1);
 

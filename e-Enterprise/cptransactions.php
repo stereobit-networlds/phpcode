@@ -11,6 +11,7 @@ load_extension adodb refby _ADODB_;
 super database;
 
 /---------------------------------load and create libs
+use i18n.i18n;
 use gui.swfcharts;
 use jqgrid.jqgrid;
 
@@ -38,6 +39,8 @@ private shop.rctransactions /cgi-bin;
 private cp.rcpmenu /cgi-bin;
 #endif
 private cp.rccontrolpanel /cgi-bin;
+public i18n.i18nL;
+
 ',1);
 
 $cptemplate = GetGlobal('controller')->calldpc_method('rcserver.paramload use FRONTHTMLPAGE+cptemplate');

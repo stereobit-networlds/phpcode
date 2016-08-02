@@ -9,6 +9,7 @@ load_extension adodb refby _ADODB_;
 super database;
 
 /---------------------------------load and create libs
+use i18n.i18n;
 use xwindow.window;
 use gui.swfcharts;
 /---------------------------------load not create dpc (internal use)
@@ -23,6 +24,8 @@ private phpdac.rcslideshow /cgi-bin;
 private cp.rcpmenu /cgi-bin;
 #endif
 private cp.rccontrolpanel /cgi-bin;
+public i18n.i18nL;
+
 ',1);
 
 $cptemplate = GetGlobal('controller')->calldpc_method('rcserver.paramload use FRONTHTMLPAGE+cptemplate');

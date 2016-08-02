@@ -8,13 +8,13 @@ load_extension adodb refby _ADODB_;
 super database;
 
 /---------------------------------load and create libs
+use i18n.i18n;
 use gui.swfcharts;
 use jqgrid.jqgrid;
 
 /---------------------------------load not create dpc (internal use)
 include networlds.clientdpc;
 include gui.form;
-/include gui.datepick;
 include mail.smtpmail;
 
 security ACCOUNTMNG_ 1 1:1:1:1:1:1:1:1;
@@ -36,6 +36,8 @@ private shop.rctransactions /cgi-bin;
 #endif
 private cp.rcpmenu /cgi-bin;
 private cp.rccontrolpanel /cgi-bin;
+public i18n.i18nL;
+
 ',1);
 
 $cptemplate = GetGlobal('controller')->calldpc_method('rcserver.paramload use FRONTHTMLPAGE+cptemplate');
