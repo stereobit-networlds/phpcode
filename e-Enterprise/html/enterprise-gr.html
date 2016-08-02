@@ -9,7 +9,7 @@
 	<meta name="description" content="e-Enterprise, ενοποιημένες πληροφοριακές δομές και στατιστικά, ένα γνωσιακό συστήμα για το web και το ηλεκτρονικό εμπόριο" />
 	<meta name="keywords" content="e-Enterprise, data-driven analysis, metrics, KPIs, mail marketing, mail campaigns, behavior-driven development, BDD" />
 	<meta name="author" content="stereobit" />
-	<link rel="alternate" href="http://www.stereobit.gr" hreflang="el" />
+	<link rel="alternate" href="http://www.stereobit.com/enterprise.php" hreflang="en" />	
 	<link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-touch-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="images/favicons/apple-touch-icon-60x60.png">
 	<link rel="icon" type="image/png" href="images/favicons/favicon-32x32.png" sizes="32x32">
@@ -27,8 +27,8 @@
 	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.1.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="fonts/eleganticons/et-icons.css">
 	<link rel="stylesheet" type="text/css" href="css/cardio/enterprise.css">
-	
-	<link rel="stylesheet" type="text/css" href="css/jquery.cookiebar.css" />	
+	<link rel="stylesheet" type="text/css" href="css/jquery.cookiebar.css" />
+	<link rel="stylesheet" href="css/zebra/flat/zebra_dialog.css" type="text/css">		
 </head>
 
 <body>
@@ -75,7 +75,14 @@
 						</div>
 					</div>
 					<div class="row">
-						<h4 class="light blue">#text #spreadsheet #database #dynamic-sql #data-flow #business-intelligence</h4>
+						<h4 class="light blue">
+						<a href="campaign.php">#text</a> 
+						<a href="#" onClick="<phpdac>jsdialog.zdialogFrame use http://en.m.wikipedia.org/wiki/Spreadsheet</phpdac>">#spreadsheet</a> 
+						<a href="#" onClick="<phpdac>jsdialog.zdialogFrame use http://en.m.wikipedia.org/wiki/Database</phpdac>">#database</a> 
+						<a href="crm.php">#data-mining</a> 						
+						<a href="#" onClick="<phpdac>jsdialog.zdialogFrame use http://en.m.wikipedia.org/wiki/Dataflow</phpdac>">#data-flow</a> 
+						<a href="#" onClick="<phpdac>jsdialog.zdialogFrame use http://en.m.wikipedia.org/wiki/Business_intelligence</phpdac>">#business-intelligence
+						</h4>
 					</div>
 				</div>
 			</div>
@@ -504,13 +511,14 @@
 	<script src="js/cardio/jquery.onepagenav.js"></script>
 	<script src="js/cardio/main.js"></script>
 	
-	<script type="text/javascript" src="js/jquery.cookiebar.js"></script>	
+	<script type="text/javascript" src="js/jquery.cookiebar.js"></script>
+	<script type="text/javascript" src="js/zebra/zebra_dialog.js"></script>	
 	
 <script type="text/javascript">
 	$(document).ready(function(){
 		$.cookieBar({
 			message: 'Αυτός ο ιστότοπος χρησιμοποιεί cookies. Με τη χρήση αυτού του ιστότοπου αποδέχεστε τη χρήση τους',
-			acceptText: '.'
+			acceptText: '.',
 			element: 'body',
 			autoEnable: false,
 			acceptOnScroll: 100
