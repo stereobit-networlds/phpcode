@@ -59,7 +59,7 @@
                            </span>
                          </div>
                          <div class="widget-body"-->
-                             <div id="ckfinder"></div>
+                             <div id="ckfinder" style="height:600px;"></div>
                          <!--/div>
                      </div-->
                      <!-- END BLANK PAGE PORTLET-->

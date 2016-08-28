@@ -158,19 +158,19 @@
                             <div class="text-center">
                                 <div class="easy-pie-chart">
                                     <div class="percentage success" data-percent="<phpdac>rccontrolpanel.getStats use Diskspace+remainsizepercent</phpdac>"><span><phpdac>rccontrolpanel.getStats use Diskspace+remainsizepercent</phpdac></span>%</div>
-                                    <div class="title">Used Space</div>
+                                    <div class="title"><phpdac>i18nL.translate use usedspace</phpdac></div>
                                 </div>
                                 <div class="easy-pie-chart">
                                     <div class="percentage" data-percent="<phpdac>rccontrolpanel.getStats use Diskspace+remainhdpercent</phpdac>"><span><phpdac>rccontrolpanel.getStats use Diskspace+remainhdpercent</phpdac></span>%</div>
-                                    <div class="title">HD Usage</div>
+                                    <div class="title"><phpdac>i18nL.translate use hdusage</phpdac></div>
                                 </div>
                                 <div class="easy-pie-chart">
                                     <div class="percentage" data-percent="<phpdac>rccontrolpanel.getStats use Diskspace+remainmxpercent</phpdac>"><span><phpdac>rccontrolpanel.getStats use Diskspace+remainmxpercent</phpdac></span>%</div>
-                                    <div class="title">MX Usage</div>
+                                    <div class="title"><phpdac>i18nL.translate use mxusage</phpdac></div>
                                 </div>
                                 <div class="easy-pie-chart">
                                     <div class="percentage" data-percent="<phpdac>rccontrolpanel.getStats use Diskspace+remaindbpercent</phpdac>"><span><phpdac>rccontrolpanel.getStats use Diskspace+remaindbpercent</phpdac></span>%</div>
-                                    <div class="title">DB Usage</div>
+                                    <div class="title"><phpdac>i18nL.translate use dbusage</phpdac></div>
                                 </div>
                             </div>
                         </div>

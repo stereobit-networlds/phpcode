@@ -204,25 +204,25 @@
                                     <div class="percentage success" data-percent="<phpdac>rcbulkmail.getStats use percentSucceed</phpdac>">
 									<span><phpdac>rcbulkmail.getStats use percentSucceed</phpdac></span>%
 									</div>
-                                    <div class="title">Succeed</div>
+                                    <div class="title"><phpdac>i18nL.translate use mailsucceed</phpdac></div>
                                 </div>
                                 <div class="easy-pie-chart">
                                     <div class="percentage" data-percent="<phpdac>rcbulkmail.getStats use percentUnread</phpdac>">
 									<span><phpdac>rcbulkmail.getStats use percentUnread</phpdac></span>%
 									</div>
-                                    <div class="title">Not viewed</div>
+                                    <div class="title"><phpdac>i18nL.translate use mailnotviewed</phpdac></div>
                                 </div>
                                 <div class="easy-pie-chart">
                                     <div class="percentage" data-percent="<phpdac>rcbulkmail.getStats use percentFailed</phpdac>">
 									<span><phpdac>rcbulkmail.getStats use percentFailed</phpdac></span>%
 									</div>
-                                    <div class="title">Failed</div>
+                                    <div class="title"><phpdac>i18nL.translate use mailfailed</phpdac></div>
                                 </div>
                                 <div class="easy-pie-chart">
                                     <div class="percentage" data-percent="<phpdac>rcbulkmail.getStats use percentUnsend</phpdac>">
 									<span><phpdac>rcbulkmail.getStats use percentUnsend</phpdac></span>%
 									</div>
-                                    <div class="title">In process</div>
+                                    <div class="title"><phpdac>i18nL.translate use mailinprocess</phpdac></div>
                                 </div>
                             </div>
                     </div>
