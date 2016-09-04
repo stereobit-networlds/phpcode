@@ -18,7 +18,8 @@ include networlds.clientdpc;
 private frontpage.fronthtmlpage /cgi-bin;
 #ifdef SES_LOGIN
 public jqgrid.mygrid;
-public cp.rctreedescr;
+public cms.cmsrt;
+public cms.rctreedescr;
 private cp.rcpmenu /cgi-bin;
 #endif
 private cp.rccontrolpanel /cgi-bin;

@@ -5,17 +5,18 @@
 <!-- BEGIN HEAD -->
 <head>
    <meta charset="utf-8" />
-   <title>Landing pages</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="" name="description" />
-    <meta content="" name="author" />
-    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="assets/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" />
-    <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
-    <link href="css/style.css" rel="stylesheet" />
-    <link href="css/style-responsive.css" rel="stylesheet" />
-    <link href="css/style-default.css" rel="stylesheet" id="style_color" />	
-	
+   <title>e-Shop</title>
+   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+   <meta content="" name="description" />
+   <meta content="" name="author" />
+   <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+   <link href="assets/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" />
+   <link href="assets/bootstrap/css/bootstrap-fileupload.css" rel="stylesheet" />
+   <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+   <link href="css/style.css" rel="stylesheet" />
+   <link href="css/style-responsive.css" rel="stylesheet" />
+   <link href="css/style-default.css" rel="stylesheet" id="style_color" />
+
 	<link href="../javascripts/themes/redmond/jquery-ui.custom.css" rel="stylesheet" /> 
 	<link href="../javascripts/jqgrid/css/ui.jqgrid.css" rel="stylesheet" />  
 	
@@ -23,8 +24,9 @@
 	<script src="js/jquery-1.8.3.min.js"></script>
 	<script src="../javascripts/jqgrid/js/i18n/grid.locale-en.js"></script>			
 	<script src="../javascripts/jqgrid/js/jquery.jqGrid.min.js"></script>
-	<script src="../javascripts/themes/jquery-ui.custom.min.js"></script> 	
+	<script src="../javascripts/themes/jquery-ui.custom.min.js"></script>    
    	
+	<!--script src="http://www.stereobit.gr/ckeditor/ckeditor.js"></script-->
 </head>
 <!-- END HEAD -->
 <!-- BEGIN BODY -->
@@ -44,15 +46,14 @@
             <!-- BEGIN PAGE HEADER-->
 			<phpdac>frontpage.include_part use /parts/pageheader.php+++metro</phpdac>
             <!-- END PAGE HEADER-->
-			
             <!-- BEGIN PAGE CONTENT-->
-			<div class="row-fluid">
+             <div class="row-fluid">
                  <div class="span12">
 					 <?METRO/INDEX?>
                  </div>
-            </div>
+             </div>
             <!-- END PAGE CONTENT-->
-         </div>		
+         </div>
          <!-- END PAGE CONTAINER-->
       </div>
       <!-- END PAGE -->
@@ -65,8 +66,8 @@
 
    <!-- BEGIN JAVASCRIPTS -->
    <!-- Load javascripts at bottom, this will reduce page load time -->
-
-   <!--script src="js/jquery-1.8.2.min.js"></script-->
+   
+   <!--script src="js/jquery-1.8.3.min.js"></script-->
    <script src="js/jquery.nicescroll.js" type="text/javascript"></script>
    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
    <script src="js/jquery.scrollTo.min.js"></script>
@@ -80,19 +81,10 @@
    <!--common script for all pages-->
    <script src="js/common-scripts.js"></script>
 
-        
-  <!-- END JAVASCRIPTS -->
+   <!-- END JAVASCRIPTS -->  
    <script>
-	function ttree() {var str = arguments[0]; $('#cmsframe').load("cpcmslandp.php?t=cplandframe&mode=tree&id="+str);}   
-	function titems() {var str = arguments[0]; $('#cmsframe').load("cpcmslandp.php?t=cplandframe&mode=items&id="+str);}
-	function tcats() {var str = arguments[0]; $('#cmsframe').load("cpcmslandp.php?t=cplandframe&mode=cats&id="+str);}	
-	function trels() {var str = arguments[0]; $('#cmsframe').load("cpcmslandp.php?t=cplandframe&mode=rels&id="+str);}
-	function ttemp() {var str = arguments[0]; $('#cmsframe').load("cpcmslandp.php?t=cplandframe&mode=landpage&id="+str);}	
-	function tsort() {var str = arguments[0]; $('#cmsframe').load("cpcmslandp.php?t=cplandframe&mode=sort&id="+str);}
-   </script>  
-        
-   <!-- END JAVASCRIPTS --> 
-
+	function editform() {var str = arguments[0]; $('#shopform').load("cpshop.php?t=cpshopfshow&id="+str);}
+   </script>
 	<phpdac>frontpage.include_part use /parts/google-analytics.php+++metro</phpdac>
 	<!-- e-Enterprise, stereobit.networlds (phpdac5) -->   
 </body>

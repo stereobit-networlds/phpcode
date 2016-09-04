@@ -5,113 +5,109 @@
 <!-- BEGIN HEAD -->
 <head>
    <meta charset="utf-8" />
-   <title>e-Enterprise Crm</title>
+   <title>Item dashboard</title>
    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
    <meta content="" name="description" />
    <meta content="stereobit.networlds" name="author" />
    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
    <link href="assets/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" />
-   <!--link href="assets/bootstrap/css/bootstrap-fileupload.css" rel="stylesheet" /-->
+   <link href="assets/bootstrap/css/bootstrap-fileupload.css" rel="stylesheet" />
    <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
    <link href="css/style.css" rel="stylesheet" />
    <link href="css/style-responsive.css" rel="stylesheet" />
    <link href="css/style-default.css" rel="stylesheet" id="style_color" />
    
-    <link rel="stylesheet" type="text/css" href="assets/bootstrap-datepicker/css/datepicker.css" />
-	<link rel="stylesheet" type="text/css" href="assets/bootstrap-daterangepicker/daterangepicker.css" />
-	
-   <!--link href="assets/fullcalendar/fullcalendar/bootstrap-fullcalendar.css" rel="stylesheet" /-->
-   <link href="assets/jquery-easy-pie-chart/jquery.easy-pie-chart.css" rel="stylesheet" type="text/css" media="screen"/>
-    
+   <link rel="stylesheet" type="text/css" href="assets/bootstrap-datepicker/css/datepicker.css" />
+   <link rel="stylesheet" type="text/css" href="assets/bootstrap-daterangepicker/daterangepicker.css" />
 </head>
-<!-- END HEAD -->	
+<!-- END HEAD -->
 
 <!-- BEGIN BODY -->
 <body>
-         <!-- BEGIN PAGE CONTAINER-->
+   <!--div id="container" class="row-fluid">
+      <div id="main-content"-->
          <div class="container-fluid">
-            <!-- BEGIN PAGE CONTENT-->
-			<phpdac>crmdashboard.select_timeline use timeline</phpdac>
+				<phpdac>rcshop.select_timeline use cptimeline</phpdac>
             <div class="row-fluid">
                 <!--BEGIN METRO STATES-->
                 <div class="metro-nav">
                     <div class="metro-nav-block nav-block-orange">
-                        <a data-original-title="" href="cpcrm.php?t=cpcrmdetails&iframe=1&id=<phpdac>fronthtmlpage.echostr use id</phpdac>&module=inbox">
+                        <a data-original-title="" href="cpshop.php?t=cpshopformsubdetail&id=<phpdac>fronthtmlpage.echostr use id</phpdac>&module=istats">
                             <i class="icon-user"></i>
-                            <div class="info"><phpdac>crmdashboard.inbox</phpdac></div>
-                            <div class="status">Inbox</div>
-                        </a>
-                    </div>
-                    <div class="metro-nav-block nav-olive">
-                        <a data-original-title="" href="cpcrm.php?t=cpcrmdetails&iframe=1&id=<phpdac>fronthtmlpage.echostr use id</phpdac>&module=stats">
-                            <i class="icon-tags"></i>
-                            <div class="info"><phpdac>crmdashboard.pageview</phpdac></div>
-                            <div class="status">Page views</div>
-                        </a>
-                    </div>
-                    <div class="metro-nav-block nav-light-brown">
-                        <a data-original-title="" href="cpcrm.php?t=cpcrmdetails&iframe=1&id=<phpdac>fronthtmlpage.echostr use id</phpdac>&module=tasks">
-                            <i class="icon-remove-sign"></i>
-                            <div class="info"><phpdac>crmdashboard.mailsFailed</phpdac></div>
-                            <div class="status">Failed mails</div>
-                        </a>
-                    </div>					
-                    <div class="metro-nav-block nav-block-green double">
-                        <a data-original-title="" href="cpcrm.php?t=cpcrmdetails&iframe=1&id=<phpdac>fronthtmlpage.echostr use id</phpdac>&module=tasks">
-                            <i class="icon-eye-open"></i>
-                            <div class="info"><phpdac>crmdashboard.mailSent</phpdac></div>
-                            <div class="status">Mails sent</div>
+                            <div class="info"><phpdac>rcshop.visits</phpdac></div>
+                            <div class="status">Visits</div>
                         </a>
                     </div>
                     <div class="metro-nav-block nav-block-red">
-                        <a data-original-title="" href="cpcrm.php?t=cpcrmdetails&iframe=1&id=<phpdac>fronthtmlpage.echostr use id</phpdac>&module=tasks">
-                            <i class="icon-envelope"></i>
-                            <div class="info"><phpdac>crmdashboard.mailtoSend</phpdac></div>
-                            <div class="status">Mails to send</div>
+                        <a data-original-title="" href="cpshop.php?t=cpshopformsubdetail&id=<phpdac>fronthtmlpage.echostr use id</phpdac>&module=istats">
+                            <i class="icon-eye-open"></i>
+                            <div class="info"><phpdac>rcshop.uniquevisits</phpdac></div>
+                            <div class="status">Unique visits</div>
+                        </a>
+                    </div>					
+                    <div class="metro-nav-block nav-olive">
+                        <a data-original-title="" href="cpshop.php?t=cpshopformsubdetail&id=<phpdac>fronthtmlpage.echostr use id</phpdac>&module=ipurchases">
+                            <i class="icon-tags"></i>
+                            <div class="info"><phpdac>rcshop.cartin</phpdac></div>
+                            <div class="status">Cart in</div>
+                        </a>
+                    </div>
+                    <div class="metro-nav-block nav-light-brown">
+                        <a data-original-title="" href="cpshop.php?t=cpshopformsubdetail&id=<phpdac>fronthtmlpage.echostr use id</phpdac>&module=ipurchases">
+                            <i class="icon-remove-sign"></i>
+                            <div class="info"><phpdac>rcshop.cartout</phpdac></div>
+                            <div class="status">Cart out</div>
+                        </a>
+                    </div>
+                    <div class="metro-nav-block nav-block-green double">
+                        <a data-original-title="" href="#">
+                            <i class="icon-dashboard"></i>
+                            <div class="info"><phpdac>rcshop.itemqty</phpdac></div>
+                            <div class="status">Stock</div>
                         </a>
                     </div>
                 </div>
                 <div class="metro-nav">
                     <div class="metro-nav-block nav-light-green">
-                        <a data-original-title="" href="javascript:sndReqArg('cp.php?t=cpinfo&s=&statsid='+statsid.value,'cpinfo');">
-                            <i class="icon-bar-chart"></i>
-                            <div class="info"><phpdac>crmdashboard.itemsPurchasedQty</phpdac></div>
-                            <div class="status">Purchased Quantity</div>
+                        <a data-original-title="" href="#">
+                            <i class="icon-star-empty"></i>
+                            <div class="info"><phpdac>rcshop.inbox</phpdac></div>
+                            <div class="status">Favorites</div>
                         </a>
                     </div>				
                     <div class="metro-nav-block nav-light-blue double">
-                        <a data-original-title="" href="javascript:sndReqArg('cp.php?t=cpinfo&s=items&statsid='+statsid.value,'cpinfo');">
-                            <i class="icon-tasks"></i>
-                            <div class="info"><phpdac>crmdashboard.itemsPurchased</phpdac></div>
-                            <div class="status">Purchased Items</div>
+                        <a data-original-title="" href="cpshop.php?t=cpshopformsubdetail&id=<phpdac>fronthtmlpage.echostr use id</phpdac>&module=ipurchases">
+                            <i class="icon-comments-alt"></i>
+                            <div class="info"><phpdac>rcshop.inbox</phpdac></div>
+                            <div class="status">Inline</div>
                         </a>
                     </div>
                     <div class="metro-nav-block nav-block-yellow">
-                        <a data-original-title="" href="cpcrm.php?t=cpcrmdetails&iframe=1&id=<phpdac>fronthtmlpage.echostr use id</phpdac>&module=tasks">
-                            <i class="icon-comments-alt"></i>
-                            <div class="info"><phpdac>crmdashboard.mailClickPath</phpdac></div>
-                            <div class="status">Follow up</div>
+                        <a data-original-title="" href="cpshop.php?t=cpshopformsubdetail&id=<phpdac>fronthtmlpage.echostr use id</phpdac>&module=ipurchases">
+                            <i class="icon-bar-chart"></i>
+                            <div class="info"><phpdac>rcshop.transactions</phpdac></div>
+                            <div class="status">Orders</div>
                         </a>
                     </div>
                     <div class="metro-nav-block nav-light-purple">
-                        <a data-original-title="" href="cpcrm.php?t=cpcrmdetails&iframe=1&id=<phpdac>fronthtmlpage.echostr use id</phpdac>&module=transactions">
+                        <a data-original-title="" href="#">
                             <i class="icon-shopping-cart"></i>
-                            <div class="info"><phpdac>crmdashboard.transactions</phpdac></div>
-                            <div class="status">Orders</div>
+                            <div class="info"><phpdac>rcshop.itemsPurchasedQty</phpdac></div>
+                            <div class="status">Quantity</div>
                         </a>
                     </div>					
                     <div class="metro-nav-block nav-block-grey ">
-                        <a data-original-title="" href="cpcrm.php?t=cpcrmdetails&iframe=1&id=<phpdac>fronthtmlpage.echostr use id</phpdac>&module=transactions">
+                        <a data-original-title="" href="#">
                             <i class="icon-external-link"></i>
-                            <div class="info"><phpdac>crmdashboard.sales</phpdac> &euro;</div>
-                            <div class="status">Sales</div>
+                            <div class="info"><phpdac>rcshop.itemRevenue</phpdac> &euro;</div>
+                            <div class="status">Income</div>
                         </a>
                     </div>
                 </div>
                 <div class="space10"></div>
                 <!--END METRO STATES-->
             </div>
-
+			
             <div class="row-fluid">
 				<div class="span12">
 					<div class="widget yellow">
@@ -126,29 +122,21 @@
                         </div>
                     </div>
 				</div>	
-            </div>
-            <!-- END PAGE CONTENT-->         
+            </div>		       
          </div>
-         <!-- END PAGE CONTAINER-->	 
-
+      <!--/div>
+   </div-->
 
    <!-- BEGIN JAVASCRIPTS -->
-   <script language="JavaScript">
-   <phpdac>crmdashboard.javascript</phpdac>   
-   </script>
-   
    <!-- Load javascripts at bottom, this will reduce page load time -->
    <script src="js/jquery-1.8.3.min.js"></script>
    <script src="js/jquery.nicescroll.js" type="text/javascript"></script>
-   <script type="text/javascript" src="assets/jquery-slimscroll/jquery-ui-1.9.2.custom.min.js"></script>
-   <script type="text/javascript" src="assets/jquery-slimscroll/jquery.slimscroll.min.js"></script>
-   <!--script src="assets/fullcalendar/fullcalendar/fullcalendar.min.js"></script-->
    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
    <script src="assets/flot/jquery.flot.js"></script>
    <script src="assets/flot/jquery.flot.resize.js"></script>
    <script src="assets/flot/jquery.flot.pie.js"></script>
    <script src="assets/flot/jquery.flot.stack.js"></script>
-   <script src="assets/flot/jquery.flot.crosshair.js"></script>     
+   <script src="assets/flot/jquery.flot.crosshair.js"></script>
 
    <!-- ie8 fixes -->
    <!--[if lt IE 9]>
@@ -164,9 +152,6 @@
    <script type="text/javascript" src="assets/bootstrap-daterangepicker/date.js"></script>
    <script type="text/javascript" src="assets/bootstrap-daterangepicker/daterangepicker.js"></script>
    
-   <script src="assets/jquery-easy-pie-chart/jquery.easy-pie-chart.js" type="text/javascript"></script>
-   <script src="js/jquery.sparkline.js" type="text/javascript"></script>
-   <script src="assets/chart-master/Chart.js"></script>
    <script src="js/jquery.scrollTo.min.js"></script>
 
 
@@ -174,15 +159,18 @@
    <script src="js/common-scripts.js"></script>
 
    <!--script for this page only-->
+   <!--script src="js/flot-chart.js"></script>
+   <script src="js/custom-flot-chart.js"></script-->   
    <script language="javascript" type="text/javascript">
    
-	<phpdac>cpflotcharts.jsflotCrmCharts</phpdac>
-	
+    <phpdac>cpflotcharts.jsflotEshopCharts</phpdac>
+	   
     //chosen select
     $(".chzn-select").chosen(); $(".chzn-select-deselect").chosen({allow_single_deselect:true});
 	   
 	   
     //daterange picker
+
     $('#reservation').daterangepicker();
 
     $('#reportrange').daterangepicker(
@@ -222,16 +210,11 @@
     //Set the initial state of the picker label
     $('#reportrange span').html(Date.today().add({ days: -29 }).toString('MMMM d, yyyy') + ' - ' + Date.today().toString('MMMM d, yyyy'));
 
-   </script>  
-
-   <script src="js/easy-pie-chart.js"></script>
-   <script src="js/sparkline-chart.js"></script>
-   
-   <!--script src="js/home-page-calender.js"></script>
-   <script src="js/home-chartjs.js"></script-->
-	
+   </script>    
+  
    <!-- END JAVASCRIPTS --> 
    
+   <phpdac>frontpage.include_part use /parts/google-analytics.php+++metro</phpdac>
    <!-- e-Enterprise, stereobit.networlds (phpdac5) -->     
 </body>
 <!-- END BODY -->

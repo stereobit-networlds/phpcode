@@ -17,12 +17,14 @@ include networlds.clientdpc;
 /---------------------------------load all and create after dpc objects
 private frontpage.fronthtmlpage /cgi-bin;
 #ifdef SES_LOGIN
+public cms.cmsrt;
 public phpdac.rcfs;
 public shop.rckategories;
 public shop.shtags;
 private shop.rcitems /cgi-bin;
+/private cp.rccollections /cgi-bin;
+public cms.rccollections;
 private cp.rcpmenu /cgi-bin;
-private cp.rccollections /cgi-bin;
 #endif
 private cp.rccontrolpanel /cgi-bin;
 public i18n.i18nL;

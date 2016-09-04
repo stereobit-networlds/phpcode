@@ -50,6 +50,8 @@
 								<form id="sortCollection" name="sortCollection" action="cpcmslandp.php?t=cpsortsave" method="post">
 								<input type="hidden" name="FormName" value="cpsortsave" />
 								<input type="hidden" name="FormAction" value="cpsortsave" />
+								<input type="hidden" name="mode" value="<phpdac>frontpage.echostr use mode</phpdac>" />
+								<input type="hidden" name="id" value="<phpdac>frontpage.echostr use id</phpdac>" />
                                     <select id="col-sort" name="mylandlist[]" multiple="multiple" style="height:400px;width:100%;">
 									<phpdac>rccmslandp.viewList</phpdac>
                                     </select>
