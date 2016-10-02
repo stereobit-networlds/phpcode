@@ -8,6 +8,7 @@ load_extension adodb refby _ADODB_;
 super database;
 
 /---------------------------------load and create libs
+use i18n.i18n;
 use xwindow.window,browser;
 
 /---------------------------------load not create dpc (internal use)
@@ -28,8 +29,9 @@ security SHTRANSACTIONS_DPC 1 1:1:1:1:1:1:1:1:1:1;
 /---------------------------------load all and create after dpc objects
 private frontpage.fronthtmlpage /cgi-bin;
 /public twig.twigengine;
-private shop.shlogin /cgi-bin;
-public shop.rcvstats;
+public cms.cmsrt;
+public cms.cmsvstats;
+public cms.cmslogin;
 public elements.confbar;
 private shop.shlangs /cgi-bin;
 private shop.shkategories /cgi-bin; 
@@ -44,11 +46,16 @@ private shop.shcustomers /cgi-bin;
 private shop.shcart /cgi-bin;
 private shop.shtransactions /cgi-bin;
 private shop.shpaypal /cgi-bin;
+public i18n.i18nL;
+
 ',1);
 
 $lan=getlocal();
 
-$mc_page = 'paypal'; //GetGlobal('controller')->calldpc_method('frontpage.mcSelectPage use +klist');
+$mc_page = 'paypal'; //_m('frontpage.mcSelectPage use +klist');
+$user = GetGlobal('UserName') ? decode(GetGlobal('UserName')) : '';
+_m("cmsvstats.update_page_statistics use fp+$mc_page+".$user);
+
 $headerStyle = ($mc_page=='home') ? 1 : 2;
 echo $htmlpage->render(null,getlocal(),null,'media-center/index.php');
 ?>

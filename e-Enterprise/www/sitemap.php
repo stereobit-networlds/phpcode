@@ -8,6 +8,7 @@ load_extension adodb refby _ADODB_;
 super database;
 
 /---------------------------------load and create libs
+use i18n.i18n;
 use xwindow.window;
 
 /---------------------------------load not create dpc (internal use)
@@ -27,9 +28,10 @@ security SHTRANSACTIONS_DPC 1 1:1:1:1:1:1:1:1:1:1;
 
 /---------------------------------load all and create after dpc objects
 private frontpage.fronthtmlpage /cgi-bin;
-private shop.shlogin /cgi-bin;
-private shop.rcvstats /cgi-bin;
-/public elements.confbar;
+public cms.cmsrt;
+public cms.cmsvstats;
+public cms.cmslogin;
+public elements.confbar;
 private shop.shlangs /cgi-bin;
 private shop.shkategories /cgi-bin; 
 private shop.shkatalogmedia /cgi-bin;
@@ -40,10 +42,14 @@ private shop.shusers /cgi-bin;
 private shop.shcustomers /cgi-bin;
 private shop.shcart /cgi-bin;
 /private shop.shtransactions /cgi-bin;
-',1);
+public i18n.i18nL;
 
-//$mc_page = GetReq('t') ? GetReq('t') : (isset($_GET['mc_page']) ? $_GET['mc_page'] : 'sitemap');	  
-$mc_page = GetGlobal('controller')->calldpc_method('frontpage.mcSelectPage use +sitemap');	
+',1);
+  
+$mc_page = _m('frontpage.mcSelectPage use +sitemap');	
+$user = GetGlobal('UserName') ? decode(GetGlobal('UserName')) : '';
+_m("cmsvstats.update_page_statistics use fp+$mc_page+".$user);
+
 $headerStyle = ($mc_page=='home') ? 1 : 2;
 	
 echo $htmlpage->render(null,getlocal(),null,'media-center/index.php');	

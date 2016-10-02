@@ -8,6 +8,7 @@ load_extension adodb refby _ADODB_;
 super database;
 
 #---------------------------------load and create libs
+use i18n.i18n;
 /use xwindow.window;
 
 #---------------------------------load not create dpc (internal use)
@@ -25,13 +26,15 @@ security SHTRANSACTIONS_DPC 1 1:1:1:1:1:1:1:1;
 #---------------------------------load all and create after dpc ojects
 private frontpage.fronthtmlpage /cgi-bin;
 private stereobit.stlogin /cgi-bin;
-public shop.rcvstats;
+public cms.cmsrt;
+public cms.cmsvstats;
 public elements.confbar;
 private shop.shlangs /cgi-bin;
 private shop.shusers /cgi-bin;
 /private shop.shcustomers /cgi-bin;
 private stereobit.shform /cgi-bin;
 public jsdialog.jsdialogStream;
+public i18n.i18nL;
 
 ',0);
  
@@ -60,7 +63,9 @@ public jsdialog.jsdialogStream;
 						  echo $htmlpage->render(null,getlocal(),null,'metro/index.php');
                           break;   
 						  
-        default        : echo $htmlpage->render(null,getlocal(),null,'cardio-en.html');
+        default        :  $mc_page = 'call';
+		                  echo $htmlpage->render(null,getlocal(),null,'cardio-en.html');
 	}	
-	  
+	$user = GetGlobal('UserName') ? decode(GetGlobal('UserName')) : '';
+	_m("cmsvstats.update_page_statistics use fp+$mc_page+".$user);		  
 ?>

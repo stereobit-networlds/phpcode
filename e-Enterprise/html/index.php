@@ -23,10 +23,9 @@ security SHTRANSACTIONS_DPC 1 1:1:1:1:1:1:1:1:1:1;
 /---------------------------------load all and create after dpc objects
 private frontpage.fronthtmlpage /cgi-bin;
 public twig.twigengine;
-/private shop.shlogin /cgi-bin;
-private stereobit.stlogin /cgi-bin;
 public cms.cmsrt;
 public cms.cmsvstats;
+public cms.cmslogin;
 public elements.confbar;
 private shop.shlangs /cgi-bin;
 private shop.shkategories /cgi-bin; 
@@ -95,10 +94,12 @@ $t = $_GET['t'];
 							echo $htmlpage->render(null,getlocal(),null,'media-center/index.php');
 						}
 						else {/*land page */
-							$mc_page = 'index'; //dummy arg for stats
+							$mc_page = 'call'; //dummy arg for stats
 							echo $htmlpage->render(null,getlocal(),null,'cardio-gr.html'); 
 						}	
 	}
+	
+	//GetGlobal('controller')->calldpc_method("rcvstats.update_item_statistics use fp+".$mc_page);	
 	$user = GetGlobal('UserName') ? decode(GetGlobal('UserName')) : '';
-	_m("cmsvstats.update_page_statistics use fp+$mc_page+".$user);	
+	_m("cmsvstats.update_page_statistics use fp+$mc_page+".$user);
 ?>

@@ -7,6 +7,7 @@ super rcserver.rcssystem;
 load_extension adodb refby _ADODB_; 
 super database;
 
+use i18n.i18n;
 use xwindow.window;
 
 include networlds.clientdpc;
@@ -24,7 +25,8 @@ private frontpage.fronthtmlpage /cgi-bin;
 public twig.twigengine;
 /private shop.shlogin /cgi-bin;
 private stereobit.stlogin /cgi-bin;
-private shop.rcvstats /cgi-bin;
+public cms.cmsrt;
+public cms.cmsvstats;
 public elements.confbar;
 private shop.shlangs /cgi-bin;
 private shop.shkategories /cgi-bin; 
@@ -41,6 +43,8 @@ private shop.shtransactions /cgi-bin;
 private stereobit.shform /cgi-bin;
 /private stereobit.jsdialog /cgi-bin;
 public jsdialog.jsdialogStream;
+public i18n.i18nL;
+
 ',1);
 
 $lan=getlocal();
@@ -90,7 +94,11 @@ $t = $_GET['t'];
 							$mc_page = $t ? $t : 'home-2';
 							echo $htmlpage->render(null,getlocal(),null,'media-center/index.php');
 						}
-						else /*land page */
+						else {/*land page */
+						    $mc_page = 'index';
 							echo $htmlpage->render(null,getlocal(),null,'cardio-en.html'); 
-	}					
+						}	
+	}	
+	$user = GetGlobal('UserName') ? decode(GetGlobal('UserName')) : '';
+	_m("cmsvstats.update_page_statistics use fp+$mc_page+".$user);		
 ?>

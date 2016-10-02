@@ -13,15 +13,24 @@ use xwindow.window,browser;
 
 /---------------------------------load not create dpc (internal use)
 include networlds.clientdpc;
-mail.smtpmail;
+include mail.smtpmail;
+include gui.form;
+include gui.msgbox;
+include mchoice.mchoice;
 	
-/---------------------------------load not create extensions (internal use) 		
+security CART_DPC 1 1:1:1:1:1:1:1:1:1:1;
+security SHCART_DPC 1 1:1:1:1:1:1:1:1:1:1;
+security TRANSACTIONS_DPC 1 1:1:1:1:1:1:1:1:1:1;
+security SHTRANSACTIONS_DPC 1 1:1:1:1:1:1:1:1:1:1;
+/security ACCOUNTMNG_ 1 1:1:1:1:1:1:1:1;
+
 
 /---------------------------------load all and create after dpc objects
 private frontpage.fronthtmlpage /cgi-bin;
+/public twig.twigengine;
 public cms.cmsrt;
-public cms.cmsvstats;
 public cms.cmslogin;
+public cms.cmsvstats;
 public elements.confbar;
 private shop.shlangs /cgi-bin;
 private shop.shkategories /cgi-bin; 
@@ -30,22 +39,22 @@ private shop.shnsearch /cgi-bin;
 private shop.shwishcmp /cgi-bin;
 private shop.shtags /cgi-bin;
 private shop.shmenu /cgi-bin;
+private shop.shsubscribe /cgi-bin;
 private shop.shusers /cgi-bin;
 private shop.shcustomers /cgi-bin;
 private shop.shcart /cgi-bin;
-private shop.shsubscribe /cgi-bin;
+private shop.shtransactions /cgi-bin;
+private shop.sheurobank /cgi-bin;
 public i18n.i18nL;
 
 ',1);
 
-$nosubform = ((GetParam('t')=='subscribe') || ((GetReq('t')=='unsubscribe'))) ? 1 : 0;
+$lan=getlocal();
 
-//$mc_page = 'subscribe';
-$mc_page = _m('frontpage.mcSelectPage use +subscribe');
+$mc_page = 'cart-order';
 $user = GetGlobal('UserName') ? decode(GetGlobal('UserName')) : '';
 _m("cmsvstats.update_page_statistics use fp+$mc_page+".$user);
 
-$headerStyle = ($mc_page=='home') ? 1 : 2;
-	  
 echo $htmlpage->render(null,getlocal(),null,'media-center/index.php');
+
 ?>

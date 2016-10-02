@@ -24,8 +24,9 @@ security SHTRANSACTIONS_DPC 1 1:1:1:1:1:1:1:1:1:1;
 
 /---------------------------------load all and create after dpc objects
 private frontpage.fronthtmlpage /cgi-bin;
-private shop.shlogin /cgi-bin;
-public shop.rcvstats;
+public cms.cmsrt;
+public cms.cmsvstats;
+public cms.cmslogin;
 public elements.confbar;
 private shop.shlangs /cgi-bin;
 private shop.shkategories /cgi-bin; 
@@ -44,9 +45,11 @@ public i18n.i18nL;
 ',1);
 
 $lan=getlocal();
-	  
-//$mc_page = GetReq('t') ? GetReq('t') : (isset($_GET['mc_page']) ? $_GET['mc_page'] : 'klist');	  
-$mc_page = GetGlobal('controller')->calldpc_method('frontpage.mcSelectPage use +klist');	
+	    
+$mc_page = _m('frontpage.mcSelectPage use +klist');	
+$user = GetGlobal('UserName') ? decode(GetGlobal('UserName')) : '';
+_m("cmsvstats.update_page_statistics use fp+$mc_page+".$user);
+
 $headerStyle = ($mc_page=='home') ? 1 : 2;
 echo $htmlpage->render(null,getlocal(),null,'media-center/index.php');	  
 ?>
