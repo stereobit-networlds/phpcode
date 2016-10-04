@@ -23,10 +23,9 @@ security SHTRANSACTIONS_DPC 1 1:1:1:1:1:1:1:1:1:1;
 /---------------------------------load all and create after dpc objects
 private frontpage.fronthtmlpage /cgi-bin;
 public twig.twigengine;
-/private shop.shlogin /cgi-bin;
-private stereobit.stlogin /cgi-bin;
 public cms.cmsrt;
 public cms.cmsvstats;
+public cms.cmslogin;
 public elements.confbar;
 private shop.shlangs /cgi-bin;
 private shop.shkategories /cgi-bin; 
