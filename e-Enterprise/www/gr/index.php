@@ -6,12 +6,8 @@ super rcserver.rcssystem;
 
 load_extension adodb refby _ADODB_; 
 super database;
-
 use i18n.i18n;
-use xwindow.window;
-
 include networlds.clientdpc;
-	
 load_extension recaptcha refby _RECAPTCHA_;	
 
 security CART_DPC 1 1:1:1:1:1:1:1:1:1:1;
@@ -45,7 +41,6 @@ public jsdialog.jsdialogStream;
 public i18n.i18nL;
 
 ',1);
-
 $lan=getlocal();
 $t = $_GET['t'];
 
@@ -95,7 +90,7 @@ $t = $_GET['t'];
 						}
 						else {/*land page */
 							$mc_page = 'index'; //dummy arg for stats
-							echo $htmlpage->render(null,getlocal(),null,'cardio-gr.html'); 
+							echo $htmlpage->render(null,getlocal(),null,'home-gr.html'); 
 						}	
 	}
 	$user = GetGlobal('UserName') ? decode(GetGlobal('UserName')) : '';

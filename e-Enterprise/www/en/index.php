@@ -8,10 +8,7 @@ load_extension adodb refby _ADODB_;
 super database;
 
 use i18n.i18n;
-use xwindow.window;
-
 include networlds.clientdpc;
-	
 load_extension recaptcha refby _RECAPTCHA_;	
 
 security CART_DPC 1 1:1:1:1:1:1:1:1:1:1;
@@ -95,7 +92,7 @@ $t = $_GET['t'];
 						}
 						else {/*land page */
 						    $mc_page = 'index';
-							echo $htmlpage->render(null,getlocal(),null,'cardio-en.html'); 
+							echo $htmlpage->render(null,getlocal(),null,'home-en.html'); 
 						}	
 	}	
 	$user = GetGlobal('UserName') ? decode(GetGlobal('UserName')) : '';
