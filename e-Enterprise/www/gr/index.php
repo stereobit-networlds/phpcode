@@ -1,4 +1,5 @@
 <?php
+$start=microtime(true);
 require_once('cp/dpc2/system/pcntl.lib.php'); 
 $htmlpage = &new pcntl('
 super javascript;
@@ -67,20 +68,17 @@ $t = $_GET['t'];
 						  
         default        : 
 
-						if ($t=='index') { /*e-shop start page*/
-							//echo GetParam('FormAction');
+						if ($t=='index') { 
 							/*when in cart procedure disable common subscribe form in every page -footer-*/	
 							$nosubform = ((GetParam('t')=='viewcart') || ((GetReq('t')=='calc')) ||
 										  (GetReq('t')=='cart-order') || ((GetReq('t')=='cart-submit')) || 
 										  (GetReq('t')=='cart-cancel') || ((GetReq('t')=='cart-checkout')) ||
 										  (GetReq('t')=='addtocart') || ((GetReq('t')=='removefromcart')) ||
-										  (GetParam('FormAction')==GetGlobal('controller')->calldpc_var('shcart.checkout')) ||
-										  (GetParam('FormAction')==GetGlobal('controller')->calldpc_var('shcart.order')) ||
-										  (GetParam('FormAction')==GetGlobal('controller')->calldpc_var('shcart.submit'))) ? 1 : 0;
-							//echo 'nosubform:',$nosubform; 
-							//$mc_page = GetReq('t') ? GetReq('t') : (isset($_GET['mc_page']) ? $_GET['mc_page'] : 'klist');	  
-							$mc_page = 'home-2';//GetGlobal('controller')->calldpc_method('frontpage.mcSelectPage use +klist');	
-							//echo $mc_page,'>2';
+										  (GetParam('FormAction')==_v('shcart.checkout')) ||
+										  (GetParam('FormAction')==_v('shcart.order')) ||
+										  (GetParam('FormAction')==_v('shcart.submit'))) ? 1 : 0;
+	  
+							$mc_page = 'home-2';//_m('frontpage.mcSelectPage use +klist');	
 							$headerStyle = ($mc_page=='home') ? 1 : 2;
 							echo $htmlpage->render(null,getlocal(),null,'media-center/index.php');	  
 						}
@@ -94,5 +92,8 @@ $t = $_GET['t'];
 						}	
 	}
 	$user = GetGlobal('UserName') ? decode(GetGlobal('UserName')) : '';
-	_m("cmsvstats.update_page_statistics use fp+$mc_page+".$user);	
+	_m("cmsvstats.update_page_statistics use fp+$mc_page+".$user);
+
+$time = (microtime(true) - $start)/60;//5.4$_SERVER["REQUEST_TIME_FLOAT"]);// /60;
+echo "<!-- 	$time -->";	
 ?>

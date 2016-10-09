@@ -1,4 +1,5 @@
 <?php
+$start=microtime(true);
 require_once('cp/dpc2/system/pcntl.lib.php'); 
 $htmlpage = &new pcntl('
 super javascript;
@@ -62,8 +63,9 @@ if ($mc_page == 'home') {
 else
 	$_GET['style'] = 'alt';
 
-//$headerStyle = ($_GET['style'] == 'alt') ? 2 : 1;
 $headerStyle = ($mc_page=='home') ? 1 : 2;
-//echo $htmlpage->render2(null,getlocal(),null,$mypage,'media-center');
 echo $htmlpage->render(null,getlocal(),null,'media-center/index.php');
+
+$time = (microtime(true) - $start)/60;//5.4$_SERVER["REQUEST_TIME_FLOAT"]);// /60;
+echo "<!-- 	$time -->";
 ?>

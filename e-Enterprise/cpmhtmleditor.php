@@ -30,6 +30,8 @@ $cptemplate = GetGlobal('controller')->calldpc_method('rcserver.paramload use FR
 
 	switch ($_GET['t']) {
 	    case 'cpmhtmleditor' : $p = $_GET['ajax'] ? 'cp-ajax-ckeditor' : ($_GET['iframe'] ? 'cp-iframe-ckeditor' : 'cp-ckeditor'); break;
+		case 'cpmvphotoadddb':
+		case 'cpmvphotodeldb':
 		case 'cpmvphoto'     : $p = $_GET['ajax'] ? 'cp-ajax-mvphoto' : 'cp-mvphoto'; break;
 		case 'cpmvdel'       : $p = $_GET['ajax'] ? 'cp-ajax-mvphoto' : 'cp-mvphoto'; break;
 		default              : $p = ($_POST['insfast'] ? 'cp-uploadimage' : 'cp-htmleditor');
