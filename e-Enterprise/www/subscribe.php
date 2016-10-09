@@ -15,7 +15,15 @@ use xwindow.window,browser;
 include networlds.clientdpc;
 mail.smtpmail;
 	
-/---------------------------------load not create extensions (internal use) 		
+/---------------------------------load not create extensions (internal use) 
+
+security CART_DPC 1 1:1:1:1:1:1:1:1:1:1;
+security SHCART_DPC 1 1:1:1:1:1:1:1:1:1:1;
+security TRANSACTIONS_DPC 1 1:1:1:1:1:1:1:1:1:1;
+security SHTRANSACTIONS_DPC 1 1:1:1:1:1:1:1:1:1:1;
+security CUSTOMERSMNG_ 1 1:1:1:1:1:1:1:1:1:1;
+security UPDATECUSTOMER_ 1 1:1:1:1:1:1:1:1:1:1;
+/security ACCOUNTMNG_ 1 1:1:1:1:1:1:1:1:1:1;		
 
 /---------------------------------load all and create after dpc objects
 private frontpage.fronthtmlpage /cgi-bin;
