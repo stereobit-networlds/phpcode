@@ -58,7 +58,7 @@
 											<div class="status">Recognize</div>
 										</a>
 									</div>
-									<div class="metro-nav-block nav-block-blue ">
+									<div class="metro-nav-block nav-block-yellow ">
 										<a href="cpcrmtrace.php?t=cpcrmtrace&resolved=1&<phpdac>rccrmtrace.getDateRange</phpdac>" data-original-title="">
 											<div class="text-center">
 											<i class="icon-cogs"></i>
@@ -66,6 +66,22 @@
 											<div class="status">Resolve</div>
 										</a>
 									</div>
+									<div class="metro-nav-block nav-block-green ">
+										<a href="cpcrmtrace.php?t=cpcrmtrace&recognized=<phpdac>rccrmtrace.readVar use recognize</phpdac>&login=1&<phpdac>rccrmtrace.getDateRange</phpdac>" data-original-title="">
+											<div class="text-center">
+											<i class="icon-book"></i>
+											</div>
+											<div class="status">Login</div>
+										</a>
+									</div>
+									<div class="metro-nav-block nav-block-blue ">
+										<a href="cpcrmtrace.php?t=cpcrmtrace&recognized=<phpdac>rccrmtrace.readVar use recognize</phpdac>&fb=1&<phpdac>rccrmtrace.getDateRange</phpdac>" data-original-title="">
+											<div class="text-center">
+											<i class="icon-facebook"></i>
+											</div>
+											<div class="status">Facebook</div>
+										</a>
+									</div>									
 									<div class="metro-nav-block  nav-block-red">
 										<a href="cpcrmtrace.php?t=cpcrmtrace&<phpdac>rccrmtrace.getDateRange</phpdac>" data-original-title="">
 											<div class="text-center">

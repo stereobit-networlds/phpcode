@@ -21,6 +21,8 @@ include networlds.clientdpc;
 private frontpage.fronthtmlpage /cgi-bin;
 #ifdef SES_LOGIN
 public jqgrid.mygrid;
+public cms.cmsrt;
+public crm.crmreturns;
 public crm.crmpurchases;
 public crm.crmitemstats;
 public crm.crmwishlist;

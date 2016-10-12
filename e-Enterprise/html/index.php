@@ -8,7 +8,7 @@ load_extension adodb refby _ADODB_;
 super database;
 
 use i18n.i18n;
-use xwindow.window;
+use xwindow.window,browser;
 
 include networlds.clientdpc;
 	

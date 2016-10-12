@@ -27,14 +27,18 @@ public i18n.i18nL;
 ',1);
 	
 $cptemplate = GetGlobal('controller')->calldpc_method('rcserver.paramload use FRONTHTMLPAGE+cptemplate');
+$postok = defined('CPMHTMLEDITOR_DPC') ? GetGlobal('controller')->calldpc_var('cpmhtmleditor.postok') : false;
 
 	switch ($_GET['t']) {
-	    case 'cpmhtmleditor' : $p = $_GET['ajax'] ? 'cp-ajax-ckeditor' : ($_GET['iframe'] ? 'cp-iframe-ckeditor' : 'cp-ckeditor'); break;
+		case 'cpmnewitem'    : $p = $_POST['insert'] && $postok ? 'cp-uploadimage' : 'cp-htmleditor-newitem'; break;
+		case 'cpmedititem'   : $p = 'cp-htmleditor-edititem'; break;
 		case 'cpmvphotoadddb':
 		case 'cpmvphotodeldb':
 		case 'cpmvphoto'     : $p = $_GET['ajax'] ? 'cp-ajax-mvphoto' : 'cp-mvphoto'; break;
 		case 'cpmvdel'       : $p = $_GET['ajax'] ? 'cp-ajax-mvphoto' : 'cp-mvphoto'; break;
-		default              : $p = ($_POST['insfast'] ? 'cp-uploadimage' : 'cp-htmleditor');
+		
+		case 'cpmhtmleditor' :		
+		default              : $p = GetParam('ajax') ? 'cp-ajax-ckeditor' : (GetParam('iframe') ? 'cp-iframe-ckeditor' : 'cp-ckeditor'); 
 	}
     $mc_page = (GetSessionParam('LOGIN')) ? $p : 'cp-login';
 	echo $page->render(null,getlocal(), null, $cptemplate.'/index.php');
