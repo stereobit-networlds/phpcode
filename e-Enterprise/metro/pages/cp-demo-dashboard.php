@@ -567,7 +567,7 @@
    <!-- stream dialog -->
    <script type="text/javascript" src="js/zebra/zebra_dialog.js"></script>
    <script language="JavaScript">		
-		//setInterval(function() {<phpdac>rcpmenu.streamDialog</phpdac>}, 30000);	//disabled for demo
+		/*setInterval(function() {<phpdac>rcpmenu.streamDialog</phpdac>}, 30000);	//disabled for demo*/
    </script>
    <!-- end stream dialog -->    
   

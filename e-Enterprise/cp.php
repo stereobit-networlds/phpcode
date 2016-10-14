@@ -7,7 +7,6 @@ load_extension adodb refby _ADODB_;
 super database;
 /---------------------------------load and create libs
 use i18n.i18n;
-use xwindow.window,browser;
 use gui.swfcharts;
 use jqgrid.jqgrid;
 use cp.cpflotcharts;

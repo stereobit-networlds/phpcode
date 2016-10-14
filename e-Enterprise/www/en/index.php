@@ -8,7 +8,6 @@ super rcserver.rcssystem;
 load_extension adodb refby _ADODB_; 
 super database;
 
-use xwindow.window,browser;
 use i18n.i18n;
 include networlds.clientdpc;
 load_extension recaptcha refby _RECAPTCHA_;	

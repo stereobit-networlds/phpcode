@@ -8,16 +8,11 @@ load_extension adodb refby _ADODB_;
 super database;
 
 use i18n.i18n;
-use xwindow.window,xwindow.window2;
-use gui.swfcharts;
 
 include networlds.clientdpc;
 
 private frontpage.fronthtmlpage /cgi-bin;
 #ifdef SES_LOGIN
-private shop.rckategories /cgi-bin;
-private shop.rcitems /cgi-bin;
-private shop.rctags /cgi-bin;
 private cp.cpmhtmleditor /cgi-bin;
 private cp.rcpmenu /cgi-bin;
 #endif
@@ -30,6 +25,7 @@ $cptemplate = GetGlobal('controller')->calldpc_method('rcserver.paramload use FR
 $postok = defined('CPMHTMLEDITOR_DPC') ? GetGlobal('controller')->calldpc_var('cpmhtmleditor.postok') : false;
 
 	switch ($_GET['t']) {
+		case 'cpmdelitem'    : $p = 'cp-htmleditor-newitem'; break;
 		case 'cpmnewitem'    : $p = $_POST['insert'] && $postok ? 'cp-uploadimage' : 'cp-htmleditor-newitem'; break;
 		case 'cpmedititem'   : $p = 'cp-htmleditor-edititem'; break;
 		case 'cpmvphotoadddb':

@@ -132,8 +132,7 @@
                                 </div>
                             </div-->														
                             <div class="form-actions">
-                                <button type="submit" class="<phpdac>fronthtmlpage.nvl use cpmhtmleditor.postok+btn btn-success+btn btn-danger+</phpdac>">Submit</button>
-                                <!--button type="button" class="btn">Cancel</button-->
+                                <button type="submit" class="<phpdac>fronthtmlpage.nvl use cpmhtmleditor.postok+btn btn-success+btn btn-danger+</phpdac>">Update</button>
 								<input type="hidden" name="FormName" value="edititem" />
 								<input type="hidden" name="FormAction" value="cpmedititem" />
 								<input type="hidden" name="id" value="<phpdac>fronthtmlpage.echostr use id</phpdac>">
@@ -205,7 +204,11 @@
 										<phpdac>cpmhtmleditor.viewMessages</phpdac>
 									</select>
 								</div>
-							</div>							
+							</div>	
+
+							<div class="form-actions">
+								<a href="cpmhtmleditor.php?t=cpmdelitem&id=<phpdac>fronthtmlpage.echostr use id</phpdac>" class="btn btn-danger">Delete</a>							
+							</div>	
                             </form>
                             <!-- END FORM-->							 
                          </div>

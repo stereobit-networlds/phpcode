@@ -9,7 +9,6 @@ super database;
 
 #---------------------------------load and create libs
 use i18n.i18n;
-/use xwindow.window;
 
 #---------------------------------load not create dpc (internal use)
 include networlds.clientdpc;
