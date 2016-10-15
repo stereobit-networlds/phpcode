@@ -9,7 +9,7 @@ super database;
 
 /---------------------------------load and create libs
 use i18n.i18n;
-use jqgrid.jqgrid;
+use cp.cpflotcharts;
 
 /---------------------------------load not create dpc (internal use)
 include networlds.clientdpc;
@@ -17,9 +17,9 @@ include networlds.clientdpc;
 /---------------------------------load all and create after dpc objects
 private frontpage.fronthtmlpage /cgi-bin;
 #ifdef SES_LOGIN
-public jqgrid.mygrid;
 public cms.cmsrt;
-public bmail.rcsubscribers /cgi-bin;
+public crm.crmforms;
+public bmail.rculiststats;
 private cp.rcpmenu /cgi-bin;
 #endif
 private cp.rccontrolpanel /cgi-bin;
@@ -28,11 +28,11 @@ public i18n.i18nL;
 ',1);
 
 $cptemplate = GetGlobal('controller')->calldpc_method('rcserver.paramload use FRONTHTMLPAGE+cptemplate');
-
-	switch ($_GET['t']) {
-		case 'cpsubsframe'     : $p = 'cp-iframe-jqgrid'; break;
-		case 'cpsubscribers'   : 
-		default                : $p = 'cp-jqgrid'; 
+   
+    $t = $_POST['FormAction'] ? $_POST['FormAction'] : $_GET['t'];
+	switch ($t) { 	
+		case 'cpuliststats'		   : 
+		default           		   : $p = 'cp-bmail-uliststats'; 
 	}	
     $mc_page = (GetSessionParam('LOGIN')) ? $p : 'cp-login';
 	echo $page->render(null,getlocal(), null, $cptemplate.'/index.php');

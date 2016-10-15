@@ -19,7 +19,7 @@ private frontpage.fronthtmlpage /cgi-bin;
 #ifdef SES_LOGIN
 public jqgrid.mygrid;
 public cms.cmsrt;
-public bmail.rcsubscribers /cgi-bin;
+public bmail.rculists;
 private cp.rcpmenu /cgi-bin;
 #endif
 private cp.rccontrolpanel /cgi-bin;
@@ -28,11 +28,22 @@ public i18n.i18nL;
 ',1);
 
 $cptemplate = GetGlobal('controller')->calldpc_method('rcserver.paramload use FRONTHTMLPAGE+cptemplate');
-
-	switch ($_GET['t']) {
-		case 'cpsubsframe'     : $p = 'cp-iframe-jqgrid'; break;
-		case 'cpsubscribers'   : 
-		default                : $p = 'cp-jqgrid'; 
+   
+    $t = $_POST['FormAction'] ? $_POST['FormAction'] : $_GET['t'];
+	switch ($t) {
+		
+		case 'cpsubscribe'    	   :
+		case 'cpunsubscribe'   	   :
+		case 'cpadvsubscribe' 	   : $p = 'cp-bmail-ulists-subscribe'; break;		
+		
+		case 'cpactivatequeuerec'  :
+		case 'cpdeactivatequeuerec': $p = 'cp-bmail-ulists-queue';  break;
+		case 'cpulframe' 		   : $p = 'cp-iframe-jqgrid'; break;
+		case 'cpviewtrace'         : $p = 'cp-iframe-jqgrid'; break;		
+		case 'cpviewclicks'        :		
+		case 'cpviewsubsqueue'     : 	
+		case 'cpulists'   		   : 
+		default           		   : $p = 'cp-bmail-ulists-queue'; 
 	}	
     $mc_page = (GetSessionParam('LOGIN')) ? $p : 'cp-login';
 	echo $page->render(null,getlocal(), null, $cptemplate.'/index.php');

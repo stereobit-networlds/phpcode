@@ -13,7 +13,7 @@ super database;
 /---------------------------------load and create libs
 use i18n.i18n;
 use gui.swfcharts;
-use jqgrid.jqgrid;
+/use jqgrid.jqgrid;
 use cp.cpflotcharts;
 
 /---------------------------------load not create dpc (internal use)
@@ -24,13 +24,14 @@ include mail.smtpmail;
 private frontpage.fronthtmlpage /cgi-bin;
 #ifdef SES_LOGIN
 public twig.twigengine;
-public jqgrid.mygrid;
-public gui.ajax;
+/public jqgrid.mygrid;
+public cms.cmsrt;
+/public gui.ajax;
 public phpdac.rcfs;
-public crm.crmforms;
+/public crm.crmforms;
 private cp.rcpmenu /cgi-bin;
 private cp.rccollections /cgi-bin;
-private cp.rcbulkmail /cgi-bin;
+public bmail.rcbulkmail;
 #endif
 private cp.rccontrolpanel /cgi-bin;
 public i18n.i18nL;
@@ -42,9 +43,9 @@ $cptemplate = GetGlobal('controller')->calldpc_method('rcserver.paramload use FR
 	$t = $_POST['FormAction'] ? $_POST['FormAction'] : $_GET['t'];
 	switch ($t) {
 		case 'cptemplatesav'   :
-		case 'cptemplatenew'   : $p = $_GET['ajax'] ? 'cp-ajax-mvphoto' : 'cp-bulkmail-new'; break;
-		case 'cppreviewcamp'   : $p = $_GET['ajax'] ? 'cp-ajax-mvphoto' : 'cp-bulkmail-preview'; break;
-		case 'cpmailstats'     : $p = $_GET['ajax'] ? 'cp-ajax-mvphoto' : 'cp-mailstats'; break;
+		case 'cptemplatenew'   : $p = 'cp-bmail-new'; break;
+		case 'cppreviewcamp'   : $p = 'cp-bmail-preview'; break;
+		/*case 'cpmailstats'     : $p = $_GET['ajax'] ? 'cp-ajax-mvphoto' : 'cp-mailstats'; break;
 		case 'cpsubscribe'     :
 		case 'cpunsubscribe'   :
 		case 'cpadvsubscribe'  : $p = $_GET['ajax'] ? 'cp-ajax-mvphoto' : 'cp-advsubscribe'; break;
@@ -53,7 +54,7 @@ $cptemplate = GetGlobal('controller')->calldpc_method('rcserver.paramload use FR
 		case 'cpviewclicks'    :
 		case 'cpviewtrace'     :		
 		case 'cpviewsubsqueue' : $p = $_GET['ajax'] ? 'cp-ajax-mvphoto' : 'cp-mailqueue'; break;
-		case 'cpsavemailadv'   : $p = $_GET['ajax'] ? 'cp-ajax-mvphoto' : 'cp-bulkmail-post'; break;
+		case 'cpsavemailadv'   : $p = $_GET['ajax'] ? 'cp-ajax-mvphoto' : 'cp-bulkmail-post'; break;*/
 		case 'cpdeletecamp'    :
 		case 'cpviewcamp'      : $p = $_GET['ajax'] ? 'cp-ajax-mvphoto' : 'cp-bulkmail-post'; break;		
 		

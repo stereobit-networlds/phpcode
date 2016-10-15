@@ -70,13 +70,36 @@
                                     <span class="help-inline">Insert a title </span>
                                 </div>
                             </div>
+                            <div class="control-group">
+                                <label class="control-label">Description</label>
+                                <div id="edit_descr" class="controls">
+                                    <textarea class="span12" name="descr" rows="3"><phpdac>fronthtmlpage.nvldac2 use descr+fronthtmlpage.echostr:descr+cpmhtmleditor.getField:itmdescr+</phpdac></textarea>
+                                </div>
+                            </div>							
 							<div class="control-group">
 								<label class="control-label">Text</label>
 								<div class="controls">
 									<!--textarea class="span12 ckeditor" name="htmltext" rows="6"><-hpdac>cpmhtmleditor.itemText</phpda-></textarea-->
 									<phpdac>cpmhtmleditor.itemEditor</phpdac>
 								</div>
-							</div>							
+							</div>	
+                            <div class="control-group">
+                                <label class="control-label">Active</label>
+                                <div class="controls">
+                                            <div id="normal-toggle-button">
+                                                <input name="active" type="checkbox" <phpdac>cpmhtmleditor.getField use active+1</phpdac> />
+                                            </div>
+                                            <div id="info-toggle-button">
+                                                <input name="itmactive" type="checkbox" class="toggle" <phpdac>cpmhtmleditor.getField use itmactive+1</phpdac> />
+                                            </div>
+                                            <!--div id="success-toggle-button">
+                                                <input type="checkbox" class="toggle" checked="checked" />
+                                            </div>
+                                            <div id="warning-toggle-button">
+                                                <input type="checkbox" class="toggle" checked="checked" />
+											</div-->
+                                </div>
+                            </div>								
 							<div class="control-group">
                                     <label class="control-label">Tags</label>
                                     <div id="edit_to" class="controls">
@@ -139,11 +162,8 @@
 								<input type="hidden" name="id" value="<phpdac>fronthtmlpage.echostr use id</phpdac>">
 								<input type="hidden" name="insert" value="1">
 								
-								<!--br/>
-								<a href="cpbulkmail.php?t=cppreviewcamp&cid=<phpdac>fronthtmlpage.echostr use cpmhtmleditor.cid</phpdac>" class="btn btn-success">View content</a>
-								<a href="cpbulkmail.php?t=cpmailstats&cid=<phpdac>fronthtmlpage.echostr use cpmhtmleditor.cid</phpdac>" class="btn btn-success">View statistics</a>
-								<a href="cpbulkmail.php?t=cpdeletecamp&cid=<phpdac>fronthtmlpage.echostr use cpmhtmleditor.cid</phpdac>" class="btn btn-danger">Delete</a>
-								<a href="cpmhtmleditor.php?t=cpmnewitem" class="btn btn-success">New item</a-->								
+								<phpdac>fronthtmlpage.nvl use cpmhtmleditor.postok+<a href="cpmhtmleditor.php?t=cpmhtmlcopy&copyid=" class="btn btn-info">Copy</a>++</phpdac>
+								<phpdac>fronthtmlpage.nvl use cpmhtmleditor.postok+<a href="cpmhtmleditor.php?t=cpmitemedit&copyid=" class="btn btn-success">Details</a++</phpdac>								
                             </div>							
 							<div>
 							<div id="exclude" class="control-group">
