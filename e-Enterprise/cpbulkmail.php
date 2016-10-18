@@ -12,8 +12,8 @@ super database;
 
 /---------------------------------load and create libs
 use i18n.i18n;
-use gui.swfcharts;
-/use jqgrid.jqgrid;
+/use gui.swfcharts;
+use jqgrid.jqgrid;
 use cp.cpflotcharts;
 
 /---------------------------------load not create dpc (internal use)
@@ -24,45 +24,35 @@ include mail.smtpmail;
 private frontpage.fronthtmlpage /cgi-bin;
 #ifdef SES_LOGIN
 public twig.twigengine;
-/public jqgrid.mygrid;
-public cms.cmsrt;
-/public gui.ajax;
+public jqgrid.mygrid;
 public phpdac.rcfs;
+public cms.cmsrt;
+public cms.rccollections;
+public bmail.rcbulkmail;
 /public crm.crmforms;
 private cp.rcpmenu /cgi-bin;
-private cp.rccollections /cgi-bin;
-public bmail.rcbulkmail;
 #endif
 private cp.rccontrolpanel /cgi-bin;
 public i18n.i18nL;
 
 ',1);
 
-$cptemplate = GetGlobal('controller')->calldpc_method('rcserver.paramload use FRONTHTMLPAGE+cptemplate');
+$cptemplate = _m('rcserver.paramload use FRONTHTMLPAGE+cptemplate');
 
 	$t = $_POST['FormAction'] ? $_POST['FormAction'] : $_GET['t'];
 	switch ($t) {
 		case 'cptemplatesav'   :
 		case 'cptemplatenew'   : $p = 'cp-bmail-new'; break;
 		case 'cppreviewcamp'   : $p = 'cp-bmail-preview'; break;
-		/*case 'cpmailstats'     : $p = $_GET['ajax'] ? 'cp-ajax-mvphoto' : 'cp-mailstats'; break;
-		case 'cpsubscribe'     :
-		case 'cpunsubscribe'   :
-		case 'cpadvsubscribe'  : $p = $_GET['ajax'] ? 'cp-ajax-mvphoto' : 'cp-advsubscribe'; break;
-		case 'cpactivatequeuerec'  :
-		case 'cpdeactivatequeuerec':		
-		case 'cpviewclicks'    :
-		case 'cpviewtrace'     :		
-		case 'cpviewsubsqueue' : $p = $_GET['ajax'] ? 'cp-ajax-mvphoto' : 'cp-mailqueue'; break;
-		case 'cpsavemailadv'   : $p = $_GET['ajax'] ? 'cp-ajax-mvphoto' : 'cp-bulkmail-post'; break;*/
+		case 'cpsavemailadv'   : $p = 'cp-bmail-post'; break;
 		case 'cpdeletecamp'    :
-		case 'cpviewcamp'      : $p = $_GET['ajax'] ? 'cp-ajax-mvphoto' : 'cp-bulkmail-post'; break;		
+		case 'cpviewcamp'      : //$submitmails = _v('rcbulkmail.sendOk');
+		                         //$p = $submitmails==true ? 'cp-bmail-post' : 'cp-bmail-campaigns'; 
+								 $p = 'cp-bmail-campaigns'; break;	
 		
-		case 'cpsubsend'       : //$submitmails = GetGlobal('controller')->calldpc_var('rcbulkmail.sendOk');
-		                         //$p = $submitmails==true ? 'cp-mailstats' : 'cp-bulkmail-post'; break;		
-								 $p = 'cp-bulkmail-post'; break; //anyway
-								 
-		default                : $p = 'cp-bulkmail-edit';
+		case 'cpsubsend'       : $p = 'cp-bmail-campaigns'; break; //'cp-bmail-post'; break;
+
+		default                : $p = 'cp-bmail-edit';
 	}	
     $mc_page = (GetSessionParam('LOGIN')) ? $p : 'cp-login';
 	echo $page->render(null,getlocal(), null, $cptemplate.'/index.php');

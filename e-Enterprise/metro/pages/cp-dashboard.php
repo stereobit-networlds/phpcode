@@ -32,7 +32,7 @@
 	<phpdac>shlogin.check_inactive_users</phpdac>
 	<phpdac>shlogin.check_newactive_users</phpdac>
 	<phpdac>shlogin.check_form_submitions</phpdac>	
-	<phpdac>rcbulkmail.getUnsubsToday</phpdac>
+	<phpdac>rculiststats.getUnsubsToday</phpdac>
 	<phpdac>cp.getSalesToday</phpdac>
 <!-- END FUNCS -->	
 
@@ -352,8 +352,8 @@
                         </div>
                         <div class="widget-body">
                             <ul class="unstyled">
-								<phpdac>rcbulkmail.percentofCamps use task-in-progress-important</phpdac>
-								<phpdac>rcbulkmail.lastCamps use task-in-progress-success+5</phpdac>
+								<phpdac>rculiststats.percentofCamps use bmail-task-in-progress-important</phpdac>
+								<phpdac>rculiststats.lastCamps use bmail-task-in-progress-success+5</phpdac>
                             </ul>
                         </div>
                     </div>
@@ -548,7 +548,6 @@
   
    <!-- END JAVASCRIPTS --> 
    
-   <phpdac>frontpage.include_part use /parts/google-analytics.php+++metro</phpdac>
    <!-- e-Enterprise, stereobit.networlds (phpdac5) -->     
 </body>
 <!-- END BODY -->

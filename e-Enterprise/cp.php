@@ -25,7 +25,7 @@ public cms.cmsrt;
 #ifdef SES_LOGIN
 public crm.crmforms;
 public crm.rccrmtrace;
-private cp.rcbulkmail /cgi-bin;
+public bmail.rculiststats;
 #endif
 
 private cp.rcpmenu /cgi-bin;

@@ -59,7 +59,7 @@
                         </div>
                         <div class="widget-body">
                             <!-- BEGIN FORM-->
-                            <form name="subins" method="post" action="cpbulkmail.php" class="form-horizontal">
+                            <form name="subins" method="post" action="cpulists.php" class="form-horizontal">
 
                             <div class="control-group">
                                 <label class="control-label">Email Address</label>
@@ -96,6 +96,21 @@
                                 </div>
                             </div>
 							
+                            <div class="control-group">
+                                <label class="control-label">Text scan</label>
+                                <div class="controls">
+                                            <div id="normal-toggle-button">
+                                                <input name="scan" type="checkbox" />
+                                            </div>
+                                            <!--div id="success-toggle-button">
+                                                <input type="checkbox" class="toggle" checked="checked" />
+                                            </div>
+                                            <div id="warning-toggle-button">
+                                                <input type="checkbox" class="toggle" checked="checked" />
+											</div-->
+                                </div>
+                            </div>								
+							
 							<div class="control-group">
                                 <label class="control-label">Email separator</label>
                                 <div id="edit_separator" class="controls">
@@ -104,7 +119,7 @@
 										<input name="separator" class=" " type="text" placeholder="Email Separator" />
                                     </div>
                                 </div>
-                            </div>
+                            </div>						
 							
                             <div class="form-actions">
                                 <button type="submit" class="btn btn-success">Submit</button>
