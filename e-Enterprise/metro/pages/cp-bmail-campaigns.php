@@ -21,7 +21,12 @@
 
     <link rel="stylesheet" type="text/css" href="assets/chosen-bootstrap/chosen/chosen.css" />
     <link rel="stylesheet" type="text/css" href="assets/jquery-tags-input/jquery.tagsinput.css" />
+	<link rel="stylesheet" type="text/css" href="assets/clockface/css/clockface.css" />
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap-datepicker/css/datepicker.css" />
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap-timepicker/compiled/timepicker.css" />
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap-colorpicker/css/colorpicker.css" />
     <link rel="stylesheet" href="assets/bootstrap-toggle-buttons/static/stylesheets/bootstrap-toggle-buttons.css" />
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap-daterangepicker/daterangepicker.css" />	
 
     <!--link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" /-->
 	
@@ -59,7 +64,7 @@
                     <!-- BEGIN SAMPLE FORMPORTLET-->
                     <div class="widget red">
                         <div class="widget-title">
-                            <h4><i class="icon-reorder"></i> Campaigns</h4>
+                            <h4><i class="icon-reorder"></i> <phpdac>i18nL.translate use campaign+RCBULKMAIL</phpdac></h4>
                             <!--span class="tools">
                             <a href="javascript:;" class="icon-chevron-down"></a>
                             <a href="javascript:;" class="icon-remove"></a>
@@ -81,7 +86,7 @@
                                 </div>
                             </div>	
 						    <div class="control-group">
-                                <label class="control-label">From</label>
+                                <label class="control-label"><phpdac>i18nL.translate use from</phpdac></label>
                                 <div id="edit_from" class="controls">
                                     <div class="input-icon left">
                                         <i class="icon-envelope"></i>
@@ -119,7 +124,23 @@
                                 <div id="editsend" class="controls">
 									<input name="receivers" type="text" value="<phpdac>fronthtmlpage.nvldac2 use bcc+fronthtmlpage.echostr:bcc++</phpdac>" class="span12 " readonly="readonly" />									
                                 </div>																
-                            </div>								
+                            </div>	
+                            <div class="control-group">
+                                <label class="control-label">Scheduled start</label>
+                                <div class="controls">
+                                    <div class="input-append date" id="dpYears" data-date=""
+                                        data-date-format="dd-mm-yyyy" data-date-viewmode="years">
+                                        <input class="m-ctrl-medium" size="16" type="text" name="schdate" readonly>
+                                        <span class="add-on"><i class="icon-calendar"></i></span>
+                                    </div>
+									<!--input id="dp1" type="text" value="" size="16" class="m-ctrl-medium"-->		
+    
+                                    <div class="input-append bootstrap-timepicker">
+                                        <input id="timepicker4" type="text" name="schtime" class="input-small">
+                                        <span class="add-on"> <i class="icon-time"></i></span>
+                                    </div>
+                                </div>
+                            </div>							
 							<div id="messages" class="control-group">
 								<label class="control-label">Messages</label>
 								<div class="controls">
@@ -194,7 +215,13 @@
    <script type="text/javascript" src="assets/bootstrap-toggle-buttons/static/js/jquery.toggle.buttons.js"></script>
    <script type="text/javascript" src="assets/chosen-bootstrap/chosen/chosen.jquery.min.js"></script>
    <script type="text/javascript" src="assets/uniform/jquery.uniform.min.js"></script>
+   <script type="text/javascript" src="assets/clockface/js/clockface.js"></script>
    <script type="text/javascript" src="assets/jquery-tags-input/jquery.tagsinput.min.js"></script>
+   <script type="text/javascript" src="assets/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+   <script type="text/javascript" src="assets/bootstrap-daterangepicker/date.js"></script>
+   <script type="text/javascript" src="assets/bootstrap-daterangepicker/daterangepicker.js"></script>
+   <script type="text/javascript" src="assets/bootstrap-colorpicker/js/bootstrap-colorpicker.js"></script>
+   <script type="text/javascript" src="assets/bootstrap-timepicker/js/bootstrap-timepicker.js"></script>  
    <script type="text/javascript" src="assets/bootstrap-inputmask/bootstrap-inputmask.min.js"></script>
    <script src="assets/fancybox/source/jquery.fancybox.pack.js"></script>
    <script src="js/jquery.scrollTo.min.js"></script>
@@ -213,36 +240,7 @@
        $(function() {
            $.configureBoxes();
        });
-   </script>
-   
-	<script src="js/aSimpleTour.js" type="text/javascript"></script>
-    <script type="text/javascript">
-      $(document).ready(function(){
-        $('#startTour').click(function(){
-          options = {
-            data : [
-              { element : '#select_campaign', 'tooltip' : 'Επιλεγμένη εργασία', 'position' : 'T', 'text' : '<h3>Όνομα εργασίας</h3><p>Επιλεγμένη εργασία, όπως αυτή αποθηκεύτηκε κατα την διαδικασία κατασκευής και δυνατότητα επιλογής άλλης εργασίας όταν θέλουμε να επαναλάβουμε μια απο αυτές.</p>'  },
-			  { element : '#campaign_buttons', 'tooltip' : 'Σχετικές ενέργειες', 'position' : 'L', 'text' : '<h3>Ενέργειες εργασίας</h3><p>Ενέργειες εργασίας που αφορούν την προεπισκόπηση του περιεχομένου, τα στατιστικά μιας ήδη εκτελεσμένης εργασίας, την διαγραφή της ή την έναρξη μιας νέας εργασίας.</p>'  },
-              { element : '#edit_subject', 'tooltip' : 'Αλλαγή θέματος-τίλτου αποστολής', 'position' : 'L', 'text' : '<h3>Θέμα - τίτλος</h3><p>Δυνατότητα αλλαγής του τίτλου αποστολής σε παραλήπτες. Είναι ο τίτλος που θα εμφανιστεί ως θέμα στο mailbox του παραλήπτη.</p>' },
-              { element : '#edit_from', 'tooltip' : 'Αποστολέας', 'position' : 'L', 'text' : '<h3>Αποστολέας</h3><p>Αφορά τα στοιχεία αποστολής του αποστολέα και συνήθως είναι προτεινόμενα απο το σύστημα βάση των ρυθμίσεων που έχουν προηγηθεί.</p>' },
-              { element : '#edit_to', 'tooltip' : 'Παραλήπτες', 'position' : 'L' , 'text' : '<h3>Παραλήπτες</h3><p>Αναφορά στην λίστα / λίστες που έχουν επιλεγεί για την συμμετοχή τους στην αποστολή.</p>' },
-			  { element : '#exclude', 'tooltip' : 'Αφαίρεση μεμονομένων παραληπτών', 'position' : 'T', 'text' : '<h3>Παραλήπτες</h3><p>Αφαιρέστε μεμονομένους παραλήπτες σε αυτή την περιοχή.</p>'  },
-              { element : '.d-sel-filter', 'tooltip' : 'Φίλτρο αναζήτησης παραληπτών', 'position' : 'T', 'text' : '<h3>Αναζήτηση στην λίστα</h3><p>Αναζητήστε είδη που έιναι προς επιλογή ή έχετε ήδη επιλέξει, πληκτρολογώντας το είδος όπως αναφέρεται.</p>' },			  
-              { element : '#box2View', 'tooltip' : 'Λίστα επιλεγμένων παραληπτών', 'position' : 'B', 'text' : '<h3>Λίστα παραληπτών</h3><p>Περιοχή συνολικά επιλεγμένων ειδών. Αφαιρέστε παραλήπτες που επιλέξατε προτύτερα, επιλέγοντας έναν ή περισσότερους απο αυτούς.</p>' },
-              { element : '#to1', 'tooltip' : 'Αφαίρεση μερικών απο την λίστα', 'position' : 'B' , 'text' : '<h3>Αφαίρεση μερικών</h3><p>Χρησιμοποιήστε το πλήκτρο για την αφαίρεση ενός ή μερικών απο την λίστα, αν το ctrl είναι πατημένο.</p>' },
-              { element : '#allTo1', 'tooltip' : 'Αφαίρεση όλων', 'position' : 'B', 'text' : '<h3>Αφαίρεση όλων</h3><p>Χρησιμοποιήστε το πλήκτρο για να αφαιρεθούν όλα τα επιλεγμένα είδη.</p>' },			  
-			  { element : '#box1View', 'tooltip' : 'Λίστα εξαιρεθέντων παραληπτών', 'position' : 'T', 'text' : '<h3>Εξαιρέσεις παραληπτών</h3><p>Λίστα παραληπτών που έχουν εξαιρεθεί.</p>'  },
-			  { element : '#to2', 'tooltip' : 'Επαναφόρτωση στην λίστα επιλογής', 'position' : 'T', 'text' : '<h3>Πρόσθεση μερικών</h3><p>Χρησιμοποιήστε το πλήκτρο για την μεταφορά ενός ή μερικών, αν το ctrl είναι πατημένο καθώς επιλέγετε είδη.</p>' },			  
-              { element : '#allTo2', 'tooltip' : 'Επαναφόρτωση όλων στην λίστα επιλογής', 'position' : 'T', 'text' : '<h3>Πρόσθεση όλων</h3><p>Χρησιμοποιήστε το πλήκτρο για να μεταφερθούν όλοι οι εξαιρεθέντες παραλήπτες ξανά στην λίστα διανομής.</p>' },			  
-              { element : '.form-actions', 'tooltip' : 'Πλήκτρο εκτέλεσης εργασίας', 'position' : 'TL', 'text' : '<h3>Αποστολή</h3><p>Εφόσον ρυθμίσετε τις λεπτομέριες της αποστολής, πατήστε το πλήκτρο submit για την έναρξη της εργασίας. Το σύστημα αναλαμβάνει να αποστείλει το περιεχόμενο της εργασίας σε κάθε έναν απο τους παραλήπτες μέσα σε υπολογιζόμενο χρονικό όριζοντα, ώστε να η παραλαβή να γίνει βάση των προδιαγραφών αποστολής, παραλάβης και ασφάλειας παράδοσης.</p>' }
-            ] ,
-            controlsPosition : 'BR'
-          };
-
-          $.aSimpleTour(options);  
-        });
-      });
-    </script>     
+   </script>   
 
    <!-- e-Enterprise, stereobit.networlds (phpdac5) -->     
 

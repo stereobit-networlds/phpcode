@@ -161,8 +161,8 @@
 								<input type="hidden" name="id" value="<phpdac>fronthtmlpage.echostr use id</phpdac>">
 								<input type="hidden" name="update" value="1">
 								
-								<a href="cpmhtmleditor.php?t=cpmhtmlcopy&copyid=<phpdac>fronthtmlpage.echostr use id</phpdac>" class="btn btn-success">Copy</a>
-								<a href="cpmhtmleditor.php?t=cpmitemedit&copyid=<phpdac>fronthtmlpage.echostr use id</phpdac>" class="btn btn-info">Details</a>							
+								<!--a href="cpmhtmleditor.php?t=cpmhtmlcopy&copyid=<phpdac>fronthtmlpage.echostr use id</phpdac>" class="btn btn-success">Copy</a>
+								<a href="cpmhtmleditor.php?t=cpmitemedit&copyid=<phpdac>fronthtmlpage.echostr use id</phpdac>" class="btn btn-info">Details</a-->							
                             </div>							
 							<div>
 							<div id="exclude" class="control-group">

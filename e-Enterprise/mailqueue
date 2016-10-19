@@ -16,11 +16,11 @@ use mail.bounce_driver;
 
 public frontpage.fronthtmlpage;
 public mail.smtpmail;
-public mail.maildbqueue;
+public bmail.maildbqueue;
 
 ',0);	 
 
-$ret = GetGlobal('controller')->calldpc_method('maildbqueue.sendmail_daemon use 20+100');//20,400
+$ret = GetGlobal('controller')->calldpc_method('maildbqueue.sendmail_daemon use 20+200');//20,400
 echo $ret;
 //echo $page->render();
 ?>

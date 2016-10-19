@@ -15,7 +15,7 @@ use mail.bounce_driver;
 public frontpage.fronthtmlpage;
 public mail.smtpmail;
 public mail.maildbqueue;
-public cp.rcbmailbounce;
+public bmail.rcbmailbounce;
 
 ',0);	 
 

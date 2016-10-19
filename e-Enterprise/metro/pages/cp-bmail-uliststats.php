@@ -104,22 +104,22 @@
                     </div>
                     <div class="metro-nav-block nav-light-green">
                         <a data-original-title="" href="#">
-                            <i class="icon-tags"></i>
-                            <div class="info"><phpdac>rculiststats.getStats use campaigns</phpdac></div>
-                            <div class="status">Campaigns</div>
+                            <i class="icon-user"></i>
+                            <div class="info"><phpdac>rculiststats.getStats use activeSubscribers</phpdac></div>
+                            <div class="status">Subscribes</div>
                         </a>
                     </div>					
                     <div class="metro-nav-block nav-light-purple">
                         <a data-original-title="" href="#">
-                            <i class="icon-shopping-cart"></i>
-                            <div class="info"><phpdac>rculiststats.getStats use usedCampaigns</phpdac></div>
-                            <div class="status">Campaigns In Use</div>
+                            <i class="icon-user"></i>
+                            <div class="info"><phpdac>rculiststats.getStats use inactiveSubscribers</phpdac></div>
+                            <div class="status">Unsubscribes</div>
                         </a>
                     </div>						
                     <div class="metro-nav-block nav-block-red">
                         <a data-original-title="" href="#">
                             <i class="icon-bar-chart"></i>
-                            <div class="info">+<phpdac>rculiststats.getStats use runningCampaigns</phpdac></div>
+                            <div class="info"><phpdac>rculiststats.getStats use runningCampaigns</phpdac></div>
                             <div class="status">Running Campaigns</div>
                         </a>
                     </div>															
@@ -240,7 +240,7 @@
                             <a href="javascript:;" class="icon-remove"></a>
                          </span>
 						 <div class="update-btn">
-                            <a href="javascript:sndReqArg('cp.php?t=cpchartshow&group=&ai=1&report=mailqueue&statsid='+statsid.value,'mailqueue');" class="btn"><i class="icon-repeat"></i> Update</a>
+                            <a href="javascript:sndReqArg('cp.php?t=cpchartshow&group=&ai=1&report=mailqueue&statsid='+statsid.value,'mailqueue');" class="btn"><i class="icon-repeat"></i> Sum</a>
                          </div>
                         </div>
                         <div class="widget-body">
