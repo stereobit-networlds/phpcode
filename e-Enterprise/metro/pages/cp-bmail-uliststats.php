@@ -62,35 +62,35 @@
                         <a data-original-title="" href="#">
                             <i class="icon-user"></i>
                             <div class="info"><phpdac>rculiststats.getStats use totalSubscribers</phpdac></div>
-                            <div class="status">Subscribers</div>
+                            <div class="status"><phpdac>frontpage.slocale use _breg</phpdac></div>
                         </a>
                     </div>
                     <div class="metro-nav-block nav-olive double">
                         <a data-original-title="" href="#">
                             <i class="icon-envelope"></i>
                             <div class="info"><phpdac>rculiststats.getStats use inactiveQueue</phpdac></div>
-                            <div class="status">Sent</div>
+                            <div class="status"><phpdac>frontpage.slocale use _mailsent</phpdac></div>
                         </a>
                     </div>
                     <div class="metro-nav-block nav-block-green">
                         <a data-original-title="" href="#">
                             <i class="icon-comments-alt"></i>
                             <div class="info"><phpdac>rculiststats.getStats use succeed</phpdac></div>
-                            <div class="status">Succeed</div>
+                            <div class="status"></i><phpdac>i18nL.translate use success+RCCONTROLPANEL</phpdac></div>
                         </a>
                     </div>
                     <div class="metro-nav-block nav-block-yellow">
                         <a data-original-title="" href="#">
                             <i class="icon-eye-open"></i>
                             <div class="info"><phpdac>rculiststats.getStats use repliedQueue</phpdac></div>
-                            <div class="status">Viewed</div>
+                            <div class="status"></i><phpdac>i18nL.translate use view+RCCRM</phpdac></div>
                         </a>
                     </div>					
                     <div class="metro-nav-block nav-light-brown">
                         <a data-original-title="" href="#">
                             <i class="icon-remove-sign"></i>
                             <div class="info"><phpdac>rculiststats.getStats use failed</phpdac></div>
-                            <div class="status">Failed</div>
+                            <div class="status"></i><phpdac>i18nL.translate use failed+RCCRM</phpdac></div>
                         </a>
                     </div>								
                 </div>
@@ -99,35 +99,35 @@
                         <a data-original-title="" href="#">
                             <i class="icon-tasks"></i>
                             <div class="info"><phpdac>rculiststats.getStats use totalQueue</phpdac></div>
-                            <div class="status"><phpdac>frontpage.slocale use Queue</phpdac></div>
+                            <div class="status"><phpdac>frontpage.slocale use _bqueue</phpdac></div>
                         </a>
                     </div>
                     <div class="metro-nav-block nav-light-green">
                         <a data-original-title="" href="#">
                             <i class="icon-user"></i>
                             <div class="info"><phpdac>rculiststats.getStats use activeSubscribers</phpdac></div>
-                            <div class="status">Subscribes</div>
+                            <div class="status"><phpdac>frontpage.slocale use _breg</phpdac></div>
                         </a>
                     </div>					
                     <div class="metro-nav-block nav-light-purple">
                         <a data-original-title="" href="#">
                             <i class="icon-user"></i>
                             <div class="info"><phpdac>rculiststats.getStats use inactiveSubscribers</phpdac></div>
-                            <div class="status">Unsubscribes</div>
+                            <div class="status"><phpdac>frontpage.slocale use _bunreg</phpdac></div>
                         </a>
                     </div>						
                     <div class="metro-nav-block nav-block-red">
                         <a data-original-title="" href="#">
                             <i class="icon-bar-chart"></i>
                             <div class="info"><phpdac>rculiststats.getStats use runningCampaigns</phpdac></div>
-                            <div class="status">Running Campaigns</div>
+                            <div class="status"><phpdac>frontpage.slocale use _runningcamps</phpdac></div>
                         </a>
                     </div>															
                     <div class="metro-nav-block nav-block-grey double">
                         <a data-original-title="" href="#">
                             <i class="icon-external-link"></i>
                             <div class="info"><phpdac>rculiststats.getStats use activeQueue</phpdac></div>
-                            <div class="status">Active Mails In Queue</div>
+                            <div class="status"><phpdac>frontpage.slocale use _activequeue</phpdac></div>
                         </a>
                     </div>
                 </div>
@@ -139,7 +139,7 @@
                     <!-- BEGIN PROGRESS PORTLET-->
                     <div class="widget purple">
                         <div class="widget-title">
-                            <h4><i class="icon-tasks"></i> Tasks Progress</h4>
+                            <h4><i class="icon-tasks"></i> <phpdac>i18nL.translate use bmailcamp+RCPMENU</phpdac></h4>
                             <span class="tools">
                                 <a href="javascript:;" class="icon-chevron-down"></a>
                                 <a href="javascript:;" class="icon-remove"></a>
@@ -151,7 +151,7 @@
 								<phpdac>rculiststats.lastCamps use bmail-task-in-progress-success+5</phpdac>
                             </ul>
 							<div class="control-group">
-                                <label class="control-label">Search</label>
+                                <label class="control-label"><phpdac>i18nL.translate use SEARCH+SHSEARCH</phpdac></label>
                                 <div class="controls">
 									<phpdac>rculiststats.campaignSelect use cpmailstats</phpdac>
                                 </div>
@@ -167,7 +167,7 @@
 					<!-- BEGIN ALERTS PORTLET-->
                      <div class="widget blue">
                          <div class="widget-title">
-                             <h4><i class="icon-download"></i> Views </h4>
+                             <h4><i class="icon-download"></i> <phpdac>i18nL.translate use MAILCLICKS+RCBULKMAIL</phpdac> </h4>
                            <span class="tools">
                                <a href="javascript:;" class="icon-chevron-down"></a>
                                <a href="javascript:;" class="icon-remove"></a>
@@ -178,14 +178,14 @@
 								 <phpdac>rculiststats.getViews use notification-success+9</phpdac>
                              </ul>
                              <div class="space10"></div>
-                             <a href="cpulists.php" class="pull-right"><phpdac>frontpage.slocale use _viewallnotifications</phpdac></a>
+                             <a href="cpulists.php" class="pull-right"><phpdac>i18nL.translate use viewallmessages+RCCONTROLPANEL</phpdac></a>
                              <div class="clearfix no-top-space no-bottom-space"></div>
                          </div>
                      </div>
 					 
                      <div class="widget purple">
                          <div class="widget-title">
-                             <h4><i class="icon-download"></i> Clicks </h4>
+                             <h4><i class="icon-download"></i> <phpdac>frontpage.slocale use _bclick</phpdac> </h4>
                            <span class="tools">
                                <a href="javascript:;" class="icon-chevron-down"></a>
                                <a href="javascript:;" class="icon-remove"></a>
@@ -196,7 +196,7 @@
                                  <phpdac>rculiststats.getClicks use notification-success+9</phpdac>
                              </ul>
                              <div class="space10"></div>
-                             <a href="cpulists.php?t=cpviewclicks&cid=<phpdac>fronthtmlpage.echostr use rculiststats.cid</phpdac>" class="pull-right"><phpdac>frontpage.slocale use _viewallnotifications</phpdac></a>
+                             <a href="cpulists.php?t=cpviewclicks&cid=<phpdac>fronthtmlpage.echostr use rculiststats.cid</phpdac>" class="pull-right"><phpdac>i18nL.translate use viewallmessages+RCCONTROLPANEL</phpdac></a>
                              <div class="clearfix no-top-space no-bottom-space"></div>
                          </div>
                      </div>						 
@@ -234,13 +234,13 @@
 					
 					<div class="widget yellow">
                         <div class="widget-title">
-                            <h4><i class="icon-tasks"></i> Mail Queue </h4>
+                            <h4><i class="icon-tasks"></i> <phpdac>i18nL.translate use mailqueue+CPFLOTCHARTS</phpdac> </h4>
                          <span class="tools">
                             <a href="javascript:;" class="icon-chevron-down"></a>
                             <a href="javascript:;" class="icon-remove"></a>
                          </span>
 						 <div class="update-btn">
-                            <a href="javascript:sndReqArg('cp.php?t=cpchartshow&group=&ai=1&report=mailqueue&statsid='+statsid.value,'mailqueue');" class="btn"><i class="icon-repeat"></i> Sum</a>
+                            <a href="javascript:sndReqArg('cp.php?t=cpchartshow&group=&ai=1&report=mailqueue&statsid='+statsid.value,'mailqueue');" class="btn"><i class="icon-repeat"></i> <phpdac>i18nL.translate use CPFLOTCHARTS_DPC+CPFLOTCHARTS</phpdac></a>
                          </div>
                         </div>
                         <div class="widget-body">
@@ -257,7 +257,7 @@
 					<!-- BEGIN NOTIFICATIONS PORTLET-->
 					<div class="widget red">
                          <div class="widget-title">
-                             <h4><i class="icon-download"></i> Mail bounce </h4>
+                             <h4><i class="icon-download"></i> <phpdac>frontpage.slocale use _bounce</phpdac> </h4>
                            <span class="tools">
                                <a href="javascript:;" class="icon-chevron-down"></a>
                                <a href="javascript:;" class="icon-remove"></a>
@@ -268,14 +268,14 @@
 								 <phpdac>rculiststats.getMailBounce use notification-warning+9</phpdac>							 
                              </ul>
                              <div class="space10"></div>
-                             <a href="cpulists.php?t=cpcleanbounce" class="pull-right"><phpdac>frontpage.slocale use _viewallnotifications</phpdac></a>
+                             <a href="cpulists.php?t=cpcleanbounce" class="pull-right"><phpdac>i18nL.translate use viewallmessages+RCCONTROLPANEL</phpdac></a>
                              <div class="clearfix no-top-space no-bottom-space"></div>
                          </div>
                      </div>	
 
                      <div class="widget red">
                          <div class="widget-title">
-                             <h4><i class="icon-download"></i> Unsubscribe </h4>
+                             <h4><i class="icon-download"></i> <phpdac>i18nL.translate use unsubscribe+RCBULKMAIL</phpdac> </h4>
                            <span class="tools">
                                <a href="javascript:;" class="icon-chevron-down"></a>
                                <a href="javascript:;" class="icon-remove"></a>
@@ -286,14 +286,14 @@
 								 <phpdac>rculiststats.getUnsubs use notification-warning+9</phpdac>							 
                              </ul>
                              <div class="space10"></div>
-                             <a href="cpsubscribers.php" class="pull-right"><phpdac>frontpage.slocale use _viewallnotifications</phpdac></a>
+                             <a href="cpsubscribers.php" class="pull-right"><phpdac>i18nL.translate use viewallmessages+RCCONTROLPANEL</phpdac></a>
                              <div class="clearfix no-top-space no-bottom-space"></div>
                          </div>
                      </div>		
 
                     <div class="widget orange">
                         <div class="widget-title">
-                            <h4><i class="icon-bell-alt"></i> Alerts</h4>
+                            <h4><i class="icon-bell-alt"></i> <phpdac>i18nL.translate use messages+RCCONTROLPANEL</phpdac></h4>
                             <span class="tools">
                             <a class="icon-chevron-down" href="javascript:;"></a>
                             <a class="icon-remove" href="javascript:;"></a>

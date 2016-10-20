@@ -29,9 +29,10 @@
 <!-- END HEAD -->
    
 <!-- START FUNCS (CP MSGS once here) -->
-	<phpdac>shlogin.check_inactive_users</phpdac>
-	<phpdac>shlogin.check_newactive_users</phpdac>
-	<phpdac>shlogin.check_form_submitions</phpdac>	
+	<phpdac>cp.getInactiveUsers</phpdac>
+	<phpdac>cp.getActiveUsers</phpdac>
+	<phpdac>cp.getFormSubmits</phpdac>
+	<phpdac>rculiststats.percentofCamps</phpdac>
 	<phpdac>rculiststats.getUnsubsToday</phpdac>
 	<phpdac>cp.getSalesToday</phpdac>
 <!-- END FUNCS -->	
@@ -62,35 +63,35 @@
                         <a data-original-title="" href="javascript:sndReqArg('cp.php?t=cpinfo&s=users&statsid='+statsid.value,'cpinfo');">
                             <i class="icon-user"></i>
                             <div class="info"><phpdac>rccontrolpanel.getStats use Users</phpdac></div>
-                            <div class="status">Users</div>
+                            <div class="status"><phpdac>i18nL.translate use users+RCCONTROLPANEL</phpdac></div>
                         </a>
                     </div>
                     <div class="metro-nav-block nav-olive">
                         <a data-original-title="" href="javascript:sndReqArg('cp.php?t=cpinfo&s=customers&statsid='+statsid.value,'cpinfo');">
                             <i class="icon-tags"></i>
                             <div class="info"><phpdac>rccontrolpanel.getStats use Users+customers</phpdac></div>
-                            <div class="status">Customers</div>
+                            <div class="status"><phpdac>i18nL.translate use customers+RCCONTROLPANEL</phpdac></div>
                         </a>
                     </div>
                     <div class="metro-nav-block nav-block-yellow">
                         <a data-original-title="" href="javascript:sndReqArg('cp.php?t=cpinfo&s=ulists&statsid='+statsid.value,'cpinfo');">
                             <i class="icon-comments-alt"></i>
                             <div class="info"><phpdac>rccontrolpanel.getStats use Mail+maillist</phpdac></div>
-                            <div class="status">Subscribers</div>
+                            <div class="status"><phpdac>i18nL.translate use subscribers+RCCONTROLPANEL</phpdac></div>
                         </a>
                     </div>
                     <div class="metro-nav-block nav-block-green double">
                         <a data-original-title="" href="javascript:sndReqArg('cp.php?t=cpinfo&s=mails&statsid='+statsid.value,'cpinfo');">
                             <i class="icon-eye-open"></i>
                             <div class="info"><phpdac>rccontrolpanel.getStats use Mail</phpdac></div>
-                            <div class="status">Mails sent</div>
+                            <div class="status"><phpdac>frontpage.slocale use _mailsent</phpdac></div>
                         </a>
                     </div>
                     <div class="metro-nav-block nav-block-red">
                         <a data-original-title="" href="javascript:sndReqArg('cp.php?t=cpinfo&s=mails&statsid='+statsid.value,'cpinfo');">
                             <i class="icon-envelope"></i>
                             <div class="info"><phpdac>rccontrolpanel.getStats use Mail+send</phpdac></div>
-                            <div class="status">Mails to send</div>
+                            <div class="status"><phpdac>frontpage.slocale use _mailtosend</phpdac></div>
                         </a>
                     </div>
                 </div>
@@ -99,35 +100,35 @@
                         <a data-original-title="" href="javascript:sndReqArg('cp.php?t=cpinfo&s=&statsid='+statsid.value,'cpinfo');">
                             <i class="icon-bar-chart"></i>
                             <div class="info"><phpdac>rccontrolpanel.getStats use Diskspace</phpdac></div>
-                            <div class="status">Resources</div>
+                            <div class="status"><phpdac>frontpage.slocale use _resources</phpdac></div>
                         </a>
                     </div>				
                     <div class="metro-nav-block nav-light-blue double">
                         <a data-original-title="" href="javascript:sndReqArg('cp.php?t=cpinfo&s=items&statsid='+statsid.value,'cpinfo');">
                             <i class="icon-tasks"></i>
                             <div class="info"><phpdac>rccontrolpanel.getStats use Items+active</phpdac></div>
-                            <div class="status">Active Items</div>
+                            <div class="status"><phpdac>frontpage.slocale use _actives</phpdac></div>
                         </a>
                     </div>
                     <div class="metro-nav-block nav-light-brown">
                         <a data-original-title="" href="javascript:sndReqArg('cp.php?t=cpinfo&s=items&statsid='+statsid.value,'cpinfo');">
                             <i class="icon-remove-sign"></i>
                             <div class="info"><phpdac>rccontrolpanel.getStats use Items+inactive</phpdac></div>
-                            <div class="status">Inactive Items</div>
+                            <div class="status"><phpdac>frontpage.slocale use _inactives</phpdac></div>
                         </a>
                     </div>
                     <div class="metro-nav-block nav-light-purple">
                         <a data-original-title="" href="javascript:sndReqArg('cp.php?t=cpinfo&s=transactions&statsid='+statsid.value,'cpinfo');">
                             <i class="icon-shopping-cart"></i>
                             <div class="info"><phpdac>rccontrolpanel.getStats use Transactions</phpdac></div>
-                            <div class="status">Orders</div>
+                            <div class="status"><phpdac>i18nL.translate use transactions+RCCONTROLPANEL</phpdac></div>
                         </a>
                     </div>					
                     <div class="metro-nav-block nav-block-grey ">
                         <a data-original-title="" href="javascript:sndReqArg('cp.php?t=cpinfo&s=transactions&statsid='+statsid.value,'cpinfo');">
                             <i class="icon-external-link"></i>
                             <div class="info"><phpdac>rccontrolpanel.getStats use Transactions+revenue</phpdac> &euro;</div>
-                            <div class="status">Total Profit</div>
+                            <div class="status"><phpdac>frontpage.slocale use _revenue</phpdac></div>
                         </a>
                     </div>
                 </div>
@@ -179,7 +180,7 @@
 					<!-- BEGIN ALERTS PORTLET-->
                     <div class="widget orange">
                         <div class="widget-title">
-                            <h4><i class="icon-bell-alt"></i> System messages</h4>
+                            <h4><i class="icon-bell-alt"></i> <phpdac>i18nL.translate use system+RCCONTROLPANEL</phpdac> <phpdac>i18nL.translate use messages+RCCONTROLPANEL</phpdac></h4>
                             <span class="tools">
                             <a class="icon-chevron-down" href="javascript:;"></a>
                             <a class="icon-remove" href="javascript:;"></a>
@@ -188,7 +189,7 @@
                         <div class="widget-body">
 						    <phpdac>rccontrolpanel.viewSysMessages use alert-important</phpdac>
 							<div class="space10"></div>
-                            <a href="cp.php?t=cpsysMessages" class="pull-right"><phpdac>frontpage.slocale use _viewallmessages</phpdac></a>
+                            <a href="cp.php?t=cpsysMessages" class="pull-right"><phpdac>i18nL.translate use viewallmessages+RCCONTROLPANEL</phpdac></a>
                             <div class="clearfix no-top-space no-bottom-space"></div>
                         </div>
                     </div>
@@ -198,13 +199,13 @@
 					
                     <div class="widget purple">
                         <div class="widget-title">
-                            <h4><i class="icon-tasks"></i> Items </h4>
+                            <h4><i class="icon-tasks"></i> <phpdac>i18nL.translate use items+RCCONTROLPANEL</phpdac> </h4>
                          <span class="tools">
                             <a href="javascript:;" class="icon-chevron-down"></a>
                             <a href="javascript:;" class="icon-remove"></a>
                          </span>
 						 <div class="update-btn">
-                            <a href="javascript:sndReqArg('cp.php?t=cpchartshow&group=&ai=2&report=statistics&statsid='+statsid.value,'statistics');" class="btn"><i class="icon-repeat"></i> Update</a>
+                            <a href="javascript:sndReqArg('cp.php?t=cpchartshow&group=&ai=2&report=statistics&statsid='+statsid.value,'statistics');" class="btn"><i class="icon-repeat"></i> <phpdac>i18nL.translate use CPFLOTCHARTS_DPC+CPFLOTCHARTS</phpdac></a>
                          </div>
                         </div>
                         <div class="widget-body">
@@ -215,13 +216,13 @@
                     </div>	
 					<div class="widget red">
                         <div class="widget-title">
-                            <h4><i class="icon-tasks"></i> Categories </h4>
+                            <h4><i class="icon-tasks"></i> <phpdac>i18nL.translate use categories+RCCONTROLPANEL</phpdac> </h4>
                          <span class="tools">
                             <a href="javascript:;" class="icon-chevron-down"></a>
                             <a href="javascript:;" class="icon-remove"></a>
                          </span>
 						 <div class="update-btn">
-                            <a href="javascript:sndReqArg('cp.php?t=cpchartshow&group=&ai=1&report=statisticscat&statsid='+statsid.value,'statisticscat');" class="btn"><i class="icon-repeat"></i> Update</a>
+                            <a href="javascript:sndReqArg('cp.php?t=cpchartshow&group=&ai=1&report=statisticscat&statsid='+statsid.value,'statisticscat');" class="btn"><i class="icon-repeat"></i> <phpdac>i18nL.translate use CPFLOTCHARTS_DPC+CPFLOTCHARTS</phpdac></a>
                          </div>
                         </div>
                         <div class="widget-body">
@@ -232,13 +233,13 @@
                     </div>	
 					<div class="widget yellow">
                         <div class="widget-title">
-                            <h4><i class="icon-tasks"></i> Mail Queue </h4>
+                            <h4><i class="icon-tasks"></i> <phpdac>i18nL.translate use mailqueue+CPFLOTCHARTS</phpdac> </h4>
                          <span class="tools">
                             <a href="javascript:;" class="icon-chevron-down"></a>
                             <a href="javascript:;" class="icon-remove"></a>
                          </span>
 						 <div class="update-btn">
-                            <a href="javascript:sndReqArg('cp.php?t=cpchartshow&group=&ai=1&report=mailqueue&statsid='+statsid.value,'mailqueue');" class="btn"><i class="icon-repeat"></i> Update</a>
+                            <a href="javascript:sndReqArg('cp.php?t=cpchartshow&group=&ai=1&report=mailqueue&statsid='+statsid.value,'mailqueue');" class="btn"><i class="icon-repeat"></i> <phpdac>i18nL.translate use CPFLOTCHARTS_DPC+CPFLOTCHARTS</phpdac></a>
                          </div>
                         </div>
                         <div class="widget-body">
@@ -250,13 +251,13 @@
                     </div>					
 					<div class="widget green">
                         <div class="widget-title">
-                            <h4><i class="icon-tasks"></i> Transactions </h4>
+                            <h4><i class="icon-tasks"></i> <phpdac>i18nL.translate use transactions+RCCONTROLPANEL</phpdac> </h4>
                          <span class="tools">
                             <a href="javascript:;" class="icon-chevron-down"></a>
                             <a href="javascript:;" class="icon-remove"></a>
                          </span>
 						 <div class="update-btn">
-                            <a href="javascript:sndReqArg('cp.php?t=cpchartshow&group=&ai=2&report=transactions&statsid='+statsid.value,'transactions');" class="btn"><i class="icon-repeat"></i> Update</a>
+                            <a href="javascript:sndReqArg('cp.php?t=cpchartshow&group=&ai=2&report=transactions&statsid='+statsid.value,'transactions');" class="btn"><i class="icon-repeat"></i> <phpdac>i18nL.translate use CPFLOTCHARTS_DPC+CPFLOTCHARTS</phpdac></a>
                          </div>
                         </div>
                         <div class="widget-body">
@@ -310,7 +311,7 @@
                         <div class="widget-body">
 							<phpdac>rccontrolpanel.viewMessages use alert</phpdac>
 							<div class="space10"></div>
-                            <a href="cp.php?t=cpshowMessages" class="pull-right"><phpdac>frontpage.slocale use _viewallmessages</phpdac></a>
+                            <a href="cp.php?t=cpshowMessages" class="pull-right"><phpdac>i18nL.translate use viewallmessages+RCCONTROLPANEL</phpdac></a>
                             <div class="clearfix no-top-space no-bottom-space"></div>
                         </div>
                     </div>
@@ -328,7 +329,7 @@
                                  <phpdac>rccontrolpanel.getClicks use viewMessages</phpdac>
                              </ul>
                              <div class="space10"></div>
-                             <a href="cpbulkmail.php?t=cpviewclicks&cid=<-hpdac>fronthtmlpage.echostr use rcbulkmail.cid</phpda->" class="pull-right"><phpdac>frontpage.slocale use _viewallnotifications</phpdac></a>
+                             <a href="cpbulkmail.php?t=cpviewclicks&cid=<-hpdac>fronthtmlpage.echostr use rcbulkmail.cid</phpda->" class="pull-right"><phpdac>i18nL.translate use viewallnotifications+RCCONTROLPANEL</phpdac></a>
                              <div class="clearfix no-top-space no-bottom-space"></div>
                          </div>
                      </div-->
@@ -344,7 +345,7 @@
 					<!-- BEGIN PROGRESS PORTLET-->
                     <div id="tasks" class="widget purple">
                         <div class="widget-title">
-                            <h4><i class="icon-tasks"></i> Tasks Progress </h4>
+                            <h4><i class="icon-tasks"></i> <phpdac>i18nL.translate use bmailcamp+RCPMENU</phpdac> </h4>
                             <span class="tools">
                                 <a href="javascript:;" class="icon-chevron-down"></a>
                                 <a href="javascript:;" class="icon-remove"></a>
@@ -362,7 +363,7 @@
                      <!-- BEGIN NOTIFICATIONS PORTLET-->
                      <div class="widget blue">
                          <div class="widget-title">
-                             <h4><i class="icon-download"></i> <phpdac>frontpage.slocale use _update</phpdac> </h4>
+                             <h4><i class="icon-download"></i> <phpdac>i18nL.translate use update+RCCONTROLPANEL</phpdac> </h4>
                            <span class="tools">
                                <a href="javascript:;" class="icon-chevron-down"></a>
                                <a href="javascript:;" class="icon-remove"></a>
@@ -387,7 +388,7 @@
                      <!-- BEGIN CHAT PORTLET-->
                      <div id="addons" class="widget red">
                          <div class="widget-title">
-                             <h4><i class="icon-plus-sign"></i> <phpdac>frontpage.slocale use _addons</phpdac></h4>
+                             <h4><i class="icon-plus-sign"></i> <phpdac>i18nL.translate use addons+RCCONTROLPANEL</phpdac></h4>
 									<span class="tools">
 									<a href="javascript:;" class="icon-chevron-down"></a>
 									<a href="javascript:;" class="icon-remove"></a>

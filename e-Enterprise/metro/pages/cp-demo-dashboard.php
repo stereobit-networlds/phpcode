@@ -29,10 +29,11 @@
 <!-- END HEAD -->
 
 <!-- START FUNCS (CP MSGS once here) -->
-	<phpdac>shlogin.check_inactive_users</phpdac>
-	<phpdac>shlogin.check_newactive_users</phpdac>
-	<phpdac>shlogin.check_form_submitions</phpdac>	
-	<phpdac>rcbulkmail.getUnsubsToday</phpdac>
+	<phpdac>cp.getInactiveUsers</phpdac>
+	<phpdac>cp.getActiveUsers</phpdac>
+	<phpdac>cp.getFormSubmits</phpdac>
+	<phpdac>rculiststats.percentofCamps</phpdac>	
+	<phpdac>rculiststats.getUnsubsToday</phpdac>
 	<phpdac>cp.getSalesToday</phpdac>
 <!-- END FUNCS -->	
 

@@ -5,7 +5,7 @@
 <!-- BEGIN HEAD -->
 <head>
    <meta charset="utf-8" />
-   <title>Tags</title>
+   <title>Transactions</title>
    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
    <meta content="" name="description" />
    <meta content="" name="author" />
@@ -48,20 +48,19 @@
             <!-- BEGIN PAGE CONTENT-->
              <div class="row-fluid">
                  <div class="span12">
-					 <?METRO/INDEX?>
                      <!-- BEGIN BLANK PAGE PORTLET-->
-                     <!--div class="widget red">
+                     <div class="widget red">
                          <div class="widget-title">
-                             <h4><i class="icon-edit"></i> Tags </h4>
+                             <h4><i class="icon-edit"></i> <phpdac>i18nL.translate use RCTRANSACTIONS_DPC+RCTRANSACTIONS</phpdac></h4>
                            <span class="tools">
                                <a href="javascript:;" class="icon-chevron-down"></a>
                                <a href="javascript:;" class="icon-remove"></a>
                            </span>
                          </div>
                          <div class="widget-body">
-                             test
+                           	<?METRO/INDEX?>
                          </div>
-                     </div-->
+                     </div>
                      <!-- END BLANK PAGE PORTLET-->
                  </div>
              </div>

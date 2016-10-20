@@ -5,7 +5,7 @@
 <!-- BEGIN HEAD -->
 <head>
    <meta charset="utf-8" />
-   <title>Items</title>
+   <title>Tags</title>
    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
    <meta content="" name="description" />
    <meta content="" name="author" />
@@ -26,7 +26,6 @@
 	<script src="../javascripts/jqgrid/js/jquery.jqGrid.min.js"></script>
 	<script src="../javascripts/themes/jquery-ui.custom.min.js"></script>    
    	
-	<script src="http://www.stereobit.gr/ckeditor/ckeditor.js"></script>
 </head>
 <!-- END HEAD -->
 <!-- BEGIN BODY -->
@@ -49,18 +48,20 @@
             <!-- BEGIN PAGE CONTENT-->
              <div class="row-fluid">
                  <div class="span12">
+                     <!-- BEGIN BLANK PAGE PORTLET-->
                      <div class="widget red">
                          <div class="widget-title">
-                             <h4><i class="icon-edit"></i> <phpdac>i18nL.translate use RCITEMS_DPC+RCITEMS</phpdac></h4>
+                             <h4><i class="icon-edit"></i> <phpdac>i18nL.translate use upload+RCPMENU</phpdac> </h4>
                            <span class="tools">
                                <a href="javascript:;" class="icon-chevron-down"></a>
                                <a href="javascript:;" class="icon-remove"></a>
                            </span>
                          </div>
                          <div class="widget-body">
-                           	<?METRO/INDEX?>
+                             <?METRO/INDEX?>
                          </div>
                      </div>
+                     <!-- END BLANK PAGE PORTLET-->
                  </div>
              </div>
             <!-- END PAGE CONTENT-->
@@ -93,11 +94,8 @@
    <!--common script for all pages-->
    <script src="js/common-scripts.js"></script>
 
-   <!-- END JAVASCRIPTS -->  
-   <script>
-    function edit_item() { var str = arguments[0]; sndReqArg('cpitems.php?t=cpeditframe&id='+str,'edtem');}
-	function photo_item() {	$('#pdtem').load("cpitems.php?t=cpphotoframe&ajax=1&id="+arguments[0]);	}
-   </script>
+   <!-- END JAVASCRIPTS --> 
+
 	<phpdac>frontpage.include_part use /parts/google-analytics.php+++meteor</phpdac>
 	<!-- e-Enterprise, stereobit.networlds (phpdac5) -->   
 </body>

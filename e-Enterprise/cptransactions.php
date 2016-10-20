@@ -29,7 +29,6 @@ include networlds.clientdpc;
 private frontpage.fronthtmlpage /cgi-bin;
 #ifdef SES_LOGIN
 public jqgrid.mygrid;
-/public gui.ajax;
 private shop.rckategories /cgi-bin;
 private shop.shkatalogmedia /cgi-bin;
 private shop.rcitems /cgi-bin;

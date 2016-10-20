@@ -20,8 +20,6 @@ private frontpage.fronthtmlpage /cgi-bin;
 #ifdef SES_LOGIN
 public jqgrid.mygrid;
 public gui.ajax;
-/public database.dataforms;
-/public mail.abcmail;
 private shop.rccustomers /cgi-bin;
 public shop.rcitems;
 private shop.rctransactions /cgi-bin;
@@ -35,6 +33,6 @@ public i18n.i18nL;
 $cptemplate = GetGlobal('controller')->calldpc_method('rcserver.paramload use FRONTHTMLPAGE+cptemplate');
 
 
-    $mc_page = (GetSessionParam('LOGIN')) ? 'cp-tags' : 'cp-login';
+    $mc_page = (GetSessionParam('LOGIN')) ? 'cp-customers' : 'cp-login';
 	echo $page->render(null,getlocal(), null, $cptemplate.'/index.php');
 ?>

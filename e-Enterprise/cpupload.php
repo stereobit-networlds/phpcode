@@ -31,6 +31,6 @@ public i18n.i18nL;
 
 $cptemplate = GetGlobal('controller')->calldpc_method('rcserver.paramload use FRONTHTMLPAGE+cptemplate');
 
-    $mc_page = (GetSessionParam('LOGIN')) ? 'cp-tags' : 'cp-login';
+    $mc_page = (GetSessionParam('LOGIN')) ? 'cp-upload' : 'cp-login';
 	echo $page->render(null,getlocal(), null, $cptemplate.'/index.php');
 ?>

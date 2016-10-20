@@ -48,7 +48,18 @@
             <!-- BEGIN PAGE CONTENT-->
              <div class="row-fluid">
                  <div class="span12">
-					 <?METRO/INDEX?>
+					 <div class="widget red">
+                         <div class="widget-title">
+                             <h4><i class="icon-edit"></i> <phpdac>i18nL.translate use RCKATEGORIES_DPC+RCKATEGORIES</phpdac></h4>
+                           <span class="tools">
+                               <a href="javascript:;" class="icon-chevron-down"></a>
+                               <a href="javascript:;" class="icon-remove"></a>
+                           </span>
+                         </div>
+                         <div class="widget-body">
+                           	<?METRO/INDEX?>
+                         </div>
+                     </div>
                      <!-- END BLANK PAGE PORTLET-->
                  </div>
              </div>

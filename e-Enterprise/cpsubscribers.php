@@ -32,7 +32,7 @@ $cptemplate = GetGlobal('controller')->calldpc_method('rcserver.paramload use FR
 	switch ($_GET['t']) {
 		case 'cpsubsframe'     : $p = 'cp-iframe-jqgrid'; break;
 		case 'cpsubscribers'   : 
-		default                : $p = 'cp-jqgrid'; 
+		default                : $p = 'cp-subscribers'; 
 	}	
     $mc_page = (GetSessionParam('LOGIN')) ? $p : 'cp-login';
 	echo $page->render(null,getlocal(), null, $cptemplate.'/index.php');
