@@ -32,6 +32,8 @@ $cptemplate = GetGlobal('controller')->calldpc_method('rcserver.paramload use FR
     $t = $_POST['FormAction'] ? $_POST['FormAction'] : $_GET['t'];
 	switch ($t) {
 		
+		case 'cpcleanbounce'       : $p = 'cp-bmail-ulists-clean'; break;
+		
 		case 'cpsubscribe'    	   :
 		case 'cpunsubscribe'   	   :
 		case 'cpadvsubscribe' 	   : $p = 'cp-bmail-ulists-subscribe'; break;		

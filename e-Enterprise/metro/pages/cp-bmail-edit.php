@@ -57,7 +57,7 @@
                         </span>
                         </div>
                         <div class="widget-body">
-                            <form id="tForm" method="post" action="cpbulkmail.php?t=cpsavemailadv&editmode=1" class="form-horizontal">
+                            <form id="tForm" method="post" action="#" class="form-horizontal">
 							
 								<input type="hidden" name="FormName" value="cpsavemailadv" />
 								<input type="hidden" name="FormAction" value="cpsavemailadv" />
@@ -116,7 +116,7 @@
 											<label class="control-label">Select from list (multiple)</label>
 											<div id="select_ulists_multiple" class="controls">
 												<select name="ulistname[]" class="span6 " multiple="multiple" data-placeholder="Choose mailing lists" tabindex="1">
-													<phpdac>rcbulkmail.viewUList use 1</phpdac>
+													<phpdac>rcbulkmail.viewUList</phpdac>
 												</select>
 											</div>
 										</div>										

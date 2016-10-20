@@ -268,7 +268,7 @@
 								 <phpdac>rculiststats.getMailBounce use notification-warning+9</phpdac>							 
                              </ul>
                              <div class="space10"></div>
-                             <a href="cpulists.php" class="pull-right"><phpdac>frontpage.slocale use _viewallnotifications</phpdac></a>
+                             <a href="cpulists.php?t=cpcleanbounce" class="pull-right"><phpdac>frontpage.slocale use _viewallnotifications</phpdac></a>
                              <div class="clearfix no-top-space no-bottom-space"></div>
                          </div>
                      </div>	
@@ -286,7 +286,7 @@
 								 <phpdac>rculiststats.getUnsubs use notification-warning+9</phpdac>							 
                              </ul>
                              <div class="space10"></div>
-                             <a href="cpulists.php?t=cpadvsubscribe" class="pull-right"><phpdac>frontpage.slocale use _viewallnotifications</phpdac></a>
+                             <a href="cpsubscribers.php" class="pull-right"><phpdac>frontpage.slocale use _viewallnotifications</phpdac></a>
                              <div class="clearfix no-top-space no-bottom-space"></div>
                          </div>
                      </div>		
@@ -303,37 +303,7 @@
 						    <phpdac>rculiststats.viewMessages use alert</phpdac>
                         </div>
                     </div>					 
-                     <!-- END NOTIFICATIONS PORTLET-->					
-					
-                    <!--BEGIN GENERAL STATISTICS-->
-                    <!--div class="widget purple">
-                        <div class="widget-title">
-                            <h4><i class="icon-tasks"></i> General Statistics </h4>
-                         <span class="tools">
-                            <a href="javascript:;" class="icon-chevron-down"></a>
-                            <a href="javascript:;" class="icon-remove"></a>
-                         </span>
-                        </div>
-                        <div class="widget-body">
-                            <div class="row-fluid">
-                                <div class="text-center">
-                                    <div class="sparkline">
-                                        <div id="metro-sparkline-type1"></div>
-                                        <div class="sparkline-tittle">Server Load</div>
-                                    </div>
-                                    <div class="sparkline">
-                                        <div id="metro-sparkline-type2"></div>
-                                        <div class="sparkline-tittle">Network Load</div>
-                                    </div>
-                                    <div class="sparkline">
-                                        <div id="metro-sparkline-type3"></div>
-                                        <div class="sparkline-tittle">Visit Load</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div-->
-                    <!--END GENERAL STATISTICS-->				
+                     <!-- END NOTIFICATIONS PORTLET-->								
 				</div>	
 			</div>	
             <!-- END PAGE CONTENT-->         

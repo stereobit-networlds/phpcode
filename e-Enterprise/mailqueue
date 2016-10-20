@@ -1,5 +1,6 @@
 #!/usr/bin/php
 <?php
+$start=microtime(true);
 //define('SMTP_PHPMAILER','true');
 define('SENDMAIL_PHPMAILER','true');
 
@@ -22,5 +23,6 @@ public bmail.maildbqueue;
 
 $ret = GetGlobal('controller')->calldpc_method('maildbqueue.sendmail_daemon use 20+200');//20,400
 echo $ret;
-//echo $page->render();
+$time = (microtime(true) - $start)/60;//5.4$_SERVER["REQUEST_TIME_FLOAT"]);// /60;
+echo "<!-- 	$time -->";
 ?>

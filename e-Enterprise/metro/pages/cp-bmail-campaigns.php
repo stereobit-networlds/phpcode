@@ -21,12 +21,11 @@
 
     <link rel="stylesheet" type="text/css" href="assets/chosen-bootstrap/chosen/chosen.css" />
     <link rel="stylesheet" type="text/css" href="assets/jquery-tags-input/jquery.tagsinput.css" />
-	<link rel="stylesheet" type="text/css" href="assets/clockface/css/clockface.css" />
     <link rel="stylesheet" type="text/css" href="assets/bootstrap-datepicker/css/datepicker.css" />
     <link rel="stylesheet" type="text/css" href="assets/bootstrap-timepicker/compiled/timepicker.css" />
     <link rel="stylesheet" type="text/css" href="assets/bootstrap-colorpicker/css/colorpicker.css" />
     <link rel="stylesheet" href="assets/bootstrap-toggle-buttons/static/stylesheets/bootstrap-toggle-buttons.css" />
-    <link rel="stylesheet" type="text/css" href="assets/bootstrap-daterangepicker/daterangepicker.css" />	
+    <!--link rel="stylesheet" type="text/css" href="assets/bootstrap-daterangepicker/daterangepicker.css" /-->	
 
     <!--link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" /-->
 	
@@ -151,13 +150,8 @@
 							</div>		
 								
                             <div class="form-actions">
-                                <!--button type="submit" class="<phpdac>fronthtmlpage.nvl use rcbulkmail.sendOk+btn btn-success+btn btn-danger+</phpdac>">Start</button>
-								
-								<a href="cpbulkmail.php?t=cppausecamp&cid=<phpdac>fronthtmlpage.echostr use rcbulkmail.cid</phpdac>" class="btn btn-success">Pause</a>
-								<a href="cpbulkmail.php?t=cpstartcamp&cid=<phpdac>fronthtmlpage.echostr use rcbulkmail.cid</phpdac>" class="btn btn-success">Start</a>
-								<a href="cpbulkmail.php?t=cpstopcamp&cid=<phpdac>fronthtmlpage.echostr use rcbulkmail.cid</phpdac>" class="btn btn-danger">Stop</a>
-								<a href="cpbulkmail.php?t=cpdeletecamp&cid=<phpdac>fronthtmlpage.echostr use rcbulkmail.cid</phpdac>" class="btn btn-danger">Delete</a>
-								<a href="cpbulkmail.php" class="btn btn-success">New campaign</a-->
+                                <!--button type="submit" class="<phpdac>fronthtmlpage.nvl use rcbulkmail.sendOk+btn btn-success+btn btn-danger+</phpdac>">Start</button-->
+
 								<phpdac>rcbulkmail.controlCamp</phpdac>
 								
                                 <!--button type="button" class="btn">Cancel</button-->
@@ -202,10 +196,6 @@
    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
    <script src="js/jquery.blockui.js"></script>
 
-   <!--script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-   <script src="js/jQuery.dualListBox-1.3.js" language="javascript" type="text/javascript"></script-->
-
-
    <!-- ie8 fixes -->
    <!--[if lt IE 9]>
    <script src="js/excanvas.js"></script>
@@ -221,7 +211,7 @@
    <script type="text/javascript" src="assets/bootstrap-daterangepicker/date.js"></script>
    <script type="text/javascript" src="assets/bootstrap-daterangepicker/daterangepicker.js"></script>
    <script type="text/javascript" src="assets/bootstrap-colorpicker/js/bootstrap-colorpicker.js"></script>
-   <script type="text/javascript" src="assets/bootstrap-timepicker/js/bootstrap-timepicker.js"></script>  
+   <!--script type="text/javascript" src="assets/bootstrap-timepicker/js/bootstrap-timepicker.js"></script reload out of frame-->  
    <script type="text/javascript" src="assets/bootstrap-inputmask/bootstrap-inputmask.min.js"></script>
    <script src="assets/fancybox/source/jquery.fancybox.pack.js"></script>
    <script src="js/jquery.scrollTo.min.js"></script>
