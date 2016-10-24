@@ -32,7 +32,6 @@ private shop.shnsearch /cgi-bin;
 private shop.shwishcmp /cgi-bin;
 private shop.shtags /cgi-bin;
 private shop.shmenu /cgi-bin;
-/private shop.shsubscribe /cgi-bin;
 private shop.shusers /cgi-bin;
 private shop.shcustomers /cgi-bin;
 private shop.shcart /cgi-bin;

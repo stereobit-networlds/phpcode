@@ -48,35 +48,35 @@
                         <a data-original-title="" href="cp.php?t=cpcatVisits">
                             <i class="icon-user"></i>
                             <div class="info"><phpdac>rccontrolpanel.getStats use Visits</phpdac></div>
-                            <div class="status">Visits</div>
+                            <div class="status"><phpdac>frontpage.slocale use _visits</phpdac></div>
                         </a>
                     </div>
                     <div class="metro-nav-block nav-block-red">
                         <a data-original-title="" href="#">
                             <i class="icon-eye-open"></i>
                             <div class="info"><phpdac>rccontrolpanel.getStats use Visits+unique</phpdac></div>
-                            <div class="status">Unique visits</div>
+                            <div class="status">Unique <phpdac>frontpage.slocale use _visits</phpdac></div>
                         </a>
                     </div>	
                     <div class="metro-nav-block nav-block-yellow">
                         <a data-original-title="" href="#">
                             <i class="icon-tasks"></i>
                             <div class="info"><phpdac>rccontrolpanel.getStats use Items+active</phpdac></div>
-                            <div class="status">Items</div>
+                            <div class="status"><phpdac>frontpage.slocale use _actives</phpdac></div>
                         </a>
                     </div>
                     <div class="metro-nav-block nav-deep-gray">
                         <a data-original-title="" href="#">
                             <i class="icon-remove-sign"></i>
                             <div class="info"><phpdac>rccontrolpanel.getStats use Items+inactive</phpdac></div>
-                            <div class="status">Inacive items</div>
+                            <div class="status"><phpdac>frontpage.slocale use _inactives</phpdac></div>
                         </a>
                     </div>					
                     <div class="metro-nav-block nav-block-green double">
                         <a data-original-title="" href="#">
                             <i class="icon-eye-open"></i>
                             <div class="info"><phpdac>rccontrolpanel.getStats use Items+visits</phpdac></div>
-                            <div class="status">Items visits</div>
+                            <div class="status">Items <phpdac>frontpage.slocale use _visits</phpdac></div>
                         </a>
                     </div>
                 </div>
@@ -85,35 +85,35 @@
                         <a data-original-title="" href="#">
                             <i class="icon-star-empty"></i>
                             <div class="info"><phpdac>rccontrolpanel.getStats use Items+wishall</phpdac></div>
-                            <div class="status">Favorites</div>
+                            <div class="status"><phpdac>i18nL.translate use favorites+RCCRM</phpdac></div>
                         </a>
                     </div>					
                     <div class="metro-nav-block nav-light-blue double">
                         <a data-original-title="" href="#">
                             <i class="icon-comments-alt"></i>
                             <div class="info"><phpdac>rccontrolpanel.getStats use Items+orders</phpdac></div>
-                            <div class="status">Inline</div>
+                            <div class="status"><phpdac>i18nL.translate use transactions+RCCONTROLPANEL</phpdac></div>
                         </a>
                     </div>
                     <div class="metro-nav-block nav-block-yellow">
                         <a data-original-title="" href="#">
                             <i class="icon-bar-chart"></i>
                             <div class="info"><phpdac>rccontrolpanel.getStats use Items+transactions</phpdac></div>
-                            <div class="status">Orders</div>
+                            <div class="status"><phpdac>i18nL.translate use transactions+RCCONTROLPANEL</phpdac></div>
                         </a>
                     </div>
                     <div class="metro-nav-block nav-light-purple">
                         <a data-original-title="" href="#">
                             <i class="icon-shopping-cart"></i>
                             <div class="info"><phpdac>rccontrolpanel.getStats use Items+qty</phpdac></div>
-                            <div class="status">Quantity</div>
+                            <div class="status"><phpdac>i18nL.translate use qty+RCITEMQPOLICY</phpdac></div>
                         </a>
                     </div>					
                     <div class="metro-nav-block nav-block-grey ">
                         <a data-original-title="" href="#">
                             <i class="icon-external-link"></i>
                             <div class="info"><phpdac>rccontrolpanel.getStats use Items+income</phpdac> &euro;</div>
-                            <div class="status">Income</div>
+                            <div class="status"><phpdac>frontpage.slocale use _revenue</phpdac></div>
                         </a>
                     </div>
                 </div>
@@ -125,7 +125,7 @@
                     <div class="span12">
                         <div class="widget">
                             <div class="widget-title">
-                                <h4><i class="icon-bar-chart"></i> Views</h4>
+                                <h4><i class="icon-bar-chart"></i> <phpdac>i18nL.translate use view+RCCRM</phpdac></h4>
                            <span class="tools">
                                <a href="javascript:;" class="icon-chevron-down"></a>
                                <a href="javascript:;" class="icon-remove"></a>
@@ -142,7 +142,7 @@
                         <!-- BEGIN TRACKING CURVES PORTLET-->
                         <div class="widget purple">
                             <div class="widget-title">
-                                <h4><i class="icon-reorder"></i> Transactions</h4>
+                                <h4><i class="icon-reorder"></i> <phpdac>i18nL.translate use transactions+RCCONTROLPANEL</phpdac></h4>
 							<span class="tools">
 							<a href="javascript:;" class="icon-chevron-down"></a>
                             <a href="javascript:;" class="icon-remove"></a>
@@ -161,7 +161,7 @@
 					<!-- BEGIN ALERTS PORTLET-->
                     <div class="widget orange">
                         <div class="widget-title">
-                            <h4><i class="icon-bell-alt"></i> System messages</h4>
+                            <h4><i class="icon-bell-alt"></i> <phpdac>i18nL.translate use system+RCCONTROLPANEL</phpdac> <phpdac>i18nL.translate use messages+RCCONTROLPANEL</phpdac></h4>
                             <span class="tools">
                             <a class="icon-chevron-down" href="javascript:;"></a>
                             <a class="icon-remove" href="javascript:;"></a>

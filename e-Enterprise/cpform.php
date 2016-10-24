@@ -10,7 +10,6 @@ super database;
 
 /---------------------------------load and create libs
 use i18n.i18n;
-use gui.swfcharts;
 use jqgrid.jqgrid;
 
 /---------------------------------load not create dpc (internal use)
@@ -21,8 +20,8 @@ include gui.form;
 private frontpage.fronthtmlpage /cgi-bin;
 #ifdef SES_LOGIN
 public jqgrid.mygrid;
-/public gui.ajax;
-private shop.rcform /cgi-bin;
+public cms.cmsrt;
+public cms.rcform;
 private cp.rcpmenu /cgi-bin;
 #endif
 private cp.rccontrolpanel /cgi-bin;

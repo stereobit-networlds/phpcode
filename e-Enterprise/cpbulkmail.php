@@ -12,7 +12,6 @@ super database;
 
 /---------------------------------load and create libs
 use i18n.i18n;
-/use gui.swfcharts;
 use jqgrid.jqgrid;
 use cp.cpflotcharts;
 
@@ -29,7 +28,6 @@ public phpdac.rcfs;
 public cms.cmsrt;
 public cms.rccollections;
 public bmail.rcbulkmail;
-/public crm.crmforms;
 private cp.rcpmenu /cgi-bin;
 #endif
 private cp.rccontrolpanel /cgi-bin;
@@ -46,11 +44,12 @@ $cptemplate = _m('rcserver.paramload use FRONTHTMLPAGE+cptemplate');
 		case 'cppreviewcamp'   : $p = 'cp-bmail-preview'; break;
 		case 'cpsavemailadv'   : $p = 'cp-bmail-post'; break;
 		case 'cpdeletecamp'    :
-		case 'cpviewcamp'      : //$submitmails = _v('rcbulkmail.sendOk');
-		                         //$p = $submitmails==true ? 'cp-bmail-post' : 'cp-bmail-campaigns'; 
-								 $p = 'cp-bmail-campaigns'; break;	
+		case 'cpcontinuecamp'  :
+		case 'cppausecamp'     :
+		case 'cpstopcamp'      :		
+		case 'cpviewcamp'      : $p = 'cp-bmail-campaigns'; break;	
 		
-		case 'cpsubsend'       : $p = 'cp-bmail-campaigns'; break; //'cp-bmail-post'; break;
+		case 'cpsubsend'       : $p = 'cp-bmail-campaigns'; break; 
 
 		default                : $p = 'cp-bmail-edit';
 	}	

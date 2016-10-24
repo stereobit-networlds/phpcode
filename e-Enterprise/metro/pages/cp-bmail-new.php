@@ -49,7 +49,7 @@
                     <div class="widget box red">			
                         <div class="widget-title">
                             <h4>
-                                <i class="icon-reorder"></i> Template wizard</span>
+                                <i class="icon-reorder"></i> <phpdac>frontpage.slocale use _templatewiz</phpdac></span>
                             </h4>
                         <span class="tools">
                            <a href="javascript:;" class="icon-chevron-down"></a>
@@ -64,21 +64,21 @@
 								
                                 <div id="tabsleft" class="tabbable tabs-left">
                                 <ul>
-                                    <li><a href="#tabsleft-tab1" data-toggle="tab"><span class="strong">Step 1</span> <span class="muted">Create content</span></a></li>
-                                    <li><a href="#tabsleft-tab2" data-toggle="tab"><span class="strong">Step 2</span> <span class="muted">Components</span></a></li>
-                                    <li><a href="#tabsleft-tab3" data-toggle="tab"><span class="strong">Step 3</span> <span class="muted">Pattern</span></a></li>
-                                    <li><a href="#tabsleft-tab4" data-toggle="tab"><span class="strong">Step 4</span> <span class="muted">Preview</span></a></li>
+                                    <li><a href="#tabsleft-tab1" data-toggle="tab"><span class="strong"><phpdac>frontpage.slocale use _step</phpdac> 1</span> <span class="muted"><phpdac>frontpage.slocale use _content</phpdac></span></a></li>
+                                    <li><a href="#tabsleft-tab2" data-toggle="tab"><span class="strong"><phpdac>frontpage.slocale use _step</phpdac> 2</span> <span class="muted"><phpdac>frontpage.slocale use _components</phpdac></span></a></li>
+                                    <li><a href="#tabsleft-tab3" data-toggle="tab"><span class="strong"><phpdac>frontpage.slocale use _step</phpdac> 3</span> <span class="muted"><phpdac>frontpage.slocale use _pattern</phpdac></span></a></li>
+                                    <li><a href="#tabsleft-tab4" data-toggle="tab"><span class="strong"><phpdac>frontpage.slocale use _step</phpdac> 4</span> <span class="muted"><phpdac>frontpage.slocale use _preview</phpdac></span></a></li>
                                 </ul>
                                 <div class="progress progress-info progress-striped">
                                     <div class="bar"></div>
                                 </div>
                                 <div class="tab-content">
                                     <div class="tab-pane" id="tabsleft-tab1">
-                                        <h3>Create content <?METRO/INDEX?></h3>
+                                        <h3><phpdac>frontpage.slocale use _content</phpdac> <?METRO/INDEX?></h3>
 										<div id="controls" class="control-group">
 											<phpdac>rcbulkmail.viewTemplateCopy</phpdac>
-											<input class=" " name="tmplname" value="<phpdac>fronthtmlpage.nvldac2 use rcbulkmail.savedname+fronthtmlpage.echostr:rcbulkmail.savedname+fronthtmlpage.echostr:rcbulkmail.template</phpdac>" type="text" placeholder="title" />
-											<a href="cpbulkmail.php?t=cpsubloadhtmlmail&stemplate=<phpdac>fronthtmlpage.nvldac2 use rcbulkmail.savedname+fronthtmlpage.echostr:rcbulkmail.savedname+fronthtmlpage.echostr:rcbulkmail.template</phpdac>" class="btn"><i class="icon-envelope"></i> Start campaign</a>
+											<input class=" " name="tmplname" value="<phpdac>fronthtmlpage.nvldac2 use rcbulkmail.savedname+fronthtmlpage.echostr:rcbulkmail.savedname+fronthtmlpage.echostr:rcbulkmail.template</phpdac>" type="text" placeholder="<phpdac>frontpage.slocale use _title</phpdac>" />
+											<a href="cpbulkmail.php?t=cpsubloadhtmlmail&stemplate=<phpdac>fronthtmlpage.nvldac2 use rcbulkmail.savedname+fronthtmlpage.echostr:rcbulkmail.savedname+fronthtmlpage.echostr:rcbulkmail.template</phpdac>" class="btn"><i class="icon-envelope"></i> <phpdac>frontpage.slocale use _startcamp</phpdac></a>
 										</div>																			
 										
 										<div id="template" class="control-group">
@@ -95,7 +95,7 @@
 										</div>
                                     </div>
                                     <div class="tab-pane" id="tabsleft-tab2">
-                                        <h3>Components</h3>									
+                                        <h3><phpdac>frontpage.slocale use _components</phpdac></h3>									
 										<div id="components" class="control-group">
 											<textarea class="span12 ckeditor" name="subtemplate_text" rows="8">
 											<phpdac>fronthtmlpage.calldpc_var use rcbulkmail.newsubtemplatebody</phpdac>
@@ -104,22 +104,22 @@
 										</div>
                                     </div>
                                     <div class="tab-pane" id="tabsleft-tab3">
-                                        <h3>Pattern</h3>										
+                                        <h3><phpdac>frontpage.slocale use _pattern</phpdac></h3>										
 										<div id="pattern" class="control-group">
 											<textarea class="span12" name="pattern_text" rows="8"><phpdac>fronthtmlpage.calldpc_var use rcbulkmail.newpatternbody</phpdac></textarea>
 										</div>										
                                     </div>
 														
                                     <div class="tab-pane" id="tabsleft-tab4">
-                                        <h3>Preview</h3>
+                                        <h3><phpdac>frontpage.slocale use _preview</phpdac></h3>
 										<div id="preview" class="control-group">
 											<phpdac>rcbulkmail.renderTemplate</phpdac>	
 										</div>											
                                     </div>
                                     <ul class="pager wizard">
-                                        <li class="previous"><a href="javascript:;">Previous</a></li>
-                                        <li class="next"><a href="javascript:;">Next</a></li>
-                                        <li class="next finish" style="display:none;"><a href="javascript:document.getElementById('tForm').submit();">Finish</a></li>
+                                        <li class="previous"><a href="javascript:;"><phpdac>frontpage.slocale use _prev</phpdac></a></li>
+                                        <li class="next"><a href="javascript:;"><phpdac>frontpage.slocale use _next</phpdac></a></li>
+                                        <li class="next finish" style="display:none;"><a href="javascript:document.getElementById('tForm').submit();"><phpdac>frontpage.slocale use _finish</phpdac></a></li>
                                     </ul>
                                     </ul>
                                 </div>

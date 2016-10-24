@@ -32,10 +32,6 @@
 </head>
 <!-- END HEAD -->
 
-<!-- START FUNCS (CP MSGS once here) -->
-	<phpdac>rculiststats.getUnsubsToday</phpdac>
-<!-- END FUNCS -->	
-
 <!-- BEGIN BODY -->
 <body class="fixed-top" onLoad="init()">
    <!-- BEGIN HEADER -->
@@ -153,7 +149,7 @@
 							<div class="control-group">
                                 <label class="control-label"><phpdac>i18nL.translate use SEARCH+SHSEARCH</phpdac></label>
                                 <div class="controls">
-									<phpdac>rculiststats.campaignSelect use cpmailstats</phpdac>
+									<phpdac>rculiststats.campaignSelect</phpdac>
                                 </div>
 								<label class="control-label">Instances (last 5)</label>
                             </div>

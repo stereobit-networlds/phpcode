@@ -30,7 +30,7 @@ public cms.cmslogin;
 public elements.confbar;
 private shop.shlangs /cgi-bin;
 private shop.shusers /cgi-bin;
-/private shop.shcustomers /cgi-bin;
+public cms.cmssubscribe;
 private stereobit.shform /cgi-bin;
 public jsdialog.jsdialogStream;
 public i18n.i18nL;

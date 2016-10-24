@@ -12,7 +12,7 @@ use i18n.i18n;
 
 /---------------------------------load not create dpc (internal use)
 include networlds.clientdpc;
-mail.smtpmail;
+include mail.smtpmail;
 	
 /---------------------------------load not create extensions (internal use) 
 
@@ -40,7 +40,7 @@ private shop.shmenu /cgi-bin;
 private shop.shusers /cgi-bin;
 private shop.shcustomers /cgi-bin;
 private shop.shcart /cgi-bin;
-private shop.shsubscribe /cgi-bin;
+public cms.cmssubscribe;
 public i18n.i18nL;
 
 ',1);

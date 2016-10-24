@@ -50,7 +50,7 @@
                     <!-- BEGIN  widget-->
 					<div class="widget">
                             <div class="widget-title">
-                                <h4><i class="icon-bar-chart"></i> Campaign clicks</h4>
+                                <h4><i class="icon-bar-chart"></i> <phpdac>i18nL.translate use CPFLOTCHARTS_DPC+CPFLOTCHARTS</phpdac></h4>
                            <span class="tools">
                                <a href="javascript:;" class="icon-chevron-down"></a>
                                <a href="javascript:;" class="icon-remove"></a>
@@ -62,13 +62,13 @@
                     </div>
                     <div class="widget yellow">
                         <div class="widget-title">
-                            <h4><i class="icon-reorder"></i> Content</h4>
+                            <h4><i class="icon-reorder"></i> <phpdac>frontpage.slocale use _content</phpdac></h4>
 							<span class="tools">
 								<a href="javascript:;" class="icon-chevron-down"></a>
 								<!--a href="javascript:;" class="icon-remove"></a-->
 							</span>
 							<div class="update-btn">
-                                <a href="cpbulkmail.php?t=cpviewcamp&cid=<phpdac>fronthtmlpage.echostr use rcbulkmail.cid</phpdac>" class="btn"><i class="icon-repeat"></i> Back</a>
+                                <a href="cpbulkmail.php?t=cpviewcamp&cid=<phpdac>fronthtmlpage.echostr use rcbulkmail.cid</phpdac>" class="btn"><i class="icon-repeat"></i> <phpdac>frontpage.slocale use _back</phpdac></a>
                             </div>
                         </div>	
 						<div class="widget-body form">

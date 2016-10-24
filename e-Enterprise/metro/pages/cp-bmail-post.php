@@ -25,11 +25,10 @@
     <link rel="stylesheet" type="text/css" href="assets/bootstrap-datepicker/css/datepicker.css" />
     <link rel="stylesheet" type="text/css" href="assets/bootstrap-timepicker/compiled/timepicker.css" />
     <link rel="stylesheet" type="text/css" href="assets/bootstrap-colorpicker/css/colorpicker.css" />
-    <link rel="stylesheet" type="text/css" href="assets/bootstrap-colorpicker/css/colorpicker.css" /-->
     <link rel="stylesheet" href="assets/bootstrap-toggle-buttons/static/stylesheets/bootstrap-toggle-buttons.css" />
     <!--link rel="stylesheet" type="text/css" href="assets/bootstrap-daterangepicker/daterangepicker.css" /-->
 	
-    <!--link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" /-->
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
 </head>
 <!-- END HEAD -->
 <!-- BEGIN BODY -->
@@ -55,7 +54,7 @@
                     <!-- BEGIN SAMPLE FORMPORTLET-->
                     <div class="widget red">
                         <div class="widget-title">
-                            <h4><i class="icon-reorder"></i> Campaign</h4>
+                            <h4><i class="icon-reorder"></i> <phpdac>i18nL.translate use campaign+RCBULKMAIL</phpdac></h4>
                             <!--span class="tools">
                             <a href="javascript:;" class="icon-chevron-down"></a>
                             <a href="javascript:;" class="icon-remove"></a>
@@ -66,18 +65,18 @@
                             <form method="post" action="#" class="form-horizontal">
 							
                             <div class="control-group">
-                                <label class="control-label">Subject</label>
+                                <label class="control-label"><phpdac>i18nL.translate use subject+RCBULKMAIL</phpdac></label>
                                 <div id="edit_subject" class="controls">
-                                    <input name="subject" value="<phpdac>fronthtmlpage.nvldac2 use subject+fronthtmlpage.echostr:subject++</phpdac>" type="text" class="span6 " readonly="readonly" />
+                                    <input id="subject" name="subject" value="<phpdac>fronthtmlpage.nvldac2 use subject+fronthtmlpage.echostr:subject++</phpdac>" type="text" class="span6 " readonly="readonly" />
                                     <!--span class="help-inline">Insert a subject </span-->
                                 </div>
                             </div>	
 						    <div class="control-group">
-                                <label class="control-label"><phpdac>i18nL.translate use from</phpdac></label>
+                                <label class="control-label"><phpdac>i18nL.translate use sender+RCBULKMAIL</phpdac></label>
                                 <div id="edit_from" class="controls">
                                     <div class="input-icon left">
                                         <i class="icon-envelope"></i>
-                                        <input name="from" value="<phpdac>fronthtmlpage.nvldac2 use from+fronthtmlpage.echostr:from++</phpdac>" class=" " type="text" / readonly="readonly">
+                                        <input id="from" name="from" value="<phpdac>fronthtmlpage.nvldac2 use from+fronthtmlpage.echostr:from++</phpdac>" class=" " type="text" / readonly="readonly">
 										<span class="help-inline">
 											<i class="icon-user"></i>
 											<input name="realm" value="<phpdac>fronthtmlpage.nvldac2 use realm+fronthtmlpage.echostr:realm++</phpdac>" class=" " type="text" readonly="readonly" />
@@ -86,7 +85,7 @@
                                 </div>
                             </div>	
 						    <div class="control-group">
-                                <label class="control-label">Settings</label>
+                                <label class="control-label"><phpdac>i18nL.translate use settings+RCPMENU</phpdac></label>
                                 <div class="controls">
                                     <div class="input-icon left">
                                         <i class="icon-user"></i>
@@ -104,17 +103,17 @@
                                 </div>
                             </div>								
 							<div class="control-group">
-                                <label class="control-label">To</label>
+                                <label class="control-label"><phpdac>i18nL.translate use receiver+RCBULKMAIL</phpdac></label>
                                 <div id="editto" class="controls">
-									<input name="include" id="tags_1" type="text" class="tags" value="<phpdac>fronthtmlpage.nvldac2 use include+fronthtmlpage.echostr:include++</phpdac>" readonly="readonly" />									
+									<input id="include" name="include" id="tags_1" type="text" class="tags" value="<phpdac>fronthtmlpage.nvldac2 use include+fronthtmlpage.echostr:include++</phpdac>" readonly="readonly" />									
                                 </div>
                                 <div id="editsend" class="controls">
-									<input name="receivers" type="text" value="<phpdac>fronthtmlpage.nvldac2 use bcc+fronthtmlpage.echostr:bcc++</phpdac>" class="span12 " readonly="readonly" />									
+									<input id="receivers" name="receivers" type="text" value="<phpdac>fronthtmlpage.nvldac2 use bcc+fronthtmlpage.echostr:bcc++</phpdac>" class="span12 " readonly="readonly" />									
                                 </div>	
                             </div>	
 
                             <div class="control-group">
-                                <label class="control-label">Scheduled start</label>
+                                <label class="control-label"><phpdac>frontpage.slocale use _schedule</phpdac></label>
                                 <div class="controls">
                                     <div class="input-append date" id="dpYears" data-date=""
                                         data-date-format="dd-mm-yyyy" data-date-viewmode="years">
@@ -124,31 +123,38 @@
 									<!--input id="dp1" type="text" value="" size="16" class="m-ctrl-medium"-->		
     
                                     <div class="input-append bootstrap-timepicker">
-                                        <input id="timepicker4" type="text" name="schtime" class="input-small">
+                                        <input id="bid" name="bid" type="text" value="<phpdac>fronthtmlpage.echostr use rcbulkmail.batchid</phpdac>" class="input-small" readonly>
                                         <span class="add-on"> <i class="icon-time"></i></span>
                                     </div>
                                 </div>
                             </div>							
 							<div id="messages" class="control-group">
-								<label class="control-label">Messages</label>
+								<label class="control-label"><phpdac>i18nL.translate use messages+RCCONTROLPANEL</phpdac></label>
 								<div class="controls">
 									<select id="messages" multiple="multiple" style="height:60px;width:100%;">
 										<phpdac>rcbulkmail.viewMessages</phpdac>
 									</select>
+									<div id="message_p"></div>	
 								</div>
 							</div>	
 							
-                            <div class="form-actions">
-                                <button type="submit" class="<phpdac>fronthtmlpage.nvl use rcbulkmail.sendOk+btn btn-success+btn btn-danger+</phpdac>">Start</button>
+                            <!--div class="form-actions">
+                                <button type="submit" class="<phpdac>fronthtmlpage.nvl use rcbulkmail.sendOk+btn btn-success+btn btn-danger+</phpdac>"><phpdac>frontpage.slocale use _start</phpdac></button>
 
 								<input type="hidden" name="FormName" value="cpsubsend" />
 								<input type="hidden" name="FormAction" value="<phpdac>fronthtmlpage.nvl use rcbulkmail.sendOk+cppreviewcamp+cpsubsend+</phpdac>" />
 								<input type="hidden" name="xcid" value="<phpdac>fronthtmlpage.echostr use rcbulkmail.cid</phpdac>">
 								<input type="hidden" name="bid" value="<phpdac>fronthtmlpage.echostr use rcbulkmail.batchid</phpdac>">
-                            </div>							
+                            </div-->							
 						
                             </form>
                             <!-- END FORM-->
+							
+							<div class="form-actions">
+								<!--button type='submit' onClick='startcampaign()' class='btn btn-danger'>start</button-->
+								<phpdac>rcbulkmail.controlCamp use 1</phpdac>
+							</div>	
+							
                         </div>
                     </div>
                     <!-- END SAMPLE FORM PORTLET-->
@@ -180,6 +186,9 @@
    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
    <!--script type="text/javascript" src="assets/bootstrap/js/bootstrap-fileupload.js"></script-->
    <script src="js/jquery.blockui.js"></script>
+   
+   <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+   <script src="js/jQuery.dualListBox-1.3.js" language="javascript" type="text/javascript"></script>  
 
    <!-- ie8 fixes -->
    <!--[if lt IE 9]>
@@ -213,7 +222,38 @@
        $(function() {
            $.configureBoxes();
        });
-   </script>    
+	   
+	   <phpdac>rcbulkmail.javascript_code</phpdac>	
+   </script>  
+
+	<script src="js/aSimpleTour.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('#startTour').click(function(){
+          options = {
+            data : [
+              { element : '#select_campaign', 'tooltip' : 'Επιλεγμένη εργασία', 'position' : 'T', 'text' : '<h3>Όνομα εργασίας</h3><p>Επιλεγμένη εργασία, όπως αυτή αποθηκεύτηκε κατα την διαδικασία κατασκευής και δυνατότητα επιλογής άλλης εργασίας όταν θέλουμε να επαναλάβουμε μια απο αυτές.</p>'  },
+			  { element : '#campaign_buttons', 'tooltip' : 'Σχετικές ενέργειες', 'position' : 'L', 'text' : '<h3>Ενέργειες εργασίας</h3><p>Ενέργειες εργασίας που αφορούν την προεπισκόπηση του περιεχομένου, τα στατιστικά μιας ήδη εκτελεσμένης εργασίας, την διαγραφή της ή την έναρξη μιας νέας εργασίας.</p>'  },
+              { element : '#edit_subject', 'tooltip' : 'Αλλαγή θέματος-τίλτου αποστολής', 'position' : 'L', 'text' : '<h3>Θέμα - τίτλος</h3><p>Δυνατότητα αλλαγής του τίτλου αποστολής σε παραλήπτες. Είναι ο τίτλος που θα εμφανιστεί ως θέμα στο mailbox του παραλήπτη.</p>' },
+              { element : '#edit_from', 'tooltip' : 'Αποστολέας', 'position' : 'L', 'text' : '<h3>Αποστολέας</h3><p>Αφορά τα στοιχεία αποστολής του αποστολέα και συνήθως είναι προτεινόμενα απο το σύστημα βάση των ρυθμίσεων που έχουν προηγηθεί.</p>' },
+              { element : '#edit_to', 'tooltip' : 'Παραλήπτες', 'position' : 'L' , 'text' : '<h3>Παραλήπτες</h3><p>Αναφορά στην λίστα / λίστες που έχουν επιλεγεί για την συμμετοχή τους στην αποστολή.</p>' },
+			  { element : '#exclude', 'tooltip' : 'Αφαίρεση μεμονομένων παραληπτών', 'position' : 'T', 'text' : '<h3>Παραλήπτες</h3><p>Αφαιρέστε μεμονομένους παραλήπτες σε αυτή την περιοχή.</p>'  },
+              { element : '.d-sel-filter', 'tooltip' : 'Φίλτρο αναζήτησης παραληπτών', 'position' : 'T', 'text' : '<h3>Αναζήτηση στην λίστα</h3><p>Αναζητήστε είδη που έιναι προς επιλογή ή έχετε ήδη επιλέξει, πληκτρολογώντας το είδος όπως αναφέρεται.</p>' },			  
+              { element : '#box2View', 'tooltip' : 'Λίστα επιλεγμένων παραληπτών', 'position' : 'B', 'text' : '<h3>Λίστα παραληπτών</h3><p>Περιοχή συνολικά επιλεγμένων ειδών. Αφαιρέστε παραλήπτες που επιλέξατε προτύτερα, επιλέγοντας έναν ή περισσότερους απο αυτούς.</p>' },
+              { element : '#to1', 'tooltip' : 'Αφαίρεση μερικών απο την λίστα', 'position' : 'B' , 'text' : '<h3>Αφαίρεση μερικών</h3><p>Χρησιμοποιήστε το πλήκτρο για την αφαίρεση ενός ή μερικών απο την λίστα, αν το ctrl είναι πατημένο.</p>' },
+              { element : '#allTo1', 'tooltip' : 'Αφαίρεση όλων', 'position' : 'B', 'text' : '<h3>Αφαίρεση όλων</h3><p>Χρησιμοποιήστε το πλήκτρο για να αφαιρεθούν όλα τα επιλεγμένα είδη.</p>' },			  
+			  { element : '#box1View', 'tooltip' : 'Λίστα εξαιρεθέντων παραληπτών', 'position' : 'T', 'text' : '<h3>Εξαιρέσεις παραληπτών</h3><p>Λίστα παραληπτών που έχουν εξαιρεθεί.</p>'  },
+			  { element : '#to2', 'tooltip' : 'Επαναφόρτωση στην λίστα επιλογής', 'position' : 'T', 'text' : '<h3>Πρόσθεση μερικών</h3><p>Χρησιμοποιήστε το πλήκτρο για την μεταφορά ενός ή μερικών, αν το ctrl είναι πατημένο καθώς επιλέγετε είδη.</p>' },			  
+              { element : '#allTo2', 'tooltip' : 'Επαναφόρτωση όλων στην λίστα επιλογής', 'position' : 'T', 'text' : '<h3>Πρόσθεση όλων</h3><p>Χρησιμοποιήστε το πλήκτρο για να μεταφερθούν όλοι οι εξαιρεθέντες παραλήπτες ξανά στην λίστα διανομής.</p>' },			  
+              { element : '.form-actions', 'tooltip' : 'Πλήκτρο εκτέλεσης εργασίας', 'position' : 'TL', 'text' : '<h3>Αποστολή</h3><p>Εφόσον ρυθμίσετε τις λεπτομέριες της αποστολής, πατήστε το πλήκτρο submit για την έναρξη της εργασίας. Το σύστημα αναλαμβάνει να αποστείλει το περιεχόμενο της εργασίας σε κάθε έναν απο τους παραλήπτες μέσα σε υπολογιζόμενο χρονικό όριζοντα, ώστε να η παραλαβή να γίνει βάση των προδιαγραφών αποστολής, παραλάβης και ασφάλειας παράδοσης.</p>' }
+            ] ,
+            controlsPosition : 'BR'
+          };
+
+          $.aSimpleTour(options);  
+        });
+      });
+    </script>     
 
    <!-- e-Enterprise, stereobit.networlds (phpdac5) -->     
 

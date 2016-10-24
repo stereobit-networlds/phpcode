@@ -49,7 +49,7 @@
                     <div class="widget box purple">
                         <div class="widget-title">
                             <h4>
-                                <i class="icon-reorder"></i> Campaign wizard</span>
+                                <i class="icon-reorder"></i> <phpdac>frontpage.slocale use _campwiz</phpdac></span>
                             </h4>
                         <span class="tools">
                            <a href="javascript:;" class="icon-chevron-down"></a>
@@ -64,27 +64,27 @@
 								
                                 <div id="tabsleft" class="tabbable tabs-left">
                                 <ul>
-                                    <li><a href="#tabsleft-tab1" data-toggle="tab"><span class="strong">Step 1</span> <span class="muted">Select content</span></a></li>
-                                    <li<phpdac>fronthtmlpage.nvl use rcbulkmail.ulistselect+ class="active"++</phpdac>><a href="#tabsleft-tab2" data-toggle="tab"><span class="strong">Step 2</span> <span class="muted">Distribution lists</span></a></li>
-                                    <li><a href="#tabsleft-tab3" data-toggle="tab"><span class="strong">Step 3</span> <span class="muted">Message Options</span></a></li>
-                                    <li><a href="#tabsleft-tab4" data-toggle="tab"><span class="strong">Step 4</span> <span class="muted">Message Details</span></a></li>
+                                    <li><a href="#tabsleft-tab1" data-toggle="tab"><span class="strong"><phpdac>frontpage.slocale use _step</phpdac> 1</span> <span class="muted"><phpdac>frontpage.slocale use _content</phpdac></span></a></li>
+                                    <li<phpdac>fronthtmlpage.nvl use rcbulkmail.ulistselect+ class="active"++</phpdac>><a href="#tabsleft-tab2" data-toggle="tab"><span class="strong"><phpdac>frontpage.slocale use _step</phpdac> 2</span> <span class="muted"><phpdac>frontpage.slocale use _distlist</phpdac></span></a></li>
+                                    <li><a href="#tabsleft-tab3" data-toggle="tab"><span class="strong"><phpdac>frontpage.slocale use _step</phpdac> 3</span> <span class="muted"><phpdac>frontpage.slocale use _details</phpdac></span></a></li>
+                                    <li><a href="#tabsleft-tab4" data-toggle="tab"><span class="strong"><phpdac>frontpage.slocale use _step</phpdac> 4</span> <span class="muted"><phpdac>i18nL.translate use SETTINGS+RCCONTROLPANEL</phpdac></span></a></li>
                                 </ul>
                                 <div class="progress progress-info progress-striped">
                                     <div class="bar"></div>
                                 </div>
                                 <div class="tab-content">
                                     <div class="tab-pane" id="tabsleft-tab1">
-                                        <h3>Select content</h3>
+                                        <h3><phpdac>frontpage.slocale use _content</phpdac></h3>
 										<div class="control-group">
-											<label class="control-label">Select template</label>
+											<label class="control-label"><phpdac>frontpage.slocale use _template</phpdac></label>
 											<div id="select_template" class="controls">
 												<!--select name="template" class="span6 " data-placeholder="Choose a template" tabindex="1">
 												<option value="">Select...</option-->
 												<!--hpdac>rcbulkmail.viewTemplates</phpda-->
 												<!--/select-->
 												<phpdac>rcbulkmail.viewTemplateSelect</phpdac>
-												<a href="cpbulkmail.php?t=cptemplatenew&stemplate=<phpdac>fronthtmlpage.calldpc_var use rcbulkmail.template</phpdac>" class="btn"><i class="icon-pencil"></i> Edit</a>
-												<a href="cpbulkmail.php?t=cptemplatenew" class="btn"><i class="icon-plus"></i> New</a>
+												<a href="cpbulkmail.php?t=cptemplatenew&stemplate=<phpdac>fronthtmlpage.calldpc_var use rcbulkmail.template</phpdac>" class="btn"><i class="icon-pencil"></i> <phpdac>frontpage.slocale use _edit</phpdac></a>
+												<a href="cpbulkmail.php?t=cptemplatenew" class="btn"><i class="icon-plus"></i> <phpdac>frontpage.slocale use _new</phpdac></a>
 											</div>
 										</div>																				
 										
@@ -105,7 +105,7 @@
 										</div>
                                     </div>
                                     <div class="tab-pane <phpdac>fronthtmlpage.nvl use rcbulkmail.ulistselect+ active++</phpdac>" id="tabsleft-tab2">
-                                        <h3>Distribution lists</h3>
+                                        <h3><phpdac>frontpage.slocale use _distlist</phpdac></h3>
 										<!--div class="control-group">
 											<label class="control-label">Mailing list</label>
 											<div id="select_ulists" class="controls">
@@ -113,7 +113,7 @@
 											</div>
 										</div-->
 										<div class="control-group">
-											<label class="control-label">Select from list (multiple)</label>
+											<label class="control-label"><phpdac>frontpage.slocale use _selectlist</phpdac></label>
 											<div id="select_ulists_multiple" class="controls">
 												<select name="ulistname[]" class="span6 " multiple="multiple" data-placeholder="Choose mailing lists" tabindex="1">
 													<phpdac>rcbulkmail.viewUList</phpdac>
@@ -121,30 +121,30 @@
 											</div>
 										</div>										
 										<div class="control-group">
-											<label class="control-label">CSV Addon Mails</label>
+											<label class="control-label"><phpdac>frontpage.slocale use _csv</phpdac></label>
 											<div id="edit_csv" class="controls">
 												<textarea name="csv" class="span6 " rows="3"></textarea>
 											</div>
 										</div>
 										<div class="control-group">
-											<label class="control-label">Addon components</label>
+											<label class="control-label"><phpdac>frontpage.slocale use _addon</phpdac></label>
 											<div id="select_addons" class="controls">
 												<label class="checkbox">
-													<input name="siteusers" type="checkbox" /> Users
+													<input name="siteusers" type="checkbox" /> <phpdac>frontpage.slocale use _users</phpdac>
 												</label>
 												<label class="checkbox">
-													<input name="sitecusts" type="checkbox"  /> Customers
+													<input name="sitecusts" type="checkbox"  /> <phpdac>frontpage.slocale use _customers</phpdac>
 												</label>
 												<label class="checkbox">
-													<input name="timetable" type="checkbox" checked="" /> Timetable
+													<input name="timetable" type="checkbox" checked="" /> <phpdac>frontpage.slocale use _timetable</phpdac>
 												</label>
 											</div>
 										</div>	
                                     </div>
                                     <div class="tab-pane" id="tabsleft-tab3">
-                                        <h3>Message options</h3>										
+                                        <h3><phpdac>frontpage.slocale use _details</phpdac></h3>										
 										<div id="select_webpage" class="control-group">
-											<label class="control-label">View as web page</label>
+											<label class="control-label"><phpdac>frontpage.slocale use _viewasweb</phpdac></label>
 											<div class="controls">
 												<div id="normal-toggle-button">
 													<input name="webviewlink" type="checkbox" checked="checked">
@@ -152,14 +152,14 @@
 											</div>
                                         </div>	
 										<div id="edit_webpage" class="control-group">
-											<label class="control-label">Text</label>
+											<label class="control-label"><phpdac>frontpage.slocale use _linetext</phpdac></label>
 											<div class="controls">
 												<textarea name="webviewtext" class="span6 " rows="3">Πατήστε _WEBLINK_ αν δεν βλέπετε σωστά το newsletter.
 												</textarea>
 											</div>
 										</div>																				
 										<div id="select_unsubscribe" class="control-group">
-											<label class="control-label">Unsubscribe</label>
+											<label class="control-label"><phpdac>frontpage.slocale use _viewunsub</phpdac></label>
 											<div class="controls">
 												<div id="normal-toggle-button">
 													<input name="unsubscribelink" type="checkbox" checked="checked">
@@ -167,13 +167,13 @@
 											</div>
 										</div>										
                                         <div id="edit_unsubscribe" class="control-group">
-											<label class="control-label">Text</label>
+											<label class="control-label"><phpdac>frontpage.slocale use _linetext</phpdac></label>
 											<div class="controls">
 												<textarea name="unsubscribetext" class="span6 " rows="3"><phpdac>rcbulkmail.spam_conditions_text</phpdac></textarea>
 											</div>
 										</div>										
 										<div class="control-group">
-											<label class="control-label">Tokens</label>
+											<label class="control-label"><phpdac>frontpage.slocale use _tokens</phpdac></label>
 											<div class="controls">
 												<div id="normal-toggle-button">
 													<input name="usetokens" type="checkbox" checked="checked">
@@ -183,9 +183,9 @@
                                     </div>
 											
                                     <div class="tab-pane" id="tabsleft-tab4">
-                                        <h3>Message details</h3>
+                                        <h3><phpdac>i18nL.translate use SETTINGS+RCCONTROLPANEL</phpdac></h3>
 										<div id="edit_from" class="control-group">
-											<label class="control-label">From</label>
+											<label class="control-label"><phpdac>i18nL.translate use sender+RCBULKMAIL</phpdac></label>
 											<div class="controls">
 												<select name="from" class="span6 " data-placeholder="Choose a mailing list" tabindex="1">
 													<option value="<phpdac>fronthtmlpage.calldpc_var use rcbulkmail.mailuser</phpdac>"><phpdac>fronthtmlpage.calldpc_var use rcbulkmail.mailuser</phpdac></option>
@@ -193,7 +193,7 @@
 											</div>
 										</div>	
                                         <div id="edit_to" class="control-group">
-											<label class="control-label">To</label>
+											<label class="control-label"><phpdac>i18nL.translate use receiver+RCBULKMAIL</phpdac></label>
 											<div class="controls">
 												<div class="input-icon left">
 												<i class="icon-envelope"></i>
@@ -202,14 +202,14 @@
 											</div>
                                         </div>
                                         <div id="edit_subject" class="control-group">
-                                            <label class="control-label">Subject</label>
+                                            <label class="control-label"><phpdac>i18nL.translate use subject+RCBULKMAIL</phpdac></label>
                                             <div class="controls">
                                                 <input type="text" name="subject" class="span6">
-                                                <span class="help-inline">Insert a subject</span>
+                                                <!--span class="help-inline">Insert a subject</span-->
                                             </div>
                                         </div>
 										<div class="control-group">
-										    <label class="control-label">Settings</label>
+										    <label class="control-label"><phpdac>i18nL.translate use settings+RCPMENU</phpdac></label>
 											<div class="controls">
 												<div class="input-icon left">
 													<i class="icon-user"></i>
@@ -229,15 +229,15 @@
                                             <label class="control-label"></label>
                                             <div class="controls">
                                                 <label class="checkbox">
-                                                    <input name="savecmp" type="checkbox" value="1" checked /> Save campaign
+                                                    <input name="savecmp" type="checkbox" value="1" checked /> <phpdac>frontpage.slocale use _savecamp</phpdac>
                                                 </label>
                                             </div>
                                         </div>
                                     </div>
                                     <ul class="pager wizard">
-                                        <li class="previous"><a href="javascript:;">Previous</a></li>
-                                        <li class="next"><a href="javascript:;">Next</a></li>
-                                        <li class="next finish" style="display:none;"><a href="javascript:document.getElementById('tForm').submit();">Finish</a></li>
+                                        <li class="previous"><a href="javascript:;"><phpdac>frontpage.slocale use _prev</phpdac></a></li>
+                                        <li class="next"><a href="javascript:;"><phpdac>frontpage.slocale use _next</phpdac></a></li>
+                                        <li class="next finish" style="display:none;"><a href="javascript:document.getElementById('tForm').submit();"><phpdac>frontpage.slocale use _finish</phpdac></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -253,15 +253,15 @@
                     <!-- BEGIN  widget-->
                     <div class="widget yellow">
                         <div class="widget-title">
-                            <h4><i class="icon-reorder"></i> Object selection list</h4>
+                            <h4><i class="icon-reorder"></i> <phpdac>frontpage.slocale use _objselect</phpdac></h4>
 							<span class="tools">
 								<a href="javascript:;" class="icon-chevron-down"></a>
 								<!--a href="javascript:;" class="icon-remove"></a-->
 							</span>
 							<div class="update-btn">
-								<a href="JavaScript:void(0);" id="btn-up" class="btn"><i class="icon-long-arrow-up"></i> Up</a>
-								<a href="JavaScript:void(0);" id="btn-down" class="btn"><i class="icon-long-arrow-down"></i> Dn</a>
-                                <a href="cpcollections.php" class="btn"><i class="icon-repeat"></i> Edit</a>
+								<a href="JavaScript:void(0);" id="btn-up" class="btn"><i class="icon-long-arrow-up"></i> <phpdac>frontpage.slocale use _up</phpdac></a>
+								<a href="JavaScript:void(0);" id="btn-down" class="btn"><i class="icon-long-arrow-down"></i> <phpdac>frontpage.slocale use _dn</phpdac></a>
+                                <a href="cpcollections.php" class="btn"><i class="icon-repeat"></i> <phpdac>frontpage.slocale use _edit</phpdac></a>
                             </div>
                         </div>	
 						<div class="widget-body form">
@@ -273,11 +273,11 @@
 								<input type="hidden" name="FormName" value="cpsubloadhtmlmail" />
 								<input type="hidden" name="FormAction" value="cpsubloadhtmlmail" />
 								<input type="hidden" name="stemplate" value="<phpdac>fronhtmlpage.echostr use stemplate</phpdac>" />
-                                    <select id="col-sort" name="colsort[]" multiple="multiple" style="height:300px;width:100%;">
+                                    <select id="col-sort" name="colsort[]" multiple="multiple" style="height:200px;width:100%;">
 									<phpdac>rccollections.viewCollection</phpdac>
                                     </select>
 									<br/>
-									<button type="submit" class="btn btn-success">Save</button>
+									<button type="submit" class="btn btn-success"><phpdac>frontpage.slocale use _save</phpdac></button>
 								</form>	
                                 </td>
                             </tr>

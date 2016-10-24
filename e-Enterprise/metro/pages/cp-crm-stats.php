@@ -62,21 +62,21 @@
                         <a data-original-title="" href="cpcrm.php">
                             <i class="icon-user"></i>
                             <div class="info"><phpdac>rccrm.getStats use contacts+users</phpdac></div>
-                            <div class="status">Registrations</div>
+                            <div class="status"><phpdac>frontpage.slocale use _breg</phpdac></div>
                         </a>
                     </div>
                     <div class="metro-nav-block nav-light-brown">
                         <a data-original-title="" href="cpcrmtrace.php">
                             <i class="icon-user"></i>
                             <div class="info"><phpdac>rccrm.getStats use contacts</phpdac></div>
-                            <div class="status">Contacts</div>
+                            <div class="status"><phpdac>i18nL.translate use contacts+RCCRM</phpdac></div>
                         </a>
                     </div>					
                     <div class="metro-nav-block nav-block-green double">
                         <a data-original-title="" href="cpcrmoffers.php">
                             <i class="icon-eye-open"></i>
                             <div class="info"><phpdac>rccrm.getStats use outbox+sent</phpdac></div>
-                            <div class="status">Mails sent</div>
+                            <div class="status"><phpdac>frontpage.slocale use _mailsent</phpdac></div>
                         </a>
                     </div>
                     <div class="metro-nav-block nav-block-red">
@@ -92,35 +92,35 @@
                         <a data-original-title="" href="cptransactions.php">
                             <i class="icon-bar-chart"></i>
                             <div class="info"><phpdac>rccrm.itemsPurchasedQty</phpdac></div>
-                            <div class="status">Purchased Quantity</div>
+                            <div class="status"><phpdac>i18nL.translate use qty+RCITEMQPOLICY</phpdac></div>
                         </a>
                     </div>				
                     <div class="metro-nav-block nav-light-blue double">
                         <a data-original-title="" href="cptransactions.php">
                             <i class="icon-tasks"></i>
                             <div class="info"><phpdac>rccrm.itemsPurchased</phpdac></div>
-                            <div class="status">Purchased Items</div>
+                            <div class="status"><phpdac>i18nL.translate use items+RCCRM</phpdac></div>
                         </a>
                     </div>
                     <div class="metro-nav-block nav-block-yellow">
                         <a data-original-title="" href="cpbulkmail.php?t=cpviewclicks">
                             <i class="icon-comments-alt"></i>
                             <div class="info"><phpdac>rccrm.getStats use crmdocs</phpdac></div>
-                            <div class="status">Offers</div>
+                            <div class="status"><phpdac>i18nL.translate use offers+RCCRM</phpdac></div>
                         </a>
                     </div>
                     <div class="metro-nav-block nav-light-purple">
                         <a data-original-title="" href="cptransactions.php">
                             <i class="icon-shopping-cart"></i>
                             <div class="info"><phpdac>rccrm.getStats use transactions</phpdac></div>
-                            <div class="status">Orders</div>
+                            <div class="status"><phpdac>i18nL.translate use transactions+RCCONTROLPANEL</phpdac></div>
                         </a>
                     </div>					
                     <div class="metro-nav-block nav-block-grey ">
                         <a data-original-title="" href="cpcrm.php?t=cpcrmdetails&iframe=0&id=<phpdac>fronthtmlpage.echostr use id</phpdac>&module=transactions">
                             <i class="icon-external-link"></i>
                             <div class="info"><phpdac>rccrm.getStats use transactions+sales</phpdac> &euro;</div>
-                            <div class="status">Sales</div>
+                            <div class="status"><phpdac>frontpage.slocale use _revenue</phpdac></div>
                         </a>
                     </div>
                 </div>
@@ -132,7 +132,7 @@
 				<div class="span12">
 					<div class="widget yellow">
                         <div class="widget-title">
-                            <h4><i class="icon-tasks"></i> Chart </h4>
+                            <h4><i class="icon-tasks"></i> <phpdac>i18nL.translate use CPFLOTCHARTS_DPC+CPFLOTCHARTS</phpdac></h4>
                          <span class="tools">
                             <a href="javascript:;" class="icon-chevron-down"></a>
                          </span>

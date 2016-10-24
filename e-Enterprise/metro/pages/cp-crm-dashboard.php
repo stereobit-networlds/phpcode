@@ -46,28 +46,28 @@
                         <a data-original-title="" href="cpcrm.php?t=cpcrmdetails&iframe=1&id=<phpdac>fronthtmlpage.echostr use id</phpdac>&module=stats">
                             <i class="icon-tags"></i>
                             <div class="info"><phpdac>crmdashboard.pageview</phpdac></div>
-                            <div class="status">Page views</div>
+                            <div class="status"><phpdac>i18nL.translate use view+RCCRM</phpdac></div>
                         </a>
                     </div>
                     <div class="metro-nav-block nav-light-brown">
                         <a data-original-title="" href="cpcrm.php?t=cpcrmdetails&iframe=1&id=<phpdac>fronthtmlpage.echostr use id</phpdac>&module=tasks">
                             <i class="icon-remove-sign"></i>
                             <div class="info"><phpdac>crmdashboard.mailsFailed</phpdac></div>
-                            <div class="status">Failed mails</div>
+                            <div class="status"><phpdac>i18nL.translate use failed+RCCRM</phpdac> mails</div>
                         </a>
                     </div>					
                     <div class="metro-nav-block nav-block-green double">
                         <a data-original-title="" href="cpcrm.php?t=cpcrmdetails&iframe=1&id=<phpdac>fronthtmlpage.echostr use id</phpdac>&module=tasks">
                             <i class="icon-eye-open"></i>
                             <div class="info"><phpdac>crmdashboard.mailSent</phpdac></div>
-                            <div class="status">Mails sent</div>
+                            <div class="status"><phpdac>frontpage.slocale use _mailsent</phpdac></div>
                         </a>
                     </div>
                     <div class="metro-nav-block nav-block-red">
                         <a data-original-title="" href="cpcrm.php?t=cpcrmdetails&iframe=1&id=<phpdac>fronthtmlpage.echostr use id</phpdac>&module=tasks">
                             <i class="icon-envelope"></i>
                             <div class="info"><phpdac>crmdashboard.mailtoSend</phpdac></div>
-                            <div class="status">Mails to send</div>
+                            <div class="status"><phpdac>i18nL.translate use mailinprocess</phpdac></div>
                         </a>
                     </div>
                 </div>
@@ -76,35 +76,35 @@
                         <a data-original-title="" href="javascript:sndReqArg('cp.php?t=cpinfo&s=&statsid='+statsid.value,'cpinfo');">
                             <i class="icon-bar-chart"></i>
                             <div class="info"><phpdac>crmdashboard.itemsPurchasedQty</phpdac></div>
-                            <div class="status">Purchased Quantity</div>
+                            <div class="status"><phpdac>i18nL.translate use qty+RCITEMQPOLICY</phpdac></div>
                         </a>
                     </div>				
                     <div class="metro-nav-block nav-light-blue double">
                         <a data-original-title="" href="javascript:sndReqArg('cp.php?t=cpinfo&s=items&statsid='+statsid.value,'cpinfo');">
                             <i class="icon-tasks"></i>
                             <div class="info"><phpdac>crmdashboard.itemsPurchased</phpdac></div>
-                            <div class="status">Purchased Items</div>
+                            <div class="status"><phpdac>i18nL.translate use items+RCCRM</phpdac>></div>
                         </a>
                     </div>
                     <div class="metro-nav-block nav-block-yellow">
                         <a data-original-title="" href="cpcrm.php?t=cpcrmdetails&iframe=1&id=<phpdac>fronthtmlpage.echostr use id</phpdac>&module=tasks">
                             <i class="icon-comments-alt"></i>
                             <div class="info"><phpdac>crmdashboard.mailClickPath</phpdac></div>
-                            <div class="status">Follow up</div>
+                            <div class="status"><phpdac>frontpage.slocale use _bclick</phpdac></div>
                         </a>
                     </div>
                     <div class="metro-nav-block nav-light-purple">
                         <a data-original-title="" href="cpcrm.php?t=cpcrmdetails&iframe=1&id=<phpdac>fronthtmlpage.echostr use id</phpdac>&module=transactions">
                             <i class="icon-shopping-cart"></i>
                             <div class="info"><phpdac>crmdashboard.transactions</phpdac></div>
-                            <div class="status">Orders</div>
+                            <div class="status"><phpdac>i18nL.translate use transactions+RCCONTROLPANEL</phpdac></div>
                         </a>
                     </div>					
                     <div class="metro-nav-block nav-block-grey ">
                         <a data-original-title="" href="cpcrm.php?t=cpcrmdetails&iframe=1&id=<phpdac>fronthtmlpage.echostr use id</phpdac>&module=transactions">
                             <i class="icon-external-link"></i>
                             <div class="info"><phpdac>crmdashboard.sales</phpdac> &euro;</div>
-                            <div class="status">Sales</div>
+                            <div class="status"><phpdac>frontpage.slocale use _revenue</phpdac></div>
                         </a>
                     </div>
                 </div>
@@ -116,7 +116,7 @@
 				<div class="span12">
 					<div class="widget yellow">
                         <div class="widget-title">
-                            <h4><i class="icon-tasks"></i> Chart </h4>
+                            <h4><i class="icon-tasks"></i> <phpdac>i18nL.translate use CPFLOTCHARTS_DPC+CPFLOTCHARTS</phpdac> </h4>
                          <span class="tools">
                             <a href="javascript:;" class="icon-chevron-down"></a>
                          </span>

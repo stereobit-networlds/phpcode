@@ -31,10 +31,6 @@
 <!-- START FUNCS (CP MSGS once here) -->
 	<phpdac>cp.getInactiveUsers</phpdac>
 	<phpdac>cp.getActiveUsers</phpdac>
-	<phpdac>cp.getFormSubmits</phpdac>
-	<phpdac>rculiststats.percentofCamps</phpdac>
-	<phpdac>rculiststats.getUnsubsToday</phpdac>
-	<phpdac>cp.getSalesToday</phpdac>
 <!-- END FUNCS -->	
 
 <!-- BEGIN BODY -->

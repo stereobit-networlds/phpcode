@@ -40,7 +40,6 @@ private shop.shmenu /cgi-bin;
 private shop.shusers /cgi-bin;
 private shop.shcustomers /cgi-bin;
 private shop.shcart /cgi-bin;
-/private shop.shtransactions /cgi-bin;
 public i18n.i18nL;
 
 ',1);

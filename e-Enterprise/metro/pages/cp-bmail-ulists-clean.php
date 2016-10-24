@@ -50,7 +50,7 @@
                  <div class="span12">
                     <div class="widget red">
                         <div class="widget-title">
-                            <h4><i class="icon-reorder"></i> Clean List(s)</h4>
+                            <h4><i class="icon-reorder"></i> <phpdac>frontpage.slocale use _cleanlist</phpdac></h4>
                             <!--span class="tools">
                             <a href="javascript:;" class="icon-chevron-down"></a>
                             <a href="javascript:;" class="icon-remove"></a>
@@ -61,7 +61,7 @@
                             <form method="post" action="#" class="form-horizontal">	
 
                             <div class="control-group">
-                                <label class="control-label">Fails margin (&gt;=)</label>
+                                <label class="control-label"><phpdac>frontpage.slocale use _failmargin</phpdac> (&gt;=)</label>
                                 <div class="controls">
 
                                     <select name="fid" class="span6 " data-placeholder="Choose a Category" tabindex="1">
@@ -88,7 +88,7 @@
                                 </div>
                             </div>							
 							<div id="messages" class="control-group">
-								<label class="control-label">Messages</label>
+								<label class="control-label"><phpdac>i18nL.translate use messages+RCCONTROLPANEL</phpdac></label>
 								<div class="controls">
 									<select id="messages" multiple="multiple" style="height:60px;width:100%;">
 										<phpdac>rculists.viewMessages</phpdac>
@@ -97,7 +97,7 @@
 							</div>		
 								
                             <div class="form-actions">
-								<button type="submit" class="btn btn-danger">Clean</button>
+								<button type="submit" class="btn btn-danger"><phpdac>frontpage.slocale use _cleanlist</phpdac></button>
 								<input type="hidden" name="FormName" value="cleanbounce" />
 								<input type="hidden" name="FormAction" value="cpcleanbounce" />
                             </div>							

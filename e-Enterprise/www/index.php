@@ -15,11 +15,9 @@ use i18n.i18n;
 include networlds.clientdpc;
 include mchoice;
 include mail.smtpmail;
-include gui.msgbox;
 	
 /---------------------------------load not create extensions (internal use)
 load_extension adodb refby _RECAPTCHA_; 	
-/load_extension PHP_XML_Dumper refby _PHP_XML_DUMPER_;	
 
 security CART_DPC 1 1:1:1:1:1:1:1:1:1:1;
 security SHCART_DPC 1 1:1:1:1:1:1:1:1:1:1;
@@ -41,8 +39,7 @@ private shop.shnsearch /cgi-bin;
 private shop.shwishcmp /cgi-bin;
 private shop.shtags /cgi-bin;
 private shop.shmenu /cgi-bin;
-/private shop.shslideshow /cgi-bin;
-private shop.shsubscribe /cgi-bin;
+public cms.cmssubscribe;
 private shop.shusers /cgi-bin;
 private shop.shcustomers /cgi-bin;
 private shop.shcart /cgi-bin;
