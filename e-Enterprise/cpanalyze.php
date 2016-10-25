@@ -13,17 +13,17 @@ use jqgrid.jqgrid;
 /---------------------------------load not create dpc (internal use)
 include networlds.clientdpc;
 
-private frontpage.fronthtmlpage /cgi-bin;
-#ifdef SES_LOGIN
 public jqgrid.mygrid;
+public cms.cmsrt;
+#ifdef SES_LOGIN
 public cp.rcanalyzer;
-private cp.rcpmenu /cgi-bin;
+public cp.rcpmenu;
 #endif
-private cp.rccontrolpanel /cgi-bin;
+public cp.rccontrolpanel;
 
 ',1);	 
 
-$cptemplate = GetGlobal('controller')->calldpc_method('rcserver.paramload use FRONTHTMLPAGE+cptemplate');
+$cptemplate = _m('rcserver.paramload use FRONTHTMLPAGE+cptemplate');
 
 $mc_page = (GetSessionParam('LOGIN')) ? 'cp-tags' : 'cp-login';
 echo $page->render(null,getlocal(), null, $cptemplate.'/index.php');

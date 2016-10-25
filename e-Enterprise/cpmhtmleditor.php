@@ -11,18 +11,19 @@ use i18n.i18n;
 
 include networlds.clientdpc;
 
-private frontpage.fronthtmlpage /cgi-bin;
+public jqgrid.mygrid;
+public cms.cmsrt;
 #ifdef SES_LOGIN
-private cp.cpmhtmleditor /cgi-bin;
-private cp.rcpmenu /cgi-bin;
+public cp.cpmhtmleditor;
+public cp.rcpmenu;
 #endif
-private cp.rccontrolpanel /cgi-bin;
+public cp.rccontrolpanel;
 public i18n.i18nL;
 
 ',1);
 	
-$cptemplate = GetGlobal('controller')->calldpc_method('rcserver.paramload use FRONTHTMLPAGE+cptemplate');
-$postok = defined('CPMHTMLEDITOR_DPC') ? GetGlobal('controller')->calldpc_var('cpmhtmleditor.postok') : false;
+$cptemplate = _m('rcserver.paramload use FRONTHTMLPAGE+cptemplate');
+$postok = defined('CPMHTMLEDITOR_DPC') ? _v('cpmhtmleditor.postok') : false;
 
 	switch ($_GET['t']) {
 		case 'cpmdelitem'    : $p = 'cp-htmleditor-newitem'; break;

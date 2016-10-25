@@ -1,7 +1,6 @@
 <?php
-require_once('dpc2/system/pcntlajax.lib.php'); 
-$page = &new pcntlajax('
-
+require_once('dpc2/system/pcntl.lib.php'); 
+$page = &new pcntl('
 super javascript;
 super rcserver.rcssystem;
 
@@ -13,13 +12,13 @@ use i18n.i18n;
 use jqgrid.jqgrid;
 
 /---------------------------------load not create dpc (internal use)
-include networlds.clientdpc;	
+include networlds.clientdpc;
 
 /---------------------------------load all and create after dpc objects
 public jqgrid.mygrid;
 public cms.cmsrt;
 #ifdef SES_LOGIN
-public backup.rcfscanner;
+public cms.rccmsctg;
 public cp.rcpmenu;
 #endif
 public cp.rccontrolpanel;
@@ -30,12 +29,14 @@ public i18n.i18nL;
 $cptemplate = _m('rcserver.paramload use FRONTHTMLPAGE+cptemplate');
 
 	switch ($_GET['t']) {
-		case 'cpmakeaccfile' : $p = $_GET['iframe'] ? 'cp-fscanner-detail' : 'cp-fscanner'; break;
-		case 'cpsreport'     : $p = 'cp-fscanner-detail'; break;
-		case 'cpscanrep'     : $p = $_GET['iframe'] ? 'cp-fscanner-detail' : 'cp-fscanner'; break;
-		default              : $p = $_GET['iframe'] ? 'cp-fscanner-detail' : 'cp-fscanner';
-	}
-	
+		case 'cpsortsave'  :
+		case 'cpsortpage'  : $p = 'cp-cmsctg-sort'; break;		
+		case 'cpcatalog'   : 
+		case 'cpsavectg'   : 
+		case 'cpctgitems'  : $p = 'cp-cmsctg-items'; break;
+		case 'cpcmsctg'    :
+		default            : $p = 'cp-cmsctg';
+	}	
     $mc_page = (GetSessionParam('LOGIN')) ? $p : 'cp-login';
 	echo $page->render(null,getlocal(), null, $cptemplate.'/index.php');
 ?>

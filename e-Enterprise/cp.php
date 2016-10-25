@@ -18,24 +18,23 @@ include mail.smtpmail;
 load_extension recaptcha refby _RECAPTCHA_;	
 
 /---------------------------------load all and create after dpc objects
-private frontpage.fronthtmlpage /cgi-bin;
 public jqgrid.mygrid;
 public cms.cmsrt;
 
 #ifdef SES_LOGIN
 public crm.crmforms;
 public crm.rccrmtrace;
-public bmail.rculiststats;
 #endif
 
-private cp.rcpmenu /cgi-bin;
-private cp.shlogin /cgi-bin;
-private cp.rccontrolpanel /cgi-bin;
+public bmail.rculiststats;
+public cp.rcpmenu;
+public cp.shlogin;
+public cp.rccontrolpanel;
 public i18n.i18nL;
 
 ',1);
 
-$cptemplate = GetGlobal('controller')->calldpc_method('rcserver.paramload use FRONTHTMLPAGE+cptemplate');
+$cptemplate = _m('rcserver.paramload use FRONTHTMLPAGE+cptemplate');
 
 
 	switch ($_GET['t']) {
@@ -46,10 +45,10 @@ $cptemplate = GetGlobal('controller')->calldpc_method('rcserver.paramload use FR
                             break;    
         default       	:	
 							if (($user = $_POST['cpuser']) && ($pass = $_POST['cppass'])) 
-								$login = GetGlobal('controller')->calldpc_method("shlogin.do_login use ".$user.'+'.$pass.'+1');	//editmode
+								$login = _m("shlogin.do_login use ".$user.'+'.$pass.'+1');	//editmode
 						
 							if ((GetSessionParam('LOGIN'))||($login)) { 
-								$cpGet = GetGlobal('controller')->calldpc_var('rcpmenu.cpGet');
+								$cpGet = _v('rcpmenu.cpGet');
 								$id = $cpGet['id'];
 								$cat = $cpGet['cat'];
 								$dashboard = (isset($id)) ? 'cp-itemstats' : ( (isset($cat)) ? 'cp-catstats' : 'cp-dashboard' );

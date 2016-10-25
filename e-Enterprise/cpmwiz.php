@@ -14,17 +14,17 @@ use gui.swfcharts;
 include networlds.clientdpc;			
 
 /---------------------------------load all and create after dpc objects
-private frontpage.fronthtmlpage /cgi-bin;
+public cms.cmsrt;
 #ifdef SES_LOGIN
-public phpdac.shlogin;
-private shop.rcitems /cgi-bin;
+public cp.shlogin;
+public bshop.rcitems;
 public phpdac.rcwizard;
-private cp.rcpmenu /cgi-bin;
+public cp.rcpmenu;
 #endif
-private cp.rccontrolpanel /cgi-bin;
+public cp.rccontrolpanel;
 ',1);
 
-$cptemplate = GetGlobal('controller')->calldpc_method('rcserver.paramload use FRONTHTMLPAGE+cptemplate');
+$cptemplate = _m('rcserver.paramload use FRONTHTMLPAGE+cptemplate');
 $lan = getlocal();
 if ($cptemplate) {
     $mc_page = (GetSessionParam('LOGIN')) ? 'cp-tags' : 'cp-login';

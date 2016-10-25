@@ -35,35 +35,35 @@
                         <a data-original-title="" href="cpshop.php?t=cpshopformsubdetail&id=<phpdac>fronthtmlpage.echostr use id</phpdac>&module=istats">
                             <i class="icon-user"></i>
                             <div class="info"><phpdac>rcshop.visits</phpdac></div>
-                            <div class="status">Visits</div>
+                            <div class="status"><phpdac>frontpage.slocale use _visits</phpdac></div>
                         </a>
                     </div>
                     <div class="metro-nav-block nav-block-red">
                         <a data-original-title="" href="cpshop.php?t=cpshopformsubdetail&id=<phpdac>fronthtmlpage.echostr use id</phpdac>&module=istats">
                             <i class="icon-eye-open"></i>
                             <div class="info"><phpdac>rcshop.uniquevisits</phpdac></div>
-                            <div class="status">Unique visits</div>
+                            <div class="status">Unique <phpdac>frontpage.slocale use _visits</phpdac></div>
                         </a>
                     </div>					
                     <div class="metro-nav-block nav-olive">
                         <a data-original-title="" href="cpshop.php?t=cpshopformsubdetail&id=<phpdac>fronthtmlpage.echostr use id</phpdac>&module=ipurchases">
                             <i class="icon-tags"></i>
                             <div class="info"><phpdac>rcshop.cartin</phpdac></div>
-                            <div class="status">Cart in</div>
+                            <div class="status"><phpdac>i18nL.translate use LOADCART+SHTRANSACTIONS</phpdac> in</div>
                         </a>
                     </div>
                     <div class="metro-nav-block nav-light-brown">
                         <a data-original-title="" href="cpshop.php?t=cpshopformsubdetail&id=<phpdac>fronthtmlpage.echostr use id</phpdac>&module=ipurchases">
                             <i class="icon-remove-sign"></i>
                             <div class="info"><phpdac>rcshop.cartout</phpdac></div>
-                            <div class="status">Cart out</div>
+                            <div class="status"><phpdac>i18nL.translate use LOADCART+SHTRANSACTIONS</phpdac> out</div>
                         </a>
                     </div>
                     <div class="metro-nav-block nav-block-green double">
                         <a data-original-title="" href="#">
                             <i class="icon-dashboard"></i>
                             <div class="info"><phpdac>rcshop.itemqty</phpdac></div>
-                            <div class="status">Stock</div>
+                            <div class="status"><phpdac>i18nL.translate use qty+RCITEMQPOLICY</phpdac></div>
                         </a>
                     </div>
                 </div>
@@ -72,35 +72,35 @@
                         <a data-original-title="" href="#">
                             <i class="icon-star-empty"></i>
                             <div class="info"><phpdac>rcshop.inbox</phpdac></div>
-                            <div class="status">Favorites</div>
+                            <div class="status"><phpdac>i18nL.translate use favorites+RCCRM</phpdac></div>
                         </a>
                     </div>				
                     <div class="metro-nav-block nav-light-blue double">
                         <a data-original-title="" href="cpshop.php?t=cpshopformsubdetail&id=<phpdac>fronthtmlpage.echostr use id</phpdac>&module=ipurchases">
                             <i class="icon-comments-alt"></i>
                             <div class="info"><phpdac>rcshop.inbox</phpdac></div>
-                            <div class="status">Inline</div>
+                            <div class="status"><phpdac>frontpage.slocale use _visits</phpdac></div>
                         </a>
                     </div>
                     <div class="metro-nav-block nav-block-yellow">
                         <a data-original-title="" href="cpshop.php?t=cpshopformsubdetail&id=<phpdac>fronthtmlpage.echostr use id</phpdac>&module=ipurchases">
                             <i class="icon-bar-chart"></i>
                             <div class="info"><phpdac>rcshop.transactions</phpdac></div>
-                            <div class="status">Orders</div>
+                            <div class="status"><phpdac>i18nL.translate use transactions+RCCONTROLPANEL</phpdac></div>
                         </a>
                     </div>
                     <div class="metro-nav-block nav-light-purple">
                         <a data-original-title="" href="#">
                             <i class="icon-shopping-cart"></i>
                             <div class="info"><phpdac>rcshop.itemsPurchasedQty</phpdac></div>
-                            <div class="status">Quantity</div>
+                            <div class="status"><phpdac>i18nL.translate use qty+RCITEMQPOLICY</phpdac></div>
                         </a>
                     </div>					
                     <div class="metro-nav-block nav-block-grey ">
                         <a data-original-title="" href="#">
                             <i class="icon-external-link"></i>
                             <div class="info"><phpdac>rcshop.itemRevenue</phpdac> &euro;</div>
-                            <div class="status">Income</div>
+                            <div class="status"><phpdac>frontpage.slocale use _revenue</phpdac></div>
                         </a>
                     </div>
                 </div>
@@ -112,7 +112,7 @@
 				<div class="span12">
 					<div class="widget yellow">
                         <div class="widget-title">
-                            <h4><i class="icon-tasks"></i> Chart </h4>
+                            <h4><i class="icon-tasks"></i> <phpdac>i18nL.translate use CPFLOTCHARTS_DPC+CPFLOTCHARTS</phpdac></h4>
                          <span class="tools">
                             <a href="javascript:;" class="icon-chevron-down"></a>
                          </span>

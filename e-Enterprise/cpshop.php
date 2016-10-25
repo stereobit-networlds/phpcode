@@ -10,7 +10,6 @@ super database;
 
 /---------------------------------load and create libs
 use i18n.i18n;
-use filesystem.downloadfile;
 use jqgrid.jqgrid;
 use cp.cpflotcharts;
 
@@ -18,19 +17,18 @@ use cp.cpflotcharts;
 include networlds.clientdpc;	
 
 /---------------------------------load all and create after dpc objects
-private frontpage.fronthtmlpage /cgi-bin;
-#ifdef SES_LOGIN
 public jqgrid.mygrid;
 public cms.cmsrt;
-public shop.rcshop;
-private cp.rcpmenu /cgi-bin;
+#ifdef SES_LOGIN
+public bshop.rcshop;
+public cp.rcpmenu;
 #endif
-private cp.rccontrolpanel /cgi-bin;
+public cp.rccontrolpanel;
 public i18n.i18nL;
 
 ',1);
 
-$cptemplate = GetGlobal('controller')->calldpc_method('rcserver.paramload use FRONTHTMLPAGE+cptemplate');
+$cptemplate = _m('rcserver.paramload use FRONTHTMLPAGE+cptemplate');
 
 	switch ($_GET['t']) {
 		case 'cpshopformsubdetail': 

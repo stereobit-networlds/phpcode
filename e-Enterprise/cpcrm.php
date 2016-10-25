@@ -10,7 +10,6 @@ super database;
 
 /---------------------------------load and create libs
 use i18n.i18n;
-use filesystem.downloadfile;
 use jqgrid.jqgrid;
 use cp.cpflotcharts;
 
@@ -18,10 +17,9 @@ use cp.cpflotcharts;
 include networlds.clientdpc;	
 
 /---------------------------------load all and create after dpc objects
-private frontpage.fronthtmlpage /cgi-bin;
-#ifdef SES_LOGIN
 public jqgrid.mygrid;
 public cms.cmsrt;
+#ifdef SES_LOGIN
 public crm.crmreturns;
 public crm.crmpurchases;
 public crm.crmitemstats;
@@ -40,14 +38,14 @@ public crm.crmstats;
 public crm.crmcustomer;
 public crm.crmdashboard;
 public crm.rccrm;
-private cp.rcpmenu /cgi-bin;
+public cp.rcpmenu;
 #endif
-private cp.rccontrolpanel /cgi-bin;
+public cp.rccontrolpanel;
 public i18n.i18nL;
 
 ',1);
 
-$cptemplate = GetGlobal('controller')->calldpc_method('rcserver.paramload use FRONTHTMLPAGE+cptemplate');
+$cptemplate = _m('rcserver.paramload use FRONTHTMLPAGE+cptemplate');
 
 	switch ($_GET['t']) {
 		case 'cpcrmrun'       : $p = 'cp-crm-subdetail'; break; 

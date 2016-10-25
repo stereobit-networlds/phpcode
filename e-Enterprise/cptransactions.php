@@ -12,7 +12,6 @@ super database;
 
 /---------------------------------load and create libs
 use i18n.i18n;
-use gui.swfcharts;
 use jqgrid.jqgrid;
 
 /---------------------------------load not create dpc (internal use)
@@ -26,23 +25,23 @@ include networlds.clientdpc;
 #endif				
 
 /---------------------------------load all and create after dpc objects
-private frontpage.fronthtmlpage /cgi-bin;
-#ifdef SES_LOGIN
 public jqgrid.mygrid;
-private shop.rckategories /cgi-bin;
-private shop.shkatalogmedia /cgi-bin;
-private shop.rcitems /cgi-bin;
-private shop.shcustomers /cgi-bin;
-private shop.shcart /cgi-bin;
-private shop.rctransactions /cgi-bin;
-private cp.rcpmenu /cgi-bin;
+public cms.cmsrt;
+#ifdef SES_LOGIN
+public bshop.rckategories;
+public bshop.shkatalogmedia;
+public bshop.rcitems;
+public bshop.shcustomers;
+public bshop.shcart;
+public bshop.rctransactions;
+public cp.rcpmenu;
 #endif
-private cp.rccontrolpanel /cgi-bin;
+public cp.rccontrolpanel;
 public i18n.i18nL;
 
 ',1);
 
-$cptemplate = GetGlobal('controller')->calldpc_method('rcserver.paramload use FRONTHTMLPAGE+cptemplate');
+$cptemplate = _m('rcserver.paramload use FRONTHTMLPAGE+cptemplate');
 
     $mc_page = (GetSessionParam('LOGIN')) ? 'cp-transactions' : 'cp-login';
 	echo $page->render(null,getlocal(), null, $cptemplate.'/index.php');

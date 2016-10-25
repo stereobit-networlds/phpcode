@@ -9,29 +9,23 @@ super database;
 
 /---------------------------------load and create libs
 use i18n.i18n;
-use xwindow.window,xwindow.window2,browser,gui.swfcharts;
 
 /---------------------------------load not create dpc (internal use)
 include networlds.clientdpc;
 
 /---------------------------------load all and create after dpc objects
-private frontpage.fronthtmlpage /cgi-bin;
-#ifdef SES_LOGIN
 public cms.cmsrt;
-public phpdac.rcfs;
-public shop.rckategories;
-public shop.shtags;
-private shop.rcitems /cgi-bin;
-/private cp.rccollections /cgi-bin;
+#ifdef SES_LOGIN
+public cp.rcfs;
 public cms.rccollections;
-private cp.rcpmenu /cgi-bin;
+public cp.rcpmenu;
 #endif
-private cp.rccontrolpanel /cgi-bin;
+public cp.rccontrolpanel;
 public i18n.i18nL;
 
 ',1);
 
-$cptemplate = GetGlobal('controller')->calldpc_method('rcserver.paramload use FRONTHTMLPAGE+cptemplate');
+$cptemplate = _m('rcserver.paramload use FRONTHTMLPAGE+cptemplate');
 
 	switch ($_GET['t']) {
 		default : $p = $_POST['xmlload'] ? ($_POST['goxml'] ? 'cp-collections' : 'cp-collections-xml') : 'cp-collections';

@@ -9,12 +9,10 @@ super database;
 
 /---------------------------------load and create libs
 use i18n.i18n;
-use gui.swfcharts;
 use jqgrid.jqgrid;
 
 /---------------------------------load not create dpc (internal use)
 include networlds.clientdpc;
-include gui.form;
 include mail.smtpmail;
 
 security ACCOUNTMNG_ 1 1:1:1:1:1:1:1:1;
@@ -25,24 +23,23 @@ security DELETEUSR_ 1 1:1:1:1:1:1:1:1;
 security UPDATEUSR_ 1 1:1:1:1:1:1:1:1;
 			
 /---------------------------------load all and create after dpc objects
-private frontpage.fronthtmlpage /cgi-bin;
-#ifdef SES_LOGIN
 public jqgrid.mygrid;
-public shop.shsubscribe;
-private shop.rcitems /cgi-bin;
-private shop.rcusers /cgi-bin;
-private shop.rccustomers /cgi-bin;
-private shop.rctransactions /cgi-bin;
+public cms.cmsrt;
+#ifdef SES_LOGIN
+public cms.cmssubscribe;
+public bshop.rcitems;
+public bshop.rcusers;
+public bshop.rccustomers;
+public bshop.rctransactions;
+public cp.rcpmenu;
 #endif
-private cp.rcpmenu /cgi-bin;
-private cp.rccontrolpanel /cgi-bin;
+public cp.rccontrolpanel;
 public i18n.i18nL;
 
 ',1);
 
-$cptemplate = GetGlobal('controller')->calldpc_method('rcserver.paramload use FRONTHTMLPAGE+cptemplate');
+$cptemplate = _m('rcserver.paramload use FRONTHTMLPAGE+cptemplate');
 
-    $mc_page = (GetSessionParam('LOGIN')) ? 'cp-users' : 'cp-login'; //del grid line issue
-	//$mc_page = (GetSessionParam('LOGIN')) ? 'cp-tags' : 'cp-login';
-	echo $page->render(null,getlocal(), null, $cptemplate.'/index.php');
+$mc_page = (GetSessionParam('LOGIN')) ? 'cp-users' : 'cp-login'; 
+echo $page->render(null,getlocal(), null, $cptemplate.'/index.php');
 ?>

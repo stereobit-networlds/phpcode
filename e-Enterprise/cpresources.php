@@ -9,13 +9,13 @@ super database;
 
 include networlds.clientdpc;
 
-private frontpage.fronthtmlpage /cgi-bin;
+public cms.cmsrt;
 #ifdef SES_LOGIN
-private cp.rcpmenu /cgi-bin;
+public cp.rcpmenu;
 #endif
-private cp.rccontrolpanel /cgi-bin;
+public cp.rccontrolpanel;
 ',1);
-$cptemplate = GetGlobal('controller')->calldpc_method('rcserver.paramload use FRONTHTMLPAGE+cptemplate');
+$cptemplate = _m('rcserver.paramload use FRONTHTMLPAGE+cptemplate');
 
     $mc_page = (GetSessionParam('LOGIN')) ? 'cp-ckfinder' : 'cp-login';
 	echo $page->render(null,getlocal(), null, $cptemplate.'/index.php');

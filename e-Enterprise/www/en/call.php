@@ -7,38 +7,32 @@ super rcserver.rcssystem;
 load_extension adodb refby _ADODB_; 
 super database;
 
-#---------------------------------load and create libs
+/---------------------------------load and create libs
 use i18n.i18n;
 
-#---------------------------------load not create dpc (internal use)
+/---------------------------------load not create dpc (internal use)
 include networlds.clientdpc;
-/include gui.form;
 include mail.smtpmail;
 
 load_extension recaptcha refby _RECAPTCHA_;	
 			
-security CART_DPC 1 1:1:1:1:1:1:1:1;
-security SHCART_DPC 1 1:1:1:1:1:1:1:1;
-security TRANSACTIONS_DPC 1 1:1:1:1:1:1:1:1;
-security SHTRANSACTIONS_DPC 1 1:1:1:1:1:1:1:1;
+security CART_DPC 1 1:1:1:1:1:1:1:1:1:1;
+security SHCART_DPC 1 1:1:1:1:1:1:1:1:1:1;
+security TRANSACTIONS_DPC 1 1:1:1:1:1:1:1:1:1:1;
+security SHTRANSACTIONS_DPC 1 1:1:1:1:1:1:1:1:1:1;
 
-#---------------------------------load all and create after dpc ojects
-private frontpage.fronthtmlpage /cgi-bin;
+/---------------------------------load all and create after dpc ojects
 public cms.cmsrt;
 public cms.cmsvstats;
 public cms.cmslogin;
-public elements.confbar;
-private shop.shlangs /cgi-bin;
-private shop.shusers /cgi-bin;
+public cms.cmssubscribe;
+public bshop.shlangs;
+public bshop.shusers;
 private stereobit.shform /cgi-bin;
 public jsdialog.jsdialogStream;
 public i18n.i18nL;
 
-',0);
- 
-//$mc_page = 'contact';
-//$mc_page = GetGlobal('controller')->calldpc_method('frontpage.mcSelectPage use +contact');
-//$headerStyle = ($mc_page=='home') ? 1 : 2;
+',1);
 
 	switch ($_GET['t']) {
 		case 'useractivate' : if ($_GET['sectoken']) {

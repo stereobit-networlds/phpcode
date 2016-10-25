@@ -14,24 +14,24 @@ use gui.swfcharts;
 /---------------------------------load not create dpc (internal use)
 include networlds.clientdpc;
 
-private frontpage.fronthtmlpage /cgi-bin;
-#ifdef SES_LOGIN
 public jqgrid.mygrid;
-public shop.rctranssql2;
-private cp.rcpmenu /cgi-bin;
+public cms.cmsrt;
+#ifdef SES_LOGIN
+public cp.rctranssql2;
+public cp.rcpmenu;
 #endif
-private cp.rccontrolpanel /cgi-bin;
+public cp.rccontrolpanel;
 
 ',1);	 
 
 //load standart sync sql
-GetGlobal('controller')->calldpc_method('rctranssql2.sync_sql use 1+ISO-8859-7+UTF-8');
+_m('rctranssql2.sync_sql use 1+ISO-8859-7+UTF-8');
 
 //load syncmysqlpos.txt
-GetGlobal('controller')->calldpc_method('rctranssql2.remote_execute_sql use /cp/syncsql/syncmysqlpos.txt++ISO-8859-7+UTF-8+1+1');
+_m('rctranssql2.remote_execute_sql use /cp/syncsql/syncmysqlpos.txt++ISO-8859-7+UTF-8+1+1');
 
 //run sql
-GetGlobal('controller')->calldpc_method('rctranssql2.run_sql use +1');//execute sql
+_m('rctranssql2.run_sql use +1');//execute sql
 
 //run xml
 $data = @file_get_contents(getcwd() .'/syncsql/skroutz.xml');//'http://dl.dropbox.com/u/106627024/skroutz.xml');
@@ -50,7 +50,7 @@ $to3 = getcwd() . '/../bestprice.xml';
 file_put_contents($to3, trim($utfdata, "\t\n\r\0\x0B"));
 //echo $to,'>home/stereobi/public_html/basis/bestprice.xml';
 
-$cptemplate = GetGlobal('controller')->calldpc_method('rcserver.paramload use FRONTHTMLPAGE+cptemplate');
+$cptemplate = _m('rcserver.paramload use FRONTHTMLPAGE+cptemplate');
 
 $mc_page = (GetSessionParam('LOGIN')) ? 'cp-tags' : 'cp-login';
 echo $page->render(null,getlocal(), null, $cptemplate.'/index.php');

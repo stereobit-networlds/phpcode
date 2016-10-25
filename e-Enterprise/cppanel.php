@@ -12,6 +12,7 @@ use xwindow.window,xwindow.window2,browser;
 include frontpage.fronthtmlpage;
 
 /---------------------------------load all and create after dpc objects
+public cms.cmsrt;
 public cpanel.rcpanel;
 
 ',1);

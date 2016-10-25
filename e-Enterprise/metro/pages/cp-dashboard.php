@@ -310,33 +310,11 @@
                             <a href="cp.php?t=cpshowMessages" class="pull-right"><phpdac>i18nL.translate use viewallmessages+RCCONTROLPANEL</phpdac></a>
                             <div class="clearfix no-top-space no-bottom-space"></div>
                         </div>
-                    </div>
-					<!-- BEGIN NOTIFICATIONS PORTLET-->
-                     <!--div class="widget blue">
-                         <div class="widget-title">
-                             <h4><i class="icon-download"></i> <phpdac>frontpage.slocale use _notifications</phpdac> </h4>
-                           <span class="tools">
-                               <a href="javascript:;" class="icon-chevron-down"></a>
-                               <a href="javascript:;" class="icon-remove"></a>
-                           </span>
-                         </div>
-                         <div class="widget-body">
-                             <ul class="item-list scroller padding"  style="overflow: hidden; width: auto; " data-always-visible="1">
-                                 <phpdac>rccontrolpanel.getClicks use viewMessages</phpdac>
-                             </ul>
-                             <div class="space10"></div>
-                             <a href="cpbulkmail.php?t=cpviewclicks&cid=<-hpdac>fronthtmlpage.echostr use rcbulkmail.cid</phpda->" class="pull-right"><phpdac>i18nL.translate use viewallnotifications+RCCONTROLPANEL</phpdac></a>
-                             <div class="clearfix no-top-space no-bottom-space"></div>
-                         </div>
-                     </div-->
-                     <!-- END NOTIFICATIONS PORTLET-->					
-                    <!-- END ALERTS PORTLET-->						
+                    </div>					
                 </div>
             </div>
             <div class="row-fluid">
                  <div class="span6">
-				 
-				     <!--hpdac>rccontrolpanel.showChart use mailqueue</phpda-->
 					 
 					<!-- BEGIN PROGRESS PORTLET-->
                     <div id="tasks" class="widget purple">

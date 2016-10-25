@@ -20,17 +20,16 @@ include networlds.clientdpc;
 include mail.smtpmail;
 
 /---------------------------------load all and create after dpc objects
-private frontpage.fronthtmlpage /cgi-bin;
+public jqgrid.mygrid;
+public cms.cmsrt;
 #ifdef SES_LOGIN
 public twig.twigengine;
-public jqgrid.mygrid;
 public phpdac.rcfs;
-public cms.cmsrt;
 public cms.rccollections;
 public bmail.rcbulkmail;
-private cp.rcpmenu /cgi-bin;
+public cp.rcpmenu;
 #endif
-private cp.rccontrolpanel /cgi-bin;
+public cp.rccontrolpanel;
 public i18n.i18nL;
 
 ',1);

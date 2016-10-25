@@ -13,11 +13,10 @@ use i18n.i18n;
 
 /---------------------------------load not create dpc (internal use)
 include networlds.clientdpc;
-include mchoice;
 include mail.smtpmail;
 	
 /---------------------------------load not create extensions (internal use)
-load_extension adodb refby _RECAPTCHA_; 	
+/load_extension adodb refby _RECAPTCHA_; 	
 
 security CART_DPC 1 1:1:1:1:1:1:1:1:1:1;
 security SHCART_DPC 1 1:1:1:1:1:1:1:1:1:1;
@@ -26,24 +25,23 @@ security SHTRANSACTIONS_DPC 1 1:1:1:1:1:1:1:1:1:1;
 /security ACCOUNTMNG_ 1 1:1:1:1:1:1:1:1:1:1;
 
 /---------------------------------load all and create after dpc objects
-private frontpage.fronthtmlpage /cgi-bin;
 public twig.twigengine;
 public cms.cmsrt;
 public cms.cmsvstats;
 public cms.cmslogin;
-public elements.confbar;
-private shop.shlangs /cgi-bin;
-private shop.shkategories /cgi-bin; 
-private shop.shkatalogmedia /cgi-bin;
-private shop.shnsearch /cgi-bin;
-private shop.shwishcmp /cgi-bin;
-private shop.shtags /cgi-bin;
-private shop.shmenu /cgi-bin;
 public cms.cmssubscribe;
-private shop.shusers /cgi-bin;
-private shop.shcustomers /cgi-bin;
-private shop.shcart /cgi-bin;
-private shop.shtransactions /cgi-bin;
+public bshop.shlangs;
+public bshop.shkategories; 
+public bshop.shkatalogmedia;
+public bshop.shnsearch;
+public bshop.shwishcmp;
+public bshop.shtags;
+public bshop.shmenu;
+public bshop.shusers;
+public bshop.shcustomers;
+public bshop.shcart;
+public bshop.shtransactions;
+public jsdialog.jsdialogStream;
 public i18n.i18nL;
 
 ',1);

@@ -7,7 +7,7 @@ super rcserver.rcssystem;
 load_extension adodb refby _ADODB_; 		
 super database;
 
-private frontpage.fronthtmlpage /cgi-bin;
+public cms.fronthtmlpage;
 public jsdialog.jsdialogStreamSrv;
 
 ',1);	 

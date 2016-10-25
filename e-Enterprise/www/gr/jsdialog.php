@@ -7,8 +7,7 @@ super rcserver.rcssystem;
 load_extension adodb refby _ADODB_; 		
 super database;
 
-private frontpage.fronthtmlpage /cgi-bin;
-/public stereobit.jsdialog /cgi-bin;
+public cms.cmsrt;
 public jsdialog.jsdialogStream;
 
 ',1);	 

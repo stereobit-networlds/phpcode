@@ -16,18 +16,18 @@ use jqgrid.jqgrid;
 include networlds.clientdpc;	
 
 /---------------------------------load all and create after dpc objects
-private frontpage.fronthtmlpage /cgi-bin;
-#ifdef SES_LOGIN
 public jqgrid.mygrid;
-private shop.rcitemrel /cgi-bin;
-private cp.rcpmenu /cgi-bin;
+public cms.cmsrt;
+#ifdef SES_LOGIN
+public bshop.rcitemrel;
+public cp.rcpmenu;
 #endif
-private cp.rccontrolpanel /cgi-bin;
+public cp.rccontrolpanel;
 public i18n.i18nL;
 
 ',1);
 
-$cptemplate = GetGlobal('controller')->calldpc_method('rcserver.paramload use FRONTHTMLPAGE+cptemplate');
+$cptemplate = _m('rcserver.paramload use FRONTHTMLPAGE+cptemplate');
 
 	switch ($_GET['t']) {
 		case 'cpirelmod'     : $p = $_GET['iframe'] ? 'cp-itemrel-detail' : 'cp-itemrel'; break;
