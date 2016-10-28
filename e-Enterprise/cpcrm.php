@@ -19,7 +19,13 @@ include networlds.clientdpc;
 /---------------------------------load all and create after dpc objects
 public jqgrid.mygrid;
 public cms.cmsrt;
+#ifdef CONF_CRM_PLUS
+public crm.crmplus;
+public crm.crmevents;
+public crm.crmactions;
+#endif
 #ifdef SES_LOGIN
+public crm.crmreports;
 public crm.crmreturns;
 public crm.crmpurchases;
 public crm.crmitemstats;
@@ -27,7 +33,6 @@ public crm.crmwishlist;
 public crm.crmwishcmp;
 public crm.crmwishfav;
 public crm.crmforms;
-public crm.crmplus;
 public crm.crmtransactions;
 public crm.crmtasks;
 public crm.crminbox;

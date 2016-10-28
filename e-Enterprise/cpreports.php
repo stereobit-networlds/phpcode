@@ -18,14 +18,8 @@ include networlds.clientdpc;
 /---------------------------------load all and create after dpc objects
 public jqgrid.mygrid;
 public cms.cmsrt;
-#ifdef CONF_CRM_PLUS
-public crm.crmgantti;
-public crm.crmacal;
-public crm.reservations;
-public crm.rccrm;
-public crm.rccrmplus;
-#endif
 #ifdef SES_LOGIN
+public reports.rcreports;
 public cp.rcpmenu;
 #endif
 public cp.rccontrolpanel;
@@ -36,11 +30,10 @@ public i18n.i18nL;
 $cptemplate = _m('rcserver.paramload use FRONTHTMLPAGE+cptemplate');
 
 	switch ($_GET['t']) {
-		case 'cpcrmprun'      : $p = 'cp-crmplus-subdetail'; break; 
-		case 'cpcrmpdetails'  : $p = 'cp-crmplus-subdetail'; break;
-		case 'cpcrmgant'      : $p = 'cp-crmplus-detail'; break;
-		case 'cpcrmpdashboard': $p = 'cp-crmplus-dashboard'; break;
-		default               : $p = $_GET['iframe'] ? 'cp-crmplus-detail' : 'cp-crmplus';
+		case 'cprepcrm'      : $p = 'cp-reports-detail'; break;		
+		case 'cprepcodesave' : $p = 'cp-reports-detail'; break;
+		case 'cprepframe'    : $p = $_GET['iframe'] ? 'cp-reports-detail' : 'cp-reports'; break;
+		default              : $p = $_GET['iframe'] ? 'cp-reports-detail' : 'cp-reports';
 	}
 	
     $mc_page = (GetSessionParam('LOGIN')) ? $p : 'cp-login';

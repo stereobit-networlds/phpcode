@@ -5,7 +5,7 @@
 <!-- BEGIN HEAD -->
 <head>
    <meta charset="utf-8" />
-   <title>Cron</title>
+   <title>Reports</title>
    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
    <meta content="" name="description" />
    <meta content="" name="author" />
@@ -51,7 +51,7 @@
                  <div class="span12">
                      <div class="widget red">
                          <div class="widget-title">
-                             <h4><i class="icon-edit"></i> Cron </h4>
+                             <h4><i class="icon-edit"></i> <phpdac>frontpage.slocale use RCREPORTS_DPC</phpdac> </h4>
                            <span class="tools">
                                <a href="javascript:;" class="icon-chevron-down"></a>
                                <a href="javascript:;" class="icon-remove"></a>
@@ -95,9 +95,8 @@
 
    <!-- END JAVASCRIPTS -->  
    <script>
-	function cronjobs() {var str = arguments[0]; $('#cronjobs').load("cpcron.php?t=cpcronjobs&id="+str);}
+	function report() {var str = arguments[0]; $('#report').load("cpreports.php?t=cprepframe&id="+str);}
    </script>
-
 	<!-- e-Enterprise, stereobit.networlds (phpdac5) -->   
 </body>
 <!-- END BODY -->
