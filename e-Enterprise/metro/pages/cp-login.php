@@ -64,7 +64,7 @@
                 <a id="forget-password" class="" href="#" onClick="top.location.href='../<phpdac>fronthtmlpage.echostr use turldecoded</phpdac>'"><phpdac>frontpage.slocale use _back</phpdac></a>
             </div>
             <div class="forgot-hint pull-right">
-                <a id="forget-password" class="" href="cp.php?t=chpass&turl=<phpdac>fronthtmlpage.echostr use turl</phpdac>"><phpdac>frontpage.slocale use _rempass</phpdac>?</a>
+                <a id="forget-password" class="" href="cp.php?t=chpass&turl=<phpdac>fronthtmlpage.echostr use turl</phpdac>"><phpdac>frontpage.slocale use _rempass</phpdac></a>
             </div>
         </div>
     </div>

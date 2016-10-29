@@ -8,7 +8,6 @@ super database;
 /---------------------------------load and create libs
 use i18n.i18n;
 use gui.swfcharts;
-/use jqgrid.jqgrid;
 use cp.cpflotcharts;
 
 /---------------------------------load not create dpc (internal use)
@@ -18,7 +17,6 @@ include mail.smtpmail;
 load_extension recaptcha refby _RECAPTCHA_;	
 
 /---------------------------------load all and create after dpc objects
-/public jqgrid.mygrid;
 public cms.cmsrt;
 
 #ifdef SES_LOGIN
@@ -43,7 +41,8 @@ $cptemplate = _m('rcserver.paramload use FRONTHTMLPAGE+cptemplate');
 						
 		case 'shremember':	$mc_page = 'cp-lock';
                             break;  
-        case 'lang'     :   						
+        case 'lang'     :   $mc_page = 'cp-lang';
+                            break;  						
         default       	:	
 							if (($user = $_POST['cpuser']) && ($pass = $_POST['cppass'])) 
 								$login = _m("shlogin.do_login use ".$user.'+'.$pass.'+1');	//editmode

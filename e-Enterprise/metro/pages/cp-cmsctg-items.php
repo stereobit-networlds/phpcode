@@ -36,10 +36,10 @@
                     <div class="widget orange">
                         <div class="widget-title">
                             <h4>
-                                <i class="icon-reorder"></i> <phpdac>frontpage.slocale use _selecto</phpdac> <phpdac>rccmslandp.currentSelectedTree</phpdac>
+                                <i class="icon-reorder"></i> <phpdac>frontpage.slocale use _selecto</phpdac> <phpdac>rccmsctg.currentSelectedTree</phpdac>
                             </h4>
 							<div class="update-btn">
-								<phpdac>rccmslandp.selectFieldButton</phpdac>
+								<phpdac>rccmsctg.selectFieldButton</phpdac>
                                 <a href="<phpdac>rctreedescr.selectFieldUrl</phpdac>" class="btn"><i class="icon-repeat"></i> Default</a>
                             </div>
                         </div>
@@ -60,7 +60,7 @@
                                                 </div>
 
                                                 <select name="tlist[]" id="box1View" multiple="multiple" style="height:300px;width:75%">
-                                                    <phpdac>rccmslandp.getCurrentList</phpdac>
+                                                    <phpdac>rccmsctg.getCurrentList</phpdac>
                                                 </select><br/>
 
                                                 <span id="box1Counter" class="countLabel"></span>
@@ -85,8 +85,8 @@
                                                     <button type="button" class="btn" id="box2Clear">X</button>
                                                 </div>
 
-                                                <select name="mylandlist[]" id="box2View" multiple="multiple" style="height:300px;width:75%;">
-													<phpdac>rccmslandp.viewList</phpdac>
+                                                <select name="myctglist[]" id="box2View" multiple="multiple" style="height:300px;width:75%;">
+													<phpdac>rccmsctg.viewList</phpdac>
                                                 </select><br/>
 
                                                 <span id="box2Counter" class="countLabel"></span>
@@ -100,7 +100,7 @@
                                 </div>
 							
                                 <div class="mtop20">
-									<phpdac>rccmslandp.postSubmit use cpsavelandp+Ok+btn</phpdac>
+									<phpdac>rccmsctg.postSubmit use cpsavectg+Ok+btn</phpdac>
                                 </div>
                             </form>
                             <!-- END DUAL SELECT-->

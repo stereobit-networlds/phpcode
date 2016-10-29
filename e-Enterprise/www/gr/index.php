@@ -23,7 +23,6 @@ public twig.twigengine;
 public cms.cmsrt;
 public cms.cmsvstats;
 public cms.cmslogin;
-public bshop.shlangs;
 public bshop.shkategories; 
 public bshop.shkatalogmedia;
 public bshop.shnsearch;
