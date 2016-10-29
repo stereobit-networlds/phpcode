@@ -26,7 +26,6 @@ security SHTRANSACTIONS_DPC 1 1:1:1:1:1:1:1:1:1:1;
 public cms.cmsrt;
 public cms.cmsvstats;
 public cms.cmslogin;
-public bshop.shlangs;
 public bshop.shkategories;
 public bshop.shkatalogmedia;
 public bshop.shnsearch;

@@ -8,7 +8,7 @@ super database;
 /---------------------------------load and create libs
 use i18n.i18n;
 use gui.swfcharts;
-use jqgrid.jqgrid;
+/use jqgrid.jqgrid;
 use cp.cpflotcharts;
 
 /---------------------------------load not create dpc (internal use)
@@ -18,7 +18,7 @@ include mail.smtpmail;
 load_extension recaptcha refby _RECAPTCHA_;	
 
 /---------------------------------load all and create after dpc objects
-public jqgrid.mygrid;
+/public jqgrid.mygrid;
 public cms.cmsrt;
 
 #ifdef SES_LOGIN
@@ -42,7 +42,8 @@ $cptemplate = _m('rcserver.paramload use FRONTHTMLPAGE+cptemplate');
 							break;
 						
 		case 'shremember':	$mc_page = 'cp-lock';
-                            break;    
+                            break;  
+        case 'lang'     :   						
         default       	:	
 							if (($user = $_POST['cpuser']) && ($pass = $_POST['cppass'])) 
 								$login = _m("shlogin.do_login use ".$user.'+'.$pass.'+1');	//editmode
@@ -54,7 +55,7 @@ $cptemplate = _m('rcserver.paramload use FRONTHTMLPAGE+cptemplate');
 								$dashboard = (isset($id)) ? 'cp-itemstats' : ( (isset($cat)) ? 'cp-catstats' : 'cp-dashboard' );
 						
 								$seclevid = $GLOBALS['ADMINSecID'] ? $GLOBALS['ADMINSecID'] : GetSessionParam('ADMINSecID');
-								$default_page = ($seclevid<6) ? 'cp-mailstats' : $dashboard; //'cp-dashboard';
+								$default_page = ($seclevid<6) ? 'cp-mailstats' : $dashboard; 
 								$mc_page = (($p=GetReq('t')) && ($p!='cp'))  ? str_replace('cp', 'cp-', GetReq('t')) : $default_page;
 							}
 							else

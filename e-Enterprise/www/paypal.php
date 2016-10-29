@@ -29,7 +29,6 @@ public cms.cmsrt;
 public cms.cmsvstats;
 public cms.cmslogin;
 public cms.cmssubscribe;
-public bshop.shlangs;
 public bshop.shkategories; 
 public bshop.shkatalogmedia;
 public bshop.shnsearch;

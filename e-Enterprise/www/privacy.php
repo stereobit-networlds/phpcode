@@ -21,7 +21,6 @@ load_extension recaptcha refby _RECAPTCHA_;
 public cms.cmsrt;
 public cms.cmsvstats;
 public cms.cmslogin;
-public bshop.shlangs;
 public bshop.shkategories; 
 public bshop.shkatalogmedia;
 public bshop.shnsearch;
