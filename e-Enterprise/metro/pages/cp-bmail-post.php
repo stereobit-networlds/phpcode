@@ -105,7 +105,7 @@
 							<div class="control-group">
                                 <label class="control-label"><phpdac>i18nL.translate use receiver+RCBULKMAIL</phpdac></label>
                                 <div id="editto" class="controls">
-									<input id="include" name="include" id="tags_1" type="text" class="tags" value="<phpdac>fronthtmlpage.nvldac2 use include+fronthtmlpage.echostr:include++</phpdac>" readonly="readonly" />									
+									<input name="include" id="tags_1" type="text" class="tags" value="<phpdac>fronthtmlpage.nvldac2 use include+fronthtmlpage.echostr:include++</phpdac>" readonly="readonly" />									
                                 </div>
                                 <div id="editsend" class="controls">
 									<input id="receivers" name="receivers" type="text" value="<phpdac>fronthtmlpage.nvldac2 use bcc+fronthtmlpage.echostr:bcc++</phpdac>" class="span12 " readonly="readonly" />									
@@ -187,8 +187,8 @@
    <!--script type="text/javascript" src="assets/bootstrap/js/bootstrap-fileupload.js"></script-->
    <script src="js/jquery.blockui.js"></script>
    
-   <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-   <script src="js/jQuery.dualListBox-1.3.js" language="javascript" type="text/javascript"></script>  
+   <!--script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+   <script src="js/jQuery.dualListBox-1.3.js" language="javascript" type="text/javascript"></script-->  
 
    <!-- ie8 fixes -->
    <!--[if lt IE 9]>

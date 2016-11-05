@@ -67,7 +67,6 @@
                                 <label class="control-label">Title</label>
                                 <div id="edit_subject" class="controls">
                                     <input name="title" value="<phpdac>fronthtmlpage.nvldac2 use title+fronthtmlpage.echostr:title+cpmhtmleditor.getField:itmname+</phpdac>" type="text" class="span6 " />
-                                    <span class="help-inline">Insert a title </span>
                                 </div>
                             </div>
                             <div class="control-group">
@@ -110,50 +109,18 @@
 											Insert e-mail in order to test before sending	
 											</span>
 										</div-->	
-										<input id="tags_1" name="tags" type="text" class="tags" value="<phpdac>cphtmleditor.cpGet</phpdac>" />									
+										<input id="tags_1" name="tags" type="text" class="tags" value="<phpdac>cphtmleditor.getTags</phpdac>" />									
                                     </div>
                             </div>								
 							<div id="select_template" class="control-group">
                                 <label class="control-label">Template</label>
                                 <div id="template_page" class="controls">
-                                    <select name="mcpage" class="span6 chzn-select" data-placeholder="Choose a Category" tabindex="1">
+                                    <select name="mctemplate" class="span6 chzn-select" data-placeholder="Choose a Category" tabindex="1">
                                         <option value="">Select...</option>
-										<phpdac>cpmhtmleditor.frontpages</phpdac>
+										<phpdac>cpmhtmleditor.templates</phpdac>
                                     </select>
-									<span class="help-inline"><phpdac>cphtmleditor.getMcPage</phpdac> </span>
                                 </div>								
-                            </div>
-						    <!--div class="control-group">
-                                <label class="control-label">From</label>
-                                <div id="edit_from" class="controls">
-                                    <div class="input-icon left">
-                                        <i class="icon-envelope"></i>
-                                        <input name="from" value="<phpdac>fronthtmlpage.nvldac2 use from+fronthtmlpage.echostr:from++</phpdac>" class=" " type="text" />
-										<span class="help-inline">
-											<i class="icon-user"></i>
-											<input name="realm" value="<phpdac>fronthtmlpage.nvldac2 use realm+fronthtmlpage.echostr:realm++</phpdac>" class=" " type="text" readonly="readonly" />
-										</span>
-                                    </div>
-                                </div>
-                            </div>	
-						    <div class="control-group">
-                                <label class="control-label">Settings</label>
-                                <div class="controls">
-                                    <div class="input-icon left">
-                                        <i class="icon-user"></i>
-										<input name="user" value="<phpdac>fronthtmlpage.nvldac2 use user+fronthtmlpage.echostr:user++</phpdac>" class=" " type="text" />
-										</span>
-										<span class="help-inline">
-											<i class="icon-lock"></i>
-											<input name="pass" value="<phpdac>fronthtmlpage.nvldac2 use pass+fronthtmlpage.echostr:pass++</phpdac>" class=" " type="text" />
-										</span>
-										<span class="help-inline">
-											<i class="icon-tasks"></i>
-											<input name="server" value="<phpdac>fronthtmlpage.nvldac2 use server+fronthtmlpage.echostr:server++</phpdac>" class=" " type="text" />
-										</span>
-                                    </div>
-                                </div>
-                            </div-->														
+                            </div>														
                             <div class="form-actions">
                                 <button type="submit" class="<phpdac>fronthtmlpage.nvl use cpmhtmleditor.postok+btn btn-success+btn btn-danger+</phpdac>">Update</button>
 								<input type="hidden" name="FormName" value="edititem" />

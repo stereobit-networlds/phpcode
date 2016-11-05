@@ -116,54 +116,23 @@
 							<div id="select_template" class="control-group">
                                 <label class="control-label">Template</label>
                                 <div id="template_page" class="controls">
-                                    <select name="mcpage" class="span6 chzn-select" data-placeholder="Choose a Category" tabindex="1">
+                                    <select name="mctemplate" class="span6 chzn-select" data-placeholder="Choose a Category" tabindex="1">
                                         <option value="">Select...</option>
-										<phpdac>cpmhtmleditor.frontpages</phpdac>
+										<phpdac>cpmhtmleditor.templates</phpdac>
                                     </select>
-									<span class="help-inline"><phpdac>cphtmleditor.getMcPage</phpdac> </span>
                                 </div>							
-                            </div>
-						    <!--div class="control-group">
-                                <label class="control-label">From</label>
-                                <div id="edit_from" class="controls">
-                                    <div class="input-icon left">
-                                        <i class="icon-envelope"></i>
-                                        <input name="from" value="<phpdac>fronthtmlpage.nvldac2 use from+fronthtmlpage.echostr:from++</phpdac>" class=" " type="text" />
-										<span class="help-inline">
-											<i class="icon-user"></i>
-											<input name="realm" value="<phpdac>fronthtmlpage.nvldac2 use realm+fronthtmlpage.echostr:realm++</phpdac>" class=" " type="text" readonly="readonly" />
-										</span>
-                                    </div>
-                                </div>
-                            </div>	
-						    <div class="control-group">
-                                <label class="control-label">Settings</label>
-                                <div class="controls">
-                                    <div class="input-icon left">
-                                        <i class="icon-user"></i>
-										<input name="user" value="<phpdac>fronthtmlpage.nvldac2 use user+fronthtmlpage.echostr:user++</phpdac>" class=" " type="text" />
-										</span>
-										<span class="help-inline">
-											<i class="icon-lock"></i>
-											<input name="pass" value="<phpdac>fronthtmlpage.nvldac2 use pass+fronthtmlpage.echostr:pass++</phpdac>" class=" " type="text" />
-										</span>
-										<span class="help-inline">
-											<i class="icon-tasks"></i>
-											<input name="server" value="<phpdac>fronthtmlpage.nvldac2 use server+fronthtmlpage.echostr:server++</phpdac>" class=" " type="text" />
-										</span>
-                                    </div>
-                                </div>
-                            </div-->														
+                            </div>														
                             <div class="form-actions">
                                 <button type="submit" class="<phpdac>fronthtmlpage.nvl use cpmhtmleditor.postok+btn btn-success+btn btn-danger+</phpdac>">Submit</button>
                                 <!--button type="button" class="btn">Cancel</button-->
 								<input type="hidden" name="FormName" value="newitem" />
 								<input type="hidden" name="FormAction" value="cpmnewitem" />
-								<input type="hidden" name="id" value="<phpdac>fronthtmlpage.echostr use id</phpdac>">
+								<input type="hidden" name="id" value="<phpdac>fronthtmlpage.nvldac2 use id+fronthtmlpage.echostr:id++</phpdac>">
 								<input type="hidden" name="insert" value="1">
 								
-								<phpdac>fronthtmlpage.nvl use cpmhtmleditor.postok+<a href="cpmhtmleditor.php?t=cpmhtmlcopy&copyid=" class="btn btn-info">Copy</a>++</phpdac>
-								<phpdac>fronthtmlpage.nvl use cpmhtmleditor.postok+<a href="cpmhtmleditor.php?t=cpmitemedit&copyid=" class="btn btn-success">Details</a++</phpdac>								
+								<phpdac>fronthtmlpage.nvl use cpmhtmleditor.postok+<a href="cpmhtmleditor.php?t=cpmvphoto&id=" class="btn btn-info">Photo</a>++</phpdac>
+								<!--hpdac>fronthtmlpage.nvl use cpmhtmleditor.postok+<a href="cpmhtmleditor.php?t=cpmhtmlcopy&copyid=" class="btn btn-info">Copy</a>++</phpda-->
+								<!--hpdac>fronthtmlpage.nvl use cpmhtmleditor.postok+<a href="cpmhtmleditor.php?t=cpmitemedit&copyid=" class="btn btn-success">Details</a++</phpda-->								
                             </div>							
 							<div>
 							<div id="exclude" class="control-group">

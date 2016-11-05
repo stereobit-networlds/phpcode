@@ -20,9 +20,7 @@
     <link href="assets/fancybox/source/jquery.fancybox.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="assets/uniform/css/uniform.default.css" />
     <link rel="stylesheet" type="text/css" href="assets/chosen-bootstrap/chosen/chosen.css" />
-    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" /> 
-	
-    <link href="assets/jquery-easy-pie-chart/jquery.easy-pie-chart.css" rel="stylesheet" type="text/css" media="screen"/>		
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" /> 		
 </head>
 <!-- END HEAD -->
 <!-- BEGIN BODY -->
@@ -77,63 +75,7 @@
                     </div>
                     <!-- END SAMPLE FORM PORTLET-->
                 </div>
-            </div>	
-            <div class="row-fluid">
-                <div class="span6">
-                    <div class="widget-body">
-                            <div class="text-center">
-                                <div class="easy-pie-chart">
-                                    <div class="percentage success" data-percent="<phpdac>rccontrolpanel.getStats use Diskspace+remainsizepercent</phpdac>"><span><phpdac>rccontrolpanel.getStats use Diskspace+remainsizepercent</phpdac></span>%</div>
-                                    <div class="title"><phpdac>i18nL.translate use usedspace</phpdac></div>
-                                </div>
-                                <div class="easy-pie-chart">
-                                    <div class="percentage" data-percent="<phpdac>rccontrolpanel.getStats use Diskspace+remainhdpercent</phpdac>"><span><phpdac>rccontrolpanel.getStats use Diskspace+remainhdpercent</phpdac></span>%</div>
-                                    <div class="title"><phpdac>i18nL.translate use hdusage</phpdac></div>
-                                </div>
-                                <div class="easy-pie-chart">
-                                    <div class="percentage" data-percent="<phpdac>rccontrolpanel.getStats use Diskspace+remainmxpercent</phpdac>"><span><phpdac>rccontrolpanel.getStats use Diskspace+remainmxpercent</phpdac></span>%</div>
-                                    <div class="title"><phpdac>i18nL.translate use mxusage</phpdac></div>
-                                </div>
-                                <div class="easy-pie-chart">
-                                    <div class="percentage" data-percent="<phpdac>rccontrolpanel.getStats use Diskspace+remaindbpercent</phpdac>"><span><phpdac>rccontrolpanel.getStats use Diskspace+remaindbpercent</phpdac></span>%</div>
-                                    <div class="title"><phpdac>i18nL.translate use dbusage</phpdac></div>
-                                </div>
-                            </div>
-                    </div>	
-						
-                     <div class="widget blue">
-                         <div class="widget-title">
-                             <h4><i class="icon-download"></i> <phpdac>i18nL.translate use update+RCCONTROLPANEL</phpdac> </h4>
-                           <span class="tools">
-                               <a href="javascript:;" class="icon-chevron-down"></a>
-                               <a href="javascript:;" class="icon-remove"></a>
-                           </span>
-                         </div>
-                         <div class="widget-body">
-                             <ul class="item-list scroller padding"  style="overflow: hidden; width: auto; " data-always-visible="1">
-                                 <phpdac>rccontrolpanel.getStats use Update+html</phpdac>
-                             </ul>
-                         </div>
-                     </div>						
-				</div>
-                <div class="span6">
-                     <div id="addons" class="widget red">
-                         <div class="widget-title">
-                             <h4><i class="icon-plus-sign"></i> <phpdac>i18nL.translate use addons+RCCONTROLPANEL</phpdac></h4>
-									<span class="tools">
-									<a href="javascript:;" class="icon-chevron-down"></a>
-									<a href="javascript:;" class="icon-remove"></a>
-									</span>
-                         </div>
-                         <div class="widget-body">
-                             <div class="timeline-messages">
-                                <phpdac>rccontrolpanel.getStats use Addons+html</phpdac> 
-                             </div>
-                         </div>
-                     </div>
-                </div>				
-			</div>		
-	
+            </div>		
             <!-- END PAGE CONTENT-->
          </div>		
          <!-- END PAGE CONTAINER-->
@@ -166,9 +108,6 @@
    <script type="text/javascript" src="assets/bootstrap-inputmask/bootstrap-inputmask.min.js"></script>
 
    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-   <script src="assets/jquery-easy-pie-chart/jquery.easy-pie-chart.js" type="text/javascript"></script>
-   <script src="js/jquery.sparkline.js" type="text/javascript"></script>
-   <script src="assets/chart-master/Chart.js"></script>
    <script src="js/jquery.scrollTo.min.js"></script>   
 
    <!--common script for all pages-->
@@ -177,9 +116,6 @@
    <!--script for this page-->
    <script src="js/form-component.js"></script>
    
-   
-   <script src="js/easy-pie-chart.js"></script>
-   <script src="js/sparkline-chart.js"></script>   
   <!-- END JAVASCRIPTS -->
 
   <!-- e-Enterprise, stereobit.networlds (phpdac5) -->   

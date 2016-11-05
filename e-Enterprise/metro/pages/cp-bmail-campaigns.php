@@ -198,8 +198,8 @@
    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
    <script src="js/jquery.blockui.js"></script>
    
-   <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-   <script src="js/jQuery.dualListBox-1.3.js" language="javascript" type="text/javascript"></script>  
+   <!--script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+   <script src="js/jQuery.dualListBox-1.3.js" language="javascript" type="text/javascript"></script-->  
 
    <!-- ie8 fixes -->
    <!--[if lt IE 9]>

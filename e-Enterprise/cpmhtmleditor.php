@@ -27,7 +27,7 @@ $postok = defined('CPMHTMLEDITOR_DPC') ? _v('cpmhtmleditor.postok') : false;
 
 	switch ($_GET['t']) {
 		case 'cpmdelitem'    : $p = 'cp-htmleditor-newitem'; break;
-		case 'cpmnewitem'    : $p = $_POST['insert'] && $postok ? 'cp-uploadimage' : 'cp-htmleditor-newitem'; break;
+		case 'cpmnewitem'    : $p = ($_POST['insert'] && $postok) ? 'cp-uploadimage' : 'cp-htmleditor-newitem'; break;
 		case 'cpmedititem'   : $p = 'cp-htmleditor-edititem'; break;
 		case 'cpmvphotoadddb':
 		case 'cpmvphotodeldb':

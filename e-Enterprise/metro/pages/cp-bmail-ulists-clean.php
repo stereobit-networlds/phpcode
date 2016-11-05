@@ -61,15 +61,18 @@
                             <form method="post" action="#" class="form-horizontal">	
 
                             <div class="control-group">
-                                <label class="control-label"><phpdac>frontpage.slocale use _failmargin</phpdac> (&gt;=)</label>
+                                <label class="control-label"><phpdac>frontpage.slocale use _failmargin</phpdac> (&gt;)</label>
                                 <div class="controls">
 
-                                    <select name="fid" class="span6 " data-placeholder="Choose a Category" tabindex="1">
-                                        <option value="50">50</option>
-                                        <option value="30">30</option>
-                                        <option value="15">15</option>
-                                        <option value="10">10</option>
+                                    <select name="fid" class="span6 " data-placeholder="Choose a limit" tabindex="1">
+										<option value="10">10</option>
+										<option value="9">9</option>
+										<option value="8">8</option>
+										<option value="7">7</option>
+                                        <option value="6">6</option>
                                         <option value="5">5</option>
+                                        <option value="4">4</option>
+                                        <option value="3">3</option>
 										<option value="2">2</option>
 										<option value="1">1</option>
                                     </select>

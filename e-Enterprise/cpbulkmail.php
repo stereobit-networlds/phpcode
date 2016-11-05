@@ -24,7 +24,7 @@ public jqgrid.mygrid;
 public cms.cmsrt;
 #ifdef SES_LOGIN
 public twig.twigengine;
-public phpdac.rcfs;
+public cp.rcfs;
 public cms.rccollections;
 public bmail.rcbulkmail;
 public cp.rcpmenu;

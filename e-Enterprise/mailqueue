@@ -8,6 +8,7 @@ define('SENDMAIL_PHPMAILER','true');
 
 require_once('dpc2/system/pcntlcmd.lib.php'); 
 $page = &new pcntl('
+super javascript;
 super rcserver.rcssystem;
 
 load_extension adodb4 refby _ADODB_; 
@@ -15,13 +16,13 @@ super database;
 
 use mail.bounce_driver;
 
-public frontpage.fronthtmlpage;
+public cms.cmsrt;
 public mail.smtpmail;
 public bmail.maildbqueue;
 
 ',0);	 
 
-$ret = GetGlobal('controller')->calldpc_method('maildbqueue.sendmail_daemon use 20+200');//20,400
+$ret = _m('maildbqueue.sendmail_daemon use 20+100');
 echo $ret;
 $time = (microtime(true) - $start)/60;//5.4$_SERVER["REQUEST_TIME_FLOAT"]);// /60;
 echo "<!-- 	$time -->";

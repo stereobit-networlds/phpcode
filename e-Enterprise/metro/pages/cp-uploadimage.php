@@ -56,7 +56,7 @@
                         </div>
                     </div>
                     <!-- END SAMPLE FORM PORTLET-->
-                     <div class="widget green">
+                     <!--div class="widget green">
                          <div class="widget-title">
                              <h4><i class="icon-edit"></i> CK Editor </h4>
                            <span class="tools">
@@ -65,9 +65,9 @@
                            </span>
                          </div>
                          <div class="widget-body">
-                             <?METRO/INDEX?>
+                             <-METRO/INDEX->
                          </div>
-                     </div>					
+                     </div-->					
                 </div>
             </div>
             <!-- END PAGE CONTENT-->
