@@ -85,7 +85,7 @@
                                 </div>
                             </div>	
 						    <div class="control-group">
-                                <label class="control-label"><phpdac>i18nL.translate use settings+RCPMENU</phpdac></label>
+                                <label class="control-label"><phpdac>i18nL.translate use SETTINGS+RCPMENU</phpdac></label>
                                 <div class="controls">
                                     <div class="input-icon left">
                                         <i class="icon-user"></i>

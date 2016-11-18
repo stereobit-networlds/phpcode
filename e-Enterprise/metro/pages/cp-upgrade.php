@@ -59,19 +59,18 @@
                             </span>
                         </div>
                         <div class="widget-body">
-
-                            <!--form name="form1" method="post" action="#" id="form1">
-                                <div>
-                                    <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTk5MjI0ODUwOWRkJySmk0TGHOhSY+d9BU9NHeCKW6o=" />
-                                </div-->
 								
                                 <?METRO/INDEX?>
-
-								<!--div class="form-actions">
-                                    <button type="submit" class="btn blue"><i class="icon-ok"></i> Save</button>
-                                    <button type="button" class="btn"><i class=" icon-remove"></i> Cancel</button>
-                                </div>
-                            </form-->
+								<ul class="unstyled">
+								<li>
+									<strong class="label"> 0%</strong>
+									<div class="space10"></div>
+									<div class="progress">
+										<div style="width: 0%;" class="bar"></div>
+									</div>
+								</li>
+								</ul>	
+								<div id="message_p"></div>									
 
                         </div>
                     </div>

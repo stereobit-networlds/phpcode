@@ -89,8 +89,6 @@
 										</div>																				
 										
 										<div id="edit_template" class="control-group">
-										<!-- BEGIN FORM-->
-										<form action="#" class="form-horizontal">
 										<div class="control-group">
 											<label class="control-label"><phpdac>fronthtmlpage.nvldac use rcbulkmail.template+rcbulkmail.templateLoaded+fronthtmlpage.echostr use Template+</phpdac></label>
 											<div class="controls">
@@ -100,8 +98,6 @@
                                         		<phpdac>rcbulkmail.ckeditorjs use mail_text+minimize+1</phpdac>										
 											</div>
 										</div>
-										</form>
-										<!-- END FORM-->
 										</div>
                                     </div>
                                     <div class="tab-pane <phpdac>fronthtmlpage.nvl use rcbulkmail.ulistselect+ active++</phpdac>" id="tabsleft-tab2">

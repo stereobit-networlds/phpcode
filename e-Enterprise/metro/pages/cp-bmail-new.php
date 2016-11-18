@@ -57,7 +57,7 @@
                         </span>
                         </div>
                         <div class="widget-body">
-                            <form id="tForm" method="post" action="cpbulkmail.php?t=cpsavemailadv&editmode=1" class="form-horizontal">
+                            <form id="tForm" method="post" action="cpbulkmail.php" class="form-horizontal">
 							    <input type="hidden" name="stemplate" value="<phpdac>fronthtmlpage.echostr use stemplate</phpdac>" />
 								<input type="hidden" name="FormName" value="cptemplatenew" />
 								<input type="hidden" name="FormAction" value="cptemplatesav" />
@@ -82,16 +82,12 @@
 										</div>																			
 										
 										<div id="template" class="control-group">
-										<!-- BEGIN FORM-->
-										<form action="#" class="form-horizontal">
 										<div class="control-group">
 											<textarea class="span12 ckeditor" name="template_text" rows="8">
 											<phpdac>fronthtmlpage.calldpc_var use rcbulkmail.newtemplatebody</phpdac>
 											</textarea>
                                         	<phpdac>rcbulkmail.ckeditorjs use template_text</phpdac>										
 										</div>
-										</form>
-										<!-- END FORM-->
 										</div>
                                     </div>
                                     <div class="tab-pane" id="tabsleft-tab2">

@@ -1,5 +1,13 @@
+<IfModule mod_security.c>
+   SecFilterEngine Off
+   SecFilterScanPOST Off
+</IfModule>
 
 RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)/([^\.]+).html$ katalog.php?t=kshow&cat=$1&id=$2 [L]
+RewriteRule ^([^\.]+).html$ katalog.php?t=klist&cat=$1 [NC,L]
 
 RewriteRule ^addtocart/([^/]*)/([^/]*)/([^/]*)/$ /katalog.php?t=addtocart&a=$1&cat=$2&page=$3 [L]
 RewriteRule ^removefromcart/([^/]*)/([^/]*)/([^/]*)/$ /katalog.php?t=removefromcart&a=$1&cat=$2&page=$3 [L]
