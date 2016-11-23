@@ -4,7 +4,7 @@
 <script type="text/javascript">
 	$(document).ready(function(){
 		$.cookieBar({
-			message: 'We use cookies to ensure that we give you the best experience on our website',
+			message: '<phpdac>cmsrt.slocale use _cookiesmsg</phpdac>',
 			acceptText: '.',
 			element: 'body',
 			autoEnable: false,

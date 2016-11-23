@@ -30,6 +30,7 @@ public i18n.i18nL;
 
 $cptemplate = _m('rcserver.paramload use FRONTHTMLPAGE+cptemplate');
     switch ($_GET['t']) {
+		case 'cpappnew'      : $p = 'cp-apps-new'; break;
 		case 'cpappslink'    :
 		case 'cpdoupgrade'   : $p = 'cp-apps-upgrade'; break;
 		default              : $p = 'cp-apps';		

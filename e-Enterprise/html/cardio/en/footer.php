@@ -55,7 +55,7 @@
 					<img src="images/logo-analytics.png" alt="Analytics"/>	
 				</div>
 				<div class="col-sm-8">
-					<p><phpdac>fronthtmlpage.get_copyright</phpdac> Powered by <a href="http://www.stereobit.com/">stereobit.com</a> designed by <a href="http://www.phir.co/">PHIr</a></p>
+					<p>&copy; 2016 <a href="<phpdac>cmsrt.get_admin_link use 1</phpdac>"><img src="images/icon_cp.png"/></a> Powered by <a href="http://www.stereobit.com">stereobit.com</a> designed by <a href="http://www.phir.co/">PHIr</a></p>
 				</div>
 				<div class="col-sm-4 text-right text-center-mobile">
 					<ul class="social-footer">
