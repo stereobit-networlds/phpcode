@@ -14,7 +14,6 @@ use i18n.i18n;
 include networlds.clientdpc;
 include mail.smtpmail;
 
-	
 /---------------------------------load not create extensions (internal use)	
 load_extension recaptcha refby _RECAPTCHA_;	
 
@@ -27,12 +26,12 @@ security SHTRANSACTIONS_DPC 1 1:1:1:1:1:1:1:1:1:1;
 public cms.cmsrt;
 public cms.cmsvstats;
 public cms.cmslogin;
+public cms.cmsmenu;
 public bshop.shkategories; 
 public bshop.shkatalogmedia;
 public bshop.shnsearch;
 public bshop.shwishcmp;
 public bshop.shtags;
-public bshop.shmenu;
 public bshop.shusers;
 public bshop.shcustomers;
 public bshop.shcart;

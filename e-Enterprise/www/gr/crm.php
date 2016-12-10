@@ -26,7 +26,7 @@ public cms.cmsrt;
 public cms.cmsvstats;
 public cms.cmslogin;
 public cms.cmssubscribe;
-public bshop.shlangs;
+public cms.cmsmenu;
 public bshop.shusers;
 private stereobit.shform /cgi-bin;
 public jsdialog.jsdialogStream;

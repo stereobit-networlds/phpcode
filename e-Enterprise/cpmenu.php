@@ -10,7 +10,6 @@ super database;
 
 /---------------------------------load and create libs
 use i18n.i18n;
-include gui.form;
 
 /---------------------------------load not create dpc (internal use)
 include networlds.clientdpc;	
@@ -18,7 +17,6 @@ include networlds.clientdpc;
 /---------------------------------load all and create after dpc objects
 public cms.cmsrt;
 #ifdef SES_LOGIN
-public bshop.rcitems;
 public cms.rcmenu;
 public cp.rcpmenu;
 #endif

@@ -5,7 +5,7 @@
 <!-- BEGIN HEAD -->
 <head>
    <meta charset="utf-8" />
-   <title>Nestable</title>
+   <title>Menu</title>
    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
    <meta content="" name="description" />
    <meta content="" name="author" />
@@ -42,13 +42,17 @@
             <div class="row-fluid">
                 <div class="span12">
                     <div class="margin-bottom-10 pull-right" id="nestable_list_menu">
-                        <button type="button" class="btn btn-success" data-action="expand-all">Expand All</button>
-                        <button type="button" class="btn btn-warning" data-action="collapse-all">Collapse All</button>
-						<button type="button" class="btn" id="save" data-action="collapse-all">Save</button>
+						<phpdac>rcmenu.menuButtonSelect</phpdac>
+                        <button type="button" class="btn btn-success" data-action="expand-all"><phpdac>frontpage.slocale use _expand</phpdac></button>
+                        <button type="button" class="btn btn-warning" data-action="collapse-all"><phpdac>frontpage.slocale use _collapse</phpdac></button>
+						<button type="button" class="btn" id="save" data-action="collapse-all"><phpdac>frontpage.slocale use _save</phpdac></button>
                     </div>
                 </div>
             </div>
-            <div class="row-fluid">
+			<div class="row-fluid">
+				<?METRO/INDEX?>
+			</div>
+            <!--div class="row-fluid">
                 <div class="span12">
                     <h3>Serialised Output (per list)</h3>
                     <div class="row-fluid">
@@ -60,61 +64,27 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div-->
+			<!-- menuname var -->
+			<input type="hidden" id="menuname" name="menuname" value="<phpdac>cmsrt.echostr use menu</phpdac>" />
+			<!-- menuname var -->
             <div class="row-fluid">
                 <div class="span6">
                     <div class="widget green">
                         <div class="widget-title">
-                            <h4><i class="icon-align-left"></i> Nestable List 1</h4>
+                            <h4><i class="icon-align-left"></i> Select items</h4>
                             <span class="tools">
                            <a href="javascript:;" class="icon-chevron-down"></a>
-                           <a href="javascript:;" class="icon-remove"></a>
+                           <!--a href="javascript:;" class="icon-remove"></a-->
                            </span>
                         </div>
                         <div class="widget-body">
                             <div class="dd" id="nestable_list_1">
                                 <ol class="dd-list">
-                                    <!--li class="dd-item" data-id="1">
-                                        <div class="dd-handle">Item 1</div>
-                                    </li>
-                                    <li class="dd-item" data-id="2">
-                                        <div class="dd-handle">Item 2</div>
-                                        <ol class="dd-list">
-                                            <li class="dd-item" data-id="3">
-                                                <div class="dd-handle">Item 3</div>
-                                            </li>
-                                            <li class="dd-item" data-id="4">
-                                                <div class="dd-handle">Item 4</div>
-                                            </li>
-                                            <li class="dd-item" data-id="5">
-                                                <div class="dd-handle">Item 5</div>
-                                                <ol class="dd-list">
-                                                    <li class="dd-item" data-id="6">
-                                                        <div class="dd-handle">Item 6</div>
-                                                    </li>
-                                                    <li class="dd-item" data-id="7">
-                                                        <div class="dd-handle">Item 7</div>
-                                                    </li>
-                                                    <li class="dd-item" data-id="8">
-                                                        <div class="dd-handle">Item 8</div>
-                                                    </li>
-                                                </ol>
-                                            </li>
-                                            <li class="dd-item" data-id="9">
-                                                <div class="dd-handle">Item 9</div>
-                                            </li>
-                                            <li class="dd-item" data-id="10">
-                                                <div class="dd-handle">Item 10</div>
-                                            </li>
-                                        </ol>
-                                    </li>
-                                    <li class="dd-item" data-id="11">
-                                        <div class="dd-handle">Item 11</div>
-                                    </li-->
-									<phpdac>rcitems.nestBuild use menutmp.ini</phpdac>
-                                    <li class="dd-item" data-id="recycle-bin">
+                                    <!--li class="dd-item" data-id="recycle-bin">
                                         <div class="dd-handle">Drop element</div>
-                                    </li>
+                                    </li-->									
+									<phpdac>rcmenu.readCurrentMenu</phpdac>
                                 </ol>
                             </div>
                         </div>
@@ -123,59 +93,22 @@
                 <div class="span6">
                     <div class="widget purple">
                         <div class="widget-title">
-                            <h4><i class="icon-align-left"></i> Nestable List 2</h4>
+                            <h4><i class="icon-align-left"></i> <phpdac>rcmenu.currentMenuName</phpdac></h4>
                             <span class="tools">
                            <a href="javascript:;" class="icon-chevron-down"></a>
-                           <a href="javascript:;" class="icon-remove"></a>
+                           <!--a href="javascript:;" class="icon-remove"></a-->
                            </span>
                         </div>
                         <div class="widget-body">
                             <div class="dd" id="nestable_list_2">
                                 <ol class="dd-list">
-                                    <!--li class="dd-item" data-id="13">
-                                        <div class="dd-handle">Item 13</div>
-                                    </li>
-                                    <li class="dd-item" data-id="14">
-                                        <div class="dd-handle">Item 14</div>
-                                    </li>
-                                    <li class="dd-item" data-id="15">
-                                        <div class="dd-handle">Item 15</div>
-                                        <ol class="dd-list">
-                                            <li class="dd-item" data-id="16">
-                                                <div class="dd-handle">Item 16</div>
-                                            </li>
-                                            <li class="dd-item" data-id="17">
-                                                <div class="dd-handle">Item 17</div>
-                                            </li>
-                                            <li class="dd-item" data-id="18">
-                                                <div class="dd-handle">Item 18</div>
-                                            </li>
-                                        </ol>
-                                    </li-->
-									<phpdac>rcitems.nestBuild</phpdac>
+									<phpdac>rcmenu.readSelectedMenu</phpdac>
                                 </ol>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row-fluid">
-                <div class="span12">
-                    <div class="widget red">
-                        <div class="widget-title">
-                            <h4><i class="icon-align-left"></i> Menu</h4>
-                            <span class="tools">
-                           <a href="javascript:;" class="icon-chevron-down"></a>
-                           <a href="javascript:;" class="icon-remove"></a>
-                           </span>
-                        </div>
-                        <div class="widget-body">
-                            <?METRO/INDEX?>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
             <!-- END PAGE CONTENT-->         
          </div>
          <!-- END PAGE CONTAINER-->
@@ -209,13 +142,14 @@
    <script src="js/nestable.js"></script>
    <script>
 $('#save').click(function() {
+  var menuname = $('#menuname').val();			
   var m = JSON.stringify($('#nestable_list_2').nestable('serialize'));
   var tmp = JSON.stringify($('#nestable_list_1').nestable('serialize'));
   //tmp value: [{"id":21,"children":[{"id":196},{"id":195},{"id":49},{"id":194}]},{"id":29,"children":[{"id":184},{"id":152}]},...]
   $.ajax({
     type: 'POST',
     url: 'cpmenu.php?t=cpmsavenest',
-    data: {'list': m, 'tmplist': tmp},
+    data: {'list': m, 'tmplist': tmp, 'menu': menuname},
     success: function(msg) {
       alert(msg);
     }
@@ -223,9 +157,7 @@ $('#save').click(function() {
 });	
   </script>
   
-   <!-- END JAVASCRIPTS -->
-   <phpdac>frontpage.include_part use /parts/google-analytics.php+++meteor</phpdac>
-   <!-- e-Enterprise, stereobit.networlds (phpdac5) -->        
+   <!-- END JAVASCRIPTS -->     
 </body>
 <!-- END BODY -->
 </html>

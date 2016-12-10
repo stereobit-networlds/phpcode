@@ -113,14 +113,23 @@
                                     </div>
                             </div>								
 							<div id="select_template" class="control-group">
-                                <label class="control-label">Template</label>
+                                <label class="control-label">Article Template</label>
                                 <div id="template_page" class="controls">
-                                    <select name="mctemplate" class="span6 chzn-select" data-placeholder="Choose a Category" tabindex="1">
+                                    <select name="mctemplate" class="span6 chzn-select" data-placeholder="Choose a template" tabindex="1">
                                         <option value="">Select...</option>
 										<phpdac>cpmhtmleditor.templates</phpdac>
                                     </select>
                                 </div>								
-                            </div>														
+                            </div>	
+							<div id="select_page" class="control-group">
+                                <label class="control-label">Page Template</label>
+                                <div id="mc_page" class="controls">
+                                    <select name="mcpage" class="span6 chzn-select" data-placeholder="Choose a page" tabindex="1">
+                                        <option value="">Select...</option>
+										<phpdac>cpmhtmleditor.mcpages</phpdac>
+                                    </select>
+                                </div>								
+                            </div>								
                             <div class="form-actions">
                                 <button type="submit" class="<phpdac>fronthtmlpage.nvl use cpmhtmleditor.postok+btn btn-success+btn btn-danger+</phpdac>">Update</button>
 								<input type="hidden" name="FormName" value="edititem" />
