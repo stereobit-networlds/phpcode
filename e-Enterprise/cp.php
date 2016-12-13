@@ -24,6 +24,7 @@ public crm.crmforms;
 public crm.rccrmtrace;
 #endif
 
+public piwik.siteanalytics;
 public bmail.rculiststats;
 public cp.rcpmenu;
 public cp.shlogin;

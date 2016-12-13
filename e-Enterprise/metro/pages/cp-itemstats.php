@@ -123,7 +123,7 @@
 			
             <div class="row-fluid">
                 <div class="span12">
-                    <div class="widget">
+                    <div class="widget purple">
                         <div class="widget-title">
                             <h4><i class="icon-bar-chart"></i> <phpdac>i18nL.translate use view+RCCRM</phpdac></h4>
                         <span class="tools">
@@ -139,12 +139,11 @@
             </div>
             <div class="row-fluid">
                 <div class="span12">
-                    <div class="widget orange">
+                    <div class="widget green">
                         <div class="widget-title">
                             <h4><i class="icon-reorder"></i> <phpdac>i18nL.translate use transactions+RCCONTROLPANEL</phpdac></h4>
 						<span class="tools">
 						<a href="javascript:;" class="icon-chevron-down"></a>
-                        <a href="javascript:;" class="icon-remove"></a>
 						</span>
                         </div>
                         <div class="widget-body">
@@ -156,13 +155,11 @@
 
             <div class="row-fluid">
                 <div class="span6">			
-					<!-- BEGIN ALERTS PORTLET-->
                     <div class="widget orange">
                         <div class="widget-title">
                             <h4><i class="icon-bell-alt"></i> <phpdac>i18nL.translate use system+RCCONTROLPANEL</phpdac> <phpdac>i18nL.translate use messages+RCCONTROLPANEL</phpdac></h4>
                             <span class="tools">
                             <a class="icon-chevron-down" href="javascript:;"></a>
-                            <a class="icon-remove" href="javascript:;"></a>
                             </span>
                         </div>
                         <div class="widget-body">
@@ -172,60 +169,48 @@
                             <div class="clearfix no-top-space no-bottom-space"></div>
                         </div>
                     </div>
-                    <!-- END ALERTS PORTLET-->
 					
-                    <!-- BEGIN TRACKING CURVES PORTLET-->
                     <div class="widget purple">
                         <div class="widget-title">
                             <h4><i class="icon-reorder"></i> Tracking Chart</h4>
 						<span class="tools">
 						<a href="javascript:;" class="icon-chevron-down"></a>
-                        <a href="javascript:;" class="icon-remove"></a>
 						</span>
                         </div>
                         <div class="widget-body">
                             <div id="chart-1" class="chart"></div>
                         </div>
                     </div>
-                    <!-- END TRACKING CURVES PORTLET-->
-						
-                    <!-- BEGIN INTERACTIVE CHART PORTLET-->
-                    <div class="widget green">
+
+                    <!--div class="widget green">
                         <div class="widget-title">
                             <h4><i class="icon-reorder"></i> Live Chart</h4>
 						<span class="tools">
 						<a href="javascript:;" class="icon-chevron-down"></a>
-                        <a href="javascript:;" class="icon-remove"></a>
 						</span>
                         </div>
                         <div class="widget-body">
                             <div id="chart-3" class="chart"></div>
                         </div>
                     </div>
-                    <!-- END INTERACTIVE CHART PORTLET-->
 
-                    <!-- BEGIN DYNAMIC CHART PORTLET-->
                     <div class="widget yellow">
                         <div class="widget-title">
                             <h4><i class="icon-reorder"></i> Support Chart</h4>
                                 <span class="tools">
                                 <a href="javascript:;" class="icon-chevron-down"></a>
-                                <a href="javascript:;" class="icon-remove"></a>
                                 </span>
                         </div>
                         <div class="widget-body">
                             <div id="chart-4" class="chart"></div>
                         </div>
                     </div>
-                    <!-- END DYNAMIC CHART PORTLET-->
 
-                    <!-- BEGIN Bar Chat PORTLET-->
                     <div class="widget blue">
                         <div class="widget-title">
                             <h4><i class="icon-reorder"></i> Bar Chat</h4>
 						<span class="tools">
 						<a href="javascript:;" class="icon-chevron-down"></a>
-                        <a href="javascript:;" class="icon-remove"></a>
 						</span>
                         </div>
                         <div class="widget-body">
@@ -243,8 +228,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- END Bar Chat PORTLET-->						
+                    </div-->						
                 </div>
                 <div class="span6">
 					<!-- BEGIN ALERTS PORTLET-->

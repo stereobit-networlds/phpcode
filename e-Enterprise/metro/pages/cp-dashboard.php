@@ -139,7 +139,6 @@
 								<div id="cpinfo"></div>
                             </div>
                         </div>				
-                    <!--BEGIN GENERAL STATISTICS-->
                     <!--div class="widget orange">
                         <div class="widget-title">
                             <h4><i class="icon-tasks"></i> General Statistics </h4>
@@ -173,46 +172,51 @@
                         </div>
                     <!--/div-->
 					
-					<!-- BEGIN ALERTS PORTLET-->
-                    <div class="widget orange">
-                        <div class="widget-title">
-                            <h4><i class="icon-bell-alt"></i> <phpdac>i18nL.translate use system+RCCONTROLPANEL</phpdac> <phpdac>i18nL.translate use messages+RCCONTROLPANEL</phpdac></h4>
-                            <span class="tools">
-                            <a class="icon-chevron-down" href="javascript:;"></a>
-                            <a class="icon-remove" href="javascript:;"></a>
-                            </span>
-                        </div>
-                        <div class="widget-body">
-						    <phpdac>rccontrolpanel.viewSysMessages use alert-important</phpdac>
-							<div class="space10"></div>
-                            <a href="cp.php?t=cpsysMessages" class="pull-right"><phpdac>i18nL.translate use viewallmessages+RCCONTROLPANEL</phpdac></a>
-                            <div class="clearfix no-top-space no-bottom-space"></div>
-                        </div>
-                    </div>
-                    <!-- END ALERTS PORTLET-->
-					
-					<div class="plots"></div>
-					
                     <div class="widget purple">
                         <div class="widget-title">
-                            <h4><i class="icon-tasks"></i> <phpdac>i18nL.translate use items+RCCONTROLPANEL</phpdac> </h4>
+                            <h4><i class="icon-tasks"></i> <phpdac>i18nL.translate use CPFLOTCHARTS_DPC+CPFLOTCHARTS</phpdac> </h4>
                          <span class="tools">
                             <a href="javascript:;" class="icon-chevron-down"></a>
-                            <a href="javascript:;" class="icon-remove"></a>
+                            <!--a href="javascript:;" class="icon-remove"></a-->
                          </span>
-						 <div class="update-btn">
+						 <!--div class="update-btn">
                             <a href="javascript:sndReqArg('cp.php?t=cpchartshow&group=&ai=2&report=statistics&statsid='+statsid.value,'statistics');" class="btn"><i class="icon-repeat"></i> <phpdac>i18nL.translate use CPFLOTCHARTS_DPC+CPFLOTCHARTS</phpdac></a>
-                         </div>
+                         </div-->
+                        </div>
+                        <div class="widget-body">					
+							<div class="plots"></div>
+                        </div>
+						<div id="widgetIframe"> 
+							<phpdac>siteanalytics.widget use VisitsSummary+getEvolutionGraph+++200</phpdac>
+						</div>						
+                    </div>							
+					
+                    <div class="widget orange">
+                        <div class="widget-title">
+                            <h4><i class="icon-tasks"></i> <phpdac>i18nL.translate use CPFLOTCHARTS_DPC+CPFLOTCHARTS</phpdac> </h4>
+                         <span class="tools">
+                            <a href="javascript:;" class="icon-chevron-down"></a>
+                            <!--a href="javascript:;" class="icon-remove"></a-->
+                         </span>
+						 <!--div class="update-btn">
+                            <a href="javascript:sndReqArg('cp.php?t=cpchartshow&group=&ai=2&report=statistics&statsid='+statsid.value,'statistics');" class="btn"><i class="icon-repeat"></i> <phpdac>i18nL.translate use CPFLOTCHARTS_DPC+CPFLOTCHARTS</phpdac></a>
+                         </div-->
                         </div>
                         <div class="widget-body">
-                            <div class="text-center">
+                            <!--div class="text-center">
                                 <div id="statistics"></div>
-                            </div>
+                            </div-->
+							<div id="widgetIframe">
+								<phpdac>siteanalytics.widget use UserCountryMap+visitorMap</phpdac>
+							</div>							
+							<div id="widgetIframe"> 
+								<phpdac>siteanalytics.widget use VisitsSummary+getSparklines+++500</phpdac>
+							</div>
                         </div>
                     </div>	
-					<div class="widget red">
+					<!--div class="widget red">
                         <div class="widget-title">
-                            <h4><i class="icon-tasks"></i> <phpdac>i18nL.translate use categories+RCCONTROLPANEL</phpdac> </h4>
+                            <h4><i class="icon-tasks"></i> Analytics </h4>
                          <span class="tools">
                             <a href="javascript:;" class="icon-chevron-down"></a>
                             <a href="javascript:;" class="icon-remove"></a>
@@ -241,10 +245,29 @@
                         <div class="widget-body">
                             <div class="text-center">
                                 <div id="mailqueue"></div>
-								<div id="chart-1" class="chart"></div>
+								<div id="chart-2" class="chart"></div>
                             </div>
                         </div>
-                    </div>					
+                    </div-->
+
+                    <div id="tasks" class="widget purple">
+                        <div class="widget-title">
+                            <h4><i class="icon-tasks"></i> <phpdac>i18nL.translate use bmailcamp+RCPMENU</phpdac> </h4>
+                            <span class="tools">
+                                <a href="javascript:;" class="icon-chevron-down"></a>
+                                <!--a href="javascript:;" class="icon-remove"></a-->
+                            </span>
+                        </div>
+                        <div class="widget-body">
+                            <ul class="unstyled">
+								<phpdac>rculiststats.percentofCamps use bmail-task-in-progress-important</phpdac>
+								<phpdac>rculiststats.lastCamps use bmail-task-in-progress-success+5</phpdac>
+                            </ul>
+                        </div>
+                    </div>						
+                </div>
+				
+                <div class="span6">
 					<div class="widget green">
                         <div class="widget-title">
                             <h4><i class="icon-tasks"></i> <phpdac>i18nL.translate use transactions+RCCONTROLPANEL</phpdac> </h4>
@@ -259,49 +282,20 @@
                         <div class="widget-body">
                             <div class="text-center">
                                 <div id="transactions"></div>
-								<div id="chart-2" class="chart"></div>
+								<div id="chart-1" class="chart"></div>
                             </div>
                         </div>
-                    </div>		
-                    <!--END GENERAL STATISTICS-->
-                </div>
-                <div class="span6">
-                    <!--BEGIN GENERAL STATISTICS-->
-                    <!--div class="widget purple">
-                        <div class="widget-title">
-                            <h4><i class="icon-tasks"></i> General Statistics </h4>
-                         <span class="tools">
-                            <a href="javascript:;" class="icon-chevron-down"></a>
-                            <a href="javascript:;" class="icon-remove"></a>
-                         </span>
-                        </div>
-                        <div class="widget-body">
-                            <div class="row-fluid">
-                                <div class="text-center">
-                                    <div class="sparkline">
-                                        <div id="metro-sparkline-type1"></div>
-                                        <div class="sparkline-tittle">Server Load</div>
-                                    </div>
-                                    <div class="sparkline">
-                                        <div id="metro-sparkline-type2"></div>
-                                        <div class="sparkline-tittle">Network Load</div>
-                                    </div>
-                                    <div class="sparkline">
-                                        <div id="metro-sparkline-type3"></div>
-                                        <div class="sparkline-tittle">Visit Load</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div-->
-					<!--END GENERAL STATISTICS-->
-					<!-- BEGIN ALERTS PORTLET-->
+                    </div>	
+					
+					<!--hpdac>rccontrolpanel._show_charts</phpda-->
+					<INPUT TYPE= "hidden" ID="statsid" VALUE="0" />
+					
                     <div id="alerts" class="widget blue">
                         <div class="widget-title">
                             <h4><i class="icon-bell-alt"></i> Alerts</h4>
                             <span class="tools">
                             <a class="icon-chevron-down" href="javascript:;"></a>
-                            <a class="icon-remove" href="javascript:;"></a>
+                            <!--a class="icon-remove" href="javascript:;"></a-->
                             </span>
                         </div>
                         <div class="widget-body">
@@ -310,73 +304,26 @@
                             <a href="cp.php?t=cpshowMessages" class="pull-right"><phpdac>i18nL.translate use viewallmessages+RCCONTROLPANEL</phpdac></a>
                             <div class="clearfix no-top-space no-bottom-space"></div>
                         </div>
-                    </div>					
-                </div>
-            </div>
-            <div class="row-fluid">
-                 <div class="span6">
-					 
-					<!-- BEGIN PROGRESS PORTLET-->
-                    <div id="tasks" class="widget purple">
+                    </div>
+
+                    <div class="widget orange">
                         <div class="widget-title">
-                            <h4><i class="icon-tasks"></i> <phpdac>i18nL.translate use bmailcamp+RCPMENU</phpdac> </h4>
+                            <h4><i class="icon-bell-alt"></i> <phpdac>i18nL.translate use system+RCCONTROLPANEL</phpdac> <phpdac>i18nL.translate use messages+RCCONTROLPANEL</phpdac></h4>
                             <span class="tools">
-                                <a href="javascript:;" class="icon-chevron-down"></a>
-                                <a href="javascript:;" class="icon-remove"></a>
+                            <a class="icon-chevron-down" href="javascript:;"></a>
+                            <!--a class="icon-remove" href="javascript:;"></a-->
                             </span>
                         </div>
                         <div class="widget-body">
-                            <ul class="unstyled">
-								<phpdac>rculiststats.percentofCamps use bmail-task-in-progress-important</phpdac>
-								<phpdac>rculiststats.lastCamps use bmail-task-in-progress-success+5</phpdac>
-                            </ul>
+						    <phpdac>rccontrolpanel.viewSysMessages use alert-important</phpdac>
+							<div class="space10"></div>
+                            <a href="cp.php?t=cpsysMessages" class="pull-right"><phpdac>i18nL.translate use viewallmessages+RCCONTROLPANEL</phpdac></a>
+                            <div class="clearfix no-top-space no-bottom-space"></div>
                         </div>
-                    </div>
-                    <!-- END PROGRESS PORTLET-->					 
-					 
-                     <!-- BEGIN NOTIFICATIONS PORTLET-->
-                     <div class="widget blue">
-                         <div class="widget-title">
-                             <h4><i class="icon-download"></i> <phpdac>i18nL.translate use update+RCCONTROLPANEL</phpdac> </h4>
-                           <span class="tools">
-                               <a href="javascript:;" class="icon-chevron-down"></a>
-                               <a href="javascript:;" class="icon-remove"></a>
-                           </span>
-                         </div>
-                         <div class="widget-body">
-                             <ul class="item-list scroller padding"  style="overflow: hidden; width: auto; " data-always-visible="1">
-                                 <phpdac>rccontrolpanel.getStats use Update+html</phpdac>
-                             </ul>
-                             <!--div class="space10"></div>
-                             <a href="#" class="pull-right">View all notifications</a>
-                             <div class="clearfix no-top-space no-bottom-space"></div-->
-                         </div>
-                     </div>
-                     <!-- END NOTIFICATIONS PORTLET-->					 
-                 </div>
-				 
-				 <!--hpdac>rccontrolpanel._show_charts</phpda-->
-				 <INPUT TYPE= "hidden" ID="statsid" VALUE="0" />
+                    </div>				 
 					
-                 <div class="span6">
-                     <!-- BEGIN CHAT PORTLET-->
-                     <div id="addons" class="widget red">
-                         <div class="widget-title">
-                             <h4><i class="icon-plus-sign"></i> <phpdac>i18nL.translate use addons+RCCONTROLPANEL</phpdac></h4>
-									<span class="tools">
-									<a href="javascript:;" class="icon-chevron-down"></a>
-									<a href="javascript:;" class="icon-remove"></a>
-									</span>
-                         </div>
-                         <div class="widget-body">
-                             <div class="timeline-messages">
-                                <phpdac>rccontrolpanel.getStats use Addons+html</phpdac> 
-                             </div>
-                         </div>
-                     </div>
-                     <!-- END CHAT PORTLET-->
-                 </div>
-             </div>
+                </div>
+            </div>
             <!-- END PAGE CONTENT-->         
          </div>
          <!-- END PAGE CONTAINER-->

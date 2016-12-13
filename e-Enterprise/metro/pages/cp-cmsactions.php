@@ -50,7 +50,7 @@
                      <!-- BEGIN BLANK PAGE PORTLET-->
                      <div class="widget red">
                          <div class="widget-title">
-                             <h4><i class="icon-edit"></i> <phpdac>frontpage.slocale use RCCRMACTIONS_DPC</phpdac> </h4>
+                             <h4><i class="icon-edit"></i> <phpdac>frontpage.slocale use RCCMSACTIONS_DPC</phpdac> </h4>
                            <span class="tools">
                                <a href="javascript:;" class="icon-chevron-down"></a>
                                <a href="javascript:;" class="icon-remove"></a>

@@ -72,7 +72,7 @@
                 <div class="span6">
                     <div class="widget green">
                         <div class="widget-title">
-                            <h4><i class="icon-align-left"></i> Select items</h4>
+                            <h4><i class="icon-align-left"></i> <phpdac>frontpage.slocale use _currentmenu</phpdac></h4>
                             <span class="tools">
                            <a href="javascript:;" class="icon-chevron-down"></a>
                            <!--a href="javascript:;" class="icon-remove"></a-->
