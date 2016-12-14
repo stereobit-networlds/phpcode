@@ -87,8 +87,7 @@
 	function udetails() {var str = arguments[0]; $('#crmdetails').load("cpcrm.php?t=cpcrmusers&id="+str);}
 	function cdetails() {var str = arguments[0]; $('#crmdetails').load("cpcrm.php?t=cpcrmcus&id="+str);}
    </script>
-	<phpdac>frontpage.include_part use /parts/google-analytics.php+++metro</phpdac>
-	<!-- e-Enterprise, stereobit.networlds (phpdac5) -->   
+
 </body>
 <!-- END BODY -->
 </html>

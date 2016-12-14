@@ -1,5 +1,5 @@
 <?php
-require_once('cp/dpc2/system/pcntlhtml.lib.php'); 
+require_once('cp/dpc/system/pcntlhtml.lib.php'); 
 $htmlpage = &new pcntl('
 super javascript;
 super rcserver.rcssystem;

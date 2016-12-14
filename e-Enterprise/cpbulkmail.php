@@ -2,7 +2,7 @@
 //define ('SENDMAIL_PHPMAILER',null);
 //define ('SMTP_PHPMAILER','true');
 
-require_once('dpc2/system/pcntl.lib.php'); //2
+require_once('dpc/system/pcntl.lib.php'); //2
 $page = &new pcntl('
 super javascript;
 super rcserver.rcssystem;

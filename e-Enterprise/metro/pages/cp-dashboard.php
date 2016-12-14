@@ -29,8 +29,8 @@
 <!-- END HEAD -->
    
 <!-- START FUNCS (CP MSGS once here) -->
-	<phpdac>cp.getInactiveUsers</phpdac>
-	<phpdac>cp.getActiveUsers</phpdac>
+	<phpdac>rcmessages.getInactiveUsers</phpdac>
+	<phpdac>rcmessages.getActiveUsers</phpdac>
 <!-- END FUNCS -->	
 
 <!-- BEGIN BODY -->
@@ -299,9 +299,9 @@
                             </span>
                         </div>
                         <div class="widget-body">
-							<phpdac>rccontrolpanel.viewMessages use alert</phpdac>
+							<phpdac>rcmessages.viewMessages use alert</phpdac>
 							<div class="space10"></div>
-                            <a href="cp.php?t=cpshowMessages" class="pull-right"><phpdac>i18nL.translate use viewallmessages+RCCONTROLPANEL</phpdac></a>
+                            <a href="<phpdac>cmsrt.nvl use rccontrolpanel.isCrm+cpcrmtrace.php+cpmessages.php?t=cpshowmessages+</phpdac>" class="pull-right"><phpdac>i18nL.translate use viewallmessages+RCCONTROLPANEL</phpdac></a>
                             <div class="clearfix no-top-space no-bottom-space"></div>
                         </div>
                     </div>
@@ -315,9 +315,9 @@
                             </span>
                         </div>
                         <div class="widget-body">
-						    <phpdac>rccontrolpanel.viewSysMessages use alert-important</phpdac>
+						    <phpdac>rcmessages.viewSysMessages use alert-important</phpdac>
 							<div class="space10"></div>
-                            <a href="cp.php?t=cpsysMessages" class="pull-right"><phpdac>i18nL.translate use viewallmessages+RCCONTROLPANEL</phpdac></a>
+                            <a href="cpmessages.php?t=cpmsg" class="pull-right"><phpdac>i18nL.translate use viewallmessages+RCCONTROLPANEL</phpdac></a>
                             <div class="clearfix no-top-space no-bottom-space"></div>
                         </div>
                     </div>				 

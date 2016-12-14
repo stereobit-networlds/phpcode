@@ -1,6 +1,6 @@
 <?php
-require_once('dpc2/system/pcntlajax.lib.php'); 
-$page = &new pcntlajax('
+require_once('dpc/system/pcntl.lib.php'); 
+$page = &new pcntl('
 
 super javascript;
 super rcserver.rcssystem;

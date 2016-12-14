@@ -1,7 +1,7 @@
 <?php
 //define ('SENDMAIL_PHPMAILER',null);
 //define ('SMTP_PHPMAILER','true');
-require_once('dpc2/system/pcntl.lib.php'); 
+require_once('dpc/system/pcntl.lib.php'); 
 $page = &new pcntl('
 
 super javascript;

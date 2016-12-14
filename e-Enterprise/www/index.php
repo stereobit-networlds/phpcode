@@ -1,6 +1,6 @@
 <?php
 $start=microtime(true);
-require_once('cp/dpc2/system/pcntl.lib.php'); 
+require_once('cp/dpc/system/pcntl.lib.php'); 
 $htmlpage = &new pcntl('
 super javascript;
 super rcserver.rcssystem;

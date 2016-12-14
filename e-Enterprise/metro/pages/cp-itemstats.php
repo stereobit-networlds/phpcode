@@ -147,7 +147,7 @@
 						</span>
                         </div>
                         <div class="widget-body">
-                            <div id="chart-2" class="chart"></div>
+                            <div id="chart-1" class="chart"></div>
                         </div>
                     </div>				
                 </div>
@@ -163,14 +163,14 @@
                             </span>
                         </div>
                         <div class="widget-body">
-						    <phpdac>rccontrolpanel.viewSysMessages use alert-important</phpdac>
+						    <phpdac>rcmessages.viewSysMessages use alert-important</phpdac>
 							<div class="space10"></div>
-                            <a href="cp.php?t=cpsysMessages" class="pull-right"><phpdac>frontpage.slocale use _viewallmessages</phpdac></a>
+                            <a href="cpmessages.php?t=cpmsg" class="pull-right"><phpdac>frontpage.slocale use _viewallmessages</phpdac></a>
                             <div class="clearfix no-top-space no-bottom-space"></div>
                         </div>
                     </div>
 					
-                    <div class="widget purple">
+                    <!--div class="widget purple">
                         <div class="widget-title">
                             <h4><i class="icon-reorder"></i> Tracking Chart</h4>
 						<span class="tools">
@@ -178,11 +178,11 @@
 						</span>
                         </div>
                         <div class="widget-body">
-                            <div id="chart-1" class="chart"></div>
+                            <div id="chart-2" class="chart"></div>
                         </div>
                     </div>
 
-                    <!--div class="widget green">
+                    <div class="widget green">
                         <div class="widget-title">
                             <h4><i class="icon-reorder"></i> Live Chart</h4>
 						<span class="tools">
@@ -241,9 +241,9 @@
                             </span>
                         </div>
                         <div class="widget-body">
-							<phpdac>rccontrolpanel.viewItemStatistics use alert-important</phpdac>
+							<phpdac>rcmessages.viewItemStatistics use alert-important</phpdac>
 							<div class="space10"></div>
-                            <a href="cp.php?t=cpitemVisits" class="pull-right"><phpdac>frontpage.slocale use _viewallmessages</phpdac></a>
+                            <a href="<phpdac>cmsrt.nvl use rccontrolpanel.isCrm+cpcrmtrace.php+cpmessages.php?t=cpitemvisits+</phpdac>" class="pull-right"><phpdac>frontpage.slocale use _viewallmessages</phpdac></a>
                             <div class="clearfix no-top-space no-bottom-space"></div>
                         </div>
                     </div>				

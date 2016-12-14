@@ -3,8 +3,9 @@
 $start=microtime(true);
 /*** adodb4 (prev ver) for pcntlcmd (!?) ***/
 
-require_once('dpc2/system/pcntlcmd.lib.php'); 
+require_once('dpc/system/pcntlcmd.lib.php'); 
 $page = &new pcntl('
+super javascript;
 super rcserver.rcssystem;
 
 load_extension adodb4 refby _ADODB_; 
@@ -12,7 +13,7 @@ super database;
 
 use mail.bounce_driver;
 
-public frontpage.fronthtmlpage;
+public cms.cmsrt;
 public mail.smtpmail;
 public bmail.maildbqueue;
 public bmail.rcbmailbounce;
@@ -20,14 +21,14 @@ public bmail.rcbmailbounce;
 ',0);	 
 
 //root app
-$ret = GetGlobal('controller')->calldpc_method("rcbmailbounce.cleanBounce use +1"); //+1 //for del
+$ret = _m("rcbmailbounce.cleanBounce use +1"); //+1 //for del
 echo $ret;
 
-$apps = GetGlobal('controller')->calldpc_var('maildbqueue.app_pool');
+$apps = _v('maildbqueue.app_pool');
 if (!empty($apps)) {
   foreach ($apps as $i=>$app) {
     echo $app,'<br/>';
-	$ret = GetGlobal('controller')->calldpc_method("rcbmailbounce.cleanBounce use $app+1+1");
+	$ret = _m("rcbmailbounce.cleanBounce use $app+1+1");
 	echo $ret;
   }
 }

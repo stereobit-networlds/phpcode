@@ -83,7 +83,7 @@
                         <a data-original-title="" href="javascript:sndReqArg('cp.php?t=cpinfo&s=items&statsid='+statsid.value,'cpinfo');">
                             <i class="icon-tasks"></i>
                             <div class="info"><phpdac>crmdashboard.itemsPurchased</phpdac></div>
-                            <div class="status"><phpdac>i18nL.translate use items+RCCRM</phpdac>></div>
+                            <div class="status"><phpdac>i18nL.translate use items+RCCRM</phpdac></div>
                         </a>
                     </div>
                     <div class="metro-nav-block nav-block-yellow">
@@ -133,9 +133,6 @@
 
 
    <!-- BEGIN JAVASCRIPTS -->
-   <script language="JavaScript">
-   <phpdac>crmdashboard.javascript</phpdac>   
-   </script>
    
    <!-- Load javascripts at bottom, this will reduce page load time -->
    <script src="js/jquery-1.8.3.min.js"></script>

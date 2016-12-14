@@ -6,7 +6,7 @@ define('SENDMAIL_PHPMAILER','true');
 
 /*** adodb4 (prev ver) for pcntlcmd (!?) ***/
 
-require_once('dpc2/system/pcntlcmd.lib.php'); 
+require_once('dpc/system/pcntlcmd.lib.php'); 
 $page = &new pcntl('
 super javascript;
 super rcserver.rcssystem;
