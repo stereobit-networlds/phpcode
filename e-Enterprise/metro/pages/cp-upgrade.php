@@ -75,60 +75,7 @@
                     </div>
                     <!-- END SAMPLE FORM PORTLET-->
                 </div>
-            </div>	
-            <div class="row-fluid">
-                <div class="span6">
-                    <div class="widget-body">
-                            <div class="text-center">
-                                <div class="easy-pie-chart">
-                                    <div class="percentage success" data-percent="<phpdac>rccontrolpanel.getStats use Diskspace+remainsizepercent</phpdac>"><span><phpdac>rccontrolpanel.getStats use Diskspace+remainsizepercent</phpdac></span>%</div>
-                                    <div class="title"><phpdac>i18nL.translate use usedspace</phpdac></div>
-                                </div>
-                                <div class="easy-pie-chart">
-                                    <div class="percentage" data-percent="<phpdac>rccontrolpanel.getStats use Diskspace+remainhdpercent</phpdac>"><span><phpdac>rccontrolpanel.getStats use Diskspace+remainhdpercent</phpdac></span>%</div>
-                                    <div class="title"><phpdac>i18nL.translate use hdusage</phpdac></div>
-                                </div>
-                                <div class="easy-pie-chart">
-                                    <div class="percentage" data-percent="<phpdac>rccontrolpanel.getStats use Diskspace+remainmxpercent</phpdac>"><span><phpdac>rccontrolpanel.getStats use Diskspace+remainmxpercent</phpdac></span>%</div>
-                                    <div class="title"><phpdac>i18nL.translate use mxusage</phpdac></div>
-                                </div>
-                                <div class="easy-pie-chart">
-                                    <div class="percentage" data-percent="<phpdac>rccontrolpanel.getStats use Diskspace+remaindbpercent</phpdac>"><span><phpdac>rccontrolpanel.getStats use Diskspace+remaindbpercent</phpdac></span>%</div>
-                                    <div class="title"><phpdac>i18nL.translate use dbusage</phpdac></div>
-                                </div>
-                            </div>
-                    </div>	
-						
-                     <div class="widget blue">
-                         <div class="widget-title">
-                             <h4><i class="icon-download"></i> <phpdac>i18nL.translate use update+RCCONTROLPANEL</phpdac> </h4>
-                           <span class="tools">
-                               <a href="javascript:;" class="icon-chevron-down"></a>
-                           </span>
-                         </div>
-                         <div class="widget-body">
-                             <ul class="item-list scroller padding"  style="overflow: hidden; width: auto; " data-always-visible="1">
-                                 <phpdac>rccontrolpanel.getStats use Update+html</phpdac>
-                             </ul>
-                         </div>
-                     </div>						
-				</div>
-                <div class="span6">
-                     <div id="addons" class="widget red">
-                         <div class="widget-title">
-                             <h4><i class="icon-plus-sign"></i> <phpdac>i18nL.translate use addons+RCCONTROLPANEL</phpdac></h4>
-									<span class="tools">
-									<a href="javascript:;" class="icon-chevron-down"></a>
-									</span>
-                         </div>
-                         <div class="widget-body">
-                             <div class="timeline-messages">
-                                <phpdac>rccontrolpanel.getStats use Addons+html</phpdac> 
-                             </div>
-                         </div>
-                     </div>
-                </div>				
-			</div>		
+            </div>			
 	
             <!-- END PAGE CONTENT-->
          </div>		

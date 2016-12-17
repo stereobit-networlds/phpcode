@@ -10,12 +10,10 @@ super database;
 
 /---------------------------------load and create libs
 use i18n.i18n;
-use xwindow.window,browser;
 
 /---------------------------------load not create dpc (internal use)
 include networlds.clientdpc;
 include mail.smtpmail;
-include mchoice.mchoice;
 
 security CART_DPC 1 1:1:1:1:1:1:1:1:1:1;
 security SHCART_DPC 1 1:1:1:1:1:1:1:1:1:1;

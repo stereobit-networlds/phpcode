@@ -16,8 +16,7 @@ include networlds.clientdpc;
 /---------------------------------load all and create after dpc objects
 public cms.cmsrt;
 #ifdef SES_LOGIN
-public cp.rcconfig;
-public cp.rcuwizard;
+public cms.rcupgrade;
 public cp.rcpmenu;
 #endif
 public cp.rccontrolpanel;

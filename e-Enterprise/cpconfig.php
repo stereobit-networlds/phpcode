@@ -13,7 +13,6 @@ use i18n.i18n;
 
 /---------------------------------load not create dpc (internal use)
 include networlds.clientdpc;
-include gui.form;
 
 /---------------------------------load all and create after dpc objects
 public cms.cmsrt;
