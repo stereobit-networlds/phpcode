@@ -110,47 +110,19 @@
                              </div>
                          </div>
                          <div class="span4">
-                             <!--div class="blog-side-bar blue-box">
-                                <h2> <i class=" icon-tasks"></i> category</h2>
-                                 <ul>
-                                     <li>
-                                         <a href="#">
-                                             <i class=" icon-umbrella"></i>
-                                             <span>Animal</span>
-                                         </a>
-                                     </li>
-                                     <li>
-                                         <a href="#">
-                                             <i class=" icon-trophy"></i>
-                                             <span>Landscape</span>
-                                         </a>
-                                     </li>
-                                     <li>
-                                         <a href="#">
-                                             <i class=" icon-plane"></i>
-                                             <span>Potrait</span>
-                                         </a>
-                                     </li>
-                                     <li>
-                                         <a href="#">
-                                             <i class=" icon-pushpin"></i>
-                                             <span>Wild Life</span>
-                                         </a>
-                                     </li>
-                                     <li>
-                                         <a href="#">
-                                             <i class=" icon-beaker"></i>
-                                             <span>Video</span>
-                                         </a>
-                                     </li>
-                                     <li>
-                                         <a href="#">
-                                             <i class=" icon-bullhorn"></i>
-                                             <span>Nature</span>
-                                         </a>
-                                     </li>
-                                 </ul>
-                             </div-->
+							<div class="widget orange">
+								<div class="widget-title">
+									<h4><i class="icon-tasks"></i> Analytics </h4>
+									<span class="tools">
+									<a href="javascript:;" class="icon-chevron-down"></a>
+									</span>
+								</div>
+								<div class="widget-body">
+									<div id="widgetIframe"> 
+										<phpdac>siteanalytics.widget use Live+widget+++++yes</phpdac>
+									</div>								
+								</div>
+							</div>
                              <div class="blog-side-bar orange-box">
                                  <h2> <i class=" icon-tasks"></i> Archive</h2>
                                  <ul>

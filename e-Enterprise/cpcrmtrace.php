@@ -19,6 +19,7 @@ include networlds.clientdpc;
 public jqgrid.mygrid;
 public cms.cmsrt;
 #ifdef SES_LOGIN
+public piwik.siteanalytics;
 public cms.rccollections;
 public crm.crmforms;
 public crm.crmtimeline;

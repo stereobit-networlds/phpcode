@@ -135,8 +135,8 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="row-fluid">
+            </div>
+            <div class="row-fluid">
                     <div class="span12">
                         <!-- BEGIN TRACKING CURVES PORTLET-->
                         <div class="widget purple">
@@ -155,7 +155,22 @@
             </div>			
 
             <div class="row-fluid">
-                <div class="span6">			
+                <div class="span6">	
+
+					<div class="widget orange">
+						<div class="widget-title">
+							<h4><i class="icon-tasks"></i> Analytics </h4>
+							<span class="tools">
+							<a href="javascript:;" class="icon-chevron-down"></a>
+							</span>
+						</div>
+						<div class="widget-body">
+							<div id="widgetIframe"> 
+								<phpdac>siteanalytics.widget use Live+widget+++++yes</phpdac>
+							</div>								
+						</div>
+					</div>				
+					
                     <div class="widget orange">
                         <div class="widget-title">
                             <h4><i class="icon-bell-alt"></i> <phpdac>i18nL.translate use system+RCCONTROLPANEL</phpdac> <phpdac>i18nL.translate use messages+RCCONTROLPANEL</phpdac></h4>
