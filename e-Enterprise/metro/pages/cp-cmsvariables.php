@@ -5,13 +5,13 @@
 <!-- BEGIN HEAD -->
 <head>
    <meta charset="utf-8" />
-   <title>Tree</title>
+   <title>Variables</title>
    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
    <meta content="" name="description" />
    <meta content="" name="author" />
    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
    <link href="assets/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" />
-   <!--link href="assets/bootstrap/css/bootstrap-fileupload.css" rel="stylesheet" /-->
+   <link href="assets/bootstrap/css/bootstrap-fileupload.css" rel="stylesheet" />
    <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
    <link href="css/style.css" rel="stylesheet" />
    <link href="css/style-responsive.css" rel="stylesheet" />
@@ -28,7 +28,7 @@
 </head>
 <!-- END HEAD -->
 <!-- BEGIN BODY -->
-<body class="fixed-top" onLoad="init()">
+<body class="fixed-top">
    <!-- BEGIN HEADER -->
 	<phpdac>frontpage.include_part use /parts/header.php+++metro</phpdac>
    <!-- END HEADER -->
@@ -47,18 +47,19 @@
             <!-- BEGIN PAGE CONTENT-->
              <div class="row-fluid">
                  <div class="span12">
-                     <div class="widget red">
+                     <!-- BEGIN BLANK PAGE PORTLET-->
+                     <div class="widget blue">
                          <div class="widget-title">
-                             <h4><i class="icon-edit"></i> <phpdac>frontpage.slocale use RCTREE_DPC</phpdac> </h4>
+                             <h4><i class="icon-edit"></i> <phpdac>frontpage.slocale use RCCMSVARIABLES_DPC</phpdac> </h4>
                            <span class="tools">
                                <a href="javascript:;" class="icon-chevron-down"></a>
                            </span>
                          </div>
                          <div class="widget-body">
-                             <div id='treerel'></div>
-							 <?METRO/INDEX?>
+							<?METRO/INDEX?>
                          </div>
-                     </div>				 
+                     </div>
+                     <!-- END BLANK PAGE PORTLET-->
                  </div>
              </div>
             <!-- END PAGE CONTENT-->
@@ -74,7 +75,6 @@
    <!-- END FOOTER -->
 
    <!-- BEGIN JAVASCRIPTS -->
-   <!-- Load javascripts at bottom, this will reduce page load time -->
    
    <!--script src="js/jquery-1.8.3.min.js"></script-->
    
@@ -92,11 +92,6 @@
    <script src="js/common-scripts.js"></script>
 
    <!-- END JAVASCRIPTS -->  
-   <script>
-	function treerel() {var str = arguments[0]; $('#treerel').load("cptree.php?t=cptreerel&id="+str);}
-   </script>
-	<phpdac>frontpage.include_part use /parts/google-analytics.php+++metro</phpdac>
-	<!-- e-Enterprise, stereobit.networlds (phpdac5) -->   
 </body>
 <!-- END BODY -->
 </html>

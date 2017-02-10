@@ -20,7 +20,7 @@
 									                <div class="id="input-prepend">
 														<span class="add-on"><i class="icon-calendar"></i></span>
 														<input id="reservation" name="rdate" type="text" class=" m-ctrl-medium" />
-														<input type="hidden" name="FormAction" value="cpmailstats" />
+														<input type="hidden" name="FormAction" value="cpuliststats" />
 													</div>
                                                 </form>
 												<a href="#" class="brand">$7$</a>												

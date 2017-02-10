@@ -47,8 +47,7 @@
          <!-- BEGIN PAGE CONTAINER-->
          <div class="container-fluid">
             <!-- BEGIN PAGE HEADER-->   
-				<!--hpdac>frontpage.include_part use /parts/pageheader.php+++metro</phpda-->
-				<phpdac>frontpage.nvldac2 use rculiststats.cpStats+rculiststats.select_timeline:timeline++1</phpdac>
+				<phpdac>frontpage.nvldac2 use rculiststats.cpStats+rculiststats.select_timeline:bmail-timeline</phpdac>
             <!-- END PAGE HEADER-->
             <!-- BEGIN PAGE CONTENT-->
             <div class="row-fluid">
@@ -443,10 +442,7 @@
    <script src="js/home-chartjs.js"></script-->
   
   
-   <!-- END JAVASCRIPTS --> 
-   
-   <phpdac>frontpage.include_part use /parts/google-analytics.php+++metro</phpdac>
-   <!-- e-Enterprise, stereobit.networlds (phpdac5) -->     
+   <!-- END JAVASCRIPTS -->   
 </body>
 <!-- END BODY -->
 </html>

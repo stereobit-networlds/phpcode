@@ -30,7 +30,6 @@ public cms.cmsvstats;
 public cms.cmslogin;
 public cms.cmsmenu;
 public cms.cmssubscribe;
-public cms.rcxmlfeeds;
 public bshop.shkategories; 
 public bshop.shkatalogmedia;
 public bshop.shnsearch;

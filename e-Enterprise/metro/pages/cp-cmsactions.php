@@ -53,7 +53,6 @@
                              <h4><i class="icon-edit"></i> <phpdac>frontpage.slocale use RCCMSACTIONS_DPC</phpdac> </h4>
                            <span class="tools">
                                <a href="javascript:;" class="icon-chevron-down"></a>
-                               <a href="javascript:;" class="icon-remove"></a>
                            </span>
                          </div>
                          <div class="widget-body">
@@ -92,10 +91,7 @@
    <!--common script for all pages-->
    <script src="js/common-scripts.js"></script>
 
-   <!-- END JAVASCRIPTS -->  
-
-	<phpdac>frontpage.include_part use /parts/google-analytics.php+++metro</phpdac>
-	<!-- e-Enterprise, stereobit.networlds (phpdac5) -->   
+   <!-- END JAVASCRIPTS -->    
 </body>
 <!-- END BODY -->
 </html>

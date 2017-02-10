@@ -77,7 +77,7 @@
 								</div>
 								<div class="schedule-row row">
 									<div class="col-xs-6">
-										<h5 class="regular white">Feedbacks</h5>
+										<h5 class="regular white">Traffic forecast</h5>
 									</div>
 									<div class="col-xs-6 text-right">
 										<h5 class="white">06:30 - 08:00</h5>
@@ -89,11 +89,12 @@
 				</div>
 				<div class="col-md-4">
 					<div class="intro-table intro-table-hover">
-						<h5 class="white heading hide-hover">Task force</h5>
+						<h5 class="white heading hide-hover">Transform</h5>
 						<div class="bottom">
-							<h4 class="white heading small-heading no-margin regular">Register</h4>
-							<h4 class="white heading small-pt">Tonight</h4>
-							<a href="#" data-toggle="modal" data-target="#modal2"  class="btn btn-white-fill expand">Register</a>
+							<h4 class="white heading small-heading no-margin regular">A web plan</h4>
+							<h4 class="white heading small-pt">for creative business</h4>
+							<!--a href="#" data-toggle="modal" data-target="#modal2"  class="btn btn-white-fill expand">Register</a-->
+							<a href="#" data-toggle="modal" data-target="#modal1"  class="btn btn-white-fill expand">Call</a>
 						</div>
 					</div>
 				</div>

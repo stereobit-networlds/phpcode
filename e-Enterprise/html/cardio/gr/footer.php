@@ -39,7 +39,7 @@
 						</div>
 						<div class="col-sm-6 text-center-mobile">
 							<h5 class="light-white light">Δευ - Παρ</h5>
-							<h3 class="regular white">09:00 - 20:00</h3>
+							<h3 class="regular white">10:00 - 18:00</h3>
 							<h5 class="light-white light">Σαβ - Κυρ <!--(<a href="http://www.timeanddate.com/worldclock/usa/phoenix">Arizona Tmz</a>)--></h5>
 							<h3 class="regular white">10:00 - 15:00</h3>
 						</div>

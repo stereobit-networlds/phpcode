@@ -89,17 +89,18 @@
 				</div>
 				<div class="col-md-4">
 					<div class="intro-table intro-table-hover">
-						<h5 class="white heading hide-hover">Ειδικές αποστολές</h5>
+						<h5 class="white heading hide-hover">Εξειδίκευση</h5>
 						<div class="bottom">
-							<h4 class="white heading small-heading no-margin regular">Κάντε την εγγραφή σας</h4>
-							<h4 class="white heading small-pt">Δοκιμάστε τα εργαλεία μας</h4>
-							<a href="#" data-toggle="modal" data-target="#modal2"  class="btn btn-white-fill expand">Register</a>
+							<h4 class="white heading small-heading no-margin regular">Στην εξέλιξη</h4>
+							<h4 class="white heading small-pt">και στον σχεδιασμό λύσεων</h4>
+							<!--a href="#" data-toggle="modal" data-target="#modal2"  class="btn btn-white-fill expand">Register</a-->
+							<a href="#" data-toggle="modal" data-target="#modal1"  class="btn btn-white-fill expand">Επικοινωνία</a>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="intro-table intro-table-third">
-						<h5 class="white heading">Απαιτητικοί πελάτες</h5>
+						<h5 class="white heading">Προώθηση</h5>
 						<div class="owl-testimonials bottom">
 							<div class="item">
 								<h4 class="white heading content">Τοποθέτηση προϊόντων</h4>

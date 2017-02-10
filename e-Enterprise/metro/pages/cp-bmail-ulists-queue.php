@@ -48,8 +48,14 @@
             <!-- BEGIN PAGE CONTENT-->
              <div class="row-fluid">
                  <div class="span12">
-					 <?METRO/INDEX?>
-                     <!-- END BLANK PAGE PORTLET-->
+					<div class="widget red">
+                        <div class="widget-title">
+                            <h4><i class="icon-reorder"></i> <phpdac>frontpage.slocale use _MAILQUEUE</phpdac></h4>
+                        </div>
+                        <div class="widget-body">
+							<?METRO/INDEX?>
+						</div>
+					</div>			
                  </div>
              </div>
             <!-- END PAGE CONTENT-->

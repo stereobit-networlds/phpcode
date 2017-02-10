@@ -51,11 +51,7 @@
                     <!-- BEGIN SAMPLE FORMPORTLET-->
                     <div class="widget red">
                         <div class="widget-title">
-                            <h4><i class="icon-reorder"></i> Insert emails</h4>
-                            <!--span class="tools">
-                            <a href="javascript:;" class="icon-chevron-down"></a>
-                            <a href="javascript:;" class="icon-remove"></a>
-                            </span-->
+                            <h4><i class="icon-reorder"></i> <phpdac>frontpage.slocale use _MASSSUBSCRIBE</phpdac></h4>
                         </div>
                         <div class="widget-body">
                             <!-- BEGIN FORM-->

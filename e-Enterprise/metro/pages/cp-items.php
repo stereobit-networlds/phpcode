@@ -26,7 +26,7 @@
 	<script src="../javascripts/jqgrid/js/jquery.jqGrid.min.js"></script>
 	<script src="../javascripts/themes/jquery-ui.custom.min.js"></script>    
    	
-	<script src="http://www.stereobit.gr/ckeditor/ckeditor.js"></script>
+	<!--script src="http://www.stereobit.gr/ckeditor/ckeditor.js"></script-->
 </head>
 <!-- END HEAD -->
 <!-- BEGIN BODY -->
@@ -98,8 +98,7 @@
     function edit_item() { var str = arguments[0]; sndReqArg('cpitems.php?t=cpeditframe&id='+str,'edtem');}
 	function photo_item() {	$('#pdtem').load("cpitems.php?t=cpphotoframe&ajax=1&id="+arguments[0]);	}
    </script>
-	<phpdac>frontpage.include_part use /parts/google-analytics.php+++meteor</phpdac>
-	<!-- e-Enterprise, stereobit.networlds (phpdac5) -->   
+  
 </body>
 <!-- END BODY -->
 </html>

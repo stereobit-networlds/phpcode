@@ -10,7 +10,7 @@
 						<div class="box-main active" data-img="images/enterprise-tab1.jpg">
 							<h4 class="white">Data driven e-mail marketing</h4>
 							<h4 class="white regular light">45,00 &euro; <span class="small-font">/ month</span></h4>
-							<a href="#" data-toggle="modal" data-target="#modal2" class="btn btn-white-fill">Sign Up Now</a>
+							<a href="#" data-toggle="modal" data-target="#modal1" class="btn btn-white-fill">Call</a>
 							<i class="info-icon icon_question"></i>
 						</div>
 						<div class="box-second active">
@@ -27,7 +27,7 @@
 						<div class="box-main" data-img="images/enterprise-tab2.jpg">
 							<h4 class="white">Learning paths<br/>(e-Enterprise ext.)</h4>
 							<h4 class="white regular light">120,00 &euro;<span class="small-font"> / month</span></h4>
-							<a href="#" data-toggle="modal" data-target="#modal2" class="btn btn-white-fill">Sign Up Now</a>
+							<a href="#" data-toggle="modal" data-target="#modal1" class="btn btn-white-fill">Call</a>
 							<i class="info-icon icon_question"></i>
 						</div>
 						<div class="box-second">
