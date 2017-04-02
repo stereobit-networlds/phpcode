@@ -5,7 +5,7 @@
 <!-- BEGIN HEAD -->
 <head>
    <meta charset="utf-8" />
-   <title>Tree descriptors</title>
+   <title>Tree map</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta content="" name="description" />
     <meta content="" name="author" />
@@ -87,13 +87,12 @@
 	function ttree() {var str = arguments[0]; $('#crmform').load("cptreedescr.php?t=cptreeframe&mode=tree&id="+str);}   
 	function titems() {var str = arguments[0]; $('#crmform').load("cptreedescr.php?t=cptreeframe&mode=items&id="+str);}
 	function tcats() {var str = arguments[0]; $('#crmform').load("cptreedescr.php?t=cptreeframe&mode=cats&id="+str);}	
-	function tusers() {var str = arguments[0]; $('#crmform').load("cptreedescr.php?t=cptreeframe&mode=users&id="+str);}
+	function tattach() {var str = arguments[0]; $('#crmform').load("cptreedescr.php?t=cptreeframe&mode=attach&id="+str);}
    </script>  
         
    <!-- END JAVASCRIPTS --> 
 
-	<phpdac>frontpage.include_part use /parts/google-analytics.php+++metro</phpdac>
-	<!-- e-Enterprise, stereobit.networlds (phpdac5) -->   
+   <!-- e-Enterprise, stereobit.networlds (phpdac5) -->   
 </body>
 <!-- END BODY -->
 </html>

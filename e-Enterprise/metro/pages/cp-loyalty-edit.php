@@ -5,7 +5,7 @@
 <!-- BEGIN HEAD -->
 <head>
    <meta charset="utf-8" />
-   <title>Q policy edit</title>
+   <title>Loyalty edit</title>
    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
    <meta content="" name="description" />
    <meta content="" name="author" />
@@ -26,7 +26,7 @@
 				 	<?METRO/INDEX?>	
 					<div id="edit_form" class="control-group">
 						<form name="form1" method="post" action="#" class="form-horizontal">
-							<textarea wrap="virtual" id="formdata" class="span12" name="formdata" rows="20" autowrap><phpdac>rcitemqpolicy.fetchFormData</phpdac></textarea>
+							<textarea wrap="virtual" id="formdata" class="span12" name="formdata" rows="20" autowrap><phpdac>rcloyalty.fetchFormData</phpdac></textarea>
 							<input type="hidden" name="id" value="<phpdac>fronthtmlpage.echostr use id</phpdac>">									
 							<input type="hidden" name="FormName" value="qpolicy">									
 							<input type="hidden" name="FormAction" value="cpitemqdetail">									

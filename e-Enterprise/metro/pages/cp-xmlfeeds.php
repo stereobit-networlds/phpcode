@@ -55,7 +55,6 @@
                              <h4><i class="icon-edit"></i> <phpdac>i18nL.translate use xmlfeeds+RCPMENU</phpdac> </h4>
                            <span class="tools">
                                <a href="javascript:;" class="icon-chevron-down"></a>
-                               <a href="javascript:;" class="icon-remove"></a>
                            </span>
                          </div>
                          <div class="widget-body">
@@ -97,11 +96,9 @@
 
    <!-- END JAVASCRIPTS -->  
    <script>
-    //function relatecat() { var str = arguments[0]; sndReqArg('cpitemrel.php?t=cploadrelf&item='+str,'relcat');}
 	function relatecat() {var str = arguments[0]; $('#relcat').load("cpitemrel.php?t=cploadrelf&item="+str);}
 	function relateitm() {var str = arguments[0]; $('#relcat').load("cpitemrel.php?t=cploadrelf&id="+str);}
    </script>
-	<phpdac>frontpage.include_part use /parts/google-analytics.php+++metro</phpdac>
 	<!-- e-Enterprise, stereobit.networlds (phpdac5) -->   
 </body>
 <!-- END BODY -->

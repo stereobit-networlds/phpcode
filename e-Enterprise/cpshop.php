@@ -1,9 +1,8 @@
 <?php
 require_once('dpc/system/pcntl.lib.php'); 
 $page = &new pcntl('
-
 super javascript;
-super rcserver.rcssystem;
+/super rcserver.rcssystem;
 
 load_extension adodb refby _ADODB_; 
 super database;
@@ -11,7 +10,7 @@ super database;
 /---------------------------------load and create libs
 use i18n.i18n;
 use jqgrid.jqgrid;
-use cp.cpflotcharts;
+use bshop.bshopcharts;
 
 /---------------------------------load not create dpc (internal use)
 include networlds.clientdpc;	
@@ -28,7 +27,7 @@ public i18n.i18nL;
 
 ',1);
 
-$cptemplate = _m('rcserver.paramload use FRONTHTMLPAGE+cptemplate');
+$cptemplate = _m('cmsrt.paramload use FRONTHTMLPAGE+cptemplate');
 
 	switch ($_GET['t']) {
 		case 'cpshopformsubdetail': 

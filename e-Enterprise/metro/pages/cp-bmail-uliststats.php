@@ -131,71 +131,94 @@
             </div>
 			<div class="row-fluid">
                 <div class="span7">
-                    <!-- BEGIN PROGRESS PORTLET-->
-                    <div class="widget purple">
+								
+                    <div class="widget blue">
                         <div class="widget-title">
                             <h4><i class="icon-tasks"></i> <phpdac>i18nL.translate use bmailcamp+RCPMENU</phpdac></h4>
                             <span class="tools">
                                 <a href="javascript:;" class="icon-chevron-down"></a>
-                                <a href="javascript:;" class="icon-remove"></a>
                             </span>
                         </div>
                         <div class="widget-body">
-                            <ul class="unstyled">
-                                <phpdac>rculiststats.percentofCamps use bmail-task-in-progress-important</phpdac>
-								<phpdac>rculiststats.lastCamps use bmail-task-in-progress-success+5</phpdac>
-                            </ul>
-							<div class="control-group">
-                                <label class="control-label"><phpdac>i18nL.translate use SEARCH+SHSEARCH</phpdac></label>
-                                <div class="controls">
-									<phpdac>rculiststats.campaignSelect</phpdac>
-                                </div>
-								<label class="control-label">Instances (last 5)</label>
-                            </div>
-							<ul class="unstyled">
-								<phpdac>rculiststats.instanceCamps use bmail-task-in-progress-instance+5</phpdac>
-                            </ul>
+							<div class="tabbable ">
+                                <ul class="nav nav-tabs">
+									<li class="active"><a href="#widget_tab1" data-toggle="tab"><phpdac>i18nL.translate use bmailcamp+RCPMENU</phpdac></a></li>
+									<li><a href="#widget_tab2" data-toggle="tab"><phpdac>i18nL.translate use MAILCLICKS+RCBULKMAIL</phpdac></a></li>									
+                                    <li><a href="#widget_tab3" data-toggle="tab"><phpdac>frontpage.slocale use _bclick</phpdac></a></li>                                    
+                                </ul>
+								<div class="tab-content">
+                                    <div class="tab-pane active" id="widget_tab1">
+										<ul class="unstyled">
+										<phpdac>rculiststats.percentofCamps use bmail-task-in-progress-important</phpdac>
+										<phpdac>rculiststats.lastCamps use bmail-task-in-progress-success+5</phpdac>
+										</ul>
+										<div class="control-group">
+											<label class="control-label"><phpdac>i18nL.translate use SEARCH+SHSEARCH</phpdac></label>
+											<div class="controls">
+												<phpdac>rculiststats.campaignSelect</phpdac>
+											</div>
+											<label class="control-label">Instances (last 5)</label>
+										</div>
+										<ul class="unstyled">
+											<phpdac>rculiststats.instanceCamps use bmail-task-in-progress-instance+5</phpdac>
+										</ul>
+									</div>	
+									<div class="tab-pane" id="widget_tab2">
+                                        <ul class="item-list scroller padding"  style="overflow: hidden; width: auto; " data-always-visible="1">
+										<phpdac>rculiststats.getViews use notification-success+9</phpdac>
+										</ul>
+										<div class="space10"></div>
+										<a href="cpulists.php?t=cpulists&cid=<phpdac>cms.nvldac2 use cid+cms.echostr:cid++</phpdac>" class="pull-right"><phpdac>i18nL.translate use viewallmessages+RCCONTROLPANEL</phpdac></a>
+										<div class="clearfix no-top-space no-bottom-space"></div>
+                                    </div>
+                                    <div class="tab-pane" id="widget_tab3">
+                                        <ul class="item-list scroller padding"  style="overflow: hidden; width: auto; " data-always-visible="1">							 
+										<phpdac>rculiststats.getClicks use notification-success+9</phpdac>
+										</ul>
+										<div class="space10"></div>
+										<a href="cpulists.php?t=cpviewclicks&cid=<phpdac>fronthtmlpage.echostr use rculiststats.cid</phpdac>" class="pull-right"><phpdac>i18nL.translate use viewallmessages+RCCONTROLPANEL</phpdac></a>
+										<div class="clearfix no-top-space no-bottom-space"></div>
+                                    </div>
+								</div>	
+							</div>
                         </div>
                     </div>
-                    <!-- END PROGRESS PORTLET-->
 					
-					<!-- BEGIN ALERTS PORTLET-->
-                     <div class="widget blue">
-                         <div class="widget-title">
-                             <h4><i class="icon-download"></i> <phpdac>i18nL.translate use MAILCLICKS+RCBULKMAIL</phpdac> </h4>
-                           <span class="tools">
-                               <a href="javascript:;" class="icon-chevron-down"></a>
-                               <a href="javascript:;" class="icon-remove"></a>
-                           </span>
-                         </div>
-                         <div class="widget-body">
-                             <ul class="item-list scroller padding"  style="overflow: hidden; width: auto; " data-always-visible="1">
-								 <phpdac>rculiststats.getViews use notification-success+9</phpdac>
-                             </ul>
-                             <div class="space10"></div>
-                             <a href="cpulists.php" class="pull-right"><phpdac>i18nL.translate use viewallmessages+RCCONTROLPANEL</phpdac></a>
-                             <div class="clearfix no-top-space no-bottom-space"></div>
-                         </div>
-                     </div>
-					 
-                     <div class="widget purple">
-                         <div class="widget-title">
-                             <h4><i class="icon-download"></i> <phpdac>frontpage.slocale use _bclick</phpdac> </h4>
-                           <span class="tools">
-                               <a href="javascript:;" class="icon-chevron-down"></a>
-                               <a href="javascript:;" class="icon-remove"></a>
-                           </span>
-                         </div>
-                         <div class="widget-body">
-                             <ul class="item-list scroller padding"  style="overflow: hidden; width: auto; " data-always-visible="1">							 
-                                 <phpdac>rculiststats.getClicks use notification-success+9</phpdac>
-                             </ul>
-                             <div class="space10"></div>
-                             <a href="cpulists.php?t=cpviewclicks&cid=<phpdac>fronthtmlpage.echostr use rculiststats.cid</phpdac>" class="pull-right"><phpdac>i18nL.translate use viewallmessages+RCCONTROLPANEL</phpdac></a>
-                             <div class="clearfix no-top-space no-bottom-space"></div>
-                         </div>
-                     </div>						 
-                    <!-- END ALERTS PORTLET-->
+                    <div class="widget purple">
+                        <div class="widget-title">
+                            <h4><i class="icon-reorder"></i> <phpdac>frontpage.slocale use _bounce</phpdac></a></h4>
+							<span class="tools">
+                                <a href="javascript:;" class="icon-chevron-down"></a>
+                            </span>
+                        </div>
+                        <div class="widget-body">
+                            <div class="tabbable ">
+                                <ul class="nav nav-tabs">
+									<li class="active"><a href="#tab_1_1" data-toggle="tab"><phpdac>frontpage.slocale use _bounce</phpdac></a></li>
+									<li><a href="#tab_1_2" data-toggle="tab"><phpdac>i18nL.translate use unsubscribe+RCBULKMAIL</phpdac></a></li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="tab_1_1">
+                                        <ul class="item-list scroller padding"  style="overflow: hidden; width: auto; " data-always-visible="0">
+										<phpdac>rculiststats.getMailBounce use notification-warning+9</phpdac>							 
+										</ul>
+										<div class="space10"></div>
+										<a href="cpulists.php?t=cpcleanbounce&cid=<phpdac>cms.nvldac2 use cid+cms.echostr:cid++</phpdac>" class="pull-right"><phpdac>i18nL.translate use viewallmessages+RCCONTROLPANEL</phpdac></a>
+										<div class="clearfix no-top-space no-bottom-space"></div>
+                                    </div>
+                                    <div class="tab-pane" id="tab_1_2">
+                                        <ul class="item-list"  style="overflow: hidden; width: auto; " data-always-visible="1">
+										<phpdac>rculiststats.getUnsubs use notification-warning+9</phpdac>							 
+										</ul>
+										<div class="space10"></div>
+										<a href="cpsubscribers.php" class="pull-right"><phpdac>i18nL.translate use viewallmessages+RCCONTROLPANEL</phpdac></a>
+										<div class="clearfix no-top-space no-bottom-space"></div>
+                                    </div>									
+                                </div>
+                            </div>
+                        </div>
+                    </div>	
+					
                 </div>			
                 <div class="span5">
 					<div class="widget-body">
@@ -232,7 +255,6 @@
                             <h4><i class="icon-tasks"></i> <phpdac>i18nL.translate use mailqueue+CPFLOTCHARTS</phpdac> </h4>
                          <span class="tools">
                             <a href="javascript:;" class="icon-chevron-down"></a>
-                            <a href="javascript:;" class="icon-remove"></a>
                          </span>
 						 <div class="update-btn">
                             <a href="javascript:sndReqArg('cp.php?t=cpchartshow&group=&ai=1&report=mailqueue&statsid='+statsid.value,'mailqueue');" class="btn"><i class="icon-repeat"></i> <phpdac>i18nL.translate use CPFLOTCHARTS_DPC+CPFLOTCHARTS</phpdac></a>
@@ -249,56 +271,29 @@
 					<!--hpdac>rculiststats._show_charts</phpda-->
 					<INPUT TYPE= "hidden" ID="statsid" VALUE="0" />					
 					
-					<!-- BEGIN NOTIFICATIONS PORTLET-->
-					<div class="widget red">
+					<!--div class="widget red">
                          <div class="widget-title">
                              <h4><i class="icon-download"></i> <phpdac>frontpage.slocale use _bounce</phpdac> </h4>
                            <span class="tools">
                                <a href="javascript:;" class="icon-chevron-down"></a>
-                               <a href="javascript:;" class="icon-remove"></a>
                            </span>
                          </div>
                          <div class="widget-body">
-                             <ul class="item-list scroller padding"  style="overflow: hidden; width: auto; " data-always-visible="0">
-								 <phpdac>rculiststats.getMailBounce use notification-warning+9</phpdac>							 
-                             </ul>
-                             <div class="space10"></div>
-                             <a href="cpulists.php?t=cpcleanbounce" class="pull-right"><phpdac>i18nL.translate use viewallmessages+RCCONTROLPANEL</phpdac></a>
-                             <div class="clearfix no-top-space no-bottom-space"></div>
+                             
                          </div>
-                     </div>	
-
-                     <div class="widget red">
-                         <div class="widget-title">
-                             <h4><i class="icon-download"></i> <phpdac>i18nL.translate use unsubscribe+RCBULKMAIL</phpdac> </h4>
-                           <span class="tools">
-                               <a href="javascript:;" class="icon-chevron-down"></a>
-                               <a href="javascript:;" class="icon-remove"></a>
-                           </span>
-                         </div>
-                         <div class="widget-body">
-                             <ul class="item-list"  style="overflow: hidden; width: auto; " data-always-visible="1">
-								 <phpdac>rculiststats.getUnsubs use notification-warning+9</phpdac>							 
-                             </ul>
-                             <div class="space10"></div>
-                             <a href="cpsubscribers.php" class="pull-right"><phpdac>i18nL.translate use viewallmessages+RCCONTROLPANEL</phpdac></a>
-                             <div class="clearfix no-top-space no-bottom-space"></div>
-                         </div>
-                     </div>		
+                     </div-->			
 
                     <div class="widget orange">
                         <div class="widget-title">
                             <h4><i class="icon-bell-alt"></i> <phpdac>i18nL.translate use messages+RCCONTROLPANEL</phpdac></h4>
                             <span class="tools">
                             <a class="icon-chevron-down" href="javascript:;"></a>
-                            <a class="icon-remove" href="javascript:;"></a>
                             </span>
                         </div>
                         <div class="widget-body">
 						    <phpdac>rculiststats.viewMessages use alert</phpdac>
                         </div>
-                    </div>					 
-                     <!-- END NOTIFICATIONS PORTLET-->								
+                    </div>					 								
 				</div>	
 			</div>	
             <!-- END PAGE CONTENT-->         
@@ -357,7 +352,7 @@
    <!--script src="js/form-component.js"></script partial -->   
    <script language="javascript" type="text/javascript">
    
-    <phpdac>cpflotcharts.jsflotMailcharts</phpdac>  
+    <phpdac>bmailcharts.jsflotMailcharts</phpdac>  
 	
     //chosen select
     $(".chzn-select").chosen(); $(".chzn-select-deselect").chosen({allow_single_deselect:true});
@@ -438,9 +433,6 @@
 
    <script src="js/easy-pie-chart.js"></script>
    <script src="js/sparkline-chart.js"></script>
-   <!--script src="js/home-page-calender.js"></script>
-   <script src="js/home-chartjs.js"></script-->
-  
   
    <!-- END JAVASCRIPTS -->   
 </body>

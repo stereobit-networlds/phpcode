@@ -5,7 +5,7 @@
 <!-- BEGIN HEAD -->
 <head>
    <meta charset="utf-8" />
-   <title><phpdac>frontpage.slocale use _RESETPASS</phpdac></title>
+   <title><phpdac>cms.slocale use _RESETPASS</phpdac></title>
    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
    <meta content="" name="description" />
    <meta content="" name="author" />
@@ -70,10 +70,10 @@
                 <input type="checkbox" id=""> Remember Me
             </div-->
 			<div class="forgot-hint pull-left">
-                <a id="forget-password" class="" href="#" onClick="top.location.href='../<phpdac>fronthtmlpage.echostr use turldecoded</phpdac>'"><phpdac>frontpage.slocale use _back</phpdac></a>
+                <a id="forget-password" class="" href="#" onClick="top.location.href='../<phpdac>cms.echostr use turldecoded</phpdac>'"><phpdac>cms.slocale use _back</phpdac></a>
             </div>
             <div class="forgot-hint pull-right">
-                <a id="forget-password" class="" href="cp.php?editmode=1&turl=<phpdac>fronthtmlpage.echostr use turl</phpdac>"><phpdac>frontpage.slocale use SHLOGIN_DPC</phpdac></a>
+                <a id="forget-password" class="" href="cp.php?turl=<phpdac>cms.echostr use turl</phpdac>"><phpdac>cms.slocale use SHLOGIN_DPC</phpdac></a>
             </div>
         </div>		
     </div>

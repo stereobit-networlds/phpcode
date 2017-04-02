@@ -15,7 +15,7 @@ include networlds.clientdpc;
 include gui.form;
 include mail.smtpmail;
 
-load_extension recaptcha refby _RECAPTCHA_;	
+/load_extension recaptcha refby _RECAPTCHA_;	
 			
 security CART_DPC 1 1:1:1:1:1:1:1:1:1:1;
 security SHCART_DPC 1 1:1:1:1:1:1:1:1:1:1;

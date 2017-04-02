@@ -29,6 +29,7 @@ public i18n.i18nL;
 $cptemplate = _m('rcserver.paramload use FRONTHTMLPAGE+cptemplate');
 
 	switch ($_GET['t']) {
+		case 'cptreeattach': $p = 'cp-iframe-jqgrid'; break;
 		case 'cpsavetree'  : 
 		case 'cptreeitems' : $p = 'cp-treedescr-items'; break;
 		case 'cptreedescr' :

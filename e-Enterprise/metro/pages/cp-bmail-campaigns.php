@@ -80,7 +80,7 @@
                             <div class="control-group">
                                 <label class="control-label"><phpdac>i18nL.translate use subject+RCBULKMAIL</phpdac></label>
                                 <div id="edit_subject" class="controls">
-                                    <input id="subject" name="subject" value="<phpdac>fronthtmlpage.nvldac2 use subject+fronthtmlpage.echostr:subject++</phpdac>" type="text" class="span6 " />
+                                    <input id="subject" name="subject" value="<phpdac>cms.nvldac2 use subject+cms.echostr:subject++</phpdac>" type="text" class="span6 " />
                                     <!--span class="help-inline">Insert a subject </span-->
                                 </div>
                             </div>	
@@ -89,10 +89,10 @@
                                 <div id="edit_from" class="controls">
                                     <div class="input-icon left">
                                         <i class="icon-envelope"></i>
-                                        <input id="from" name="from" value="<phpdac>fronthtmlpage.nvldac2 use from+fronthtmlpage.echostr:from++</phpdac>" class=" " type="text" / readonly="readonly">
+                                        <input id="from" name="from" value="<phpdac>cms.nvldac2 use from+cms.echostr:from++</phpdac>" class=" " type="text" / readonly="readonly">
 										<span class="help-inline">
 											<i class="icon-user"></i>
-											<input name="realm" value="<phpdac>fronthtmlpage.nvldac2 use realm+fronthtmlpage.echostr:realm++</phpdac>" class=" " type="text" readonly="readonly" />
+											<input name="realm" value="<phpdac>cms.nvldac2 use realm+cms.echostr:realm++</phpdac>" class=" " type="text" readonly="readonly" />
 										</span>
                                     </div>
                                 </div>
@@ -102,26 +102,37 @@
                                 <div class="controls">
                                     <div class="input-icon left">
                                         <i class="icon-user"></i>
-										<input name="user" value="<phpdac>fronthtmlpage.nvldac2 use user+fronthtmlpage.echostr:user++</phpdac>" class=" " type="text" <phpdac>rcbulkmail.disableSettings</phpdac> />
+										<input name="user" value="<phpdac>cms.nvldac2 use user+cms.echostr:user++</phpdac>" class=" " type="text" <phpdac>rcbulkmail.disableSettings</phpdac> />
 										</span>
 										<span class="help-inline">
 											<i class="icon-lock"></i>
-											<input name="pass" value="<phpdac>fronthtmlpage.nvldac2 use pass+fronthtmlpage.echostr:pass++</phpdac>" class=" " type="text" <phpdac>rcbulkmail.disableSettings</phpdac> />
+											<input name="pass" value="<phpdac>cms.nvldac2 use pass+cms.echostr:pass++</phpdac>" class=" " type="text" <phpdac>rcbulkmail.disableSettings</phpdac> />
 										</span>
 										<span class="help-inline">
 											<i class="icon-tasks"></i>
-											<input name="server" value="<phpdac>fronthtmlpage.nvldac2 use server+fronthtmlpage.echostr:server++</phpdac>" class=" " type="text" <phpdac>rcbulkmail.disableSettings</phpdac> />
+											<input name="server" value="<phpdac>cms.nvldac2 use server+cms.echostr:server++</phpdac>" class=" " type="text" <phpdac>rcbulkmail.disableSettings</phpdac> />
 										</span>
                                     </div>
                                 </div>
-                            </div>								
+                            </div>
+
 							<div class="control-group">
                                 <label class="control-label"><phpdac>i18nL.translate use receiver+RCBULKMAIL</phpdac></label>
-                                <div id="editto" class="controls">
-									<input name="include" id="tags_1" type="text" class="tags" value="<phpdac>fronthtmlpage.nvldac2 use ulists+fronthtmlpage.echostr:ulists++</phpdac>" />									
+                                <div id="select_ulist" class="controls">
+                                    <select id="tags_1" name="include" class="span6 " data-placeholder="<phpdac>cms.slocale use _sellistprompt</phpdac>" tabindex="1">
+                                        <option value=""><phpdac>cms.slocale use _selectlist</phpdac></option>
+										<phpdac>rculists.viewUList</phpdac>
+                                    </select>
                                 </div>
+                            </div>
+							
+							<div class="control-group">
+                                <!--label class="control-label"><phpdac>i18nL.translate use receiver+RCBULKMAIL</phpdac></label>
+                                <div id="editto" class="controls">
+									<input name="include" id="tags_1" type="text" class="tags" value="<phpdac>cms.nvldac2 use ulists+cms.echostr:ulists++</phpdac>" />									
+                                </div-->
                                 <div id="editsend" class="controls">
-									<input id="receivers" name="receivers" type="text" value="<phpdac>fronthtmlpage.nvldac2 use bcc+fronthtmlpage.echostr:bcc++</phpdac>" class="span12 " readonly="readonly" />									
+									<input id="receivers" name="receivers" type="text" value="<phpdac>cms.nvldac2 use bcc+cms.echostr:bcc++</phpdac>" class="span12 " readonly="readonly" />									
                                 </div>																
                             </div>	
                             <div class="control-group">
@@ -135,7 +146,7 @@
 									<!--input id="dp1" type="text" value="" size="16" class="m-ctrl-medium"-->		
     
                                     <div class="input-append bootstrap-timepicker">
-                                        <input id="bid" name="bid" type="text" value="<phpdac>fronthtmlpage.echostr use rcbulkmail.batchid</phpdac>" class="input-small" readonly>
+                                        <input id="bid" name="bid" type="text" value="<phpdac>cms.echostr use rcbulkmail.batchid</phpdac>" class="input-small" readonly>
                                         <span class="add-on"> <i class="icon-time"></i></span>
                                     </div>
                                 </div>
@@ -153,9 +164,9 @@
                             <!--div class="form-actions">
 								<-hpdac>rcbulkmail.controlCamp</phpda->
 								<input type="hidden" name="FormName" value="cpsubsend" />
-								<input type="hidden" name="FormAction" value="<phpdac>fronthtmlpage.nvl use rcbulkmail.sendOk+cppreviewcamp+cpsubsend+</phpdac>" />
-								<input type="hidden" name="xcid" value="<phpdac>fronthtmlpage.echostr use rcbulkmail.cid</phpdac>">
-								<input type="hidden" name="bid" value="<phpdac>fronthtmlpage.echostr use rcbulkmail.batchid</phpdac>">
+								<input type="hidden" name="FormAction" value="<phpdac>cms.nvl use rcbulkmail.sendOk+cppreviewcamp+cpsubsend+</phpdac>" />
+								<input type="hidden" name="xcid" value="<phpdac>cms.echostr use rcbulkmail.cid</phpdac>">
+								<input type="hidden" name="bid" value="<phpdac>cms.echostr use rcbulkmail.batchid</phpdac>">
                             </div-->										
 							
                             </form>

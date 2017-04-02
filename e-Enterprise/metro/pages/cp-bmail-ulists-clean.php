@@ -60,6 +60,16 @@
                             <!-- BEGIN FORM-->
                             <form method="post" action="#" class="form-horizontal">	
 
+							<div class="control-group">
+                                <label class="control-label"><phpdac>cms.slocale use _selectlist</phpdac></label>
+                                <div id="select_ulist" class="controls">
+                                    <select name="ulist" onChange="location='cpulists.php?t=cpcleanbounce&ulist='+this.options[this.selectedIndex].value" class="span6 " data-placeholder="<phpdac>cms.slocale use _sellistprompt</phpdac>" tabindex="1">
+                                        <option value=""><phpdac>cms.slocale use _selectlist</phpdac></option>
+										<phpdac>rculists.viewUList use +ulist</phpdac>
+                                    </select>
+                                </div>
+                            </div>
+							
                             <div class="control-group">
                                 <label class="control-label"><phpdac>frontpage.slocale use _failmargin</phpdac> (&gt;)</label>
                                 <div class="controls">
@@ -93,11 +103,23 @@
 							<div id="messages" class="control-group">
 								<label class="control-label"><phpdac>i18nL.translate use messages+RCCONTROLPANEL</phpdac></label>
 								<div class="controls">
-									<select id="messages" multiple="multiple" style="height:60px;width:100%;">
+									<select id="messages" multiple="multiple" style="height:90px;width:100%;">
 										<phpdac>rculists.viewMessages</phpdac>
 									</select>
 								</div>
-							</div>		
+							</div>
+
+							<div class="control-group">
+								<label class="control-label"><phpdac>cms.slocale use _subutils</phpdac></label>
+								<div class="controls">
+									<label class="checkbox">
+										<input name="cleanbad" type="checkbox" /> <phpdac>cms.slocale use _cleanbad</phpdac>
+									</label>
+									<label class="checkbox">
+										<input name="cleanfailed" type="checkbox" checked /> <phpdac>cms.slocale use _cleanfailed</phpdac>
+									</label>									
+								</div>
+							</div>							
 								
                             <div class="form-actions">
 								<button type="submit" class="btn btn-danger"><phpdac>frontpage.slocale use _cleanlist</phpdac></button>

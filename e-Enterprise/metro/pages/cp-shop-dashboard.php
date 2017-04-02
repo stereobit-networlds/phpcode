@@ -163,7 +163,7 @@
    <script src="js/custom-flot-chart.js"></script-->   
    <script language="javascript" type="text/javascript">
    
-    <phpdac>cpflotcharts.jsflotEshopCharts</phpdac>
+    <phpdac>bshopcharts.jsflotEshopCharts</phpdac>
 	   
     //chosen select
     $(".chzn-select").chosen(); $(".chzn-select-deselect").chosen({allow_single_deselect:true});

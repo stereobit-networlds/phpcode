@@ -95,7 +95,6 @@
    <script>
 	function treerel() {var str = arguments[0]; $('#treerel').load("cptree.php?t=cptreerel&id="+str);}
    </script>
-	<phpdac>frontpage.include_part use /parts/google-analytics.php+++metro</phpdac>
 	<!-- e-Enterprise, stereobit.networlds (phpdac5) -->   
 </body>
 <!-- END BODY -->

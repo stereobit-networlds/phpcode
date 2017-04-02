@@ -20,13 +20,11 @@
 	<link href="../javascripts/themes/redmond/jquery-ui.custom.css" rel="stylesheet" /> 
 	<link href="../javascripts/jqgrid/css/ui.jqgrid.css" rel="stylesheet" />  
 	
-    <script src="../javascripts/jquery.min.js"></script>
-	<!--script src="js/jquery-1.8.3.min.js"></script-->
+    <!--script src="../javascripts/jquery.min.js"></script-->
+	<script src="js/jquery-1.8.3.min.js"></script>
 	<script src="../javascripts/jqgrid/js/i18n/grid.locale-en.js"></script>			
 	<script src="../javascripts/jqgrid/js/jquery.jqGrid.min.js"></script>
 	<script src="../javascripts/themes/jquery-ui.custom.min.js"></script>    
-   	
-	<!--script src="http://www.stereobit.gr/ckeditor/ckeditor.js"></script-->
 </head>
 <!-- END HEAD -->
 <!-- BEGIN BODY -->
@@ -96,7 +94,6 @@
    <script>
 	function blactivity() {var str = arguments[0]; $('#blactivity').load("cpblacklist.php?t=cpblactivity&ip="+str);}
    </script>
-	<phpdac>frontpage.include_part use /parts/google-analytics.php+++metro</phpdac>
 	<!-- e-Enterprise, stereobit.networlds (phpdac5) -->   
 </body>
 <!-- END BODY -->

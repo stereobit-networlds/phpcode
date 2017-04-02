@@ -11,6 +11,7 @@ super database;
 /---------------------------------load and create libs
 use i18n.i18n;
 use jqgrid.jqgrid;
+use filesystem.downloadfile;
 
 /---------------------------------load not create dpc (internal use)
 include networlds.clientdpc;	

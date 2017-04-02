@@ -5,7 +5,7 @@
 <!-- BEGIN HEAD -->
 <head>
    <meta charset="utf-8" />
-   <title>Tree attach</title>
+   <title>Item descriptors</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta content="" name="description" />
     <meta content="" name="author" />
@@ -37,17 +37,10 @@
                     <div class="widget orange">
                         <div class="widget-title">
                             <h4>
-                                <i class="icon-reorder"></i> <phpdac>frontpage.slocale use _treeattach</phpdac> <phpdac>rctreedescr.currentSelectedTree</phpdac>
+                                <i class="icon-reorder"></i> <phpdac>cms.slocale use _treeattach</phpdac> <phpdac>rctreedescr.currentSelectedTree</phpdac>
                             </h4>
-                            <!--span class="tools">
-                            <a href="javascript:;" class="icon-chevron-down"></a>
-                            <a href="javascript:;" class="icon-remove"></a>
-                            </span-->
 							<div class="update-btn">
 								<phpdac>rctreedescr.selectFieldButton</phpdac>
-								<!--a href="<phpdac>rctreedescr.selectFieldUrl use size</phpdac>" class="btn"><i class="icon-repeat"></i> Size</a>
-								<a href="<phpdac>rctreedescr.selectFieldUrl use color</phpdac>" class="btn"><i class="icon-repeat"></i> Color</a>
-								<a href="<phpdac>rctreedescr.selectFieldUrl use manufacturer</phpdac>" class="btn"><i class="icon-repeat"></i> Manufacturer</a-->
                                 <a href="<phpdac>rctreedescr.selectFieldUrl</phpdac>" class="btn"><i class="icon-repeat"></i> Default</a>
                             </div>
                         </div>
@@ -93,7 +86,7 @@
                                                     <button type="button" class="btn" id="box2Clear">X</button>
                                                 </div>
 
-                                                <select name="mytreelist[]" id="box2View" multiple="multiple" style="height:300px;width:75%;">
+                                                <select name="mytreedescr[]" id="box2View" multiple="multiple" style="height:300px;width:75%;">
 													<phpdac>rctreedescr.viewList</phpdac>
                                                 </select><br/>
 

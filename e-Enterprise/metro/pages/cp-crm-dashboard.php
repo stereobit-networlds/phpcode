@@ -173,7 +173,7 @@
    <!--script for this page only-->
    <script language="javascript" type="text/javascript">
    
-	<phpdac>cpflotcharts.jsflotCrmCharts</phpdac>
+	<phpdac>crmcharts.jsflotCrmCharts</phpdac>
 	
     //chosen select
     $(".chzn-select").chosen(); $(".chzn-select-deselect").chosen({allow_single_deselect:true});

@@ -46,7 +46,7 @@
       <div id="main-content">
           <!-- BEGIN PAGE CONTAINER-->
           <div class="container-fluid">
-			<phpdac>rccrm.select_timeline use timeline</phpdac>
+			<phpdac>rccrm.select_timeline use crm-timeline</phpdac>
 			<!-- BEGIN PAGE CONTENT-->
             <div class="row-fluid">				
                 <!--BEGIN METRO STATES-->

@@ -16,7 +16,9 @@
    <link href="css/style.css" rel="stylesheet" />
    <link href="css/style-responsive.css" rel="stylesheet" />
    <link href="css/style-default.css" rel="stylesheet" id="style_color" />
+   
    <link rel="stylesheet" type="text/css" href="assets/nestable/jquery.nestable.css" />
+   <link rel="stylesheet" href="css/zebra/flat/zebra_dialog.css" type="text/css">
    
    <script type="text/javascript" src="ckfinder/ckfinder.js"></script>   
 </head>
@@ -142,6 +144,9 @@
    <!--script for this page only-->
    <script src="js/nestable.js"></script>
    
+   <!-- stream dialog -->
+   <script type="text/javascript" src="js/zebra/zebra_dialog.js"></script>   
+   
    <script>
 		CKFinder.popup({
          height: 600
@@ -173,7 +178,7 @@ $('#save').click(function() {
     url: 'cpslideshow.php?t=cpssavenest',
     data: {'list': m, 'tmplist': tmp, 'slider': slidername},
     success: function(msg) {
-      alert(msg);
+      new $.Zebra_Dialog(msg, {'type':'information','title':slidername});
     }
   });
 });	

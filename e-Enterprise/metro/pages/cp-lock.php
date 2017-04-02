@@ -5,7 +5,7 @@
 <!-- BEGIN HEAD -->
 <head>
    <meta charset="utf-8" />
-   <title><phpdac>frontpage.slocale use _RESETPASS</phpdac></title>
+   <title><phpdac>cms.slocale use _RESETPASS</phpdac></title>
    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
    <meta content="" name="description" />
    <meta content="" name="author" />
@@ -21,31 +21,31 @@
 <body class="lock">
     <div class="lock-header">
         <!-- BEGIN LOGO -->
-        <a class="center" id="logo" href="#" onClick="top.location.href='../<phpdac>fronthtmlpage.echostr use turldecoded</phpdac>'">
+        <a class="center" id="logo" href="#" onClick="top.location.href='../<phpdac>cms.echostr use turldecoded</phpdac>'">
             <img class="center" alt="logo" src="img/logo.png">
         </a>
         <!-- END LOGO -->
     </div>
     <div class="lock-wrap">
+	<form method="POST" action="cp.php">
         <div class="metro single-size gray">
             <img src="img/lock-thumb.jpg" alt="" style="height: 165px" >
         </div>
         <div class="metro double-size blue">
 		    <br/>
-            <phpdac>shlogin.recaptcha</phpdac>
+            <!--hpdac>shlogin.recaptcha</phpda-->
+			<img src="cp.php?t=captchaimage" alt="captcha"/><br/>
+			<input type="text" name="mycaptcha" class="" placeholder="Captcha"><br/>
         </div>
         <div class="metro double-size green">
-            <form method="POST" action="cp.php">
                 <div class="input-append lock-input">
-                    <input type="text" name="myemail" class="" placeholder="Username">
+					<input type="text" name="myemail" class="" placeholder="Username">
 					<input type="hidden" name="FormAction" value="shremember" />
-					<input type="hidden" name="turl" value="<phpdac>fronthtmlpage.echostr use turl</phpdac>">
-					<input type="hidden" name="turldecoded" value="<phpdac>fronthtmlpage.echostr use turldecoded</phpdac>">
-					<input type="hidden" name="cpGet" value="<phpdac>fronthtmlpage.echostr use cpGet</phpdac>">
-					<input type="hidden" name="editmode" value="1">						
+					<input type="hidden" name="turl" value="<phpdac>cms.echostr use turl</phpdac>">
+					<input type="hidden" name="turldecoded" value="<phpdac>cms.echostr use turldecoded</phpdac>">
+					<input type="hidden" name="cpGet" value="<phpdac>cms.echostr use cpGet</phpdac>">					
                     <button type="submit" class="btn tarquoise"><i class=" icon-arrow-right"></i></button>
                 </div>
-            </form>
         </div>
         <div class="metro single-size terques">
             <div class="locked">
@@ -64,16 +64,11 @@
             <p>admin@superduper.com</p>		
         </div>		
         <div class="login-footer">
-            <!--div class="remember-hint pull-left">
-                <input type="checkbox" id=""> Remember Me
-            </div-->
 			<div class="forgot-hint pull-left">
-                <a id="forget-password" class="" href="#" onClick="top.location.href='../<phpdac>fronthtmlpage.echostr use turldecoded</phpdac>'"><phpdac>frontpage.slocale use _back</phpdac></a>
+                <a id="forget-password" class="" href="#" onClick="top.location.href='../<phpdac>cms.echostr use turldecoded</phpdac>'"><phpdac>cms.slocale use _back</phpdac></a>
             </div>
-            <!--div class="forgot-hint pull-right">
-                <a id="forget-password" class="" href="cp.php?turl=<phpdac>fronthtmlpage.echostr use turl</phpdac>"><phpdac>frontpage.slocale use SHLOGIN_DPC</phpdac></a>
-            </div-->
-        </div>		
+        </div>
+	</form>		
     </div>
 </body>
 <!-- END BODY -->

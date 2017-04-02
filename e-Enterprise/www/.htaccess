@@ -31,9 +31,13 @@ RewriteRule ^kfilter/([^/]*)/([^/]*)/([^/]*)/$ /katalog.php?t=kfilter&cat=$1&inp
 RewriteRule ^kfilter/([^/]*)/([^/]*)/$ /katalog.php?t=kfilter&cat=$1&input=$2 [L]
 RewriteRule ^kfilter/([^/]*)/$ /katalog.php?t=kfilter&cat=$1 [L]
 
+RewriteRule ^ktree/([^/]*)/([^/]*)/([^/]*)/$ /katalog.php?t=ktree&cat=$1&treeid=$2&page=$3 [L]
+RewriteRule ^ktree/([^/]*)/([^/]*)/$ /katalog.php?t=ktree&cat=$1&treeid=$2 [L]
+RewriteRule ^ktree/([^/]*)/$ /katalog.php?t=ktree&treeid=$1 [L]
+
 RewriteRule ^feed/([^/]*)/([^/]*)/([^/]*)/([^/]*)/$ /katalog.php?t=feed&cat=$1&page=$2&id=$3&format=$4 [L]
 RewriteRule ^feed/([^/]*)/([^/]*)/([^/]*)/$ /katalog.php?t=feed&cat=$1&page=$2&format=$3 [L]
-RewriteRule ^feed/([^/]*)/([^/]*)/$ /katalog.php?t=feed&dpc=$1&format=$2 [L]
+RewriteRule ^feed/([^/]*)/([^/]*)/$ /katalog.php?t=feed&cat=$1&format=$2 [L]
 
 RewriteRule ^xml/([^/]*)/([^/]*)/([^/]*)/([^/]*)/$ /katalog.php?t=xmlout&cat=$1&xml=$2&id=$3&format=$4 [L]
 RewriteRule ^xml/([^/]*)/([^/]*)/([^/]*)/$ /katalog.php?t=xmlout&cat=$1&xml=$2&format=$3 [L]

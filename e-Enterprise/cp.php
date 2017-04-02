@@ -8,13 +8,13 @@ super database;
 /---------------------------------load and create libs
 use i18n.i18n;
 use gui.swfcharts;
-use cp.cpflotcharts;
+use cms.cmscharts;
 
 /---------------------------------load not create dpc (internal use)
 include networlds.clientdpc;
 include mail.smtpmail;
 
-load_extension recaptcha refby _RECAPTCHA_;	
+/load_extension recaptcha refby _RECAPTCHA_;	
 
 /---------------------------------load all and create after dpc objects
 public cms.cmsrt;
@@ -34,10 +34,13 @@ public i18n.i18nL;
 
 ',1);
 
-$cptemplate = _m('rcserver.paramload use FRONTHTMLPAGE+cptemplate');
+$cptemplate = _m('cms.paramload use FRONTHTMLPAGE+cptemplate');
 
 
 	switch ($_GET['t']) {
+		
+		case 'captchaimage' : die(_m('shlogin.captchaImage'));
+		
 	    case 'chpass'   : 	$mc_page = (GetReq('sectoken')) ? 'cp-chpass' : 'cp-lock';
 							break;
 						

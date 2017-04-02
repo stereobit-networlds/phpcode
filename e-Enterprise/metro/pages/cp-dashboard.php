@@ -376,7 +376,7 @@
    <!--script for this page only-->
    <script language="javascript" type="text/javascript">
    
-    <phpdac>cpflotcharts.jsflotcharts</phpdac> 
+    <phpdac>cmscharts.jsflotcharts</phpdac> 
 	   
     //chosen select
     $(".chzn-select").chosen(); $(".chzn-select-deselect").chosen({allow_single_deselect:true});

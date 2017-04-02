@@ -42,6 +42,8 @@ $lan=getlocal();
 $t = $_GET['t'];
 
 	switch ($t) {
+		case 'captchaimage' : die(_m('cmsrt.captchaImage')); break;
+		
 		case 'useractivate' : if ($_GET['sectoken']) {
 			                     //$msg = 'Account activated';
 								 $mc_page = 'cp-login';

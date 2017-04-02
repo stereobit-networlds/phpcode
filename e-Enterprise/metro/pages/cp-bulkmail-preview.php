@@ -135,7 +135,7 @@
 
    <script language="javascript" type="text/javascript">
    
-	   <phpdac>cpflotcharts.jsflotMailcharts</phpdac>
+	   <phpdac>bmailcharts.jsflotMailcharts</phpdac>
 
        $(function() {
            $.configureBoxes();

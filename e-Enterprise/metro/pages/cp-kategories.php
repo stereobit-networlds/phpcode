@@ -94,7 +94,7 @@
    <script src="js/common-scripts.js"></script>
 
 <script language="JavaScript">  
-<phpdac>rckategories.javascript</phpdac>
+function edit_cat() { var str = arguments[0]; sndReqArg('cpkategories.php?t=cpeditframe&id='+str,'editcat');}
 </script>	
    <!-- END JAVASCRIPTS --> 
 

@@ -51,13 +51,13 @@
                     <!-- BEGIN SAMPLE FORMPORTLET-->
                     <div class="widget red">
                         <div class="widget-title">
-                            <h4><i class="icon-reorder"></i> <phpdac>frontpage.slocale use _MASSSUBSCRIBE</phpdac></h4>
+                            <h4><i class="icon-reorder"></i> <phpdac>cms.slocale use _MASSSUBSCRIBE</phpdac></h4>
                         </div>
                         <div class="widget-body">
                             <!-- BEGIN FORM-->
                             <form name="subins" method="post" action="cpulists.php" class="form-horizontal">
 
-                            <div class="control-group">
+                            <!--div class="control-group">
                                 <label class="control-label">Email Address</label>
                                 <div id="edit_email" class="controls">
                                     <div class="input-icon left">
@@ -65,64 +65,85 @@
                                         <input class=" " name="submail" type="text" placeholder="Email Address" />
                                     </div>
                                 </div>
-                            </div>
+                            </div-->
 
                             <div class="control-group">
-                                <label class="control-label">Insert into</label>
+                                <label class="control-label"><phpdac>cms.slocale use _subinsinto</phpdac></label>
                                 <div id="select_ulist" class="controls">
-                                    <select name="ulist" class="span6 " data-placeholder="Choose an existing mailing list" tabindex="1">
-                                        <option value="">Select...</option>
+                                    <select name="ulist" class="span6 " data-placeholder="<phpdac>cms.slocale use _sellistprompt</phpdac>" tabindex="1">
+                                        <option value=""><phpdac>cms.slocale use _selectlist</phpdac></option>
 										<phpdac>rculists.viewUList</phpdac>
                                     </select>
                                 </div>
                             </div>
 							
                             <div class="control-group">
-                                <label class="control-label">New list</label>
+                                <label class="control-label"><phpdac>cms.slocale use _newlist</phpdac></label>
                                 <div id="edit_ulist" class="controls">
-                                    <input name="ulistname" type="text" class="span6 " />
-                                    <span class="help-inline">Enter a name for a new mailing list</span>
+                                    <input name="ulistname" type="text" class="span6 " placeholder="<phpdac>cms.slocale use _newlistprompt</phpdac>"/>
+                                    <!--span class="help-inline"><phpdac>cms.slocale use _newlistprompt</phpdac></span-->
+                                </div>
+                            </div>	
+
+							<div class="control-group">
+                                <label class="control-label"><phpdac>cms.slocale use _listsep</phpdac></label>
+                                <div id="edit_separator" class="controls">
+                                    <div class="input-prepend">
+                                        <span class="add-on">,</span>
+										<input name="separator" class=" " type="text" placeholder="<phpdac>cms.slocale use _listsep</phpdac>" />
+                                    </div>
                                 </div>
                             </div>							
 
                             <div class="control-group">
-                                <label class="control-label">Text</label>
+                                <label class="control-label"><phpdac>cms.slocale use _subtext</phpdac></label>
                                 <div id="edit_subscribers" class="controls">
                                     <textarea name="csvmails" class="span6 " rows="3"></textarea>
                                 </div>
                             </div>
 							
-                            <div class="control-group">
+                            <!--div class="control-group">
                                 <label class="control-label">Text scan</label>
                                 <div class="controls">
-                                            <div id="normal-toggle-button">
-                                                <input name="scan" type="checkbox" />
-                                            </div>
-                                            <!--div id="success-toggle-button">
-                                                <input type="checkbox" class="toggle" checked="checked" />
-                                            </div>
-                                            <div id="warning-toggle-button">
-                                                <input type="checkbox" class="toggle" checked="checked" />
-											</div-->
-                                </div>
-                            </div>								
-							
-							<div class="control-group">
-                                <label class="control-label">Email separator</label>
-                                <div id="edit_separator" class="controls">
-                                    <div class="input-prepend">
-                                        <span class="add-on">;</span>
-										<input name="separator" class=" " type="text" placeholder="Email Separator" />
+                                    <div id="normal-toggle-button">
+                                        <input name="scan" type="checkbox" />
                                     </div>
                                 </div>
-                            </div>						
+                            </div-->								
+							
+							
+							<div class="control-group">
+								<label class="control-label"><phpdac>cms.slocale use _subutils</phpdac></label>
+								<div class="controls">
+									<label class="checkbox">
+										<input name="subupdate" type="checkbox" checked /> <phpdac>cms.slocale use _subupdate</phpdac>
+									</label>
+									<label class="checkbox">
+										<input name="subcheck" type="checkbox"  /> <phpdac>cms.slocale use _subcheck</phpdac>
+									</label>									
+									<label class="checkbox">
+										<input name="subremove" type="checkbox"  /> <phpdac>cms.slocale use _subremove</phpdac>
+									</label>
+									<label class="checkbox">
+										<input name="subscan" type="checkbox" /> <phpdac>cms.slocale use _subscan</phpdac>
+									</label>
+								</div>
+							</div>							
+
+							<div id="messages" class="control-group">
+								<label class="control-label"><phpdac>i18nL.translate use messages+RCCONTROLPANEL</phpdac></label>
+								<div class="controls">
+									<select id="messages" multiple="multiple" style="height:60px;width:100%;">
+										<phpdac>rculist.viewMessages</phpdac>
+									</select>
+								</div>
+							</div>							
 							
                             <div class="form-actions">
-                                <button type="submit" class="btn btn-success">Submit</button>
-                                <!--button type="button" class="btn">Cancel</button-->
+                                <button type="submit" class="btn btn-danger"><phpdac>cms.slocale use _subsubmit</phpdac></button>
+								<a href="cpulists.php?t=cpcleanbounce&cid=<phpdac>cms.nvldac2 use cid+cms.echostr:cid++</phpdac>" class='btn btn-success'><phpdac>cms.slocale use _cleanlist</phpdac></a>
 								<input type="hidden" name="FormName" value="cpsubscribe" />
 								<input type="hidden" name="FormAction" value="cpsubscribe" />
-								<!--hpdac>rccollections.postSubmit use cpsubscribe+Ok+btn</phpda-->
                             </div>
                             </form>
                             <!-- END FORM-->
