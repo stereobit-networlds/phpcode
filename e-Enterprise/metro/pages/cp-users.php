@@ -20,8 +20,8 @@
 	<link href="../javascripts/themes/redmond/jquery-ui.custom.css" rel="stylesheet" /> 
 	<link href="../javascripts/jqgrid/css/ui.jqgrid.css" rel="stylesheet" />  
 	
-    <script src="../javascripts/jquery.min.js"></script>
-	<!--script src="js/jquery-1.8.3.min.js"></script-->
+    <!--script src="../javascripts/jquery.min.js"></script-->
+	<script src="js/jquery-1.8.3.min.js"></script>
 	<script src="../javascripts/jqgrid/js/i18n/grid.locale-en.js"></script>			
 	<script src="../javascripts/jqgrid/js/jquery.jqGrid.min.js"></script>
 	<script src="../javascripts/themes/jquery-ui.custom.min.js"></script>    

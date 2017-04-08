@@ -121,43 +121,39 @@
                 <!--END METRO STATES-->
             </div>
 			
-            <div class="row-fluid">
-                    <div class="span12">
-                        <div class="widget blue">
-                            <div class="widget-title">
-                                <h4><i class="icon-bar-chart"></i> <phpdac>i18nL.translate use view+RCCRM</phpdac></h4>
-                           <span class="tools">
-                               <a href="javascript:;" class="icon-chevron-down"></a>
-                           </span>
-                            </div>
-                            <div class="widget-body" style="width: 96%">
-                                <div class="plots"></div>
-                            </div>
+			<div class="row-fluid">
+                <div class="span12">
+                    <div class="widget blue">
+                        <div class="widget-title">
+                            <h4><i class="icon-bar-chart"></i> <phpdac>i18nL.translate use CPFLOTCHARTS_DPC+CPFLOTCHARTS</phpdac></h4>
+                        <span class="tools">
+                            <a href="javascript:;" class="icon-chevron-down"></a>
+                        </span>
+                        </div>
+                        <div class="widget-body">
+							<div class="tabbable ">
+								<ul class="nav nav-tabs">
+									<li class="active"><a href="#tab_1_1" data-toggle="tab"><phpdac>i18nL.translate use view+RCCRM</phpdac></a></li>
+									<li><a href="#tab_1_2" data-toggle="tab"><phpdac>i18nL.translate use transactions+RCCONTROLPANEL</phpdac></a></li>
+                                </ul>
+								<div class="tab-content">
+                                    <div class="tab-pane active" id="tab_1_1">
+										<div class="plots"></div>
+									</div>
+									<div class="tab-pane" id="tab_1_2">
+										<div id="chart-1" class="chart"></div>
+									</div>
+								</div>				
+							</div>
                         </div>
                     </div>
-            </div>
-            <div class="row-fluid">
-                    <div class="span12">
-                        <!-- BEGIN TRACKING CURVES PORTLET-->
-                        <div class="widget purple">
-                            <div class="widget-title">
-                                <h4><i class="icon-reorder"></i> <phpdac>i18nL.translate use transactions+RCCONTROLPANEL</phpdac></h4>
-							<span class="tools">
-							<a href="javascript:;" class="icon-chevron-down"></a>
-							</span>
-                            </div>
-                            <div class="widget-body">
-                                <div id="chart-1" class="chart"></div>
-                            </div>
-                        </div>
-                        <!-- END TRACKING CURVES PORTLET-->
-                    </div>
-            </div>			
+                </div>
+            </div>									
 
             <div class="row-fluid">
                 <div class="span6">	
 
-					<div class="widget orange">
+					<div class="widget purple">
 						<div class="widget-title">
 							<h4><i class="icon-tasks"></i> Analytics </h4>
 							<span class="tools">

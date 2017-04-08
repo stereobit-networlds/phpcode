@@ -28,7 +28,7 @@ public piwik.siteanalytics;
 public bmail.rculiststats;
 public cp.rcmessages;
 public cp.rcpmenu;
-public cp.shlogin;
+public cp.cplogin;
 public cp.rccontrolpanel;
 public i18n.i18nL;
 

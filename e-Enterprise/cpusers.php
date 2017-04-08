@@ -2,7 +2,6 @@
 require_once('dpc/system/pcntl.lib.php'); 
 $page = &new pcntl('
 super javascript;
-super rcserver.rcssystem;
 
 load_extension adodb refby _ADODB_; 
 super database;
@@ -26,11 +25,7 @@ security UPDATEUSR_ 1 1:1:1:1:1:1:1:1;
 public jqgrid.mygrid;
 public cms.cmsrt;
 #ifdef SES_LOGIN
-public cms.cmssubscribe;
-public bshop.rcitems;
-public bshop.rcusers;
-public bshop.rccustomers;
-public bshop.rctransactions;
+public cms.rcusers;
 public cp.rcpmenu;
 #endif
 public cp.rccontrolpanel;
