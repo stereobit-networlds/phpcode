@@ -2,10 +2,8 @@
 require_once('cp/dpc/system/pcntl.lib.php'); 
 
 $page = &new pcntl('
-super rcserver.rcssystem;
 load_extension adodb refby _ADODB_; 
 super database;
-include networlds.clientdpc;
 ',1);
 
       $lan = getlocal();

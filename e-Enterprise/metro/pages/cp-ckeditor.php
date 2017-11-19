@@ -17,7 +17,7 @@
    <link href="css/style-responsive.css" rel="stylesheet" />
    <link href="css/style-default.css" rel="stylesheet" id="style_color" />
    
-   <script src="http://www.stereobit.gr/ckeditor/ckeditor.js"></script>
+   <script src="https://www.stereobit.com/ckeditor/ckeditor.js"></script>
 </head>
 <!-- END HEAD -->
 <!-- BEGIN BODY -->

@@ -2,7 +2,6 @@
 require_once('cp/dpc/system/pcntl.lib.php'); 
 $htmlpage = &new pcntl('
 super javascript;
-super rcserver.rcssystem;
 
 load_extension adodb refby _ADODB_; 
 super database;

@@ -246,7 +246,7 @@
                 </div>
 				
                 <div class="span6">
-                    <div id="alerts" class="widget blue">
+                    <div id="alerts" class="widget orange">
                         <div class="widget-title">
                             <h4><i class="icon-bell-alt"></i> <phpdac><phpdac>cms.slocale use RCMESSAGES_DPC</phpdac></h4>
                             <span class="tools">
@@ -278,20 +278,25 @@
                         </div>
                     </div>
 
-                    <!--div class="widget orange">
+                    <div class="widget blue">
                         <div class="widget-title">
-                            <h4><i class="icon-bell-alt"></i> <phpdac>i18nL.translate use system+RCCONTROLPANEL</phpdac> <phpdac>i18nL.translate use messages+RCCONTROLPANEL</phpdac></h4>
-                            <span class="tools">
-                            <a class="icon-chevron-down" href="javascript:;"></a>
-                            </span>
+                            <h4><i class="icon-tasks"></i> Analytics </h4>
+							<span class="tools">
+							<a href="javascript:;" class="icon-chevron-down"></a>
+							</span>
                         </div>
-                        <div class="widget-body">
+                        <!--div class="widget-body">
 						    <phpdac>rcmessages.viewSysMessages use alert-important</phpdac>
 							<div class="space10"></div>
                             <a href="cpmessages.php?t=cpmsg" class="pull-right"><phpdac>i18nL.translate use viewallmessages+RCCONTROLPANEL</phpdac></a>
                             <div class="clearfix no-top-space no-bottom-space"></div>
-                        </div>
-                    </div-->				 
+                        </div-->
+						<div class="widget-body">
+							<div id="widgetIframe"> 
+								<phpdac>siteanalytics.widget use Live+widget+++++yes</phpdac>
+							</div>								
+						</div>
+                    </div>				 
 					
                 </div>
             </div>

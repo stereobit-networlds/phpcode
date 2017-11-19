@@ -6,10 +6,9 @@ define('SENDMAIL_PHPMAILER','true');
 
 /*** adodb4 (prev ver) for pcntlcmd (!?) ***/
 
-require_once('dpc/system/pcntlcmd.lib.php'); 
+require_once('dpc/system/pcntl.lib.php'); 
 $page = &new pcntl('
 super javascript;
-super rcserver.rcssystem;
 
 load_extension adodb4 refby _ADODB_; 
 super database;
@@ -20,7 +19,7 @@ public cms.cmsrt;
 public mail.smtpmail;
 public bmail.maildbqueue;
 
-',0);	 
+',1,true);	 
 
 $ret = _m('maildbqueue.sendmail_daemon use 20+100');
 echo $ret;

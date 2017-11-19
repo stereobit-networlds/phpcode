@@ -2,7 +2,7 @@
 require_once('dpc/system/pcntl.lib.php'); 
 $page = &new pcntl('
 super javascript;
-super rcserver.rcssystem;
+/super rcserver.rcssystem;
 load_extension adodb refby _ADODB_; 
 super database;
 /---------------------------------load and create libs
@@ -11,7 +11,7 @@ use gui.swfcharts;
 use cms.cmscharts;
 
 /---------------------------------load not create dpc (internal use)
-include networlds.clientdpc;
+/include networlds.clientdpc;
 include mail.smtpmail;
 
 /load_extension recaptcha refby _RECAPTCHA_;	
@@ -39,7 +39,7 @@ $cptemplate = _m('cms.paramload use FRONTHTMLPAGE+cptemplate');
 
 	switch ($_GET['t']) {
 		
-		case 'captchaimage' : die(_m('shlogin.captchaImage'));
+		case 'captchaimage' : die(_m('cmsrt.captchaImage'));
 		
 	    case 'chpass'   : 	$mc_page = (GetReq('sectoken')) ? 'cp-chpass' : 'cp-lock';
 							break;

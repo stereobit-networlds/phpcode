@@ -150,8 +150,7 @@
 										<div id="edit_webpage" class="control-group">
 											<label class="control-label"><phpdac>frontpage.slocale use _linetext</phpdac></label>
 											<div class="controls">
-												<textarea name="webviewtext" class="span6 " rows="3">Πατήστε _WEBLINK_ αν δεν βλέπετε σωστά το newsletter.
-												</textarea>
+												<textarea name="webviewtext" class="span6 " rows="3"><phpdac>rcbulkmail.weblink_text</phpdac></textarea>
 											</div>
 										</div>																				
 										<div id="select_unsubscribe" class="control-group">

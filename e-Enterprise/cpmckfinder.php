@@ -1,20 +1,21 @@
 <?php
-require_once('dpc/system/pcntlhtml.lib.php'); 
+require_once('dpc/system/pcntl.lib.php'); 
 $page = &new pcntl('
 super javascript;
-super rcserver.rcssystem;
 
 load_extension adodb refby _ADODB_;
 super database; 
 
-include networlds.clientdpc;
+use i18n.i18n;
 
 public cms.cmsrt;
 #ifdef SES_LOGIN
 public cp.rcpmenu;
 #endif
 public cp.rccontrolpanel;
-',1);
+public i18n.i18nL;
+
+',1,true);
 $cptemplate = _m('rcserver.paramload use FRONTHTMLPAGE+cptemplate');
 
     $mc_page = (GetSessionParam('LOGIN')) ? 'cp-ckfinder' : 'cp-login';

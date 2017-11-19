@@ -3,10 +3,9 @@
 $start=microtime(true);
 /*** adodb4 (prev ver) for pcntlcmd (!?) ***/
 
-require_once('dpc/system/pcntlcmd.lib.php'); 
+require_once('dpc/system/pcntl.lib.php'); 
 $page = &new pcntl('
 super javascript;
-super rcserver.rcssystem;
 
 load_extension adodb4 refby _ADODB_; 
 super database;
@@ -18,7 +17,7 @@ public mail.smtpmail;
 public bmail.maildbqueue;
 public bmail.rcbmailbounce;
 
-',0);	 
+',1,true);	 
 
 //root app
 $ret = _m("rcbmailbounce.cleanBounce use +1"); //+1 //for del

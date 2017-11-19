@@ -3,6 +3,16 @@
    SecFilterScanPOST Off
 </IfModule>
 
+<FilesMatch "\.(ttf|otf|eot|woff)$">
+      <IfModule mod_headers.c>
+        Header set Access-Control-Allow-Origin "*"
+      </IfModule>
+</FilesMatch>
+
+<IfModule mod_deflate.c>
+AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css         application/x-javascript application/javascript
+</IfModule>
+
 RewriteEngine On
 
 RewriteCond %{REQUEST_FILENAME} !-f
@@ -75,8 +85,6 @@ RewriteRule ^removecus/([^/]*)/$ /katalog.php?t=removecus&id=$1 [L]
 RewriteRule ^contact/([^/]*)/$ /contact.php?t=contact&branch=$1 [L]
 RewriteRule ^contact/$ /contact.php [L]
 RewriteRule ^search/$ /search.php [L]
-RewriteRule ^subscribe/$ /subscribe.php?t=subscribe [L]
-RewriteRule ^unsubscribe/$ /subscribe.php?t=unsubscribe [L]
 RewriteRule ^transviewhtml/([^/]*)/$ /katalog.php?t=transviewhtml&tid=$1 [L]
 
 RewriteRule ^trcancel/([^/]*)/$ /katalog.php?t=cancelorder&tid=$1 [L]
@@ -95,13 +103,29 @@ RewriteRule ^cmplist/$ /katalog.php?t=cmplist [L]
 RewriteRule ^transport/([^/]*)/$ /transport.php?t=transport&id=$1 [L]
 RewriteRule ^transport/$ /transport.php?t=transport [L]
 
-RewriteRule ^([^/]*)/$ /index.php?t=$1 [L]
+RewriteRule ^subscribe/([^/]*)/$ /subscribe.php?t=subscribe&m=$1 [L]
+RewriteRule ^subscribe/$ /subscribe.php?t=subscribe [L]
 
-<FilesMatch "\.(ttf|otf|eot|woff)$">
-      <IfModule mod_headers.c>
-        Header set Access-Control-Allow-Origin "*"
-      </IfModule>
-</FilesMatch>
+RewriteRule ^unsubscribe/([^/]*)/$ /subscribe.php?t=unsubscribe&m=$1 [L]
+RewriteRule ^unsubscribe/$ /subscribe.php?t=unsubscribe [L]
+
+RewriteRule ^mtrackurl/([^/]*)/([^/]*)/([^/]*)/([^/]*)/$ /mtrackurl.php?t=mt&a=$1&u=$2&cid=$3&r=$4 [L]
+RewriteRule ^mtrackurl/([^/]*)/([^/]*)/([^/]*)/$ /mtrackurl.php?t=mt&u=$1&cid=$2&r=$3 [L]
+
+RewriteRule ^mtrack/([^/]*)/([^/]*)/$ /mtrack.php?i=$1&r=$2 [L]
+RewriteRule ^mtrack/([^/]*)/$ /mtrack.php?i=$1 [L]
+RewriteRule ^ns/([^/]*)/$ /ns.php?a=$1 [L]
+
+RewriteRule ^process/([^/]*)/([^/]*)/$ /process.php?t=process&pid=$1&clp=$2 [L]
+RewriteRule ^process/([^/]*)/$ /process.php?t=process&pid=$1 [L]
+RewriteRule ^process/$ /process.php?t=process [L]
+
+RewriteRule ^p/([^/]*)/([^/]*)/([^/]*)/$ /process_$1.php??t=process&pid=$2&clp=$3 [L]
+RewriteRule ^p/([^/]*)/([^/]*)/$ /process_$1.php?t=process&pid=$2 [L]
+RewriteRule ^p/([^/]*)/$ /process_$1.php?t=process [L]
+RewriteRule ^p/$ /process.php?t=process [L]
+
+RewriteRule ^([^/]*)/$ /index.php?t=$1 [L]
 
 RewriteRule ^(.*)\.printer$ $1.php [L] 
 
