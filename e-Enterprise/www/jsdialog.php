@@ -8,6 +8,9 @@ super database;
 
 public cms.cmsrt;
 public jsdialog.jsdialogStream;
+public bshop.shkategories; 
+public bshop.shkatalogmedia;
+public bshop.shcart;
 public bshop.shagent;
 ',1);	 
 

@@ -85,10 +85,13 @@ RewriteRule ^removecus/([^/]*)/$ /katalog.php?t=removecus&id=$1 [L]
 RewriteRule ^contact/([^/]*)/$ /contact.php?t=contact&branch=$1 [L]
 RewriteRule ^contact/$ /contact.php [L]
 RewriteRule ^search/$ /search.php [L]
-RewriteRule ^transviewhtml/([^/]*)/$ /katalog.php?t=transviewhtml&tid=$1 [L]
 
+RewriteRule ^transviewhtml/([^/]*)/$ /katalog.php?t=transviewhtml&tid=$1 [L]
 RewriteRule ^trcancel/([^/]*)/$ /katalog.php?t=cancelorder&tid=$1 [L]
+
+RewriteRule ^trload/([^/]*)/([^/]*)/$ /katalog.php?t=loadcart&tid=$1&ajax=$2 [L]
 RewriteRule ^trload/([^/]*)/$ /katalog.php?t=loadcart&tid=$1 [L]
+
 RewriteRule ^trview/([^/]*)/$ /katalog.php?t=transviewhtml&tid=$1 [L]
 RewriteRule ^trview/$ /katalog.php?t=transview [L]
 
