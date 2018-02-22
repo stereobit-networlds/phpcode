@@ -36,35 +36,35 @@
                 <!--BEGIN METRO STATES-->
                 <div class="metro-nav">
                     <div class="metro-nav-block nav-block-orange">
-                        <a data-original-title="" href="cpcrm.php?t=cpcrmdetails&iframe=1&id=<phpdac>fronthtmlpage.echostr use id</phpdac>&module=inbox">
+                        <a data-original-title="" href="cpcrm.php?t=cpcrmdetails&iframe=1&id=<phpdac>cmsrt.nvldac2 use id+cmsrt.echostr:id++</phpdac>&module=inbox">
                             <i class="icon-user"></i>
                             <div class="info"><phpdac>crmdashboard.inbox</phpdac></div>
                             <div class="status">Inbox</div>
                         </a>
                     </div>
                     <div class="metro-nav-block nav-olive">
-                        <a data-original-title="" href="cpcrm.php?t=cpcrmdetails&iframe=1&id=<phpdac>fronthtmlpage.echostr use id</phpdac>&module=stats">
+                        <a data-original-title="" href="cpcrm.php?t=cpcrmdetails&iframe=1&id=<phpdac>cmsrt.nvldac2 use id+cmsrt.echostr:id++</phpdac>&module=stats">
                             <i class="icon-tags"></i>
                             <div class="info"><phpdac>crmdashboard.pageview</phpdac></div>
                             <div class="status"><phpdac>i18nL.translate use view+RCCRM</phpdac></div>
                         </a>
                     </div>
                     <div class="metro-nav-block nav-light-brown">
-                        <a data-original-title="" href="cpcrm.php?t=cpcrmdetails&iframe=1&id=<phpdac>fronthtmlpage.echostr use id</phpdac>&module=tasks">
+                        <a data-original-title="" href="cpcrm.php?t=cpcrmdetails&iframe=1&id=<phpdac>cmsrt.nvldac2 use id+cmsrt.echostr:id++</phpdac>&module=tasks">
                             <i class="icon-remove-sign"></i>
                             <div class="info"><phpdac>crmdashboard.mailsFailed</phpdac></div>
                             <div class="status"><phpdac>i18nL.translate use failed+RCCRM</phpdac> mails</div>
                         </a>
                     </div>					
                     <div class="metro-nav-block nav-block-green double">
-                        <a data-original-title="" href="cpcrm.php?t=cpcrmdetails&iframe=1&id=<phpdac>fronthtmlpage.echostr use id</phpdac>&module=tasks">
+                        <a data-original-title="" href="cpcrm.php?t=cpcrmdetails&iframe=1&id=<phpdac>cmsrt.nvldac2 use id+cmsrt.echostr:id++</phpdac>&module=tasks">
                             <i class="icon-eye-open"></i>
                             <div class="info"><phpdac>crmdashboard.mailSent</phpdac></div>
                             <div class="status"><phpdac>frontpage.slocale use _mailsent</phpdac></div>
                         </a>
                     </div>
                     <div class="metro-nav-block nav-block-red">
-                        <a data-original-title="" href="cpcrm.php?t=cpcrmdetails&iframe=1&id=<phpdac>fronthtmlpage.echostr use id</phpdac>&module=tasks">
+                        <a data-original-title="" href="cpcrm.php?t=cpcrmdetails&iframe=1&id=<phpdac>cmsrt.nvldac2 use id+cmsrt.echostr:id++</phpdac>&module=tasks">
                             <i class="icon-envelope"></i>
                             <div class="info"><phpdac>crmdashboard.mailtoSend</phpdac></div>
                             <div class="status"><phpdac>i18nL.translate use mailinprocess</phpdac></div>
@@ -87,21 +87,21 @@
                         </a>
                     </div>
                     <div class="metro-nav-block nav-block-yellow">
-                        <a data-original-title="" href="cpcrm.php?t=cpcrmdetails&iframe=1&id=<phpdac>fronthtmlpage.echostr use id</phpdac>&module=tasks">
+                        <a data-original-title="" href="cpcrm.php?t=cpcrmdetails&iframe=1&id=<phpdac>cmsrt.nvldac2 use id+cmsrt.echostr:id++</phpdac>&module=tasks">
                             <i class="icon-comments-alt"></i>
                             <div class="info"><phpdac>crmdashboard.mailClickPath</phpdac></div>
                             <div class="status"><phpdac>frontpage.slocale use _bclick</phpdac></div>
                         </a>
                     </div>
                     <div class="metro-nav-block nav-light-purple">
-                        <a data-original-title="" href="cpcrm.php?t=cpcrmdetails&iframe=1&id=<phpdac>fronthtmlpage.echostr use id</phpdac>&module=transactions">
+                        <a data-original-title="" href="cpcrm.php?t=cpcrmdetails&iframe=1&id=<phpdac>cmsrt.nvldac2 use id+cmsrt.echostr:id++</phpdac>&module=transactions">
                             <i class="icon-shopping-cart"></i>
                             <div class="info"><phpdac>crmdashboard.transactions</phpdac></div>
                             <div class="status"><phpdac>i18nL.translate use transactions+RCCONTROLPANEL</phpdac></div>
                         </a>
                     </div>					
                     <div class="metro-nav-block nav-block-grey ">
-                        <a data-original-title="" href="cpcrm.php?t=cpcrmdetails&iframe=1&id=<phpdac>fronthtmlpage.echostr use id</phpdac>&module=transactions">
+                        <a data-original-title="" href="cpcrm.php?t=cpcrmdetails&iframe=1&id=<phpdac>cmsrt.nvldac2 use id+cmsrt.echostr:id++</phpdac>&module=transactions">
                             <i class="icon-external-link"></i>
                             <div class="info"><phpdac>crmdashboard.sales</phpdac> &euro;</div>
                             <div class="status"><phpdac>frontpage.slocale use _revenue</phpdac></div>

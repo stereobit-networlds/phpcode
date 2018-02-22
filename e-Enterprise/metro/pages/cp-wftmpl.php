@@ -5,7 +5,7 @@
 <!-- BEGIN HEAD -->
 <head>
    <meta charset="utf-8" />
-   <title>Users</title>
+   <title>Page Templates</title>
    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
    <meta content="" name="description" />
    <meta content="" name="author" />
@@ -51,7 +51,7 @@
                      <!-- BEGIN BLANK PAGE PORTLET-->
                      <div class="widget red">
                          <div class="widget-title">
-                             <h4><i class="icon-edit"></i> <phpdac>i18nL.translate use users+RCPMENU</phpdac> </h4>
+                             <h4><i class="icon-edit"></i> <phpdac>cms.slocale use RCWFTMPL_DPC</phpdac> </h4>
                            <span class="tools">
                                <a href="javascript:;" class="icon-chevron-down"></a>
                                <a href="javascript:;" class="icon-remove"></a>
@@ -95,7 +95,7 @@
    <script src="js/common-scripts.js"></script>
 
    <!-- END JAVASCRIPTS --> 
-   
+  
 </body>
 <!-- END BODY -->
 </html>

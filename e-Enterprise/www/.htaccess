@@ -13,7 +13,14 @@
 AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css         application/x-javascript application/javascript
 </IfModule>
 
+
 RewriteEngine On
+
+RewriteCond %{HTTP_HOST} !^www\.
+RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
+#RewriteCond %{HTTPS} off
+#RewriteRule ^(.*)$ https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)/([^\.]+).html$ katalog.php?t=kshow&cat=$1&id=$2 [L]

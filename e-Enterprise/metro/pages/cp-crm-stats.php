@@ -117,7 +117,7 @@
                         </a>
                     </div>					
                     <div class="metro-nav-block nav-block-grey ">
-                        <a data-original-title="" href="cpcrm.php?t=cpcrmdetails&iframe=0&id=<phpdac>fronthtmlpage.echostr use id</phpdac>&module=transactions">
+                        <a data-original-title="" href="cpcrm.php?t=cpcrmdetails&iframe=0&id=<phpdac>cmsrt.nvldac2 use id+cmsrt.echostr:id++</phpdac>&module=transactions">
                             <i class="icon-external-link"></i>
                             <div class="info"><phpdac>rccrm.getStats use transactions+sales</phpdac> &euro;</div>
                             <div class="status"><phpdac>frontpage.slocale use _revenue</phpdac></div>

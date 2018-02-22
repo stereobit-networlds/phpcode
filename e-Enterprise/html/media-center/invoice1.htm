@@ -232,10 +232,10 @@
   <div class="section">
     <h3>Παρατηρήσεις - Notes</h3>
     <div class="terms">
-	  <h3>{{phpdac._slocalize('invway')}}</h3>
-	  <h3>{{phpdac._slocalize('roadway')}}</h3>
+	  <h3>Τύπος παραστατικού: {{phpdac._slocalize('invway')}}</h3>
+	  <h3>{{phpdac._slocalize('roadway')}} {{ phpdac._var('shcart.transportcost')|nformat }}</h3>
 	  <h3>{{phpdac._func('shcart.addressDetails use 1')}}</h3>	  
-	  <h3>{{phpdac._slocalize('payway')}}</h3>
+	  <h3>{{phpdac._slocalize('payway')}} {{ phpdac._var('shcart.paymentcost')|nformat }}</h3>
 	  <h3>{{phpdac._svar('sxolia')}}</h3>
 	 
 	  <h3>{{invoice.terms|format}}</h3>  

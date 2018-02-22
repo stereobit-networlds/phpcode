@@ -133,7 +133,7 @@
                         <div class="widget-body">
 							<div class="tabbable ">
 								<ul class="nav nav-tabs">
-									<li class="active"><a href="#tab_1_1" data-toggle="tab"><phpdac>i18nL.translate use view+RCCRM</phpdac></a></li>
+									<li class="active"><a href="#tab_1_1" data-toggle="tab"><phpdac>cms.slocale use _views</phpdac></a></li>
 									<li><a href="#tab_1_2" data-toggle="tab"><phpdac>i18nL.translate use transactions+RCCONTROLPANEL</phpdac></a></li>
                                 </ul>
 								<div class="tab-content">

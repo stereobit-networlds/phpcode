@@ -10,7 +10,7 @@
                                 <div class="title">$2$</div>
                                 <div class="price">
 								  $4$, $5$
-								  <phpdac>frontpage.slocale use _WITHTAX</phpdac>
+								  <phpdac>cms.slocale use _WITHTAX</phpdac>
 								  <phpdac>shcart.price_with_tax use $5$</phpdac>
 								</div>
                             </div>
