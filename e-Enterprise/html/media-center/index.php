@@ -76,6 +76,23 @@
 </style>		
 	</head>
 <body>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '<phpdac>cms.paramload use CMS+fbid</phpdac>',
+      xfbml      : true,
+      version    : 'v2.7'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
 <!--script>
    <-hpdac>cmslogin.fblogin_javascript</phpda->
 </script-->	
@@ -123,5 +140,12 @@
 	<phpdac>cms.include_part use /parts/piwik-analytics.php+++media-center</phpdac>
 	<!-- e-Enterprise, stereobit.networlds (phpdac5) -->	
 <script type="text/javascript" src="jsdialog.php?t=divstart"></script>	
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
 </body>
 </html>

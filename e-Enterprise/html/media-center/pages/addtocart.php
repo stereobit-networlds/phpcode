@@ -1,4 +1,4 @@
-<?
+<?php
 return (GetSessionParam('fastpick')=='on') ? 
 	'<section id="category-grid">
     <div class="container">
@@ -6,15 +6,15 @@ return (GetSessionParam('fastpick')=='on') ?
         <!-- ========================================= SIDEBAR ========================================= -->
         <div class="col-xs-12 col-sm-3 no-margin sidebar narrow">
 
-            <phpdac>frontpage.include_part use /parts/widgets/sidebar/product-filter.php+++media-center</phpdac>
+            <phpdac>cmsrt.include_part use /parts/widgets/sidebar/product-filter.php+++media-center</phpdac>
 
-            <phpdac>frontpage.include_part use /parts/widgets/sidebar/category-tree.php+++media-center</phpdac>
+            <phpdac>cmsrt.include_part use /parts/widgets/sidebar/category-tree.php+++media-center</phpdac>
 
-            <phpdac>frontpage.include_part use /parts/widgets/sidebar/le-links.php+++media-center</phpdac>
+            <phpdac>cmsrt.include_part use /parts/widgets/sidebar/le-links.php+++media-center</phpdac>
 
-            <phpdac>frontpage.include_part use /parts/widgets/sidebar/sidebar-banner.php+++media-center</phpdac>
+            <phpdac>cmsrt.include_part use /parts/widgets/sidebar/sidebar-banner.php+++media-center</phpdac>
 
-            <phpdac>frontpage.include_part use /parts/widgets/sidebar/featured-products.php+++media-center</phpdac>
+            <phpdac>cmsrt.include_part use /parts/widgets/sidebar/featured-products.php+++media-center</phpdac>
 
         </div>
         <!-- ========================================= SIDEBAR : END ========================================= -->

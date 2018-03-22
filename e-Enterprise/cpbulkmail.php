@@ -3,7 +3,7 @@
 //define ('SMTP_PHPMAILER','true');
 
 require_once('dpc/system/pcntl.lib.php'); //2
-$page = &new pcntl('
+$page = new pcntl('
 super javascript;
 /super rcserver.rcssystem;
 
@@ -41,7 +41,7 @@ $cptemplate = _m('cmsrt.paramload use FRONTHTMLPAGE+cptemplate');
 		case 'cptemplatesav'   :
 		case 'cptemplatenew'   : $p = 'cp-bmail-new'; break;
 		case 'cppreviewcamp'   : $p = 'cp-bmail-preview'; break;
-		case 'cpsavemailadv'   : $p = 'cp-bmail-post'; break;
+		case 'cpsavemailadv'   : die(print_(_POST);$p = 'cp-bmail-post'; break;
 		case 'cpdeletecamp'    :
 		case 'cpcontinuecamp'  :
 		case 'cppausecamp'     :

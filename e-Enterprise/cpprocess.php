@@ -1,6 +1,6 @@
 <?php
 require_once('dpc/system/pcntl.lib.php'); 
-$page = &new pcntl('
+$page = new pcntl('
 
 super javascript;
 

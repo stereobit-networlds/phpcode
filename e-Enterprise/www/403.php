@@ -1,6 +1,6 @@
 ﻿<?php
-require_once('cp/dpc/system/pcntlhtml.lib.php'); 
-$htmlpage = &new pcntl('
+require_once('cp/dpc/system/pcntl.lib.php'); 
+$htmlpage = new pcntl('
 super javascript;
 
 load_extension adodb refby _ADODB_; 

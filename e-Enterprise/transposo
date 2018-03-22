@@ -4,8 +4,8 @@ define('SMTP_PHPMAILER','true');
 
 require_once('dpc/system/pcntlcmd.lib.php'); 
 
-$page = &new pcntl('
-super rcserver.rcssystem;
+$page = new pcntl('
+/super rcserver.rcssystem;
 
 load_extension adodb refby _ADODB_; 	
 super database.database;

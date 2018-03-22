@@ -1,8 +1,8 @@
 <?php
 require_once('dpc/system/pcntl.lib.php'); 
-$page = &new pcntl('
+$page = new pcntl('
 super javascript;
-super rcserver.rcssystem;
+/super rcserver.rcssystem;
 
 load_extension adodb refby _ADODB_; 
 super database;

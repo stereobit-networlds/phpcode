@@ -1,6 +1,6 @@
 ﻿<?php
-require_once('cp/dpc/system/pcntlhtml.lib.php'); 
-$htmlpage = &new pcntl('
+require_once('cp/dpc/system/pcnt.lib.php'); 
+$htmlpage = new pcntl('
 super javascript;
 
 load_extension adodb refby _ADODB_; 
@@ -9,9 +9,15 @@ super database;
 /---------------------------------load and create libs
 use i18n.i18n;
 
-/---------------------------------load not create dpc
+/---------------------------------load not create dpc (internal use)
+include networlds.clientdpc;
 include mail.smtpmail;
 			
+security CART_DPC 1 1:1:1:1:1:1:1:1:1:1;
+security SHCART_DPC 1 1:1:1:1:1:1:1:1:1:1;
+security TRANSACTIONS_DPC 1 1:1:1:1:1:1:1:1:1:1;
+security SHTRANSACTIONS_DPC 1 1:1:1:1:1:1:1:1:1:1;
+
 /---------------------------------load all and create after dpc ojects
 public cms.cmsrt;
 public cms.cmsvstats;

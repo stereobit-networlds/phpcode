@@ -6,7 +6,8 @@
 
 		<phpdac>
 			cms.nvltokens use $1$+
-			<?	$ret = "<li><label>";
+			<?php
+				$ret = "<li><label>";
 				$ret.= localize('_CARTDISCOUNT', getlocal());
 				$ret.= "</label><div class='value pull-right'>$1$</div></li>";
 				return ($ret);	   
@@ -16,7 +17,8 @@
 		
 		<phpdac>
 			cms.nvltokens use $2$+
-			<?	$ret = "<li><label>"; 
+			<?php
+				$ret = "<li><label>"; 
 				$ret.= localize('_CARTVAT', getlocal());
 				$ret.= "</label><div class='value pull-right'>$2$</div></li>";
 				return ($ret);	   
@@ -36,7 +38,8 @@
 		
 		<phpdac>
 			cms.nvltokens use $5$+
-			<? 	$ret = "<li><label>";
+			<?php
+				$ret = "<li><label>";
 				$ret.= localize('_CARTSHIPCOST', getlocal());
 				$ret.= "</label><div class='value pull-right'>$5$</div></li>";
 				return ($ret);	
@@ -46,7 +49,8 @@
 
 		<phpdac>
 			cms.nvltokens use $6$+
-			<? 	$ret = "<li><label>";
+			<?php
+				$ret = "<li><label>";
 				$ret.= localize('_CARTPAYCOST', getlocal());
 				$ret.= "</label><div class='value pull-right'>$6$</div></li>";
 				return ($ret);	
@@ -56,12 +60,12 @@
 		
 		<!--hpdac>
 			cms.nvltokens use $4$+
-			<?
+			<-
 				$ret = "<li><label>";
 				$ret.= localize('_CARTTOTAL', getlocal());
 				$ret.= ":</label><div class='value pull-right'>$4$</div></li>";
 				return ($ret);		
-			?>
+			->
 		+</phpda-->
 		
         <!--li>

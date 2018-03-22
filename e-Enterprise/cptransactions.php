@@ -1,11 +1,11 @@
 <?php
 require_once('dpc/system/pcntl.lib.php'); 
-$page = &new pcntl('
+$page = new pcntl('
 
 #define ESHOP CONF_ESHOP_ENABLE
 
 super javascript;
-super rcserver.rcssystem;
+/super rcserver.rcssystem;
 
 load_extension adodb refby _ADODB_; 
 super database;
