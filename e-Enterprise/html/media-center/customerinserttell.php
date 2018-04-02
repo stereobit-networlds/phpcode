@@ -164,7 +164,7 @@
                     <td bgcolor='#FFFFFF' cellspacing="10">
                     <h1 align='center'><phpdac>cmsrt.slocale use _REMINDERTITLE</phpdac></h1>
                     <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 600px;">
-					
+				</tr>	
 				<tr>
                   <td class="blsubtitles"><phpdac>cmsrt.slocale use _USERNAMETITLE</phpdac>: </td>
                   <td class="lptext" height="25">$0$</td>
@@ -213,7 +213,10 @@
                   <td class="blsubtitles"><phpdac>cmsrt.slocale use _EMAIL</phpdac>: </td>
                   <td class="lptext" height="25">$12$</td>
                 </tr>					
-
+			    <tr>
+                  <td class="blsubtitles"><phpdac>cmsrt.slocale use _REGCONTACTNAME</phpdac>: </td>
+                  <td class="lptext" height="25">$13$</td>
+                </tr>
 					</table>
 					<br/>
 					<br/>

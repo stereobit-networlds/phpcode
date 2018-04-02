@@ -162,57 +162,21 @@
                 <!-- Email Body : BEGIN -->
                 <tr>
                     <td bgcolor='#FFFFFF' cellspacing="10">
-                    <h1 align='center'><phpdac>cmsrt.slocale use _REMINDERTITLE</phpdac></h1>
+                    <h1 align='center'><phpdac>cmsrt.slocale use _CONTACTTITLE</phpdac></h1>
                     <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 600px;">
-				</tr>	
+					
 				<tr>
-                  <td class="blsubtitles"><phpdac>cmsrt.slocale use _USERNAMETITLE</phpdac>: </td>
+                  <td class="blsubtitles"><phpdac>cmsrt.slocale use _email</phpdac>: </td>
                   <td class="lptext" height="25">$0$</td>
                 </tr>
-                <tr>
-                  <td class="blsubtitles"><phpdac>cmsrt.slocale use _REGFULLNAME</phpdac>: </td>
+				<tr>
+                  <td class="blsubtitles"><phpdac>cmsrt.slocale use _subject</phpdac>: </td>
                   <td class="lptext" height="25" nowrap="nowrap">$1$</td>
                 </tr>
                 <tr>
-                  <td class="blsubtitles"><phpdac>cmsrt.slocale use _REGUSRVAT</phpdac>: </td>
-                  <td class="lptext" height="25">$2$</td>
-                </tr>
-                <tr>
-                  <td class="blsubtitles"><phpdac>cmsrt.slocale use _REGUSRVATDETAILS</phpdac>: </td>
-                  <td class="lptext" height="25">$3$</td>
-                </tr>			
-                <tr>
-                  <td class="blsubtitles"><phpdac>cmsrt.slocale use _REGUSRBUSINESS</phpdac>: </td>
-                  <td class="lptext" height="25">$4$</td>
-                </tr>	
-                <tr>
-                  <td class="blsubtitles"><phpdac>cmsrt.slocale use _ADDRESS</phpdac>: </td>
-                  <td class="lptext" height="25">$5$</td>
-                </tr>	
-                <tr>
-                  <td class="blsubtitles"><phpdac>cmsrt.slocale use _AREA</phpdac>: </td>
-                  <td class="lptext" height="25">$6$</td>
-                </tr>		
-                <tr>
-                  <td class="blsubtitles"><phpdac>cmsrt.slocale use _POBOX</phpdac>: </td>
-                  <td class="lptext" height="25">$7$</td>
-                </tr>
-                <tr>
-                  <td class="blsubtitles"><phpdac>cmsrt.slocale use _PHONE</phpdac> 1: </td>
-                  <td class="lptext" height="25">$9$</td>
-                </tr>	
-                <tr>
-                  <td class="blsubtitles"><phpdac>cmsrt.slocale use _PHONE</phpdac> 2: </td>
-                  <td class="lptext" height="25">$10$</td>
-                </tr>	
-                <tr>
-                  <td class="blsubtitles"><phpdac>cmsrt.slocale use _PHONEALT</phpdac>: </td>
-                  <td class="lptext" height="25">$11$</td>
-                </tr>		
-                <tr>
-                  <td class="blsubtitles"><phpdac>cmsrt.slocale use _EMAIL</phpdac>: </td>
-                  <td class="lptext" height="25">$12$</td>
-                </tr>					
+                  <td class="blsubtitles"><phpdac>cmsrt.slocale use _message</phpdac>: </td>
+                  <td class="lptext" height="25" nowrap="nowrap">$2$</td>
+                </tr>				
 
 					</table>
 					<br/>

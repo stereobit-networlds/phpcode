@@ -20,9 +20,9 @@
 							cmsrt.nvl use shcart.agentIsIE+
 								$2$
 								+
-								<? 
+								<?php 
 								    if (floatval(str_replace(',','.','$1$'))>0.0) {
-										$ret = '<a id="addto-cart" href="javascript:void(0)" onclick="addtocart(\'PRESELQTY\',\'$4$\');" class="le-button huge">';
+										$ret = '<a id="addto-cart" href="javascript:void(0)" onclick="addtocart(\'PRESELQTY2\',\'$4$\');" class="le-button huge">';
 										$ret.= localize('_INCART', getlocal());
 										$ret.='</a>';
 									}
