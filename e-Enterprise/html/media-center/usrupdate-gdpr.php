@@ -121,8 +121,14 @@
 				<form method="post">
 					<div class="buttons-holder">
 						<span class="pull-right">
-                        <button type="submit" class="le-button huge"><phpdac>cms.slocale use _DELETE</phpdac></button>
-					    <input type="hidden" name="FormAction" value="gdprdel" />
+                        <!--button type="submit" class="le-button huge"><-hpdac>cms.slocale use _DELETE</phpda-></button-->
+					    <!--input type="hidden" name="FormAction" value="gdprdel" /-->
+						
+						<a onclick="new $.Zebra_Dialog('<phpdac>cmsrt.slocale use _userdeletefinalquestion</phpdac> <form method=\'post\'><button type=\'submit\' class=\'le-button huge\'><phpdac>cms.slocale use _DELETE</phpdac></button><input type=\'hidden\' name=\'FormAction\' value=\'gdprdel\'></form>', {
+		'type':     'question',
+		'title':    '<phpdac>cmsrt.slocale use _userdelete</phpdac>',
+		'buttons':  [{caption: '<phpdac>cmsrt.slocale use _CANCEL</phpdac>', callback: function() { /*alert('Cancel was clicked')*/}}]
+	});" class="le-button huge"><phpdac>cms.slocale use _DELETE</phpdac></a>
 						</span>
                     </div><!-- /.buttons-holder -->					
 				</form>	

@@ -81,6 +81,8 @@ RewriteRule ^signup/([^/]*)/$ /katalog.php?t=signup&invtype=$1 [L]
 RewriteRule ^signup/$ /katalog.php?t=signup&invtype=0 [L]
 
 RewriteRule ^editcus/([^/]*)/$ /katalog.php?t=signup2&a=$1 [L]
+RewriteRule ^editcus/$ /katalog.php?t=signup2 [L]
+
 RewriteRule ^selectcus/([^/]*)/$ /katalog.php?t=selcus&id=$1 [L]
 RewriteRule ^removecus/([^/]*)/$ /katalog.php?t=removecus&id=$1 [L]
 RewriteRule ^contact/([^/]*)/$ /contact.php?t=contact&branch=$1 [L]
