@@ -1,9 +1,9 @@
 <!-- ========================================= CONTENT ========================================= -->
-<div class="inner-xs">
+<!--div class="inner-xs">
 	<div class="page-header">
-		<h2 class="page-title"><phpdac>cmsrt.slocale use _EDITCUSTOMER</phpdac></h2>
+		<h2 class="page-title">Μεταβολή λογαριασμού</h2>
 	</div>			
-</div>  
+</div-->  <!--hpdac>frontpage.slocale use _USRPLEASETEXT</phpda-->
 		
 <section id="checkout-page">
     <div class="container">
@@ -12,10 +12,13 @@
             <?MEDIA-CENTER/INDEX?>
 
             <section id="your-order">
-                <phpdac>cms.nvl use qty_total+<h2 class='border h1'>your order</h2>++</phpdac>
+
+				<phpdac>cms.include_partDb use gdpr-approve+++media-center</phpdac>
+
+                <!--hpdac>frontpage.nvl use qty_total+<h2 class='border h1'>your order</h2>++</phpda->
                 <form>
-				    <phpdac>shcart.quickview use +fpcartline-alt+fpcart-alt</phpdac>   
-                </form>
+				    <-hpdac>shcart.quickview use +fpcartline-alt.htm+fpcart-alt.htm</phpda->   
+                </form-->
             </section><!-- /#your-order -->
 
         </div><!-- /.col -->

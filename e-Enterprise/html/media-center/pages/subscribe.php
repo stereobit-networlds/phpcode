@@ -23,18 +23,14 @@
 			Τα e-mail που λαμβάνετε, δεν μπορούν να θεωρηθούν spam εφόσον αναγράφονται 
 			τα στοιχεία του αποστολέα και διαδικασίες διαγραφής απο την λίστα παραληπτών.
 			</p> 			
-		</section>
+		</section-->
 		
 		<section class="section intellectual-property">
-			<h2>Directiva</h2>
+			<h2>Regulation (EU)</h2>
 			<p>
-			Τα μήνυματα πληρούν τις προυποθέσεις της Ευρωπαικής Νομοθεσίας περί διαφημιστικών 
-			μηνυμάτων. 
-			Κάθε μήνυμα θα πρέπει να φέρει τα πλήρη στοιχεια του αποστολέα ευκρινώς και 
-			θα πρέπει να δίνει στο δέκτη τη δυνατότητα διαγραφής.
-			<strong>(Directiva 2002/31/CE του Ευρωπαικού Κοινοβουλίου).</strong> 
+			<strong>Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016</strong> on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC<a target='_blank' href='https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2016.119.01.0001.01.ENG'> [Details]</a> 
 			</p>
-		</section-->	
+		</section>	
 	</div>
 </main><!-- /.inner-bottom-md -->
 <!-- ========================================= MAIN ========================================= -->

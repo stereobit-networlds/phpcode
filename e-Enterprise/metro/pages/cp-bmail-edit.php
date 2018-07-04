@@ -105,20 +105,20 @@
                                     </div>
                                     <div class="tab-pane <phpdac>cmsrt.nvl use rcbulkmail.ulistselect+ active++</phpdac>" id="tabsleft-tab2">
                                         <h3><phpdac>cmsrt.slocale use _distlist</phpdac></h3>
-										<!--div class="control-group">
+										<div class="control-group">
 											<label class="control-label">Mailing list</label>
 											<div id="select_ulists" class="controls">
-												<-hpdac>rcbulkmail.uListSelect</phpda->
+												<phpdac>rcbulkmail.uListSelect use ulistname</phpdac>
 											</div>
-										</div-->
-										<div class="control-group">
+										</div>
+										<!--div class="control-group">
 											<label class="control-label"><phpdac>cmsrt.slocale use _selectlist</phpdac></label>
 											<div id="select_ulists_multiple" class="controls">
 												<select name="ulistname[]" class="span6 " multiple="multiple" data-placeholder="Choose mailing lists" tabindex="1">
-													<phpdac>rcbulkmail.viewUList</phpdac>
+													<-hpdac>rcbulkmail.viewUList</phpda->
 												</select>
 											</div>
-										</div>										
+										</div-->										
 										<div class="control-group">
 											<label class="control-label"><phpdac>cmsrt.slocale use _csv</phpdac></label>
 											<div id="edit_csv" class="controls">

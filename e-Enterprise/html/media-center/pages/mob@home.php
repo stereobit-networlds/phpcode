@@ -1,11 +1,11 @@
-<div id="top-banner-and-menu"> <!-- class="homepage2" -->
+<!--div id="top-banner-and-menu"> <- class="homepage2" ->
 	<div class="container">
 		<div class="col-xs-12">
-			<!--hpdac>cmsrt.include_part use /parts/section/home-page-slider-2.php+++media-center</phpda-->
-			<phpdac>cms.callVar use fpslider</phpdac>
+			<-hpdac>cmsrt.include_part use /parts/section/home-page-slider-2.php+++media-center</phpda->
+			<-hpdac>cms.callVar use fpslider</phpda->
 		</div>
 	</div>
-</div><!-- /#top-banner-and-menu -->
+</div--><!-- /#top-banner-and-menu -->
 
 <!--hpdac>cmsrt.include_part use /parts/section/home-banners.php+++media-center</phpda-->
 <phpdac>cms.callVar use fpbanner</phpdac>

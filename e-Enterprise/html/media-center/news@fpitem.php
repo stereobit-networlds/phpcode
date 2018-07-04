@@ -26,7 +26,7 @@
 						<!--li><a href="#">OffTopic</a>, <a href="#">Announcements</a></li-->
 						<li><a href="#comments"><span class="fb-comments-count" data-href="<phpdac>cmsrt.paramload use SHELL+urlbase</phpdac><phpdac>cmsrt.php_self</phpdac>"></span> Comments</a></li>
 					</ul><!-- /.meta -->
-					$13$									
+					$53$									
 				</div><!-- /.post-content -->
 				
 	 		</div><!-- /.post-entry -->

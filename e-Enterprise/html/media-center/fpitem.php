@@ -7,10 +7,10 @@
 						<div id="owl-single-product">
 							<div class="single-product-gallery-item" id="slide1">
 							    <phpdac>cmsrt.nvltokens use $26$+<div class='ribbon blue'><span>++</phpdac> 
-								<phpdac>cmsrt.nvltokens use $26$+<?php return(localize('_WITHDISCOUNT', getlocal())) ?>++</phpdac>
+								<phpdac>cmsrt.nvltokens use $26$+<? return(localize('_WITHDISCOUNT', getlocal())) ?>++</phpdac>
 								<phpdac>cmsrt.nvltokens use $26$+</span></div>++</phpdac>
 								<phpdac>cmsrt.nvltokens use $41$+<div class='ribbon red'><span>$28$ ++</phpdac>
-								<phpdac>cmsrt.nvltokens use $41$+<?php return(localize('_POINTS', getlocal())) ?>++</phpdac>
+								<phpdac>cmsrt.nvltokens use $41$+<? return(localize('_POINTS', getlocal())) ?>++</phpdac>
 								<phpdac>cmsrt.nvltokens use $41$+</span></div>++</phpdac>
 								<a data-rel="prettyphoto" href="$19$">
 									<img class="img-responsive" alt="$0$" src="assets/images/blank.gif" data-echo="$18$" />
@@ -61,9 +61,9 @@
 						<phpdac>
 							cms.nvldecode use $31$
 								+
-								<?php return(localize('_NOTAVAILABLE', getlocal())) ?>
+								<? return(localize('_NOTAVAILABLE', getlocal())) ?>
 								+
-								<?php return(localize('_AVAILABLE', getlocal())) ?>
+								<? return(localize('_AVAILABLE', getlocal())) ?>
 								+0
 								+
 								$22$
@@ -92,16 +92,16 @@
 		                <!--div class="prices">
 							<div class="price-prev">Αξία: $5$ &euro;</div>
 						</div-->
-						<div class="prices">
+						<!--div class="prices">
 							<div class="price-current">
 								<phpdac>shcart.price_with_tax use $5$</phpdac>
 								<span class="price-prev">
 									<phpdac>cms.slocale use _WITHTAX</phpdac>
 								</span>
 							</div>
-							<!--div class="price-prev"><phpdac>shcart.price_with_tax use $5$</phpdac></div-->
+							<div class="price-prev"><phpdac>shcart.price_with_tax use $5$</phpdac></div>
 							<br/><div class="price-prev">$5$€ <phpdac>cmsrt.slocale use _WITHOUTTAX</phpdac></div>
-						</div>					
+						</div-->					
 
 						<div class="qnt-holder">
 							<div class="le-quantity">
@@ -116,7 +116,7 @@
 							cmsrt.nvl use shcart.agentIsIE+
 								$6$
 								+
-								<?php 
+								<? 
 									if (floatval(str_replace(',','.','$5$'))>0.0) {
 										$ret = '<a id="addto-cart" href="javascript:void(0)" onclick="addtocart(\'PRESELQTY\',\'$27$\');" class="le-button huge">';
 										$ret.= localize('_INCART', getlocal());
@@ -167,7 +167,7 @@
 
                 <div class="tab-pane active" id="description">
                     <p>					
-						$13$
+						$53$
 					</p>		
                     <div class="meta-row">
                         <div class="inline">

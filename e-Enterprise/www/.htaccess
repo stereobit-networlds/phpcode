@@ -20,8 +20,10 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)/([^\.]+).html$ katalog.php?t=kshow&cat=$1&id=$2 [L]
 RewriteRule ^([^\.]+).html$ katalog.php?t=klist&cat=$1 [NC,L]
 
+RewriteRule ^addtocart/([^/]*)/([^/]*)/([^/]*)/([^/]*)/$ /katalog.php?t=addtocart&a=$1&cat=$2&page=$3&qty=$4 [L]
 RewriteRule ^addtocart/([^/]*)/([^/]*)/([^/]*)/$ /katalog.php?t=addtocart&a=$1&cat=$2&page=$3 [L]
 RewriteRule ^removefromcart/([^/]*)/([^/]*)/([^/]*)/$ /katalog.php?t=removefromcart&a=$1&cat=$2&page=$3 [L]
+
 RewriteRule ^kshow/([^/]*)/([^/]*)/([^/]*)/$ /katalog.php?t=kshow&cat=$1&page=$2&id=$3 [L]
 RewriteRule ^kshow/([^/]*)/([^/]*)/$ /katalog.php?t=kshow&cat=$1&id=$2 [L]
 RewriteRule ^klist/([^/]*)/([^/]*)/$ /katalog.php?t=klist&cat=$1&page=$2 [L]
@@ -117,6 +119,10 @@ RewriteRule ^mtrackurl/([^/]*)/([^/]*)/([^/]*)/$ /mtrackurl.php?t=mt&u=$1&cid=$2
 RewriteRule ^mtrack/([^/]*)/([^/]*)/$ /mtrack.php?i=$1&r=$2 [L]
 RewriteRule ^mtrack/([^/]*)/$ /mtrack.php?i=$1 [L]
 RewriteRule ^ns/([^/]*)/$ /ns.php?a=$1 [L]
+
+RewriteRule ^tools/([^/]*)/([^/]*)/$ /gdprtools.php?t=$1&submail=$2 [L]
+RewriteRule ^tools/([^/]*)/$ /gdprtools.php?t=$1 [L]
+RewriteRule ^tools/$ /gdprtools.php [L]
 
 RewriteRule ^process/([^/]*)/([^/]*)/$ /process.php?t=process&pid=$1&clp=$2 [L]
 RewriteRule ^process/([^/]*)/$ /process.php?t=process&pid=$1 [L]

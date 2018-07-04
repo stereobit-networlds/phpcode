@@ -14,10 +14,7 @@
 				</section--><!-- /#who-we-are -->
 
 				<section id="our-goal-and-idea" class="section">
-					<h2>Οικονομικά αποτελέσματα</h2>
-					<p>Οικονομικά αποτελέσματα 2012, πατήστε <a href='/files/isologismos-2012.pdf' target='_blank'>εδώ</a>.</p>
-					<p>Οικονομικά αποτελέσματα 2013, πατήστε <a href='/files/isologismos-2013.pdf' target='_blank'>εδώ</a>.</p>
-					<p>Οικονομικά αποτελέσματα 2014, πατήστε <a href='/files/isologismos-2014.pdf' target='_blank'>εδώ</a>.</p>
+					<phpdac>cms.include_partDb use text-isologismos+++media-center</phpdac>
 				</section><!-- /#our-goal-and-idea -->
 			
 			</div><!-- /.col -->
