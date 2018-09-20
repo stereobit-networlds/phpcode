@@ -19,12 +19,9 @@
 						</ul>
 					</div>
 					<div class="checkbox-holder text-left">
-						<!--div class="checkbox">
-							<input type="checkbox" value="None" id="squaredOne" name="checksub" />
-							<label for="squaredOne"><span>Ενεργοποίηση περιοδικής ενημέρωσης</span></label>
-						</div-->
-						<phpdac>shform.recaptcha</phpdac>
+						<img src="index.php?t=captchaimage" alt="captcha"/>
 					</div>
+					<input name="mycaptcha" type="text" class="form-control form-white" placeholder="Captcha text">
 					<button type="submit" class="btn btn-submit">Αποστολή</button>
 					<input type="hidden" name="FormAction" value="sendamail">
 				</form>

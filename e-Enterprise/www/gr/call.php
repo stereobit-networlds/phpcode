@@ -12,7 +12,7 @@ use i18n.i18n;
 /---------------------------------load not create dpc
 include mail.smtpmail;
 
-load_extension recaptcha refby _RECAPTCHA_;	
+/load_extension recaptcha refby _RECAPTCHA_;	
 			
 /---------------------------------load all and create after dpc ojects
 public cms.cmsrt;
