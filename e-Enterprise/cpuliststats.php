@@ -1,8 +1,7 @@
 <?php
-require_once('dpc/system/pcntl.lib.php'); 
+require('phpdac7.php'); 
 $page = new pcntl('
 super javascript;
-/super rcserver.rcssystem;
 
 load_extension adodb refby _ADODB_; 
 super database;
@@ -19,6 +18,7 @@ public jqgrid.mygrid;
 public cms.cmsrt;
 #ifdef SES_LOGIN
 public crm.crmforms;
+public bmail.rcbmailclick;
 public bmail.rculiststats;
 public cp.rcpmenu;
 #endif
